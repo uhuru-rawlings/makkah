@@ -529,6 +529,7 @@ ul li.active a{
 .booking-travel-booking .booking-model{
     width: 40%;
     margin: auto;
+    margin-top: 100px;
     background-color: #FFFFFF;
 }
 .booking-travel-booking form{
