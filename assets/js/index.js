@@ -78,7 +78,6 @@ function carouselSlider(){
     })
     // activeSlide.removeAttribute("data-active");
     offset[i].setAttribute("data-active","");
-    console.log(i);
     setTimeout("carouselSlider()",5000);
 }
 window.onload = carouselSlider();
