@@ -351,6 +351,13 @@ ul li.active a{
 .menu-bars{
     display: none;
 }
+.nav-links[data-visible]{
+    height: fit-content;
+     opacity: 1;
+}
+.nav-links[data-visible] a{
+    display: block !important;
+}
 /* responsive navbar */
 @media screen and (max-width: 921px){
     .menu-bars{
@@ -358,7 +365,9 @@ ul li.active a{
         font-size: 40px;
     }
     .nav-links{
-        display: none;
+        /* display: none; */
+        height: 0;
+        opacity: 0;
         position: absolute;
         right: 0;
         top: 100px;
@@ -370,6 +379,12 @@ ul li.active a{
     .nav-links ul li{
         display: block;
     }
+    .nav-links ul li a{
+        display: none;
+    }
+    /* .nav-links[data-visible] a{
+        display: block !important;
+    } */
     .counter-section{
         transform: translateY(0);
         height: fit-content;

@@ -1,11 +1,21 @@
 const toogleNavBar = () => {
-    var target = document.getElementById("nav-bar-items");
-    if(target.style.display == "block"){
-        target.style.display = "none";
+    var target = document.querySelector("[data-visible]");
+    if(target){
+        document.getElementById("nav-bar-items").removeAttribute("data-visible");
     }else{
-        target.style.display = "block";
+        document.getElementById("nav-bar-items").setAttribute("data-visible","");
     }
 }
+
+const unsetAttribute = () => {
+    var items = document.querySelectorAll("[data-visible]");
+    items.forEach(element => {
+        element.removeAttribute("data-visible");
+    })
+}
+
+window.onload = unsetAttribute();
+
 
 const openBookingForm = (clicked_destination) => {
     document.getElementById("locations").value = clicked_destination;
