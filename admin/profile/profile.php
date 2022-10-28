@@ -1,7 +1,7 @@
 <?php
     include_once("../../config.php");
     include_once("../database/Database.php");
-    include_once("../models/Locations.php")
+    include_once("../models/Registration.php");
 ?>
 <html lang="en">
 <head>
@@ -40,7 +40,7 @@
                         Update
                     </div>
                     <div class="card-body">
-                        <form action="add-location-fun.php" method="post">
+                        <form action="update-profile.php" method="post">
                             <?php
                                 if(isset($_GET['success'])){
                                     echo "<div class='alert alert-success'>".$_GET['success']."</div>";
@@ -48,24 +48,33 @@
                                     echo "<div class='alert alert-danger'>".$_GET['error']."</div>";
                                 }
                             ?>
+                            <?php
+                                    $conn = new Database();
+                                    $db = $conn -> connection();
+                                    $user = new Registration($db);
+                                    $user -> Email = "uhururawlings40@gmail.com";
+                                    $update = $user -> getUser();
+                                    if($update){
+                            ?>
+                           
                             <div class="row">
                               <div class="form-group col-sm-6">
                                 <label for="Fname">Firstname</label>
-                                <input type="text" name="Fname" id="Fname" class="form-control" placeholder="Firstname">
+                                <input type="text" value="<?php echo $update['Fname'] ?>" name="Fname" id="Fname" class="form-control" placeholder="Firstname">
                               </div>
                               <div class="form-group col-sm-6">
                                 <label for="Lname">Lastname</label>
-                                <input type="text" name="Lname" id="Lname" class="form-control" placeholder="Lastname">
+                                <input type="text" value="<?php echo $update['Lname'] ?>" name="Lname" id="Lname" class="form-control" placeholder="Lastname">
                               </div>
                             </div>
                             <div class="row">
                               <div class="form-group col-sm-6">
                                 <label for="Email">Email</label>
-                                <input type="email" name="Email" id="Email" class="form-control" placeholder="Email">
+                                <input type="email" value="<?php echo $update['Email'] ?>" name="Email" id="Email" class="form-control" placeholder="Email">
                               </div>
                               <div class="form-group col-sm-6">
                                 <label for="Phone">Phone</label>
-                                <input type="tel" name="Phone" id="Phone" class="form-control" placeholder="Phone">
+                                <input type="tel" value="<?php echo $update['Phone'] ?>" name="Phone" id="Phone" class="form-control" placeholder="Phone">
                               </div>
                             </div>
                             <div class="form-group">
@@ -75,6 +84,11 @@
                             <div class="form-group">
                                 <input type="submit" value="Update Profile" name="update" class="btn btn-primary" id="save">
                             </div>
+                            <?php
+                                    }else{
+                                        echo "<div class='alert alert-danger'>Seems you are not loged in.</div>";
+                                    }
+                            ?>
                         </form>
                     </div>
                 </div>
