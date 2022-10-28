@@ -34,17 +34,42 @@ const getNextCards = (clickedid) => {
     }
 }
 
-var images = ["images/slider1.jpg","images/slider2.jpg","images/slider3.jpg","images/slider4.jpg"];
-var timer = 5000;
+// var images = ["images/slider1.jpg","images/slider2.jpg","images/slider3.jpg","images/slider4.jpg"];
+// var timer = 5000;
+// var i = 0;
+// function imageSlider(){
+//     if(i < images.length - 1){
+//         i++;
+//     }else{
+//         i = 0;
+//     }
+//     document.getElementById("spear-background").setAttribute("src",images[i]);
+//     setTimeout("imageSlider()",timer);
+// }
+
+// window.onload = imageSlider();
+
+
+
+var sliders = document.querySelectorAll(".spear-background");
+var offset = [...sliders];
+var activeSlide = document.querySelector("[data-active]");
 var i = 0;
-function imageSlider(){
-    if(i < images.length - 1){
+
+function carouselSlider(){
+
+    if(i < sliders.length - 1){
         i++;
     }else{
         i = 0;
     }
-    document.getElementById("spear-background").setAttribute("src",images[i]);
-    setTimeout("imageSlider()",timer);
+    offset.forEach(element => {
+        element.removeAttribute("data-active");
+    })
+    // activeSlide.removeAttribute("data-active");
+    offset[i].setAttribute("data-active","");
+    console.log(i);
+    setTimeout("carouselSlider()",5000);
 }
+window.onload = carouselSlider();
 
-window.onload = imageSlider();
