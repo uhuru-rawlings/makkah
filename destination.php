@@ -67,7 +67,14 @@
     </div>
     <div class="locations-in-kenya">
         <div class="container py-5">
-            <h3 class="header-text">Kenya</h3>
+            <h3 class="header-text">Recent Tour Locations</h3>
+            <?php
+                if(isset($_GET['success'])){
+                    echo "<div class='alert alert-success'>".$_GET['success']."</div>";
+                }else if(isset($_GET['error'])){
+                    echo "<div class='alert alert-danger'>".$_GET['error']."</div>";
+                }
+            ?>
             <div class="row">
                 <?php
                     $conn = new Database();
@@ -116,9 +123,9 @@
         <div class="booking-model">
             <form action="bookings.php" method="post" autocomplete="off">
                 <div class="row">
-                    <div class="form-group col-sm-6">
+                    <div class="form-group col-sm-6" style="display: none;">
                         <label for="locations">Location</label>
-                        <input type="text" oninput="removeErrors(this.id)" name="locations" id="locations" class="form-control" disabled value="Masai Mara">
+                        <input type="text" oninput="removeErrors(this.id)" name="locations" id="locations" class="form-control" value="Masai Mara">
                     </div>
                     <div class="form-group col-sm-6">
                         <label for="fullname">Fullname</label>

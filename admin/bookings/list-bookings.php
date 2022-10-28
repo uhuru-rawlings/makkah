@@ -58,6 +58,7 @@
                                     <th>To Date</th>
                                     <th>Persons</th>
                                     <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -71,12 +72,20 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $destination['id'] ?></td>
-                                    <td><?php echo $destination['Fname']." ".$destination['Lname'] ?></td>
+                                    <td><?php echo $destination['Fullname'] ?></td>
                                     <td><?php echo $destination['Location_id'] ?></td>
                                     <td><?php echo $destination['From_Date'] ?></td>
                                     <td><?php echo $destination['To_Date'] ?></td>
                                     <td><?php echo $destination['Travelers'] ?></td>
                                     <td><?php echo $destination['Status'] ?></td>
+                                    <td>
+                                        <?php if($destination['Status']  == "Pending"){
+                                            echo "<a href=''><button class='btn btn-success'>Approve</button></a>";
+                                            }else{
+                                            echo "<a href=''><button class='btn btn-danger'>Cancel</button></a>";
+                                            }
+                                        ?>
+                                    </td>
                                 </tr>
                                 <?php
                                         }
