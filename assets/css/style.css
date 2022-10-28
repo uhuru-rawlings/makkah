@@ -571,7 +571,7 @@ ul li.active a{
     /* display: flex; */
     align-items: center;
     z-index: 10000;
-    /* display: none;    */
+    display: none;   
 }
 .details-models{
     width: 50%;
