@@ -76,8 +76,8 @@
                                     <td><?php echo $destination['Date_added'] ?></td>
                                     <td><?php echo $destination['Last_Modified'] ?></td>
                                     <td>
-                                        <a href="?edit=<?php echo $destination['Location_Name'] ?>&id=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
-                                        <a class="text-danger" href="delete-location.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
+                                        <a href="update-destination.php?update=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
+                                        <a class="text-danger" href="delete-destination.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <?php
