@@ -9,6 +9,13 @@
             <a href="">
                 <span><i class="nav-icon fa-solid fa-user"></i> Users</span> <i class="fa-solid fa-chevron-down"></i>
             </a>
+            <ul>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/users/add-users.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add User</span>
+                    </a>
+                </li>
+            </ul>
         </li>
         <li>
             <a href="#">
@@ -38,7 +45,7 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="<?php echo BASE_URL."admin/profile/profile.php" ?>">
                 <span><i class="nav-icon fa-solid fa-cogs"></i> Profile</span>
             </a>
         </li>
