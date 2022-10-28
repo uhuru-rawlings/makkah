@@ -9,7 +9,8 @@
         $prices            = $_POST['prices'];
         $daysoppened       = $_POST['daysoppened'];
         $placedescription  = $_POST['placedescription'];
-        $Last_Modified = date("Y-m-d H:i:s");
+        $Last_Modified     = date("Y-m-d H:i:s");
+        $Location          = $_POST['Location']; 
 
         $conn = new Database();
         $db = $conn -> connection();
@@ -20,6 +21,7 @@
         $destination -> place_description  = $placedescription;
         $destination -> Last_Modified      = $Last_Modified;
         $destination -> id                 = $update_id;
+        $destination -> Location    = $Location;
         if(!empty($_FILES['location-image']['name'][0]) || $_FILES['location-image']['name'][0] !== ""){
             $image  = new Imageuploads();
             $image -> image = $_FILES['location-image'];

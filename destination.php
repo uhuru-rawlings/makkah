@@ -92,7 +92,7 @@
                     <div class="place-deils">
                         <div class="row">
                             <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> <?php echo $location['Location_Name'] ?> </a>
+                                <a target="_blank" href="<?php echo $location['Location'] ?>"><i class="fa-solid fa-location-dot"></i> <?php echo $location['Location_Name'] ?> </a>
                             </div>
                             <div class="col" style="text-align: right;">
                                 <i class="fa-solid fa-dollar-sign"></i> Kshs. <?php echo $location['Price_Perday'] ?>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phonenumber">People</label>
-                    <input type="number" oninput="removeErrors(this.id)" name="numberofpeople" id="numberofpeople" class="form-control" placeholder="Pople">
+                    <input type="number" oninput="removeErrors(this.id)" name="numberofpeople" id="numberofpeople" class="form-control" placeholder="People">
                 </div>
                 <div class="form-group">
                     <input type="submit" onclick="return validateBookings()"  value="BOOK NOW" class="btn btn-primary">
@@ -196,7 +196,7 @@
                     <div class="col-sm-6">Place: <?php echo $destination['Location_Name'] ?></div>
                     <div class="col-sm-6">Price: Kshs. <?php echo $destination['Price_Perday'] ?> / Day</div>
                 </div>
-                <div class="days-opend">Days Opened: <?php echo $destination['Price_Perday'] ?></div>
+                <div class="days-opend">Days Opened: <?php echo $destination['Days_Opened'] ?></div>
                 <div class="descriptions">
                     <?php echo $destination['place_description'] ?>
                 </div>

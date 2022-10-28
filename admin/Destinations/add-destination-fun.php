@@ -12,7 +12,8 @@
         $prices           = $_POST['prices'];
         $daysoppened      = $_POST['daysoppened'];
         $placedescription = $_POST['placedescription'];
-        $last_modified = date("Y-m-d H:i:s");
+        $last_modified    = date("Y-m-d H:i:s");
+        $Location         = $_POST['Location']; 
 
         $conn = new Database();
         $db = $conn -> connection();
@@ -28,6 +29,7 @@
             $new_destination -> Days_Opened      = $daysoppened;
             $new_destination -> Last_Modified    = $last_modified;
             $new_destination -> place_description    = $placedescription;
+            $new_destination -> Location    = $Location;
             $destination = $new_destination -> addDestination();
             if($destination){
                 header("Location: add-destinations.php?success=destination added succesfully.");

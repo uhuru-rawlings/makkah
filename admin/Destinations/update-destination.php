@@ -101,6 +101,10 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="Location">Location</label>
+                                <input type="url" value="<?php echo $update['Location'] ?>" name="Location" id="Location" class="form-control" placeholder="Location">
+                            </div>
+                            <div class="form-group">
                                 <label for="placedescription">Description</label>
                                 <textarea name="placedescription" id="placedescription" cols="30" rows="10" class="form-control" value="<?php echo $update['place_description'] ?>"><?php echo $update['place_description'] ?></textarea>
                             </div>

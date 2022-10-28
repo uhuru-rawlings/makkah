@@ -358,116 +358,9 @@ ul li.active a{
 .nav-links[data-visible] a{
     display: block !important;
 }
-/* responsive navbar */
-@media screen and (max-width: 921px){
-    .menu-bars{
-        display: block;
-        font-size: 40px;
-    }
-    .nav-links{
-        /* display: none; */
-        height: 0;
-        opacity: 0;
-        position: absolute;
-        right: 0;
-        top: 100px;
-        background-color: #ffffffef;
-        width: 100%;
-        text-align: right;
-        z-index: 1208;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links ul li a{
-        display: none;
-    }
-    /* .nav-links[data-visible] a{
-        display: block !important;
-    } */
-    .counter-section{
-        transform: translateY(0);
-        height: fit-content;
-    }
-    .counter-section .container{
-        background-color: unset;
-        height: fit-content;
-        border-radius: 0;
-        box-shadow: unset;
-    }
-    .adventure-activities-full{
-        position: unset;
-        height: fit-content;
-    }
-    #carouselExampleControls,#adventure-card-containers{
-        position: unset;
-        width: 100%;
-        margin: auto;
-    } 
-    #adventure-cards{
-        /* position: absolute; */
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        column-gap: 15px;
-    }   
-    .slider-card{
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        border-radius: 0 !important;
-        box-shadow: unset;
-        background-color: #FFFFFF;
-        margin-bottom: 10px;
-    }
-    .slider-card img{
-        border-radius: 0 !important;
-    }
-    #adventure-activities{
-        min-height: 50vh;
-        background-image: url(../../images/background-3.jpg);
-        background-size: cover;
-        color: #FFFFFF;
-    }
-    .most-visited-places,.why-book-with-us,#about-container,.footer-section{
-        height: fit-content;
-    }
-    .most-visited-places{
-        margin-bottom: 15px;
-    }
-    .flex-reasons-section{
-        display: block;
-    }
-    #small-background,#big-background{
-        width: 100%;
-        height: fit-content;
-    }
-    .welcome-text-section{
-        position: absolute;
-        top: 20%;
-        color: #FFFFFF;
-        width: 90%;
-        margin: auto;
-    }
-    .welcome-text-section h1{
-        font-size: 40px !important;
-    }
-    .row#most-visisted-places .col-sm-4{
-        position: relative;
-        height: 400px;
-        color: #FFFFFF;
-    }
-    #small-background{
-        height: 40vh;
-    }
-    /* .counter-section .container .row{
-        display: flex !important;
-        align-items: center !important;
-    } */
+.booking-travel-booking{
+    overflow-y: scroll;
 }
-
 #mission_image img{
     width: 100%;
     height: 100%;
@@ -652,4 +545,121 @@ ul li.active a{
     padding: 15px 20px 5px 20px;
     border-bottom: 1px solid #ebebebcc;
     text-align: center;
+}
+/* responsive navbar */
+@media screen and (max-width: 921px){
+    .menu-bars{
+        display: block;
+        font-size: 40px;
+    }
+    .nav-links{
+        /* display: none; */
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        background-color: #ffffffef;
+        width: 100%;
+        text-align: right;
+        z-index: 1208;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        display: none;
+    }
+    /* .nav-links[data-visible] a{
+        display: block !important;
+    } */
+    .counter-section{
+        transform: translateY(0);
+        height: fit-content;
+    }
+    .counter-section .container{
+        background-color: unset;
+        height: fit-content;
+        border-radius: 0;
+        box-shadow: unset;
+    }
+    .adventure-activities-full{
+        position: unset;
+        height: fit-content;
+    }
+    #carouselExampleControls,#adventure-card-containers{
+        position: unset;
+        width: 100%;
+        margin: auto;
+    } 
+    #adventure-cards{
+        /* position: absolute; */
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 15px;
+    }   
+    .slider-card{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 0 !important;
+        box-shadow: unset;
+        background-color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    .slider-card img{
+        border-radius: 0 !important;
+    }
+    #adventure-activities{
+        min-height: 50vh;
+        background-image: url(../../images/background-3.jpg);
+        background-size: cover;
+        color: #FFFFFF;
+    }
+    .most-visited-places,.why-book-with-us,#about-container,.footer-section{
+        height: fit-content;
+    }
+    .most-visited-places{
+        margin-bottom: 15px;
+    }
+    .flex-reasons-section{
+        display: block;
+    }
+    #small-background,#big-background{
+        width: 100%;
+        height: fit-content;
+    }
+    .welcome-text-section{
+        position: absolute;
+        top: 20%;
+        color: #FFFFFF;
+        width: 90%;
+        margin: auto;
+    }
+    .welcome-text-section h1{
+        font-size: 40px !important;
+    }
+    .row#most-visisted-places .col-sm-4{
+        position: relative;
+        height: 400px;
+        color: #FFFFFF;
+    }
+    #small-background{
+        height: 40vh;
+    }
+    .details-models,.booking-model{
+        width: 95%;
+    }
+    .view-details{
+        opacity: 1 !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .email-link{
+        display: none;
+    }
 }
