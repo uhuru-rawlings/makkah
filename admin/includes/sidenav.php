@@ -48,7 +48,13 @@
             <a href="javascript:void(0)">
                 <span><i class="nav-icon fa-solid fa-list-check"></i> Bookings</span> <i class="fa-solid fa-chevron-down"></i>
             </a>
-            <ul class="bookingsdropdown"></ul>
+            <ul class="bookingsdropdown">
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-bookings.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> All Bookings</span>
+                    </a>
+                </li>
+            </ul>
         </li>
         <li class="<?php if($_SESSION['active'] == "profile"){ echo "active"; } ?>">
             <a href="<?php echo BASE_URL."admin/profile/profile.php" ?>">
