@@ -1,7 +1,8 @@
 <?php
     include_once("../../config.php");
     include_once("../database/Database.php");
-    include_once("../models/Locations.php")
+    include_once("../models/Locations.php");
+    $_SESSION['active'] = "users";
 ?>
 <html lang="en">
 <head>

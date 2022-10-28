@@ -37,7 +37,7 @@
         {
             $sql = "SELECT * FROM Registration";
             $query = $this -> conn -> prepare($sql);
-            $query -> execute([$this -> Email]);
+            $query -> execute();
             $rows = $query -> rowCount();
             if($rows > 0){
                 while($results = $query -> fetchAll(PDO::FETCH_ASSOC)){

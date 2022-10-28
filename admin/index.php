@@ -1,5 +1,6 @@
 <?php
     include("../config.php");
+    $_SESSION['active']="dashboard";
 ?>
 <html lang="en">
 <head>

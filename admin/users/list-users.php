@@ -1,8 +1,8 @@
 <?php
     include_once("../../config.php");
     include_once("../database/Database.php");
-    include_once("../models/Locations.php");
-    $_SESSION['active']="destination";
+    include_once("../models/Registration.php");
+    $_SESSION['active'] = "users";
 ?>
 <html lang="en">
 <head>
@@ -34,46 +34,11 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo BASE_URL."admin/index.php" ?>">Home</a></li>
-                    <li class="breadcrumb-item active">Add Locations</li>
+                    <li class="breadcrumb-item active">List Users</li>
                 </ol>
-                <div class="card">
-                    <div class="card-header">
-                        Add Locations
-                    </div>
-                    <div class="card-body">
-                        <form action="add-location-fun.php" method="post">
-                            <?php
-                                if(isset($_GET['success'])){
-                                    echo "<div class='alert alert-success'>".$_GET['success']."</div>";
-                                }else if(isset($_GET['error'])){
-                                    echo "<div class='alert alert-danger'>".$_GET['error']."</div>";
-                                }
-                            ?>
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="location-name">Location Name</label>
-                                    <input type="text" value="<?php if(isset($_GET['edit'])){echo $_GET['edit'];} ?>" name="location-name" id="location-name" class="form-control" placeholder="Location Name">
-                                </div>
-                                <?php
-                                    if(isset($_GET['edit'])){
-                                ?>
-                                    <div class="form-group col-sm-6" style="display: none;">
-                                        <label for="location-name">Location Id</label>
-                                        <input type="text" value="<?php echo $_GET['id'] ?>" name="location-id" id="location-id" class="form-control" placeholder="Location Name">
-                                    </div>
-                                <?php
-                                    }
-                                ?>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Save Destination" class="btn btn-primary" id="save">
-                            </div>
-                        </form>
-                    </div>
-                </div>
                 <div class="card" style="margin-top: 15px;">
                     <div class="card-header">
-                        List Location
+                        List Users
                     </div>
                     <div class="card-body">
                             <?php
@@ -87,29 +52,45 @@
                             <thead class="bg-primary text-light">
                                 <tr>
                                     <th>Id</th>
-                                    <th>Location Name</th>
-                                    <th>Last Modified</th>
+                                    <th>Fist Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Roles</th>
                                     <th>Date Added</th>
-                                    <th><i class="fa-solid fa-trash"></i></th>
+                                    <th>Last Modified</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
                                     $conn = new Database();
                                     $db = $conn -> connection();
-                                    $location = new Locations($db);
-                                    $locations = $location -> getLocations();
-                                    if($locations){
-                                        foreach($locations as $destination){
+                                    $user = new Registration($db);
+                                    $update = $user -> getAllUsers();
+                                    if($update){
+                                        foreach($update as $user){
                                 ?>
                                 <tr>
-                                    <td><?php echo $destination['id'] ?></td>
-                                    <td><?php echo $destination['Location_Name'] ?></td>
-                                    <td><?php echo $destination['Last_modified'] ?></td>
-                                    <td><?php echo $destination['Date_added'] ?></td>
+                                    <td><?php echo $user['id'] ?></td>
+                                    <td><?php echo $user['Fname'] ?></td>
+                                    <td><?php echo $user['Lname'] ?></td>
+                                    <td><?php echo $user['Email'] ?></td>
+                                    <td><?php echo $user['Phone'] ?></td>
                                     <td>
-                                        <a href="?edit=<?php echo $destination['Location_Name'] ?>&id=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
-                                        <a class="text-danger" href="delete-location.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
+                                        <?php 
+                                        if($user['Roles'] == "Admin"){ 
+                                            echo "<button class='btn btn-success'>Admin</button>";
+                                        }else{
+                                          echo "<button class='btn btn-info text-light'>User</button>";
+                                        }
+                                        ?>
+                                    </td>
+                                    <td><?php echo $user['Date_added'] ?></td>
+                                    <td><?php echo $user['Last_Modified'] ?></td>
+                                    <td>
+                                        <a href="update-destination.php?update=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
+                                        <a class="text-danger" href="delete-destination.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <?php

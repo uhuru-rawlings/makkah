@@ -1,27 +1,32 @@
 <nav>
     <ul>
-        <li>
+        <li class="<?php if($_SESSION['active'] == "dashboard"){ echo "active"; } ?>">
             <a href="<?php echo BASE_URL."admin/index.php" ?>">
                 <span><i class="nav-icon fa-solid fa-guarg"></i> Dashboard</span>
             </a>
         </li>
-        <li>
-            <a href="">
+        <li onclick="toogleDropDown(this.id)" id="userdropdown" class="<?php if($_SESSION['active'] == "users"){ echo "active"; } ?>">
+            <a href="javascript:void(0)">
                 <span><i class="nav-icon fa-solid fa-user"></i> Users</span> <i class="fa-solid fa-chevron-down"></i>
             </a>
-            <ul>
+            <ul class="userdropdown">
                 <li>
                     <a href="<?php echo BASE_URL."admin/users/add-users.php" ?>">
                         <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add User</span>
                     </a>
                 </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/users/list-users.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> List User</span>
+                    </a>
+                </li>
             </ul>
         </li>
-        <li>
-            <a href="#">
+        <li onclick="toogleDropDown(this.id)" id="destinationdropdown" class="<?php if($_SESSION['active'] == "destination"){ echo "active"; } ?>">
+            <a href="javascript:void(0)">
                 <span><i class="nav-icon fa-solid fa-road"></i> Destinations</span> <i class="fa-solid fa-chevron-down"></i>
             </a>
-            <ul>
+            <ul class="destinationdropdown">
                 <li>
                     <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>">
                         <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Destination</span>
@@ -39,12 +44,13 @@
                 </li>
             </ul>
         </li>
-        <li>
-            <a href="">
+        <li onclick="toogleDropDown(this.id)" id="bookingsdropdown" class="<?php if($_SESSION['active'] == "bookings"){ echo "active"; } ?>">
+            <a href="javascript:void(0)">
                 <span><i class="nav-icon fa-solid fa-list-check"></i> Bookings</span> <i class="fa-solid fa-chevron-down"></i>
             </a>
+            <ul class="bookingsdropdown"></ul>
         </li>
-        <li>
+        <li class="<?php if($_SESSION['active'] == "profile"){ echo "active"; } ?>">
             <a href="<?php echo BASE_URL."admin/profile/profile.php" ?>">
                 <span><i class="nav-icon fa-solid fa-cogs"></i> Profile</span>
             </a>

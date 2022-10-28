@@ -3,6 +3,7 @@
     include_once("../database/Database.php");
     include_once("../models/Locations.php");
     include_once("../models/Destinations.php");
+    $_SESSION['active']="destination";
 ?>
 <html lang="en">
 <head>

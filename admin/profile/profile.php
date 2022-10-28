@@ -2,6 +2,7 @@
     include_once("../../config.php");
     include_once("../database/Database.php");
     include_once("../models/Registration.php");
+    $_SESSION['active'] = "profile";
 ?>
 <html lang="en">
 <head>
