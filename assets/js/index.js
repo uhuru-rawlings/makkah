@@ -26,12 +26,17 @@ const closeBookingForm = () => {
 }
 
 const openTravelDetails = (clicked_destination) => {
+    var url = window.location.href;
+    var newurl = url + "?item="+clicked_destination;
+    window.location.href = newurl;
     document.getElementById("current-travel-item").innerText = clicked_destination;
-    document.getElementById("show-travel-details").style.display = "flex";
+    // document.getElementById("show-travel-details").style.display = "flex";
 }
 
 const closeTravelDetails = () => {
-    document.getElementById("show-travel-details").style.display = "none";
+    var url = window.location.href;
+    var new_url = url.split("?");
+    window.location.href = new_url[0]
 }
 
 const getNextCards = (clickedid) => {

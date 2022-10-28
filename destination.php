@@ -1,3 +1,8 @@
+<?php
+    include_once("admin/models/Destinations.php");
+    include_once("admin/database/Database.php");
+    include_once("config.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,181 +69,46 @@
         <div class="container py-5">
             <h3 class="header-text">Kenya</h3>
             <div class="row">
+                <?php
+                    $conn = new Database();
+                    $db = $conn -> connection();
+                    $destinations = new Destinations($db);
+                    $destination  = $destinations -> getDestinations();
+                    if($destination){
+                        foreach($destination as $location){
+                ?>
                 <div class="col-sm-3">
                     <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
+                        <?php
+                            $img_list = explode(",",$location['Location_images']);
+                        ?>
+                            <img src="<?php echo BASE_URL."uploads/".$img_list[1] ?>" width="100%" height="100%" alt="">
+                        <?php
+                        ?>
                         <div class="view-details">
-                            <button onclick="openTravelDetails(this.id)" id="book-now1" class="btn shadow-none">View Details</button>
+                            <button onclick="openTravelDetails(this.id)" id="<?php echo $location['id'] ?>" class="btn shadow-none">View Details</button>
                         </div>
                     </div>
                     <div class="place-deils">
                         <div class="row">
                             <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
+                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> <?php echo $location['Location_Name'] ?> </a>
                             </div>
                             <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
+                                <i class="fa-solid fa-dollar-sign"></i> Kshs. <?php echo $location['Price_Perday'] ?>
                             </div>
                             <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now1">BOOK NOW</button>
+                                <button onclick="openBookingForm(this.id)" id="<?php echo $location['id'] ?>" class="btn shadow-none">BOOK NOW</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
-                        <div class="view-details">
-                            <button class="btn shadow-none">View Details</button>
-                        </div>
-                    </div>
-                    <div class="place-deils">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
-                            </div>
-                            <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now2">BOOK NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
-                        <div class="view-details">
-                            <button class="btn shadow-none">View Details</button>
-                        </div>
-                    </div>
-                    <div class="place-deils">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
-                            </div>
-                            <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now3">BOOK NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
-                        <div class="view-details">
-                            <button class="btn shadow-none">View Details</button>
-                        </div>
-                    </div>
-                    <div class="place-deils">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
-                            </div>
-                            <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now4">BOOK NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="locations-in-london">
-        <div class="container py-5">
-            <h3 class="header-text">London</h3>
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
-                        <div class="view-details">
-                            <button class="btn shadow-none">View Details</button>
-                        </div>
-                    </div>
-                    <div class="place-deils">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
-                            </div>
-                            <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now5">BOOK NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
-                        <div class="view-details">
-                            <button class="btn shadow-none">View Details</button>
-                        </div>
-                    </div>
-                    <div class="place-deils">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
-                            </div>
-                            <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now6">BOOK NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
-                        <div class="view-details">
-                            <button class="btn shadow-none">View Details</button>
-                        </div>
-                    </div>
-                    <div class="place-deils">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
-                            </div>
-                            <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now7">BOOK NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="image-section">
-                        <img src="images/african-lions.jpg" width="100%" height="100%" alt="">
-                        <div class="view-details">
-                            <button class="btn shadow-none">View Details</button>
-                        </div>
-                    </div>
-                    <div class="place-deils">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" href="https://goo.gl/maps/H5EVKNFB6XPGb5QW7"><i class="fa-solid fa-location-dot"></i> Place Name </a>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <i class="fa-solid fa-dollar-sign"></i> Kshs. 15,000
-                            </div>
-                            <div class="col-sm-12">
-                                <button onclick="openBookingForm(this.id)" class="btn shadow-none" id="book-now8">BOOK NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                        }
+                    }else{
+                        echo "<div class='alert alert-danger'>No Travel Locations Added.</div>";
+                    }
+                ?>
             </div>
         </div>
     </div>
@@ -288,16 +158,60 @@
             </div>
         </div>
     </div>
+        <?php
+            if(isset($_GET['item'])){
+            $conn = new Database();
+            $db = $conn -> connection();
+            $destinations = new Destinations($db);
+            $destinations -> id = $_GET['item'];
+            $destination  = $destinations -> getSingleDestination();
+            if($destination){
+        ?>
     <div class="show-travel-details" id="show-travel-details">
         <div class="details-models">
-            <div class="model-title" id="current-travel-item"></div>
+            <div class="model-title" id="current-travel-item"><?php echo $destination['Location_Name'] ?></div>
             <div class="details">
+                <div class="row" id="image-cols">
+                <?php
+                    $img_list = explode(",",$location['Location_images']);
+                    $count = count($img_list);
+                    for($i = 1;$i < $count;$i++){
+                        if($i == 1){
+                ?>
+                        <div class="col-sm-12" style="margin-bottom: 15px;">
+                            <img src="<?php echo BASE_URL."uploads/".$img_list[$i] ?>" width="100%" height="100%" alt="">
+                        </div>
+                <?php
+                        }else{
+                ?>
+                        <div class="col-sm-3">
+                            <img src="<?php echo BASE_URL."uploads/".$img_list[$i] ?>" width="100%" height="100%" alt="">
+                        </div>
+                <?php
+                        }
+                    }
+                ?>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">Place: <?php echo $destination['Location_Name'] ?></div>
+                    <div class="col-sm-6">Price: Kshs. <?php echo $destination['Price_Perday'] ?> / Day</div>
+                </div>
+                <div class="days-opend">Days Opened: <?php echo $destination['Price_Perday'] ?></div>
+                <div class="descriptions">
+                    <?php echo $destination['place_description'] ?>
+                </div>
             </div>
             <div class="model-footer" style="text-align: right;">
                 <button onclick="closeTravelDetails()" class="btn btn-secondary">Close</button>
             </div>
         </div>
     </div>
+    <?php
+        }else{
+            echo "<div class='alert alert-danger'>Ooops! something went wrong</div>";
+        }
+    }
+    ?>
     <div class="footer-section py-4 bg-dark">
         <div class="container">
             <div class="row">

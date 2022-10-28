@@ -58,7 +58,6 @@
                                     <th>To Date</th>
                                     <th>Persons</th>
                                     <th>Status</th>
-                                    <th><i class="fa-solid fa-trash"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -78,16 +77,12 @@
                                     <td><?php echo $destination['To_Date'] ?></td>
                                     <td><?php echo $destination['Travelers'] ?></td>
                                     <td><?php echo $destination['Status'] ?></td>
-                                    <td>
-                                        <a href="update-destination.php?update=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
-                                        <a class="text-danger" href="delete-destination.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
-                                    </td>
                                 </tr>
                                 <?php
                                         }
                                     }else{
                                         echo '<tr>
-                                                <td colspan="8" class="text-center">No Bookings Available</td>
+                                                <td colspan="7" class="text-center">No Bookings Available</td>
                                               </tr>';
                                     }
                                 ?>

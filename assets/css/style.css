@@ -626,7 +626,14 @@ ul li.active a{
     /* display: flex; */
     align-items: center;
     z-index: 10000;
-    display: none;   
+    /* display: none;    */
+    overflow-y: scroll;
+}
+.details img{
+    border-radius: 5px;
+}
+#image-cols .col-sm-12,#image-cols .col-sm-3{
+    height: 200px;
 }
 .details-models{
     width: 50%;
