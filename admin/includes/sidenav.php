@@ -21,7 +21,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>">
+                    <a href="<?php echo BASE_URL."admin/Destinations/list-destinations.php" ?>">
                         <span><i class="nav-icon fa-solid fa-list"></i> List Destination</span>
                     </a>
                 </li>
