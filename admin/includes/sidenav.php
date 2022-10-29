@@ -16,10 +16,19 @@
             </a>
             <ul>
                 <li>
-                    <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>"><i class="nav-icon fa-solid fa-plus-circle"></i> Add Destination</a>
+                    <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Destination</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>"><i class="nav-icon fa-solid fa-list"></i> List Destination</a>
+                    <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> List Destination</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/Destinations/add-locations.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Locations</span>
+                    </a>
                 </li>
             </ul>
         </li>

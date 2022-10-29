@@ -1,5 +1,7 @@
 <?php
-    include("../../config.php");
+    include_once("../../config.php");
+    include_once("../database/Database.php");
+    include_once("../models/Locations.php")
 ?>
 <html lang="en">
 <head>
@@ -40,21 +42,35 @@
                     <div class="card-body">
                         <form action="" enctype="multipart/form-data" method="post">
                             <div class="row">
-                                <div class="form-group col">
+                                <div class="form-group col-sm-6">
                                     <label for="location-name">Location Name</label>
-                                    <input type="text" name="location-name" id="location-name" class="form-control" placeholder="Location Name">
+                                    <select name="location-name" id="location-name" class="form-control">
+                                        <?php
+                                            $conn = new Database();
+                                            $db = $conn -> connection();
+                                            $location = new Locations($db);
+                                            $locations = $location -> getLocations();
+                                            if($locations){
+                                                foreach($locations as $destination){
+                                                    echo "<option value='{$destination['id']}'>".$destination['Location_Name']."</option>";
+                                                }
+                                            }else{
+                                                echo '<option value="">No Location Available</option>';
+                                            }
+                                        ?>
+                                    </select>
                                 </div>
-                                <div class="form-group col">
-                                    <label for="location-name">Location Image</label>
-                                    <input type="file" name="location-image" id="location-image" class="form-control" placeholder="Location Name">
+                                <div class="form-group col-sm-6">
+                                    <label for="location-name">Location Image <span class="text-danger">(you can upload multiple images)</span></label>
+                                    <input type="file" name="location-image[]" id="location-image" class="form-control" placeholder="Location Name">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col">
+                                <div class="form-group col-sm-6">
                                     <label for="location-name">Price per Day</label>
                                     <input type="text" name="prices" id="prices" class="form-control" placeholder="Price per Day">
                                 </div>
-                                <div class="form-group col">
+                                <div class="form-group col-sm-6">
                                     <label for="location-name">Days Oppened</label>
                                     <input type="text" name="daysoppened" id="daysoppened" class="form-control" placeholder="Days Oppened">
                                 </div>
