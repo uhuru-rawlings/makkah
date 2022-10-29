@@ -75,6 +75,13 @@
                         List Location
                     </div>
                     <div class="card-body">
+                            <?php
+                                if(isset($_GET['delete-success'])){
+                                    echo "<div class='alert alert-success'>".$_GET['delete-success']."</div>";
+                                }else if(isset($_GET['delete-error'])){
+                                    echo "<div class='alert alert-danger'>".$_GET['delete-error']."</div>";
+                                }
+                            ?>
                         <table class="table table-hover table-boddered">
                             <thead class="bg-primary text-light">
                                 <tr>
@@ -101,7 +108,7 @@
                                     <td><?php echo $destination['Date_added'] ?></td>
                                     <td>
                                         <a href="?edit=<?php echo $destination['Location_Name'] ?>&id=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
-                                        <a class="text-danger" href="?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
+                                        <a class="text-danger" href="delete-location.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <?php

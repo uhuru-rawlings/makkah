@@ -11,9 +11,9 @@
 
         public function delete()
         {
-            $sql   = "DELETE FROM ? WHERE id = ?";
+            $sql   = "DELETE FROM ".$this -> table." WHERE id = ?";
             $query = $this -> conn -> prepare($sql);
-            $query -> execute([$this -> table,$this -> id]);
+            $query -> execute([$this -> id]);
             if($query){
                 return true;
             }else{

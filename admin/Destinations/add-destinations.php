@@ -40,7 +40,14 @@
                         Add Destinations
                     </div>
                     <div class="card-body">
-                        <form action="" enctype="multipart/form-data" method="post">
+                            <?php
+                                if(isset($_GET['success'])){
+                                    echo "<div class='alert alert-success'>".$_GET['success']."</div>";
+                                }else if(isset($_GET['error'])){
+                                    echo "<div class='alert alert-danger'>".$_GET['error']."</div>";
+                                }
+                            ?>
+                        <form action="add-destination-fun.php" enctype="multipart/form-data" method="post">
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label for="location-name">Location Name</label>
@@ -62,7 +69,7 @@
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="location-name">Location Image <span class="text-danger">(you can upload multiple images)</span></label>
-                                    <input type="file" name="location-image[]" id="location-image" class="form-control" placeholder="Location Name">
+                                    <input type="file" name="location-image[]" id="location-image" class="form-control" placeholder="Location Name" multiple>
                                 </div>
                             </div>
                             <div class="row">
@@ -80,7 +87,7 @@
                                 <textarea name="placedescription" id="placedescription" cols="30" rows="10" class="form-control"></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="Save Destination" class="btn btn-primary" id="save">
+                                <input type="submit" name="submit" value="Save Destination" class="btn btn-primary" id="save">
                             </div>
                         </form>
                     </div>
