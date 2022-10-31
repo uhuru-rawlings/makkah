@@ -16,7 +16,7 @@
     </div>
     <div class="user-profile">
         <ul>
-            <li><button onclick="closeSection('user-dropdown')" class="btn shadow-none"><i class="fa-solid fa-user"></i> Welcome: uhuru</button></li>
+            <li><button onclick="closeSection('user-dropdown')" class="btn shadow-none"><i class="fa-solid fa-user"></i> Welcome: <?php echo $_COOKIE['adminuser'] ?></button></li>
         </ul>
     </div>
     <div class="user-dropdown" id="user-dropdown" data-hiden>

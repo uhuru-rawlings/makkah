@@ -13,6 +13,28 @@
             $this-> conn = $db;
         }
 
+
+        public function loginUser()
+        {
+            $sql = "SELECT * FROM Registration WHERE Email = ?";
+            $query = $this -> conn -> prepare($sql);
+            $query -> execute([$this -> Email]);
+            $rows = $query -> rowCount();
+            if($rows > 0){
+                while($results = $query -> fetch(PDO::FETCH_ASSOC)){
+                    $pass = $results['Password'];
+                    $check_pass = password_verify($this -> Password, $pass);
+                    if($check_pass){
+                        setcookie("adminuser",$this -> Email, time() + 3600, "/");
+                        return true;
+                    }else{
+                        return false;
+                    }
+                }
+            }else{
+                return false;
+            }
+        }
         public function addUsers()
         {
             $sql = "SELECT * FROM Registration WHERE id = ?";

@@ -4,6 +4,11 @@
     include_once("models/Bookings.php");
     include_once("models/Registration.php");
     $_SESSION['active']="dashboard";
+    if(isset($_COOKIE['adminuser'])){
+
+    }else{
+        header("Location: auth/index.php");
+    }
 ?>
 <html lang="en">
 <head>

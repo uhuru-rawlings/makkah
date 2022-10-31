@@ -4,6 +4,11 @@
     include_once("../models/Locations.php");
     include_once("../models/Destinations.php");
     $_SESSION['active']="destination";
+    if(isset($_COOKIE['adminuser'])){
+
+    }else{
+        header("Location: auth/index.php");
+    }
 ?>
 <html lang="en">
 <head>

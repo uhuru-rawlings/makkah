@@ -3,6 +3,11 @@
     include_once("../database/Database.php");
     include_once("../models/Registration.php");
     $_SESSION['active'] = "profile";
+    if(isset($_COOKIE['adminuser'])){
+
+    }else{
+        header("Location: auth/index.php");
+    }
 ?>
 <html lang="en">
 <head>
@@ -53,7 +58,7 @@
                                     $conn = new Database();
                                     $db = $conn -> connection();
                                     $user = new Registration($db);
-                                    $user -> Email = "uhururawlings40@gmail.com";
+                                    $user -> Email = $_COOKIE['adminuser'];
                                     $update = $user -> getUser();
                                     if($update){
                             ?>

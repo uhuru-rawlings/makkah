@@ -3,6 +3,11 @@
     include_once("../database/Database.php");
     include_once("../models/Bookings.php");
     $_SESSION['active']="bookings";
+    if(isset($_COOKIE['adminuser'])){
+
+    }else{
+        header("Location: auth/index.php");
+    }
 ?>
 <html lang="en">
 <head>
