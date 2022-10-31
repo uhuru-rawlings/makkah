@@ -2,7 +2,7 @@
     <ul>
         <li class="<?php if($_SESSION['active'] == "dashboard"){ echo "active"; } ?>">
             <a href="<?php echo BASE_URL."admin/index.php" ?>">
-                <span><i class="nav-icon fa-solid fa-guarg"></i> Dashboard</span>
+                <span><i class="fa-solid fa-gauge"></i> Dashboard</span>
             </a>
         </li>
         <li onclick="toogleDropDown(this.id)" id="userdropdown" class="<?php if($_SESSION['active'] == "users"){ echo "active"; } ?>">
@@ -63,7 +63,7 @@
         </li>
         <li>
             <a href="">
-                <span><i class="nav-icon fa-solid fa-guarge"></i> Logout</span>
+                <span><i class="fa-solid fa-right-from-bracket"></i> Logout</span>
             </a>
         </li>
     </ul>

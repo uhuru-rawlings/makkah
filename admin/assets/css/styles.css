@@ -3,7 +3,7 @@
     /* margin: 0; */
     box-sizing: border-box;
     transition: 0.75s;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     /* color: #181818; */
     /* font-size: 18px; */
 }
@@ -178,4 +178,7 @@ nav ul li ul{
 }
 #sidenavbar ul li.active ul{
     display: block;
+}
+.card-icon .fa-solid,.card-icon .bi,.fa-bus,.card-icon .fa-road{
+    font-size: 40px !important;
 }

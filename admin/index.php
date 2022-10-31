@@ -1,5 +1,7 @@
 <?php
     include("../config.php");
+    include_once("database/Database.php");
+    include_once("models/Bookings.php");
     $_SESSION['active']="dashboard";
 ?>
 <html lang="en">
@@ -33,7 +35,7 @@
                 <div class="dashboard-cards">
                     <div class="item-card bg-info text-light">
                         <div class="card-icon">
-                            <i class="fa-solid fa-users"></i>
+                            <i class="bi bi-person-fill"></i>
                         </div>
                         <div class="card-details">
                             <div class="names">Users</div>
@@ -42,7 +44,7 @@
                     </div>
                     <div class="item-card bg-success text-light">
                         <div class="card-icon">
-                            <i class="fa-solid fa-user-check"></i>
+                            <i class="bi bi-person-check-fill"></i>
                         </div>
                         <div class="card-details">
                             <div class="names">Admins</div>
@@ -66,6 +68,60 @@
                             <div class="names">Destinations</div>
                             <div class="numbers">34</div>
                         </div>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 15px;">
+                    <div class="card-header">Latest Bookings</div>
+                    <div class="card-body">
+                        <table class="table table-hover table-boddered">
+                            <thead class="bg-primary text-light">
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Full Name</th>
+                                    <th>Location</th>
+                                    <th>From Date</th>
+                                    <th>To Date</th>
+                                    <th>Persons</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    $conn = new Database();
+                                    $db = $conn -> connection();
+                                    $location = new Bookings($db);
+                                    $locations = $location -> getBookings();
+                                    if($locations){
+                                        foreach($locations as $destination){
+                                ?>
+                                <tr>
+                                    <td><?php echo $destination['id'] ?></td>
+                                    <td><?php echo $destination['Fullname'] ?></td>
+                                    <td><?php echo $destination['Location_id'] ?></td>
+                                    <td><?php echo $destination['From_Date'] ?></td>
+                                    <td><?php echo $destination['To_Date'] ?></td>
+                                    <td><?php echo $destination['Travelers'] ?></td>
+                                    <td><?php echo $destination['Status'] ?></td>
+                                    <td>
+                                        <?php if($destination['Status']  == "Pending"){
+                                            echo "<a href=''><button class='btn btn-success'>Approve</button></a>";
+                                            }else{
+                                            echo "<a href=''><button class='btn btn-danger'>Cancel</button></a>";
+                                            }
+                                        ?>
+                                    </td>
+                                </tr>
+                                <?php
+                                        }
+                                    }else{
+                                        echo '<tr>
+                                                <td colspan="7" class="text-center">No Bookings Available</td>
+                                              </tr>';
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
