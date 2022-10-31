@@ -2,6 +2,7 @@
     include("../config.php");
     include_once("database/Database.php");
     include_once("models/Bookings.php");
+    include_once("models/Registration.php");
     $_SESSION['active']="dashboard";
 ?>
 <html lang="en">
@@ -73,7 +74,7 @@
                 <div class="card" style="margin-top: 15px;">
                     <div class="card-header">Latest Bookings</div>
                     <div class="card-body">
-                        <table class="table table-hover table-boddered">
+                        <table class="table table-hover table-bordered">
                             <thead class="bg-primary text-light">
                                 <tr>
                                     <th>Id</th>
@@ -117,6 +118,66 @@
                                     }else{
                                         echo '<tr>
                                                 <td colspan="7" class="text-center">No Bookings Available</td>
+                                              </tr>';
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 15px;">
+                    <div class="card-header">Latest Users</div>
+                    <div class="card-body">
+                        <table class="table table-hover table-bordered">
+                            <thead class="bg-primary text-light">
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Fist Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Roles</th>
+                                    <th>Date Added</th>
+                                    <th>Last Modified</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    $conn = new Database();
+                                    $db = $conn -> connection();
+                                    $user = new Registration($db);
+                                    $update = $user -> getAllUsers();
+                                    if($update){
+                                        foreach($update as $user){
+                                ?>
+                                <tr>
+                                    <td><?php echo $user['id'] ?></td>
+                                    <td><?php echo $user['Fname'] ?></td>
+                                    <td><?php echo $user['Lname'] ?></td>
+                                    <td><?php echo $user['Email'] ?></td>
+                                    <td><?php echo $user['Phone'] ?></td>
+                                    <td>
+                                        <?php 
+                                        if($user['Roles'] == "Admin"){ 
+                                            echo "<button class='btn btn-success'>Admin</button>";
+                                        }else{
+                                          echo "<button class='btn btn-info text-light'>User</button>";
+                                        }
+                                        ?>
+                                    </td>
+                                    <td><?php echo $user['Date_added'] ?></td>
+                                    <td><?php echo $user['Last_Modified'] ?></td>
+                                    <td>
+                                        <a href="users/update-destination.php?update=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
+                                        <a class="text-danger" href="users/delete-destination.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <?php
+                                        }
+                                    }else{
+                                        echo '<tr>
+                                                <td colspan="5">No Location Available</td>
                                               </tr>';
                                     }
                                 ?>

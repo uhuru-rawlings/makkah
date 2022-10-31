@@ -62,7 +62,7 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="<?php echo BASE_URL."admin/logout.php" ?>">
                 <span><i class="fa-solid fa-right-from-bracket"></i> Logout</span>
             </a>
         </li>

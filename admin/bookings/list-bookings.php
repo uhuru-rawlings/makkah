@@ -48,7 +48,7 @@
                                     echo "<div class='alert alert-danger'>".$_GET['delete-error']."</div>";
                                 }
                             ?>
-                        <table class="table table-hover table-boddered">
+                        <table class="table table-hover table-bordered">
                             <thead class="bg-primary text-light">
                                 <tr>
                                     <th>Id</th>
