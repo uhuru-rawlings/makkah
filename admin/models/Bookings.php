@@ -8,6 +8,8 @@
         public $From_Date;
         public $To_Date;
         public $Travelers;
+        public $id;
+        public $status;
 
         public function __construct($db)
         {
@@ -37,6 +39,33 @@
                 while($results = $query -> fetchAll(PDO::FETCH_ASSOC)){
                     return $results;
                 }
+            }else{
+                return false;
+            }
+        }
+
+        public function getSingleBooking()
+        {
+            $sql = "SELECT Travel_Bookings.id,Travel_Bookings.Fullname,Travel_Bookings.Email,Travel_Bookings.Phone,Travel_Bookings.Location_id,Travel_Bookings.From_Date,Travel_Bookings.To_Date,Travel_Bookings.Travelers,Travel_Bookings.Status,Travel_Bookings.Date_added FROM Travel_Destinations INNER JOIN Travel_Bookings ON Travel_Bookings.Location_id = Travel_Destinations.id WHERE Travel_Bookings.id = ?";
+            $query = $this -> conn -> prepare($sql);
+            $query -> execute([$this -> id]);
+            $rows = $query -> rowCount();
+            if($rows > 0){
+                while($results = $query -> fetch(PDO::FETCH_ASSOC)){
+                    return $results;
+                }
+            }else{
+                return false;
+            }
+        }
+
+        public function approveBookings()
+        {
+            $sql    = "UPDATE Travel_Bookings SET Status = ? WHERE id = ?";
+            $query  = $this -> conn -> prepare($sql);
+            $query  -> execute([$this -> status,$this -> id]);
+            if($query){
+                return true;
             }else{
                 return false;
             }

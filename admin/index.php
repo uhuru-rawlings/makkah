@@ -110,10 +110,10 @@
                                     <td><?php echo $destination['Travelers'] ?></td>
                                     <td><?php echo $destination['Status'] ?></td>
                                     <td>
-                                        <?php if($destination['Status']  == "Pending"){
-                                            echo "<a href=''><button class='btn btn-success'>Approve</button></a>";
+                                        <?php if($destination['Status']  !== "Approve"){
+                                            echo "<a href='bookings/approve-bookings.php?id={$destination['id']}&status=Approved'><button class='btn btn-success'>Approve</button></a>";
                                             }else{
-                                            echo "<a href=''><button class='btn btn-danger'>Cancel</button></a>";
+                                            echo "<a href='bookings/approve-bookings.php?id={$destination['id']}&status=Cancelled'><button class='btn btn-danger'>Cancel</button></a>";
                                             }
                                         ?>
                                     </td>
