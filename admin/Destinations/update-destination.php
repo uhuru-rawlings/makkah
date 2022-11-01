@@ -7,7 +7,7 @@
     if(isset($_COOKIE['adminuser'])){
 
     }else{
-        header("Location: auth/index.php");
+        header("Location: ../auth/index.php");
     }
 ?>
 <html lang="en">
