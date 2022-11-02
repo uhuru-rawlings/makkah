@@ -18,7 +18,6 @@ a:hover{
 }
 body{
     position: relative;
-
 }
 .spear-header-section{
     height: 100vh;
@@ -26,6 +25,9 @@ body{
     overflow: hidden;
     /* width: 100vw; */
     position: relative;
+}
+.spear-header-section#umraj,.spear-header-section#airline{
+    height: 80vh;
 }
 .spear-header-section img.spear-background{
     height: 100%;
@@ -79,15 +81,18 @@ img{
 }
 .header-text{
     position: relative;
+    padding-bottom: 5px;
+    width: fit-content;
 }
 .header-text::before{
     position: absolute;
     bottom: 0;
-    /* height: 20px; */
-    width: 100px;
+    width: 20%;
     content: "";
-    border-bottom: 4px solid #F15A30;
-    /* background-color: #0B4EAA; */
+    border-bottom: 5px solid #F15A30;
+}
+#umrah-image{
+    max-height: 450px;
 }
 #adventure-activities{
     height: 50vh;
@@ -614,4 +619,34 @@ img{
 }
 .footer-section #useremail{
     color: #FFFFFF;
+}
+.umrah-services ul li{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+#HajjPackageservices ul li,.airline-ticketing-reservation ul li{
+    position: relative;
+    list-style: none;
+    padding-left: 20px;
+}
+.umrah-services ul li::before, .col-sm-3 ul li::before, #HajjPackageservices ul li::before,.airline-ticketing-reservation ul li::before{
+    height: 1px;
+    width: 10px;
+    background-color: #F15A30;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+    bottom: calc(50% - 1px);
+    content: "";
+}
+.umrah-services button{
+    height: 50px ;
+    background-color: inherit !important;
+    border: 2px solid #0B4EAA;
+    color: #0B4EAA;
+}
+.umrah-services button:hover{
+    border: 2px solid #F15A30;
+    color: #F15A30;
 }
