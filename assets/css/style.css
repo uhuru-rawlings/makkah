@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     transition: 0.75s ease-in;
@@ -18,11 +18,13 @@ a:hover{
 }
 body{
     position: relative;
+
 }
 .spear-header-section{
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    /* width: 100vw; */
     position: relative;
 }
 .spear-header-section img.spear-background{
@@ -37,72 +39,16 @@ body{
 .spear-background[data-active]{
     opacity: 1 !important;
 }
-.nav-bar-top-main{
-    position: absolute;
-    top: 0;
-    background-color: #FFFFFF;
-    /* background-color: rgba(255, 255, 255,.8); */
-    width: 100%;
-    z-index: 15000000;
-    box-shadow: 2px 2px 4px rgba(31,31,31,.2);
-}
-.social-link{
-    width: 100%;
-    text-align: right;
-    padding: 0px 20px 0px 20px;
-    border-bottom: 1px solid #ebebebcc;
+.call-us-sections{
     display: flex;
-    align-items:center;
-    justify-content: end;
-}
-.social-link ul{
-    margin: 0;
-    padding: 0;
-}
-.social-link ul li{
-    list-style: none;
-    display: inline;
-    margin-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.email-link{
-    padding-right: 5px;
-    border-right: 1px solid #ebebebcc;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.nav-bar-top{
-    padding: 10px 20px 10px 20px;
-    background-color: #FFFFFF;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-.nav-bar-top .logo-secction{
-    height: 40px;
-    width: 150px;
-}
-.nav-links ul{
-    padding: 0 !important;
-    margin: 0 !important;
-}
-.nav-links ul li{
-    list-style: none;
-    display: inline;
-    padding: 20px;
-    width: 100%;
-    transition: 0.75s ease-in;
-}
+
 img{
     object-fit: cover;
 }
 .nav-links ul li a:hover{
     color: #F15A30;
-}
-ul li.active a{
-    color: #F15A30 !important;
 }
 .nav-links ul li a{
     text-decoration: none;
@@ -239,12 +185,14 @@ ul li.active a{
     display: flex;
     align-items: center;
 }
-.row#most-visisted-places .col-sm-4{
+#most-visisted-places .most-visited{
     position: relative;
-    height: 50vh;
+    height: 400px;
+    width: 300px;
     color: #FFFFFF;
+    overflow: hidden;
 }
-.row#most-visisted-places img{
+#most-visisted-places img{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -322,9 +270,7 @@ ul li.active a{
     border-left: 1px solid #ffffffef;
 }
 .footer-section{
-    background-color: #000000;
-    background-color: #262626;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23262626'/%3E%3Cstop offset='1' stop-color='%23262626'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23262626' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23262626' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #0B4EAA;
     background-attachment: fixed;
     background-size: cover;
     height: 70vh;
@@ -399,6 +345,10 @@ ul li.active a{
     #booking-travel-booking .booking-model{
         width: 70%;
         overflow: auto;
+    }
+    .spear-header-section{
+        min-height: 100vh;
+        height: fit-content;
     }
 }
 .col-sm-7 form .form-group{
@@ -546,6 +496,10 @@ ul li.active a{
     border-bottom: 1px solid #ebebebcc;
     text-align: center;
 }
+#most-visisted-places{
+    display: flex;
+    justify-content: space-between;
+}
 /* responsive navbar */
 @media screen and (max-width: 921px){
     .menu-bars{
@@ -642,11 +596,6 @@ ul li.active a{
     .welcome-text-section h1{
         font-size: 40px !important;
     }
-    .row#most-visisted-places .col-sm-4{
-        position: relative;
-        height: 400px;
-        color: #FFFFFF;
-    }
     #small-background{
         height: 40vh;
     }
@@ -662,4 +611,7 @@ ul li.active a{
     .email-link{
         display: none;
     }
+}
+.footer-section #useremail{
+    color: #FFFFFF;
 }

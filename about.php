@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="fontawesome/css/brands.css">
     <link rel="stylesheet" href="fontawesome/css/regular.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <title>ALIHSAN TOUR & TRAVEL LTD</title>
 </head>
 <body>
+    <?php 
+        include_once("includes/navbar.php")
+    ?>
     <div class="header-section" id="about-header">
         <div class="spear-header-section">
             <div class="image-slider-carousel">
@@ -23,37 +27,6 @@
                 <img class="spear-background" src="images/slider2.jpg" alt="">
                 <img class="spear-background" src="images/slider3.jpg" alt="">
                 <img class="spear-background" src="images/slider4.jpg" alt="">
-            </div>
-            <div class="nav-bar-top-main">
-                <div class="social-link">
-                    <div class="email-link">
-                        <a href="mailto:info@alIhsanumrah.com">info@alIhsanumrah.com</a>
-                    </div>
-                    <ul>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="nav-bar-top">
-                    <div class="logo-secction">
-                        <a href="index.html">
-                            <img src="images/logo-landscape.png" width="100%" height="100%" alt="">
-                        </a>
-                    </div>
-                    <div class="menu-bars">
-                        <i onclick="toogleNavBar()" class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="nav-links" id="nav-bar-items">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="about.html">About</a></li>
-                            <li><a href="destination.html">Destination</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="welcome-text-section p-4">
                 <h1>About Us.</h1>

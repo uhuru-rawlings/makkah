@@ -13,47 +13,20 @@
     <link rel="stylesheet" href="fontawesome/css/brands.css">
     <link rel="stylesheet" href="fontawesome/css/regular.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <title>ALIHSAN TOUR & TRAVEL LTD</title>
 </head>
 <body>
     <div class="header-section">
+        <?php 
+            include_once("includes/navbar.php")
+        ?>
         <div class="spear-header-section">
             <div class="image-slider-carousel">
                 <img class="spear-background" src="images/slider1.jpg" alt="">
                 <img class="spear-background" src="images/slider2.jpg" alt="">
                 <img class="spear-background" src="images/slider3.jpg" alt="">
                 <img class="spear-background" src="images/slider4.jpg" alt="">
-            </div>
-            <div class="nav-bar-top-main">
-                <div class="social-link">
-                    <div class="email-link">
-                        <a href="mailto:info@alIhsanumrah.com">info@alIhsanumrah.com</a>
-                    </div>
-                    <ul>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-                <div class="nav-bar-top">
-                    <div class="logo-secction">
-                        <a href="index.html">
-                            <img src="images/logo-landscape.png" width="100%" height="100%" alt="">
-                        </a>
-                    </div>
-                    <div class="menu-bars">
-                        <i onclick="toogleNavBar()" class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="nav-links" id="nav-bar-items">
-                        <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="destination.html">Destination</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="welcome-text-section p-4">
                 <h1>Book Your Holiday Trip</h1>
@@ -78,59 +51,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- <form action="" method="post" autocomplete="off">
-                    <div class="form-group">
-                        <input type="text" name="search" class="form-control" id="search" placeholder="Search">
-                    </div>
-                    <div class="form-group" id="search-button">
-                        <input type="submit" onclick="return searchIteminPage()" value="SEARCH" class="btn btn-primary" name="search">
-                    </div>
-                </form> -->
             </div>
         </div>
     </div>
-    <!-- <div class="counter-section">
-        <div class="container p-2">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <i class="fa-solid fa-users"></i>
-                            <br>
-                            244
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <br>
-                            244
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <i class="fa-solid fa-bus"></i>
-                            <br>
-                            244
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <i class="fa-solid fa-user"></i>
-                            <br>
-                            244
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="container py-4" id="about-container">
         <div class="row">
             <div class="col-sm-8">
@@ -144,6 +67,46 @@
             </div>
             <div class="col-sm-4">
                 <img src="images/hiking.jpg" width="100%" height="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="why-choose-us py-4">
+        <div class="container">
+            <h1 class="header-text">Why Choose Us</h1>
+            <p class="py-2">
+                Our proven track record speaks for itself. Over the years, we have provided services par excellence that value and empower our clients. Many factors make us your best choice in air travel and accommodation booking. This includes: 
+            </p>
+            <div class="row py-2">
+                <div class="col-sm-6">
+                    <p>
+                        We have the latest market information, including airlines offering discounts on tickets, and we are always happy to forward this to our customers.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        We book our customers on the most reliable airlines offering the best quality services at competitive rates.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        We understand global destinations like the back of our hands. We are thus able to advise our clients on applicable rules, taxes, and exchange rates, among other things that make traveling hassle-free and fun. 
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        We help our clients in arranging airport pick-up services, hotel booking, and other critical logistical issues that come in handy, especially for first-time travelers to destinations of choice. 
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        Multilingual staff speaking different languages, including English, Arabic, Kiswahili, Dutch, and Somali.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        Finally, our customer service is fast and effective, and we go the extra mile to ensure our customers feel appreciated.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -182,30 +145,6 @@
                         <h3 class="text-center">Mountain Climbing</h3>
                     </div>
                 </div>
-                <div class="slider-card slider-card-1">
-                    <img src="images/boat-racings.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Boat Racing 2</h3>
-                    </div>
-                </div>
-                <div class="slider-card slider-card-2">
-                    <img src="images/skiing.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Skiing 2</h3>
-                    </div>
-                </div>
-                <div class="slider-card slider-card-3">
-                    <img src="images/hiking.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Hiking 3</h3>
-                    </div>
-                </div>
-                <div class="slider-card slider-card-4">
-                    <img src="images/mountain-climbing.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Mountain Climbing 4</h3>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -217,8 +156,8 @@
                     There is always reasons behind numbers, People tend to prefer places where others have been is considered safe and liked by others. Check out some of our best.
                 </p>
             </div>
-            <div class="row" id="most-visisted-places">
-                <div class="col-sm-4 p-2">
+            <div id="most-visisted-places">
+                <div class="most-visited p-2">
                     <img src="images/national-parks.jpg" alt="">
                     <div class="place-name">
                         Amboseli National Park
@@ -226,7 +165,7 @@
                         <i class="fa-solid fa-user"></i> 413 People
                     </div>
                 </div>
-                <div class="col-sm-4 p-2">
+                <div class="most-visited p-2">
                     <img src="images/national-parks.jpg" alt="">
                     <div class="place-name">
                         Ruma National Park
@@ -234,7 +173,7 @@
                         <i class="fa-solid fa-user"></i> 413 People
                     </div>
                 </div>
-                <div class="col-sm-4 p-2">
+                <div class="most-visited p-2">
                     <img src="images/national-parks.jpg" alt="">
                     <div class="place-name">
                         Embu National Park
@@ -250,7 +189,7 @@
             <div class="full-width-card py-8 px-4" id="big-background">
                 <div class="important-content">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="check-icons">
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
@@ -261,7 +200,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="check-icons">
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
@@ -272,7 +211,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="check-icons">
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
@@ -317,47 +256,7 @@
             </div>
         </div>
     </div>
-    <div class="why-choose-us py-4">
-        <div class="container">
-            <h1 class="header-text">Why Choose Us</h1>
-            <p class="py-2">
-                Our proven track record speaks for itself. Over the years, we have provided services par excellence that value and empower our clients. Many factors make us your best choice in air travel and accommodation booking. This includes: 
-            </p>
-            <div class="row py-2">
-                <div class="col-sm-6">
-                    <p>
-                        We have the latest market information, including airlines offering discounts on tickets, and we are always happy to forward this to our customers.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        We book our customers on the most reliable airlines offering the best quality services at competitive rates.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        We understand global destinations like the back of our hands. We are thus able to advise our clients on applicable rules, taxes, and exchange rates, among other things that make traveling hassle-free and fun. 
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        We help our clients in arranging airport pick-up services, hotel booking, and other critical logistical issues that come in handy, especially for first-time travelers to destinations of choice. 
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        Multilingual staff speaking different languages, including English, Arabic, Kiswahili, Dutch, and Somali.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        Finally, our customer service is fast and effective, and we go the extra mile to ensure our customers feel appreciated.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-section py-4 bg-dark">
+    <div class="footer-section py-4">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
