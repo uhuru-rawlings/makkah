@@ -27,16 +27,16 @@
                 <li id="services-dropdown">
                     <a href="destination.html">Services</a>
                     <ul id="sub-dropdown">
-                        <li><a href="">Airline Ticketing & Reservation</a></li>
-                        <li><a href="">Hajj & Umrah Services</a></li>
-                        <li><a href="">Hotel Booking</a></li>
-                        <li><a href="">Visa Assistance</a></li>
-                        <li><a href="">Car Rental</a></li>
-                        <li><a href="">Leisure and Holidays services</a></li>
-                        <li><a href="">Job replacement</a></li>
-                        <li><a href="">Training and consultations</a></li>
-                        <li><a href="">Airport transfer services</a></li>
-                        <li><a href="">VIP Services (door-to-door)</a></li>
+                        <li><a href="airline-ticketing.html">Airline Ticketing & Reservation</a></li>
+                        <li><a href="hajandumrah.html">Hajj & Umrah Services</a></li>
+                        <li><a href="hotel-booking.html">Hotel Booking</a></li>
+                        <li><a href="visa-assistance.html">Visa Assistance</a></li>
+                        <li><a href="car-rental.html">Car Rental</a></li>
+                        <li><a href="leisure-and-holyday.html">Leisure and Holidays services</a></li>
+                        <li><a href="job-relacement.html">Job replacement</a></li>
+                        <li><a href="training-and-consultation.html">Training and consultations</a></li>
+                        <li><a href="air-transfare.html">Airport transfer services</a></li>
+                        <li><a href="vip-services.html">VIP Services (door-to-door)</a></li>
                     </ul>
                 </li>
             </ul>
