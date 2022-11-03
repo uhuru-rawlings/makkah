@@ -1,652 +1,189 @@
 *{
-    box-sizing: border-box;
-    /* padding: 0;
-    margin: 0; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
     transition: 0.75s ease-in;
 }
-a{
-    color: #0B4EAA;
-    text-decoration: none;
-}
-a:hover{
-    color: #F15A30;
-}
-.text-primary{
-    color: #0B4EAA;
-}
 body{
-    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.spear-header-section{
+nav .btn:hover{
+    color: #FFFFFF;
+}
+nav{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.spear-header-slider{
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    /* width: 100vw; */
     position: relative;
 }
-.spear-header-section#umraj,.spear-header-section#airline{
-    height: 80vh;
-}
-.spear-header-section img.spear-background{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.image-sliders{
     position: absolute;
-    opacity: 0;
-    transition: 0.75s opacity ease-in-out;
-    transition-delay: 0.75s;
+    width: 100%;
+    height: 100vh;
 }
-.spear-background[data-active]{
-    opacity: 1 !important;
+.page-logo{
+    width: 150px;
+    height: 50px;
 }
-.call-us-sections{
-    display: flex;
-    align-items: center;
-}
-
 img{
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-.nav-links ul li a:hover{
-    color: #F15A30;
-}
-.nav-links ul li a{
-    text-decoration: none;
-    font-size: 20px;
-}
-.welcome-text-section{
-    position: absolute;
-    top: 30%;
-    color: #FFFFFF;
-    width: 70%;
-    margin: auto;
-}
-.welcome-text-section h1{
-    font-size: 60px !important;
-}
-.welcome-text-section p{
-    font-size: 24px !important;
-}
-.welcome-text-section form{
+nav .navbar{
     display: flex;
+    justify-content: space-between;
 }
-.welcome-text-section form input{
-    border-radius: 0;
-    height: 45px;
-}
-.welcome-text-section form #search-button{
-    width: 100px;
-}
-.header-text{
-    position: relative;
-    padding-bottom: 5px;
-    width: fit-content;
-}
-.header-text::before{
-    position: absolute;
-    bottom: 0;
-    width: 20%;
-    content: "";
-    border-bottom: 5px solid #F15A30;
-}
-#umrah-image{
-    max-height: 450px;
-}
-#adventure-activities{
-    height: 50vh;
-    background-image: url(../../images/background-3.jpg);
-    background-size: cover;
-    color: #FFFFFF;
-}
-.adventure-activities-full{
-    position: relative;
-    height: auto;
-}
-.adventure-card-container{
-    position: relative;
-    /* top: 40%; */
-}
-.close-chevrons{
-    position: absolute;
-    left: 0;
-    text-align: center;
+.manu-left{
     display: flex;
+    column-gap: 20px;
     align-items: center;
-    padding-left: 15px;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #0B4EAA;
-    color: #FFFFFF;
 }
-.close-first{
-    right: 0;
-    left: unset;
+.menu-section{
+    position: relative;
 }
-.close-last{
-    left: 0;
-    right: unset;
-}
-#adventure-card-containers{
+.menu-list{
+    position: absolute;
+    top: 100%;
+    width: fit-content;
+    min-width: 350px;
+    background-color: #FFFFFF;
+    align-items: center;
     display: none;
 }
-#adventure-cards{
+.menu-list ul{
+    padding: 0;
+    height: 100%;
+    /* margin-top: 10px; */
+}
+.menu-list ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px 15px 10px 15px;
+}
+.menu-list ul li a{
+    text-decoration: none;
+}
+nav .btn{
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    outline: none;
+}
+#dropdown{
+    position: relative;
+}
+#main-dropdown{
+    display: none;
+}
+#dropdown:hover #main-dropdown{
+    display: block;
+}
+#dropdown ul li{
+    list-style: none;
+    display: block;
+    padding: 5px;
+}
+#dropdown ul{
     /* position: absolute; */
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    transform: translateY(-100px);
-}
-#adventure-cards img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-.slider-card{
-    width: 250px;
-    height: 350px;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    margin-bottom: 10px;
-}
-.slider-card:hover{
-    box-shadow: 3px 3px 6px rgba(31,31,31,.2);
-}
-.slider-card{
-    position: relative;
-    transition: 0.75s;
-}
-.slider-card img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.over-lay{
-    position: absolute;
-    width: 100%;
-    background-color: rgba(31,31,31,.6);
-    height: 100%;
-    padding: 20px;
-    color: #FFFFFF;
-    opacity: 0;
-}
-.slider-card:hover .over-lay{
-    opacity: 1;
-}
-#about-container{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-.most-visited-places{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-#most-visisted-places .most-visited{
-    position: relative;
-    height: 400px;
-    width: 300px;
-    color: #FFFFFF;
-    overflow: hidden;
-}
-#most-visisted-places img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.place-name{
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-}
-.places-headers{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-}
-.why-book-with-us{
-    background-image: url(../../images/background-3.jpg);
-    background-position: center;
-    height: 80vh;
-    background-attachment: fixed;
-}
-.full-width-card{
-    display: flex !important;
-    align-items: center !important;
-}
-#small-background{
-    height: 100%;
-    background-color: transparent;
-    color: #FFFFFF;
-    width: 40%;
-}
-#big-background{
-    height: 80vh;
-    background-color: #FFFFFF;
-    display: flex !important;
-    align-items: center !important;
-    width: 60%;
-}
-.flex-reasons-section{
-    display: flex;
-}
-.important-content{
-    width: fit-content;
-    height: fit-content;
-}
-.important-content .col-sm-6,.important-content .col-sm-4{
-    display: flex;
-}
-.check-icons{
-    color: #0B4EAA;
-    font-size: 50px;
-    margin-right: 15px;
-}
-.counter-section{
-    background: transparent;
-    transform: translateY(-70px);
-}
-.counter-section .container{
-    background-color: unset;
-    height: fit-content;
-    border-radius: 5px;
-    /* box-shadow: 3px 3px 6px rgba(31,31,31,.4); */
-}
-.col-sm-3 .card,.col-sm-3 .card-header{
-    border: none;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 0;
-}
-.col-sm-3 .card:hover{
-    background-color: #ffffffef;
-}
-.col-sm-3 .card:last-child{
-    border: none;
-    border-left: 1px solid #ffffffef;
-}
-.footer-section{
-    background-color: #0B4EAA;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    color:#ebebebcc;
-}
-.footer-section ul li{
-    list-style: none;
-}
-.footer-section ul li a{
-    text-decoration: none;
-    color:#ebebebcc;
-}
-.footer-section ul{
-    padding-left: 0;
-}
-.footer-section .form-group{
-    margin-bottom: 15px;
-}
-.footer-section #useremail{
-    background-color: inherit;
-}
-.menu-bars{
-    display: none;
-}
-.nav-links[data-visible]{
-    height: fit-content;
-     opacity: 1;
-}
-.nav-links[data-visible] a{
-    display: block !important;
-}
-.booking-travel-booking{
-    overflow-y: scroll;
-}
-#mission_image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.our-objective-section{
-    height: 100vh;
-    background-image: url(../../images/african-lions.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    overflow: hidden;
-}
-#white-big-bg{
-    background-color: #FFFFFF;
-    height: 100vh;
-}
-#black-big-bg{
-    background-color: rgba(31,31,31,.4);
-    height: 100vh; 
-}
-#small-background .important-content{
-    height: 8vh;
-    display: flex;
-    align-items: center;
-}
-/* about media query */
-@media screen and (max-width: 921px){
-    .our-objective-section{
-        height: fit-content;
-    }
-    #about-header{
-        height: 70vh !important;
-        overflow-y: hidden;
-    }
-    #booking-travel-booking .booking-model{
-        width: 70%;
-        overflow: auto;
-    }
-    .spear-header-section{
-        min-height: 100vh;
-        height: fit-content;
-    }
-}
-.col-sm-7 form .form-group{
-    margin-bottom: 15px;
-}
-.col-sm-7 form .form-group textarea{
-    height: 100px;
-    resize: none;
-}
-.image-section{
-    height: 150px;
-    width: 100%;
-    position: relative;
-}
-.image-section img{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    top: 98%;
     left: 0;
-    object-fit: cover;
-}
-.place-deils{
+    min-width: 200px;
+    background-color: #FFFFFF;
     padding: 10px;
+    border-radius: 5px;
 }
-.place-deils .col,.place-deils .col a{
-    font-size: 14px !important;
+#dropdown ul li a{
     text-decoration: none;
-    color: #262626;
 }
-.view-details{
+.menu-section button{
+    border: none;
+}
+.menu-section button:hover .menu-list{
+    display: block;
+}
+.black-overlay{
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 12;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(31,31,31,.6);
-    opacity: 0;
-    transition: 0.75s ease-out;
+    width: 100%;
+    background-color: rgba(31,31,31,.3);
 }
-.image-section:hover .view-details{
-    opacity: 1;
-}
-.view-details .btn{
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
+/* end navbar */
+.top-select-section{
+    width: fit-content;
     margin: auto;
-    border-radius: 0;
-    cursor: move;
-    font-size: 14px;
 }
-.place-deils .col-sm-12 button.btn{
+.top-select-section button{
     border: none;
     border-radius: 0;
-    color: #FFFFFF !important;
-    background-color: #262626 !important;
-    font-size: 14px;
+    font-weight: 900;
+    color: #FFFFFF;
+    height: 50px;
+    text-transform: uppercase;
 }
-.booking-travel-booking{
-    position: fixed;
-    top:0;
-    height: 100vh;
+.top-select-section button.active{
+    border-bottom: 5px solid #F15A30;
+    color: #FFFFFF;
+    background-color: #0B4EAA;
+}
+.top-select-section button:hover{
+    color: #FFFFFF;
+    background-color: #0B4EAA;
+}
+.bookings-cards{
     width: 100%;
-    background-color: rgba(31,31,31,.6);
-    /* display: flex; */
-    align-items: center;
-    z-index: 10000;
-    display: none;
-}
-.booking-travel-booking .form-group{
-    margin-bottom: 10px;
-}
-.booking-travel-booking .booking-model{
-    width: 40%;
-    margin: auto;
-    margin-top: 100px;
-    background-color: #FFFFFF;
-}
-.booking-travel-booking form{
-    padding: 20px;
-}
-.model-footer{
-    padding: 10px 20px 10px 20px;
-    border-top: 1px solid #ebebebcc;
-    text-align: right;
-}
-.counter-section .card{
-    background-color: #F15A30;
-    color: #FFFFFF;
-    border-radius: 10px;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-}
-.counter-section .card:hover{
-    background-color: #F15A30;
-    color: #FFFFFF;
-}
-.card-body{
-    font-size: 30px;
-}
-.service-counter .col-sm-3{
     background-color: #0B4EAA;
     color: #FFFFFF;
-    padding: 15px;
-    text-align: center;
 }
-.show-travel-details{
-    position: fixed;
-    top:0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(31,31,31,.6);
-    /* display: flex; */
-    align-items: center;
-    z-index: 10000;
-    /* display: none;    */
-    overflow-y: scroll;
+.bookings-cards .form-group{
+    margin-bottom: 10px;
 }
-.details img{
-    border-radius: 5px;
+.bookings-cards .form-control{
+    border: 1px solid #FFFFFF;
+    border-radius: 0;
+    background-color: inherit;
+    color: gainsboro;
 }
-#image-cols .col-sm-12,#image-cols .col-sm-3{
-    height: 200px;
-}
-.details-models{
-    width: 50%;
-    margin: auto;
-    margin-top: 100px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-}
-.details-models .details{
-    padding: 15px 20px 5px 20px;
-}
-.model-footer{
-    padding: 15px 20px;
-}
-.model-title{
-    padding: 15px 20px 5px 20px;
-    border-bottom: 1px solid #ebebebcc;
-    text-align: center;
-}
-#most-visisted-places{
-    display: flex;
-    justify-content: space-between;
-}
-/* responsive navbar */
-@media screen and (max-width: 921px){
-    .menu-bars{
-        display: block;
-        font-size: 40px;
-    }
-    .nav-links{
-        /* display: none; */
-        height: 0;
-        opacity: 0;
-        position: absolute;
-        right: 0;
-        top: 100px;
-        background-color: #ffffffef;
-        width: 100%;
-        text-align: right;
-        z-index: 1208;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links ul li a{
-        display: none;
-    }
-    /* .nav-links[data-visible] a{
-        display: block !important;
-    } */
-    .counter-section{
-        transform: translateY(0);
-        height: fit-content;
-    }
-    .counter-section .container{
-        background-color: unset;
-        height: fit-content;
-        border-radius: 0;
-        box-shadow: unset;
-    }
-    .adventure-activities-full{
-        position: unset;
-        height: fit-content;
-    }
-    #carouselExampleControls,#adventure-card-containers{
-        position: unset;
-        width: 100%;
-        margin: auto;
-    } 
-    #adventure-cards{
-        /* position: absolute; */
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        column-gap: 15px;
-    }   
-    .slider-card{
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        border-radius: 0 !important;
-        box-shadow: unset;
-        background-color: #FFFFFF;
-        margin-bottom: 10px;
-    }
-    .slider-card img{
-        border-radius: 0 !important;
-    }
-    #adventure-activities{
-        min-height: 50vh;
-        background-image: url(../../images/background-3.jpg);
-        background-size: cover;
-        color: #FFFFFF;
-    }
-    .most-visited-places,.why-book-with-us,#about-container,.footer-section{
-        height: fit-content;
-    }
-    .most-visited-places{
-        margin-bottom: 15px;
-    }
-    .flex-reasons-section{
-        display: block;
-    }
-    #small-background,#big-background{
-        width: 100%;
-        height: fit-content;
-    }
-    .welcome-text-section{
-        position: absolute;
-        top: 20%;
-        color: #FFFFFF;
-        width: 90%;
-        margin: auto;
-    }
-    .welcome-text-section h1{
-        font-size: 40px !important;
-    }
-    #small-background{
-        height: 40vh;
-    }
-    .details-models,.booking-model{
-        width: 95%;
-    }
-    .view-details{
-        opacity: 1 !important;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .email-link{
-        display: none;
-    }
-}
-.footer-section #useremail{
-    color: #FFFFFF;
-}
-.umrah-services ul li{
-    list-style: none;
-    position: relative;
-    padding-left: 20px;
-}
-#HajjPackageservices ul li,.airline-ticketing-reservation ul li{
-    position: relative;
-    list-style: none;
-    padding-left: 20px;
-}
-.umrah-services ul li::before, .col-sm-3 ul li::before, #HajjPackageservices ul li::before,.airline-ticketing-reservation ul li::before{
-    height: 1px;
-    width: 10px;
+.bookings-cards .btn{
+    border: none;
+    border-radius: 0;
     background-color: #F15A30;
+    color: #FFFFFF;
+    height: 40px;
+}
+#hotelbooking,
+#hajjumrah,
+#visaasistant{
+    display: none;
+}
+.full-services-details{
+    background-color: #FFFFFF;
+}
+.flex-dets{
+    display: flex;
+    align-items: center;
+}
+.flex-dets .icons{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+}
+.flex-dets .name{
+    font-weight: 500;
+    margin-left: 15px;
+}
+.full-services-details a{
+    text-decoration: none;
+    color: #161616;
+}
+.booking-info-section{
     position: absolute;
-    left: 0;
-    top: calc(50% - 1px);
-    bottom: calc(50% - 1px);
-    content: "";
-}
-.umrah-services button{
-    height: 50px ;
-    background-color: inherit !important;
-    border: 2px solid #0B4EAA;
-    color: #0B4EAA;
-}
-.umrah-services button:hover{
-    border: 2px solid #F15A30;
-    color: #F15A30;
+    bottom: 0;
+    width: 100%;
 }

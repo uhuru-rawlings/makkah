@@ -66,7 +66,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-section py-4 bg-dark">
+    <div class="footer-section py-4">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">

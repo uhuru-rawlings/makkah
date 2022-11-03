@@ -185,60 +185,45 @@
         </div>
     </div>
     <div class="why-book-with-us">
-        <div class="flex-reasons-section">
-            <div class="full-width-card py-8 px-4" id="big-background">
-                <div class="important-content">
+        <div class="container">
+            <div class="row">
+                <div class="big-white-background col-sm-8">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="check-icons">
-                                <i class="fa-regular fa-circle-check"></i>
-                            </div>
                             <div>
-                                <h5>Transparency</h5>
+                                <h5 class="header-text">Transparency</h5>
                                 <p>
                                     Building trust in all business and personal dealings.
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="check-icons">
-                                <i class="fa-regular fa-circle-check"></i>
-                            </div>
                                 <div>
-                                <h5>Respect</h5>
+                                <h5 class="header-text">Respect</h5>
                                 <p>
                                     For ourselves, our guests, our partners, and our team.
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="check-icons">
-                                <i class="fa-regular fa-circle-check"></i>
-                            </div>
                             <div>
-                                <h5>Integrity</h5>
+                                <h5 class="header-text">Integrity</h5>
                                 <p>
                                     We uphold the highest standards of integrity in all our actions.
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="check-icons">
-                                <i class="fa-regular fa-circle-check"></i>
-                            </div>
                             <div>
-                                <h5>Quality</h5>
+                                <h5 class="header-text">Quality</h5>
                                 <p>
                                     We provide outstanding products and services that deliver premium value to our clients and end agents.
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="check-icons">
-                                <i class="fa-regular fa-circle-check"></i>
-                            </div>
                             <div>
-                                <h5>The speed with accuracy</h5>
+                                <h5 class="header-text">The speed with accuracy</h5>
                                 <p>
                                     Understanding that requests are time sensitive while ensuring quality control.
                                 </p>
@@ -246,16 +231,30 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="full-width-card p-4" id="small-background">
-                <div class="important-content">
-                    <h1 class="header-text">
+                <div class="small-transparent-background col-sm-4">
+                <h1 class="header-text text-light">
                         Our core Values
                     </h1>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <div class="why-book-with-us">
+        <div class="flex-reasons-section">
+            <div class="full-width-card py-8" id="big-background">
+                <div class="important-content">
+                    <div class="container">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="full-width-card p-4" id="small-background">
+                <div class="important-content">
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
     <div class="footer-section py-4">
         <div class="container">
             <div class="row">
