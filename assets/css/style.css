@@ -187,3 +187,26 @@ nav .btn{
     bottom: 0;
     width: 100%;
 }
+.full-services-details{
+    box-shadow: 2px 2px 4px rgba(31,31,31,.3);
+}
+h1,h2,h3,h4,h5{
+    width: fit-content;
+}
+.header-text{
+    width: fit-content;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.header-text::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 20%;
+    height: 3px;
+    /* background-color: #F15A30; */
+    /* height: 5px; */
+    border-bottom: 3px solid #F15A30;
+}
