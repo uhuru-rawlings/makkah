@@ -68,3 +68,4 @@ function coreValuesSlider(){
 }
 window.onload = coreValuesSlider()
 
+
