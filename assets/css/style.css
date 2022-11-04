@@ -343,6 +343,11 @@ ul li::before{
     background-color: #F15A30;
     color: #FFFFFF;
     border: none;
+    /* box-shadow: 2px 2px 4px rgba(31,31,31,.3); */
+}
+.btn-secondary:hover{
+    background-color: #F15A30;
+    color: #FFFFFF;
     box-shadow: 2px 2px 4px rgba(31,31,31,.3);
 }
 .btn{

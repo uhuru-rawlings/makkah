@@ -15,7 +15,7 @@
                         <ul id="main-dropdown">
                             <li><a href="book-flight.php">Booking Flight</a></li>
                             <li><a href="hajandumrah.php">Hajj & Umrah Services</a></li>
-                            <li><a href="">Hotel Bookings</a></li>
+                            <li><a href="hotel-bookings.php">Hotel Bookings</a></li>
                             <li><a href="">Visa Assistance</a></li>
                         </ul>
                     </li>
