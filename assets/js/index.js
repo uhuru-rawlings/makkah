@@ -67,3 +67,4 @@ function coreValuesSlider(){
     setTimeout("coreValuesSlider()", 5000);
 }
 window.onload = coreValuesSlider()
+

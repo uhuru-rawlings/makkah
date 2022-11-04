@@ -13,289 +13,417 @@
     <link rel="stylesheet" href="fontawesome/css/brands.css">
     <link rel="stylesheet" href="fontawesome/css/regular.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
     <title>ALIHSAN TOUR & TRAVEL LTD</title>
 </head>
 <body>
-    <div class="header-section">
-        <?php 
-            include_once("includes/navbar.php")
-        ?>
-        <div class="spear-header-section">
-            <div class="image-slider-carousel">
-                <img class="spear-background" src="images/slider1.jpg" alt="">
-                <img class="spear-background" src="images/slider2.jpg" alt="">
-                <img class="spear-background" src="images/slider3.jpg" alt="">
-                <img class="spear-background" src="images/slider4.jpg" alt="">
+    <div class="spear-header-slider">
+        <div class="image-sliders">
+            <img src="images/background-1.jpg" id="image-slider" alt="">
+        </div>
+        <div class="black-overlay">
+            <?php
+                include("includes/navbar.php");
+            ?>
+        </div>
+    </div>
+    <section class="booking-info-section">
+        <div class="top-select-section">
+            <button onclick="toogleServicespage('book-a-trip',event.target)" id="button1" class="btn shadow-none active">Book A Trip</button>
+            <button onclick="toogleServicespage('hotelbooking',event.target)" id="button2" class="btn shadow-none">Hotel Booking</button>
+            <button onclick="toogleServicespage('hajjumrah',event.target)" id="button3" class="btn shadow-none">Hajj & Umrah</button>
+            <button onclick="toogleServicespage('visaasistant',event.target)" id="button4" class="btn shadow-none">Visa Asistance</button>
+        </div>
+        <div class="bookings-cards py-4" id="book-a-trip">
+            <div class="container">
+                <form action="" method="get">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="fromlocation">From Location</label>
+                                    <select class="shadow-none form-control" name="fromlocation" id="fromlocation">
+                                        <option value="">From Location</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="tolocation">To Location</label>
+                                    <select class="shadow-none form-control" name="tolocation" id="tolocation">
+                                        <option value="">To Location</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="tripsround">Trip</label>
+                                    <select class="shadow-none form-control" name="tripsround" id="tripsround">
+                                        <option value="Rount Trip">Rount Trip</option>
+                                        <option value="One Way">One Way</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="formdate">Date From</label>
+                                    <input type="date" class="shadow-none form-control" name="formdate" id="formdate">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="todate">To Date</label>
+                                    <input type="date" class="shadow-none form-control" name="todate" id="todate">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="travelclass">Travel Class</label>
+                                        <select name="travelclass" id="travelclass" class="shadow-none form-control">
+                                            <option value="Guest">Guest</option>
+                                            <option value="Business">Business</option>
+                                            <option value="First">First</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="number">Number of People</label>
+                                <input type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="aggrement" id="aggrement">
+                                <label for="aggrement">Agree To Change +/- 7 days.</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Book Now" class="btn btn-secondary">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="welcome-text-section p-4">
-                <h1>Book Your Holiday Trip</h1>
-                <p>Find great adventure holidays and activities around the planet.</p>
-                <div class="service-counter">
+        </div>
+        <div class="bookings-cards py-4" id="hotelbooking">
+            <div class="container">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="hetels">Hotels</label>
+                                <select name="hetels" id="hetels" class="shadow-none form-control">
+                                    <option value="">Select Hotel</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="numbers">Number of People</label>
+                                <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                            </div>
+                        </div>
+                       <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="fromdate">From Date</label>
+                                <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="todate">To Date</label>
+                                <input type="date" name="todate" id="todate" class="shadow-none form-control">
+                            </div>
+                       </div>
+                       <div class="col-sm-4">
+                        <div class="form-group" style="margin-top: 20px;">
+                            <input type="submit" value="Book Now" class="btn btn-secondary" id="book">
+                        </div>
+                       </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bookings-cards py-4" id="hajjumrah">
+            <div class="container">
+                <p>
+                    These are some of the most important religious pilgrimages for the Muslim fraternity. As fellow Muslims, we are obliged by our faith to facilitate the travel of the faithful to the Holy sites. To facilitate this, we encourage our customers to start making preparations early enough to avoid the last-minute rush.
+                </p>
+                <p>
+                    We thus allow our customers to come over for early visa application, besides pre-booking their return flights and accommodation when demand for such services is still low and charges affordable. We are always at hand to assist that intent on attending the Hajj and Umrah with all the required preparations, including visa application, flight booking, and planning for ac­commodation.
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <a href="" ><button class="btn btn-secondary">Hajj Services</button></a>
+                    </div>
+                    <div class="col">
+                        <a href="" ><button class="btn btn-secondary">Umrah Services</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bookings-cards py-4" id="visaasistant">
+            <div class="container">
+                <p>
+                    We take the task of visa application from out clicents by doing that ourselves. You book an appointment with us, we will organise and take the right procedures on your behalf which will be alittle faster. Do you want to book a meeting ?
+                </p>
+                <form action="" method="post">
                     <div class="row">
                         <div class="col-sm-3">
-                            <div class="texts">Year of Service</div>
-                            <div class="number numberCounters">10</div>
+                            <div class="form-group">
+                                <label for="fullnames">Fullname</label>
+                                <input type="text" name="fullnames" id="fullnames" class="shadow-none form-control" placeholder="Fullname">
+                            </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="texts">Customers</div>
-                            <div class="number numberCounters">872</div>
+                            <div class="form-group">
+                                <label for="Email">Email</label>
+                                <input type="email" name="Email" id="Email" class="shadow-none form-control" placeholder="Email">
+                            </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="texts">Trips</div>
-                            <div class="number numberCounters">872</div>
+                            <div class="form-group">
+                                <label for="Phone">Phone</label>
+                                <input type="tel" name="Phone" id="Phone" class="shadow-none form-control" placeholder="Phone">
+                            </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="texts">Patners</div>
-                            <div class="number numberCounters">872</div>
+                            <div class="form-group" style="margin-top: 20px;">
+                                <input type="submit" value="Book Appointment" class="btn btn-secondary">
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-    </div>
-    <div class="container py-4" id="about-container">
-        <div class="row">
-            <div class="col-sm-8">
-                <h1 class="header-text">Let's locate you your desired holy day destination.</h1>
-                <p>
-                    Are you struggling to decide your next holy day destination?
-                </p>
-                <p>
-                    We are out here to asses and located the best holy day location that will satisfy your needs. Fun,security,Affordability and Accessibility are placed into consideration. As selecting a place to have fun where both children and adults needs are catered for is had, We assess most places and recommend for Family with Kids,Lovers with their partners, Staffs with their colleagues. We are also available for consultancy about the same.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <img src="images/hiking.jpg" width="100%" height="100%" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="why-choose-us py-4">
-        <div class="container">
-            <h1 class="header-text">Why Choose Us</h1>
-            <p class="py-2">
-                Our proven track record speaks for itself. Over the years, we have provided services par excellence that value and empower our clients. Many factors make us your best choice in air travel and accommodation booking. This includes: 
-            </p>
-            <div class="row py-2">
-                <div class="col-sm-6">
-                    <p>
-                        We have the latest market information, including airlines offering discounts on tickets, and we are always happy to forward this to our customers.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        We book our customers on the most reliable airlines offering the best quality services at competitive rates.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        We understand global destinations like the back of our hands. We are thus able to advise our clients on applicable rules, taxes, and exchange rates, among other things that make traveling hassle-free and fun. 
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        We help our clients in arranging airport pick-up services, hotel booking, and other critical logistical issues that come in handy, especially for first-time travelers to destinations of choice. 
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        Multilingual staff speaking different languages, including English, Arabic, Kiswahili, Dutch, and Somali.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p>
-                        Finally, our customer service is fast and effective, and we go the extra mile to ensure our customers feel appreciated.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="adventure-activities-full">
-        <div class="" id="adventure-activities">
-            <div class="container py-2">
-                <h1 class="header-text">Adventure Activities</h1>
-                <p>
-                    We put together best places to take certain activities based to our research and testimonials from those who have been in these places. Common activities like Hiking,Boat racing,Camping ,Sky diving among many more.
-                </p>
-            </div>
-        </div>
-        <div class="container py-2" id="adventure-card-container">
-            <div id="adventure-cards">
-                <div class="slider-card slider-card-1">
-                    <img src="images/boat-racings.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Boat Racing</h3>
+        <div class="full-services-details py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="">
+                            <div class="flex-dets">
+                                <div class="icons"><i class="fa-solid fa-plane-departure"></i></div>
+                                <div class="name">Airline Booking</div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="slider-card slider-card-2">
-                    <img src="images/skiing.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Skiing</h3>
+                    <div class="col-sm-4">
+                        <a href="">
+                            <div class="flex-dets">
+                                <div class="icons"><i class="fa-solid fa-hotel"></i></div>
+                                <div class="name">Hotel Booking</div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class=" slider-card slider-card-3">
-                    <img src="images/hiking.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Hiking</h3>
-                    </div>
-                </div>
-                <div class=" slider-card slider-card-4">
-                    <img src="images/mountain-climbing.jpg" alt="">
-                    <div class="over-lay">
-                        <h3 class="text-center">Mountain Climbing</h3>
+                    <div class="col-sm-4">
+                        <a href="">
+                            <div class="flex-dets">
+                                <div class="icons"><i class="fa-solid fa-car"></i></div>
+                                <div class="name">Car Renting</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="most-visited-places">
-        <div class="container">
-            <div class="places-headers">
-                <h1 class="header-text">Most Visisted Places</h1>
-                <p class="text-center">
-                    There is always reasons behind numbers, People tend to prefer places where others have been is considered safe and liked by others. Check out some of our best.
-                </p>
-            </div>
-            <div id="most-visisted-places">
-                <div class="most-visited p-2">
-                    <img src="images/national-parks.jpg" alt="">
-                    <div class="place-name">
-                        Amboseli National Park
-                        <br>
-                        <i class="fa-solid fa-user"></i> 413 People
-                    </div>
-                </div>
-                <div class="most-visited p-2">
-                    <img src="images/national-parks.jpg" alt="">
-                    <div class="place-name">
-                        Ruma National Park
-                        <br>
-                        <i class="fa-solid fa-user"></i> 413 People
-                    </div>
-                </div>
-                <div class="most-visited p-2">
-                    <img src="images/national-parks.jpg" alt="">
-                    <div class="place-name">
-                        Embu National Park
-                        <br>
-                        <i class="fa-solid fa-user"></i> 413 People
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="why-book-with-us">
-        <div class="container">
+    </section>
+    <section class="aboutus-section">
+        <div class="container py-3">
             <div class="row">
-                <div class="big-white-background col-sm-8">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div>
-                                <h5 class="header-text">Transparency</h5>
-                                <p>
-                                    Building trust in all business and personal dealings.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                                <div>
-                                <h5 class="header-text">Respect</h5>
-                                <p>
-                                    For ourselves, our guests, our partners, and our team.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div>
-                                <h5 class="header-text">Integrity</h5>
-                                <p>
-                                    We uphold the highest standards of integrity in all our actions.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div>
-                                <h5 class="header-text">Quality</h5>
-                                <p>
-                                    We provide outstanding products and services that deliver premium value to our clients and end agents.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div>
-                                <h5 class="header-text">The speed with accuracy</h5>
-                                <p>
-                                    Understanding that requests are time sensitive while ensuring quality control.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-4">
+                    <img src="images/background-1.jpg" width="100%" height="100%" alt="alishan">
                 </div>
-                <div class="small-transparent-background col-sm-4">
-                <h1 class="header-text text-light">
-                        Our core Values
-                    </h1>
+                <div class="col-sm-8">
+                    <h2 class="header-text">About Us.</h2>
+                    <p>
+                        Al-Ihsan Tours & Travel Ltd started operations in 2015 in Amsterdam, Netherlands. The company is registered and licensed as a full-fledged travel and tourism management agency to operate inbound, outbound, and airline ticket reservations for domestic and international travelers.
+                    </p>
+                    <p>
+                        AL-IHSAN Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.
+                    </p>
+                    <p>
+                        AL-IHSAN also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- <div class="why-book-with-us">
-        <div class="flex-reasons-section">
-            <div class="full-width-card py-8" id="big-background">
-                <div class="important-content">
-                    <div class="container">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="full-width-card p-4" id="small-background">
-                <div class="important-content">
-                    
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div class="footer-section py-4">
-        <div class="container">
+    </section>
+    <section class="previous-travel-routes">
+        <div class="container py-3">
             <div class="row">
-                <div class="col-sm-3">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fa-solid fa-phone"></i><a href="tel:+254 727 885454"> +254 727 885454</a></li>
-                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@alIhsanumrah.com"> info@alIhsanumrah.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="destinations.html">Destination</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h4>Newsletter</h4>
-                    <form action="" method="post">
-                        <div class="form-group">
-                            <input type="email" name="useremail" id="useremail" class="form-control" placeholder="Email">
+                <div class="col-sm-6">
+                    <h3 class="header-text">Trips From Kenya to Saudi</h3>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="submit" name="submit" value="SIGNUP" id="submit" class="btn btn-primary">
+                    </div>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
                         </div>
-                    </form>
+                    </div>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127642.11182818291!2d36.821051!3d-1.2843240000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5feca0500bd24aeb!2sJKUAT%20Towers!5e0!3m2!1sen!2sus!4v1666785399093!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-sm-6">
+                    <h3 class="header-text">Trips From Kenya to Saudi</h3>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tip-card p-2">
+                        <div class="trip-details">
+                            <div class="col-sm-6 d-flex justify-content-between">
+                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bold">Nairobi</div>
+                            </div>
+                            <div class="col-sm-6" style="text-align: right;">
+                                <div class="text-center">Round Trips</div>
+                                <div class="text-center text-bold">350</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <p class="text-center">copyright &copy; all rights reserved.</p>
         </div>
-    </div>
+    </section>
+    <section class="mission-vision">
+        <div class="mission-overlay">
+            <div class="container">
+                <h3 class="header-text m-auto">Mission & Vision</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4 class="header-text">Our Vision</h4>
+                            <ul>
+                                <li>
+                                    Travel leading Travel Agency in the travel industry, providing our customers with the best and most effective services.
+                                </li>
+                                <li>
+                                    To be one of the well–known leading Hajj and Umrah agencies in Kenya. 
+                                </li>
+                                <li>
+                                    Provide new cultural exchange in unique ways by creating a multi-tourism, Hajj, and Umrah business.
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="header-text">Our Mission</h4>
+                            <ul>
+                                <li>
+                                    We seek service excellence and will provide quality service at a cost that will enable us to remain competitive. 
+                                </li>
+                                <li>
+                                    Expand our relationship with airlines, charter flight operators, hotels, tour operators, and travel agents within East Africa and overseas.
+                                </li>
+                                <li>
+                                    To Deliver overall satisfaction to our clients while fulfilling their requirements and needs with assistance from our experienced and professional team with total commitment to the satisfaction of our client
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="core-values">
+        <div class="container">
+            <div class="corevalues py-4" id="corevalues">
+                <div class="corevalue-card">
+                    <h3 class="header-text m-auto">Transparency</h3>
+                    <p class="text-center">
+                        Building trust in all business and personal dealings.
+                    </p>
+                </div>
+                <div class="corevalue-card">
+                    <h3 class="header-text m-auto">Quality</h3>
+                    <p class="text-center">
+                        We provide outstanding products and services that deliver premium value to our clients and end agents.
+                    </p>
+                </div>
+                <div class="corevalue-card">
+                    <h3 class="header-text m-auto">Respect</h3>
+                    <p class="text-center">
+                        For ourselves, our guests, our partners, and our team.
+                    </p>
+                </div>
+                <div class="corevalue-card">
+                    <h3 class="header-text m-auto">Integrity</h3>
+                    <p class="text-center">
+                        We uphold the highest standards of integrity in all our actions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php
+        include("includes/footer.php");
+    ?>
 </body>
-<script src="assets/js/index.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="fontawesome/js/all.js"></script>
-<script src="fontawesome/js/brands.js"></script>
-<script src="fontawesome/js/regular.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="fontawesome/js/all.js"></script>
+    <script src="fontawesome/js/brands.js"></script>
+    <script src="fontawesome/js/regular.js"></script>
 </html>

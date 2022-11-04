@@ -159,7 +159,7 @@
                 </div>
                 <div class="col-sm-5">
                     <p>
-                        <a href="contact.html#contact-us-section"><button class="btn btn-primary">MESSAGE US</button></a>
+                        <a href="contact.php#contact-us-section"><button class="btn btn-primary">MESSAGE US</button></a>
                     </p>
                 </div>
             </div>

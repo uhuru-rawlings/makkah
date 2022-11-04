@@ -12,13 +12,13 @@ nav{
     padding-right: 5%;
 }
 .spear-header-slider{
-    height: 100vh;
+    height: 50vh;
     position: relative;
 }
 .image-sliders{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .page-logo{
     width: 150px;
@@ -183,9 +183,7 @@ nav .btn{
     color: #161616;
 }
 .booking-info-section{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    transform: translateY(-50px);  
 }
 .full-services-details{
     box-shadow: 2px 2px 4px rgba(31,31,31,.3);
@@ -284,4 +282,89 @@ ul li::before{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.copyright-section{
+    width: fit-content;
+    margin: auto;
+}
+.page-footer{
+    background-image: linear-gradient(180deg,#0B4EAA,#326dc0,#73a0df);
+    color: #FFFFFF;
+    position: relative;
+}
+.page-footer a{
+    color: #F15A30;
+}
+.scroll-to-top{
+    background-color: #F15A30;
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 4px rgba(31,31,31,.3);
+}
+.scroll-top{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.contact-us-section form .form-control{
+    height: 45px;
+}
+.contact-us-section form .btn{
+    height: 45px;
+    width: 100%;
+}
+.contact-us-section form textarea{
+    height: 100px !important;
+}
+.contact-us-section form .form-group{
+    margin-bottom: 15px;
+}
+
+.our-objective-section{
+    height: fit-content;
+    background-image: url(../../images/background-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+.black-overlay-about{
+    background-color: rgba(31,31,31,.6);
+    color: #FFFFFF;
+}
+
+.btn-secondary{
+    height: 50px;
+    background-color: #F15A30;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(31,31,31,.3);
+}
+.btn{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 921px) {
+    .spear-header-slider{
+        height: 60vh;
+    }
+    .aboutus-section{
+        height: fit-content;
+    }
+    .booking-info-section{
+        transform: translateY(-100px);  
+    }
+    .menu-list ul li{
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    .page-logo{
+        display: none;
+    }
 }

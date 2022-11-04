@@ -17,20 +17,14 @@
     <title>ALIHSAN TOUR & TRAVEL LTD</title>
 </head>
 <body>
-    <?php 
-        include_once("includes/navbar.php")
-    ?>
-    <div class="header-section" id="about-header">
-        <div class="spear-header-section">
-            <div class="image-slider-carousel">
-                <img class="spear-background" src="images/slider1.jpg" alt="">
-                <img class="spear-background" src="images/slider2.jpg" alt="">
-                <img class="spear-background" src="images/slider3.jpg" alt="">
-                <img class="spear-background" src="images/slider4.jpg" alt="">
-            </div>
-            <div class="welcome-text-section p-4">
-                <h1>Contact Us.</h1>
-            </div>
+    <div class="spear-header-slider">
+        <div class="image-sliders">
+            <img src="images/background-1.jpg" alt="">
+        </div>
+        <div class="black-overlay">
+            <?php
+                include("includes/navbar.php");
+            ?>
         </div>
     </div>
     <div class="contact-us-section" id="contact-us-section">

@@ -1,107 +1,28 @@
-.contact-us-details{
-    text-align: right !important;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.contact-us-details ul{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-.contact-us-details ul li{
-    list-style: none;
-    display: inline;
-}
-.contact-us-details ul li:first-child{
-    border-right: 1px solid #ebebebcc;
-}
-.flex-logo-section{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.flex-logo-section .logo{
-    height: 50px;
-    width: 150px;
-}
-.flex-logo-section .logo img{
-    object-fit: scale-down;
-}
-.flex-logo-section .contact-details{
-    display: flex;
-    align-items: center;
-}
-.nav-link-lists{
-    padding-bottom: 4px;
-    padding-top: 4px;
-}
-.nav-link-lists ul{
-    padding: 0;
-    margin: 0;
-}
-.nav-link-lists ul li{
-    list-style: none;
-    display: inline;
-    padding: 15px 20px;
-}
-.nav-link-lists ul li ul li{
-    display: block;
-}
-#services-dropdown{
-    position: relative;
-}
-#services-dropdown ul{
-    position: absolute;
-    width: fit-content;
-    min-width: 250px;
-    top: 100%;
-    color: #FFFFFF;
-    padding: 10px;
-    z-index: 2323425456;
-    background-color: #F15A30;
-    /* margin: auto;*/
-    left: 0;
-}
-#services-dropdown ul li{
-    padding: 5px;
-}
-.nav-link-lists{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.phone-number-details{
-    font-size: 14px !important;
-}
-.contact-details .fa-phone{
-    font-size: 30px;
-}
-#nav-link-lists a{
-    color: #FFFFFF;
-}
-#nav-link-lists .active a{
+nav{
+    background-color: #FFFFFF;
     color: #0B4EAA;
 }
-.contact-us-details{
-    background-color: #ebebebcc;
+.menu-section ul li a{
+    color: #0B4EAA !important;
 }
-#nav-link-lists{
-    background-color: #F15A30;
-    padding-left: 30px;
-    padding-right: 30px;
+nav .btn{
+    color: #0B4EAA;
 }
-.contact-us-details a{
-    font-size: 14px;
+nav .btn:hover{
+    color: #0B4EAA;
 }
-.nav-link-lists ul li:hover{
-    background-color: #181a1a;
+.sign-in .btn{
+    border-color: #0B4EAA;
 }
-ul#sub-dropdown{
-    display: none;
-}
-#services-dropdown:hover #sub-dropdown{
+#menu-button:hover #menu-list{
     display: block;
+}
+.spear-header-slider{
+    height: 70vh;
+}
+form .form-group{
+    margin-bottom: 15px;
+}
+form .form-control{
+    height: 40px;
 }
