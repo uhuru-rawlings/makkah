@@ -47,3 +47,23 @@ const toogleServicespage = (clicked_id,e) =>{
 
 var elem = document.getElementById("button1");
 window.onload = toogleServicespage('book-a-trip',elem);
+
+var start = 0;
+function coreValuesSlider(){
+    var container = document.querySelectorAll(".corevalue-card");
+    if(start < container.length - 1){
+        start++;
+    }else{
+        start = 0;
+    }
+    container.forEach(element => {
+        if(container[start] == element){
+            element.setAttribute("class","corevalue-card active");
+        }else{
+            element.setAttribute("class","corevalue-card");
+        }
+    })
+
+    setTimeout("coreValuesSlider()", 5000);
+}
+window.onload = coreValuesSlider()
