@@ -15,7 +15,7 @@ function imageSliders(){
 
 window.onload = imageSliders();
 
-const displayElements = (target_element) => {
+function displayElements(target_element){
     var taregt = document.getElementById(target_element);
     if(taregt.style.display == "block"){
         taregt.removeAttribute("style");
@@ -25,7 +25,8 @@ const displayElements = (target_element) => {
 }
 
 
-const toogleServicespage = (clicked_id,e) =>{
+function toogleServicespage(clicked_id,e){
+    console.log("Hello")
     var buttonArray = ["button1","button2","button3","button4"];
     buttonArray.forEach(button => {
         if(document.getElementById(button) == e){
@@ -34,6 +35,7 @@ const toogleServicespage = (clicked_id,e) =>{
             document.getElementById(button).setAttribute("class","btn shadow-none");
         }
     })
+
     e.setAttribute("class","btn shadow-none active");
     var targetArray = ["book-a-trip","hotelbooking","hajjumrah","visaasistant"];
     targetArray.forEach(element => {
