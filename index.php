@@ -35,7 +35,7 @@
         </div>
         <div class="bookings-cards py-4" id="book-a-trip">
             <div class="container">
-                <form action="" method="post">
+                <form action="booktrip-fun.php" method="post">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="row">
@@ -64,13 +64,9 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="row">
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-12">
                                     <label for="formdate">Date From</label>
                                     <input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="formdate" id="formdate">
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="todate">To Date</label>
-                                    <input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="todate" id="todate">
                                 </div>
                             </div>
                             <div class="row">
@@ -96,7 +92,7 @@
                                 <label for="aggrement">Agree To Change +/- 7 days.</label>
                             </div>
                             <div class="form-group">
-                                <input type="submit" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary">
+                                <input type="submit" name="booktrip" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary">
                             </div>
                         </div>
                     </div>
@@ -105,7 +101,7 @@
         </div>
         <div class="bookings-cards py-4" id="hotelbooking">
             <div class="container">
-                <form action="" method="post">
+                <form action="bookhotel-fun.php" method="post">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="form-group">
@@ -131,7 +127,7 @@
                        </div>
                        <div class="col-sm-4">
                         <div class="form-group" style="margin-top: 20px;">
-                            <input type="submit" value="Book Now" class="btn btn-secondary" id="book">
+                            <input type="submit" value="Book Now" name="bookhotel" class="btn btn-secondary" id="book">
                         </div>
                        </div>
                     </div>
