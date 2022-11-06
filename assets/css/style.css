@@ -49,10 +49,11 @@ nav .navbar{
     position: absolute;
     top: 100%;
     width: fit-content;
-    min-width: 350px;
+    min-width: 200px;
     background-color: #FFFFFF;
     align-items: center;
     display: none;
+    z-index: 34334343;
 }
 .menu-list ul{
     padding: 0;
@@ -61,11 +62,33 @@ nav .navbar{
 }
 .menu-list ul li{
     list-style: none;
-    display: inline;
-    padding: 10px 15px 10px 15px;
+    /* padding: 10px 15px 10px 15px; */
+    padding: 10px;
+}
+nav .btn{
+    color: #0B4EAA;
+}
+nav .btn:hover{
+    color: #F15A30;
+}
+.sign-in .btn{
+    border-color: #F15A30;
+    color: #F15A30;
+    border-radius: 30px;
+}
+.menu-list ul li:hover{
+    background-color: #0B4EAA;
+    color: #FFFFFF;
+}
+.menu-list ul li:hover a{
+    color: #F15A30;
 }
 .menu-list ul li a{
     text-decoration: none;
+}
+.menu-list ul li::before{
+    padding-left: 0;
+    content: unset;
 }
 nav .btn{
     border: 2px solid #FFFFFF;

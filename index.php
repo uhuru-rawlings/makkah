@@ -165,8 +165,8 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="form-group">
-                                <label for="fullnames">Fullname</label>
-                                <input type="text" name="fullnames" id="fullnames" class="shadow-none form-control" placeholder="Fullname">
+                                <label for="appointmentdate">Fullname</label>
+                                <input type="date" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
                             </div>
                         </div>
                         <div class="col-sm-3">
