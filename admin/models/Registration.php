@@ -108,5 +108,25 @@
                 }
             }
         }
+
+        public function resetPassword()
+        {
+            $sql = "SELECT * FROM Registration WHERE Email = ?";
+            $query = $this -> conn -> prepare($sql);
+            $query -> execute([$this -> Email]);
+            $rows = $query -> rowCount();
+            if($rows < 1){
+                return false;
+            }else{
+                $sql   = "UPDATE `Registration` SET `Password`=?,`Last_Modified`=? WHERE `Email`=?";
+                $query = $this -> conn -> prepare($sql);
+                $query -> execute([password_hash($this -> Password,PASSWORD_DEFAULT),$this -> Last_Modified,$this -> Email]);
+                if($query){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+        }
     }
 ?>

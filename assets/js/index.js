@@ -26,7 +26,6 @@ function displayElements(target_element){
 
 
 function toogleServicespage(clicked_id,e){
-    console.log("Hello")
     var buttonArray = ["button1","button2","button3","button4"];
     buttonArray.forEach(button => {
         if(document.getElementById(button) == e){

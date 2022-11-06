@@ -19,11 +19,12 @@
                             <li><a href="">Visa Assistance</a></li>
                         </ul>
                     </li>
+                    <li><a href="contact.php">Contact us</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="sign-in">
-        <a href="contact.php"><button class="btn shadow-none">Contact Us</button></a>
+        <a href="login.php"><button class="btn shadow-none">Login/Signup</button></a>
     </div>
 </nav>

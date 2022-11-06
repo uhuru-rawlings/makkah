@@ -148,10 +148,10 @@
                 </p>
                 <div class="row">
                     <div class="col">
-                        <a href="" ><button class="btn btn-secondary">Hajj Services</button></a>
+                        <a href="hajj-services.php" ><button class="btn btn-secondary">Hajj Services</button></a>
                     </div>
                     <div class="col">
-                        <a href="" ><button class="btn btn-secondary">Umrah Services</button></a>
+                        <a href="umra-services.php" ><button class="btn btn-secondary">Umrah Services</button></a>
                     </div>
                 </div>
             </div>

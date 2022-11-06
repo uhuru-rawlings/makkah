@@ -9,10 +9,12 @@ nav .btn{
     color: #0B4EAA;
 }
 nav .btn:hover{
-    color: #0B4EAA;
+    color: #F15A30;
 }
 .sign-in .btn{
-    border-color: #0B4EAA;
+    border-color: #F15A30;
+    color: #F15A30;
+    border-radius: 30px;
 }
 #menu-button:hover #menu-list{
     display: block;
