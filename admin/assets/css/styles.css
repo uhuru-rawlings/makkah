@@ -179,6 +179,6 @@ nav ul li ul{
 #sidenavbar ul li.active ul{
     display: block;
 }
-.card-icon .fa-solid,.card-icon .bi,.fa-bus,.card-icon .fa-road{
+.card-icon .fa-solid,.card-icon .bi,.fa-bus,.card-icon .fa-road,.card-icon .fa-hotel,.card-icon .fa-plane{
     font-size: 40px !important;
 }

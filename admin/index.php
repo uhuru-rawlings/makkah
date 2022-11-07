@@ -3,6 +3,7 @@
     include_once("database/Database.php");
     include_once("models/Bookings.php");
     include_once("models/Registration.php");
+    include_once("models/Totals.php");
     $_SESSION['active']="dashboard";
     if(isset($_COOKIE['adminuser'])){
 
@@ -43,36 +44,72 @@
                         <div class="card-icon">
                             <i class="bi bi-person-fill"></i>
                         </div>
-                        <div class="card-details">
+                        <div class="card-details text-center">
                             <div class="names">Users</div>
-                            <div class="numbers">34</div>
+                            <div class="numbers">
+                                <?php
+                                    $conn = new Database();
+                                    $db = $conn -> connection();
+                                    $rows = new Totals($db);
+                                    $rows -> table = "Registration";
+                                    $row = $rows -> getTotals();
+                                    echo $row;
+                                ?>
+                            </div>
                         </div>
                     </div>
                     <div class="item-card bg-success text-light">
                         <div class="card-icon">
                             <i class="bi bi-person-check-fill"></i>
                         </div>
-                        <div class="card-details">
-                            <div class="names">Admins</div>
-                            <div class="numbers">34</div>
+                        <div class="card-details text-center">
+                            <div class="names">Appointments</div>
+                            <div class="numbers">
+                                <?php
+                                    $conn = new Database();
+                                    $db = $conn -> connection();
+                                    $rows = new Totals($db);
+                                    $rows -> table = "Registration";
+                                    $row = $rows -> getTotals();
+                                    echo $row;
+                                ?>
+                            </div>
                         </div>
                     </div>
                      <div class="item-card bg-warning text-light">
                         <div class="card-icon">
-                            <i class="fa-solid fa-bus"></i>
+                            <i class="fa-solid fa-hotel"></i>
                         </div>
-                        <div class="card-details">
-                            <div class="names">Bookings</div>
-                            <div class="numbers">34</div>
+                        <div class="card-details text-center">
+                            <div class="names">Hotels</div>
+                            <div class="numbers">
+                                <?php
+                                    $conn = new Database();
+                                    $db = $conn -> connection();
+                                    $rows = new Totals($db);
+                                    $rows -> table = "Travel_Destinations";
+                                    $row = $rows -> getTotals();
+                                    echo $row;
+                                ?>
+                            </div>
                         </div>
                     </div>
                     <div class="item-card bg-danger text-light">
                         <div class="card-icon">
-                            <i class="fa-solid fa-road"></i>
+                            <i class="fa-solid fa-plane"></i>
                         </div>
-                        <div class="card-details">
-                            <div class="names">Destinations</div>
-                            <div class="numbers">34</div>
+                        <div class="card-details text-center">
+                            <div class="names">Airlines</div>
+                            <div class="numbers">
+                                <?php
+                                    $conn = new Database();
+                                    $db = $conn -> connection();
+                                    $rows = new Totals($db);
+                                    $rows -> table = "Airline";
+                                    $row = $rows -> getTotals();
+                                    echo $row;
+                                ?>
+                            </div>
                         </div>
                     </div>
                 </div>
