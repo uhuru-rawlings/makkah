@@ -29,7 +29,17 @@
             <ul class="destinationdropdown">
                 <li>
                     <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Destination</span>
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Hotels</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/Destinations/add-airlines.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Airlines</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-bookings.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> All Bookings</span>
                     </a>
                 </li>
                 <li>
@@ -51,7 +61,12 @@
             <ul class="bookingsdropdown">
                 <li>
                     <a href="<?php echo BASE_URL."admin/bookings/list-bookings.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> All Bookings</span>
+                        <span><i class="nav-icon fa-solid fa-list"></i> All Bookings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/add-hotels.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Hotels</span>
                     </a>
                 </li>
             </ul>

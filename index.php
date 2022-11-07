@@ -161,7 +161,7 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="form-group">
-                                <label for="appointmentdate">Fullname</label>
+                                <label for="appointmentdate">Date</label>
                                 <input type="date" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
                             </div>
                         </div>

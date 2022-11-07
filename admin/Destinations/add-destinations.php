@@ -39,11 +39,11 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo BASE_URL."admin/index.php" ?>">Home</a></li>
-                    <li class="breadcrumb-item active">Add Destination</li>
+                    <li class="breadcrumb-item active">Add Hotels</li>
                 </ol>
                 <div class="card">
                     <div class="card-header">
-                        Add Destinations
+                        Add Hotels
                     </div>
                     <div class="card-body">
                             <?php
