@@ -1,5 +1,6 @@
 <?php
     if(isset($_POST['booktrip'])){
+        ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
         include_once("admin/database/Database.php");
         include_once("admin/models/Booktrip.php");
         include_once("admin/models/Registration.php");
@@ -15,6 +16,7 @@
         $db   = $conn -> connection();
         $bookings = new TripBookings($db);
         $users = new Registration($db);
+        $users -> Email = $_COOKIE['adminuser'];
         $user  = $users -> getUser();
         $bookings -> Fromlocation = $fromlocation;
         $bookings -> Tolocation   = $tolocation;

@@ -1,3 +1,7 @@
+<?php
+    include_once("admin/database/Database.php");
+    include_once("admin/models/Airline.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,13 +46,29 @@
                                 <div class="form-group col">
                                     <label for="fromlocation">From Location</label>
                                     <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="fromlocation" id="fromlocation">
-                                        <option value="">From Location</option>
+                                        <?php
+                                            $conn = new Database();
+                                            $db = $conn -> connection();
+                                            $locations = new Airline($db);
+                                            $location  = $locations -> getDestinations();
+                                            foreach($location as $location){
+                                                echo "<option value='{$location['From_location']}'>".$location['From_location']."</option>";
+                                            }
+                                        ?>
                                     </select>
                                 </div>
                                 <div class="form-group col">
                                     <label for="tolocation">To Location</label>
                                     <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tolocation" id="tolocation">
-                                        <option value="">To Location</option>
+                                        <?php
+                                            $conn = new Database();
+                                            $db = $conn -> connection();
+                                            $locations = new Airline($db);
+                                            $location  = $locations -> getDestinations();
+                                            foreach($location as $location){
+                                                echo "<option value='{$location['To_location']}'>".$location['To_location']."</option>";
+                                            }
+                                        ?>
                                     </select>
                                 </div>
                             </div>
