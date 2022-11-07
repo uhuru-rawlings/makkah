@@ -1,5 +1,6 @@
 *{
     transition: 0.75s ease-in;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -19,6 +20,13 @@ nav{
     height: 50vh;
     position: relative;
 }
+.header-carouse{
+    height: 50vh;
+    overflow: hidden;
+}
+/* .header-carouse{
+    height: 50vh;
+} */
 .image-sliders{
     position: absolute;
     width: 100%;
@@ -514,4 +522,16 @@ form #formlogo img{
     .follow-us-on{
         display: none;
     }
+}
+.footer-services{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+}
+.footer-services a{
+    color: #FFFFFF;
+}
+.footer-services a:hover{
+    color: #F15A30;
 }

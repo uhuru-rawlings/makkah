@@ -9,10 +9,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo (2).png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="fontawesome/css/brands.css">
@@ -23,6 +25,17 @@
 <body>
     <div class="spear-header-slider">
         <div class="image-sliders">
+            <!-- <div class="owl-carousel header-carousel position-absolute">
+                <div class="owl-carousel-item position-relative">
+                    <img src="images/background-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img src="images/background-2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img src="images/background-3.jpg" class="img-fluid" alt="">
+                </div>
+            </div> -->
             <img src="images/background-1.jpg" id="image-slider" alt="">
         </div>
         <div class="black-overlay">
@@ -365,7 +378,7 @@
     </section>
     <section class="mission-vision">
         <div class="mission-overlay">
-            <div class="container">
+            <div class="container py-4">
                 <h3 class="header-text m-auto">Mission & Vision</h3>
                 <div class="row">
                     <div class="col-sm-6">
@@ -440,4 +453,6 @@
     <script src="fontawesome/js/all.js"></script>
     <script src="fontawesome/js/brands.js"></script>
     <script src="fontawesome/js/regular.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </html>

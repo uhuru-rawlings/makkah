@@ -6,6 +6,18 @@
     </a>
     <div class="container py-4">
         <div class="news-letter">
+            <div class="footer-services">
+                <div><a href="#">Airline Ticketing & Reservation</a></div>
+                <div><a href="#">Hajj & Umrah Services</a></div>
+                <div><a href="#">Hotel Booking</a></div>
+                <div><a href="#">Visa Assistance</a></div>
+                <div><a href="#">Car Rental</a></div>
+                <div><a href="#">Leisure and Holidays services</a></div>
+                <div><a href="#">Job replacement</a></div>
+                <div><a href="#">Training and consultations</a></div>
+                <div><a href="#">Airport transfer services </a></div>
+                <div><a href="#">VIP Services (door-to-door)</a></div>
+            </div>
             <p class="text-center">
                 Subscribe to our newsletter to receive the latest special offers and news on
             </p>
