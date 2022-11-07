@@ -1,6 +1,7 @@
 <?php
     include_once("admin/database/Database.php");
     include_once("admin/models/Airline.php");
+    include("admin/models/Destinations.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -127,7 +128,15 @@
                             <div class="form-group">
                                 <label for="hetels">Hotels</label>
                                 <select name="hetels" id="hetels" class="shadow-none form-control">
-                                    <option value="">Select Hotel</option>
+                                        <?php
+                                            $conn = new Database();
+                                            $db = $conn -> connection();
+                                            $hotels = new Destinations($db);
+                                            $location  = $hotels -> getDestinations();
+                                            foreach($location as $location){
+                                                echo "<option value='{$location['Location_Name']}'>".$location['Location_Name']."</option>";
+                                            }
+                                        ?>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -177,7 +186,7 @@
                 <p>
                     We take the task of visa application from out clicents by doing that ourselves. You book an appointment with us, we will organise and take the right procedures on your behalf which will be alittle faster. Do you want to book a meeting ?
                 </p>
-                <form action="" method="post">
+                <form action="bookappointments.php" method="post">
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="form-group">
@@ -186,20 +195,8 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="form-group">
-                                <label for="Email">Email</label>
-                                <input type="email" name="Email" id="Email" class="shadow-none form-control" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label for="Phone">Phone</label>
-                                <input type="tel" name="Phone" id="Phone" class="shadow-none form-control" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
                             <div class="form-group" style="margin-top: 20px;">
-                                <input type="submit" value="Book Appointment" class="btn btn-secondary">
+                                <input type="submit" value="Book Appointment" name="save" class="btn btn-secondary">
                             </div>
                         </div>
                     </div>

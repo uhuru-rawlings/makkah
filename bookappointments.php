@@ -1,26 +1,20 @@
 <?php
-    if(isset($_POST['bookhotel'])){
-
+    if(isset($_POST['save'])){
+        ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
         include_once("admin/database/Database.php");
-        include_once("admin/models/Booktrip.php");
+        include_once("admin/models/Appointments.php");
         include_once("admin/models/Registration.php");
-        $hotels    = $_POST['hetels'];
-        $numbers   = $_POST['numbers'];
-        $fromdate  = $_POST['fromdate'];
-        $todate    = $_POST['todate'];
+
         $conn = new Database();
         $db   = $conn -> connection();
-        $bookings = new TripBookings($db);
         $users = new Registration($db);
         $users -> Email = $_COOKIE['adminuser'];
         $user  = $users -> getUser();
-        $bookings -> User      = $user['id'];
-        $bookings -> Hotel     = $hotels;
-        $bookings -> Formdate  = $fromdate;
-        $bookings -> To_Date   = $todate;
-        $bookings -> Number    = $numbers;
-        $book = $bookings -> bookHotel();
-        if($book){
+        $appointments = new Appointment($db);
+        $appointments -> user = $user['id'];
+        $appointments -> date = $_POST['appointmentdate'];
+        $appointment = $appointments -> addAppointment();
+        if($appointment){
             echo "<script>alert('booking was succesfully sent, we'll get to you soon.')</script>";
             echo "<script>history.go(-1)</script>";
         }else{

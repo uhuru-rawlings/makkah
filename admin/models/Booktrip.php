@@ -29,10 +29,11 @@
                 return false;
             }
         }
+
         public function bookHotel()
         {
-            $sql = "INSERT INTO Trip_Booking(user,Hotel,From_Date,To_Date,People) VALUES(?,?,?,?,?)";
-            $query = $this ->conn -> prepare($sql);
+            $sql = "INSERT INTO `Hotel_booking`(`user`,`Hotel_name`,`From_Date`,`To_Date`,`People`) VALUES(?,?,?,?,?)";
+            $query = $this -> conn -> prepare($sql);
             $query -> execute([$this -> User,$this -> Hotel,$this -> Formdate,$this -> To_Date,$this -> Number]);
             if($query){
                 return true;
