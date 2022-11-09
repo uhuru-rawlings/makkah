@@ -7,7 +7,7 @@
     <div class="container py-4">
         <div class="news-letter">
             <div class="footer-services">
-                <div><a href="#">Airline Ticketing & Reservation</a></div>
+                <div><a href="book-flight.php">Airline Ticketing & Reservation</a></div>
                 <div><a href="#">Hajj & Umrah Services</a></div>
                 <div><a href="#">Hotel Booking</a></div>
                 <div><a href="#">Visa Assistance</a></div>

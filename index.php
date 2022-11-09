@@ -254,7 +254,7 @@
                     <img src="images/background-1.jpg" width="100%" height="100%" alt="alishan">
                 </div>
                 <div class="col-sm-8">
-                    <h2 class="header-text">About Us.</h2>
+                    <h3 class="header-text">About Us.</h3>
                     <p>
                         Al-Ihsan Tours & Travel Ltd started operations in 2015 in Amsterdam, Netherlands. The company is registered and licensed as a full-fledged travel and tourism management agency to operate inbound, outbound, and airline ticket reservations for domestic and international travelers.
                     </p>
@@ -266,7 +266,7 @@
                     </p>
                 </div>
             </div>
-            <h2 class="header-text">Our Objectives</h2>
+            <h3 class="header-text">Our Objectives</h3>
             <div class="row py-4">
                 <div class="col-sm-6" id="our-objectives">
                 The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally. 
@@ -444,7 +444,8 @@
         </div>
     </section>
     <section class="core-values">
-        <div class="container">
+        <div class="container py-4">
+            <h3 class="header-text">Our Core Values</h3>
             <div class="corevalues py-4" id="corevalues">
                 <div class="corevalue-card">
                     <h3 class="header-text m-auto">Transparency</h3>
@@ -469,6 +470,51 @@
                     <p class="text-center">
                         We uphold the highest standards of integrity in all our actions.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-sm-4">
+                    <h3 class="header-text">Testimonials</h3>
+                    <h4>What does our customer says about us.</h4>
+                </div>
+                <div class="col-sm-8" id="testimonials-cards">
+                    <div class="customer-cards card">
+                        <div class="top-sections">
+                            <img src="images/testimonials.jpg" alt="">
+                            <p>Anthony Haggins</p>
+                        </div>
+                        <div class="botom-sections">
+                            <q>
+                                I have used some of their services before and they offer the best services
+                            </q>
+                        </div>
+                    </div>
+                    <div class="customer-cards card">
+                        <div class="top-sections">
+                            <img src="images/testimonials.jpg" alt="">
+                            <p>Khalid Ball</p>
+                        </div>
+                        <div class="botom-sections">
+                            <q>
+                                I have used some of their services before and they offer the best services
+                            </q>
+                        </div>
+                    </div>
+                    <div class="customer-cards card">
+                        <div class="top-sections">
+                            <img src="images/testimonials.jpg" alt="">
+                            <p>Anthony Haggins</p>
+                        </div>
+                        <div class="botom-sections">
+                            <q>
+                                I have used some of their services before and they offer the best services
+                            </q>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
