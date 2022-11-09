@@ -266,6 +266,36 @@
                     </p>
                 </div>
             </div>
+            <h2 class="header-text">Our Objectives</h2>
+            <div class="row py-4">
+                <div class="col-sm-6" id="our-objectives">
+                The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally. 
+
+                We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li>
+                            Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
+                        </li>
+                        <li>
+                            Produce expeditions and memories that would satisfy every single customer.
+                        </li>
+                        <li>
+                            Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence.
+                        </li>
+                        <li>
+                            We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
+                        </li>
+                        <li>
+                            Value our role in the community, where we recognize the responsibility and opportunity to contribute to society and make a meaningful difference.
+                        </li>
+                        <li>
+                            Value our role in the community, where we Participate in local and regional community service by providing general lectures, consultation, and training programs.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <section class="previous-travel-routes">

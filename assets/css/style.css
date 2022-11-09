@@ -143,6 +143,18 @@ nav .btn{
     background-color: rgba(31,31,31,.3);
 }
 /* end navbar */
+body ul li{
+    list-style: decimal-leading-zero;
+}
+body ul li::marker{
+    font-size: 20px;
+    color: #F15A30;
+    font-weight: 900;
+}
+#our-objectives{
+    display: flex;
+    align-items: center;
+}
 .top-select-section{
     width: fit-content;
     margin: auto;
@@ -220,6 +232,7 @@ nav .btn{
 .booking-info-section{
     transform: translateY(-50px);  
 }
+
 .full-services-details{
     box-shadow: 2px 2px 4px rgba(31,31,31,.3);
 }
@@ -270,7 +283,7 @@ h1,h2,h3,h4,h5{
     background-color: rgba(31,31,31,.4);
     color: #FFFFFF;
 }
-ul li{
+/* ul li{
     position: relative;
     padding-left: 15px;
     list-style: none;
@@ -284,7 +297,7 @@ ul li::before{
     top: calc(50% - 2px);
     bottom: calc(50% - 2px);
     left: 0;
-}
+} */
 .corevalue-card{
     display: none;
 }
