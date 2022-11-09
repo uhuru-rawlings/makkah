@@ -64,6 +64,11 @@
                         <span><i class="nav-icon fa-solid fa-list"></i> Appointments</span>
                     </a>
                 </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-hajjbookings.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Hajj & Umrah</span>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="<?php if($_SESSION['active'] == "profile"){ echo "active"; } ?>">

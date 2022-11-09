@@ -44,7 +44,20 @@
                 return false;
             }
         }
-        
+
+        public function getHajBookings()
+        {
+            $sql = "SELECT Registration.Fname,Registration.Lname,Registration.Email,Registration.Phone,Hajj_Umrah.id,Hajj_Umrah.status,Hajj_Umrah.Date_added FROM Registration INNER JOIN Hajj_Umrah ON Hajj_Umrah.user = Registration.id ORDER BY Hajj_Umrah.status DESC";
+            $query = $this -> conn -> prepare($sql);
+            $query -> execute();
+            if($query){
+                while($results = $query -> fetchAll(PDO::FETCH_ASSOC)){
+                    return $results;
+                }
+            }else{
+                return false;
+            }
+        }
         public function bookTrip()
         {
             $sql = "INSERT INTO Trip_Booking(user,From_location,To_location,From_date,Travel_class,People,Agrement) VALUES(?,?,?,?,?,?,?)";

@@ -46,4 +46,19 @@
             header("Location: list-appointments.php?error=Ooops! something went wrong try again");
         }
     }
+
+    if(isset($_GET['target']) && $_GET['target'] == "Hajj_Umrah"){
+        $conn = new Database();
+        $db = $conn -> connection();
+        $booking = new TripBookings($db);
+        $booking -> table = "Hajj_Umrah";
+        $booking -> status = "Assigned";
+        $booking -> id = $_GET['id'];
+        $status = $booking -> updateStatus();
+        if($status){
+            header("Location: list-hajjbookings.php?success=Status updated succesfully");
+        }else{
+            header("Location: list-hajjbookings.php?error=Ooops! something went wrong try again");
+        }
+    }
 ?>
