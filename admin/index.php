@@ -118,7 +118,7 @@
                     <div class="card-header">Latest Bookings</div>
                     <div class="card-body">
                         <table class="table table-hover">
-                            <thead>
+                            <thead class="bg-primary text-light">
                                 <tr>
                                     <th>#</th>
                                     <th>User</th>
@@ -174,7 +174,7 @@
                 <div class="card" style="margin-top: 15px;">
                     <div class="card-header">Latest Users</div>
                     <div class="card-body">
-                        <table class="table table-hover table-bordered">
+                        <table class="table table-hover">
                             <thead class="bg-primary text-light">
                                 <tr>
                                     <th>Id</th>

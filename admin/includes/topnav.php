@@ -21,8 +21,12 @@
     </div>
     <div class="user-dropdown" id="user-dropdown" data-hiden>
         <ul>
-            <li><a href="#"><i class="list-icons fa-solid fa-user"></i> Profile</a></li>
-            <li><a href="#"><i class="list-icons fa-solid fa-user"></i> Logout</a></li>
+            <li>
+                <a href="profile/profile.php"><span><i class="fa-solid fa-user"></i> Profile</span></a>
+            </li>
+            <li>
+                <a href="logout.php"><span><i class="fa-solid fa-right-from-bracket"></i> Logout</span></a>
+            </li>
         </ul>
     </div>
 </div>
