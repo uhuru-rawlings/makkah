@@ -33,6 +33,18 @@
             }
         }
 
+        public function bookHajj()
+        {
+            $sql = "INSERT INTO Hajj_Umrah(user) VALUES(?)";
+            $query = $this -> conn -> prepare($sql);
+            $query -> execute([$this -> User]);
+            if($query){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        
         public function bookTrip()
         {
             $sql = "INSERT INTO Trip_Booking(user,From_location,To_location,From_date,Travel_class,People,Agrement) VALUES(?,?,?,?,?,?,?)";

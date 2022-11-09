@@ -21,11 +21,11 @@
         $bookings -> Number    = $numbers;
         $book = $bookings -> bookHotel();
         if($book){
-            echo "<script>alert('booking was succesfully sent, we'll get to you soon.')</script>";
-            echo "<script>history.go(-1)</script>";
+            echo "booking was succesfully sent, we'll get to you soon, you will be redirected shortly";
+            echo "<script>setTimeout(() => { history.go(-1) },3000)</script>";
         }else{
-            echo "<script>alert('Oops! something went wrong, please try again.')</script>";
-            echo "<script>history.go(-1)</script>";
+            echo "Oops! something went wrong, please try again, you will be redirected shortly";
+            echo "<script>setTimeout(() => { history.go(-1) },3000)</script>";
         }
     }
 ?>
