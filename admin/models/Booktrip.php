@@ -11,11 +11,26 @@
         public $User;
         public $Hotel;
         public $To_Date;
+        public $status;
+        public $table;
+        public $id;
         public $conn;
 
         public function __construct($db)
         {
             $this -> conn = $db;
+        }
+
+        public function updateStatus()
+        {
+            $sql = "UPDATE ".$this -> table." SET `status` = ? WHERE `id` = ?";
+            $query = $this -> conn -> prepare($sql);
+            $query -> execute([$this -> status,$this -> id]);
+            if($query){
+                return true;
+            }else{
+                return false;
+            }
         }
 
         public function bookTrip()

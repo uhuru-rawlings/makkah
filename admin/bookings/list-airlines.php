@@ -94,7 +94,7 @@
                                             if($book['status'] == "Assigned"){
                                                 echo '<button class="btn btn-success">Assigned</button>';
                                             }else{
-                                                echo '<a href=""><button class="btn btn-danger">Pending</button></a>';
+                                                echo "<a href='updated-status.php?id={$book['id']}&target=Airline'><button class='btn btn-danger'>Pending</button></a>";
                                             }
                                         ?>
                                     </td>
