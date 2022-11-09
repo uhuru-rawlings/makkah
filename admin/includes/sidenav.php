@@ -38,16 +38,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL."admin/bookings/list-bookings.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-list"></i> All Bookings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo BASE_URL."admin/Destinations/list-destinations.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-list"></i> List Destination</span>
-                    </a>
-                </li>
-                <li>
                     <a href="<?php echo BASE_URL."admin/Destinations/add-locations.php" ?>">
                         <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Locations</span>
                     </a>
@@ -60,13 +50,18 @@
             </a>
             <ul class="bookingsdropdown">
                 <li>
-                    <a href="<?php echo BASE_URL."admin/bookings/list-bookings.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-list"></i> All Bookings</span>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-hotels.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Hotel Bookings</span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL."admin/bookings/add-hotels.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Hotels</span>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-airlines.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Airline Bookings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-appointments.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Appointments</span>
                     </a>
                 </li>
             </ul>

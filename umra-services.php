@@ -27,7 +27,7 @@
             ?>
         </div>
     </div>
-    <div class="umrah-services">
+    <div class="umrah-services py-4">
         <div class="container">
             <h2 class="header-text">Umrah Services</h2>
             <p>

@@ -1,7 +1,7 @@
 <?php
     include_once("../../config.php");
     include_once("../database/Database.php");
-    include_once("../models/Bookings.php");
+    include_once("../models/Booktrip.php");
     $_SESSION['active']="bookings";
     if(isset($_COOKIE['adminuser'])){
 
@@ -39,11 +39,11 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo BASE_URL."admin/index.php" ?>">Home</a></li>
-                    <li class="breadcrumb-item active">Add Hotels</li>
+                    <li class="breadcrumb-item active">Hotel Bookings</li>
                 </ol>
                 <div class="card" style="margin-top: 15px;">
                     <div class="card-header">
-                        Add Hotels
+                        Hotel Bookings
                     </div>
                     <div class="card-body">
                         <?php
@@ -53,6 +53,58 @@
                                 echo "<div class='alert alert-danger'>".$_GET['error']."</div>";
                             }
                         ?>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>User</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Hotel_name</th>
+                                    <th>From_Date</th>
+                                    <th>To_Date</th>
+                                    <th>People</th>
+                                    <th>Status</th>
+                                    <th>Date Added</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    $conn     = new Database();
+                                    $db       = $conn -> connection();
+                                    $bookings = new TripBookings($db);
+                                    $book     = $bookings -> getHotelBooking(); 
+                                    if($book){
+                                        foreach($book as $book){
+                                ?>
+                                <tr>
+                                    <td><?php echo $book['id']?></td>
+                                    <td><?php echo $book['Fname']." ".$book['Lname']?></td>
+                                    <td><?php echo "<a href='mailto:{$book['Email']}'>{$book['Email']}</a>"?></td>
+                                    <td><?php echo "<a href='tel:{$book['Phone']}'>{$book['Phone']}</a>"?></td>
+                                    <td><?php echo $book['Hotel_name']?></td>
+                                    <td><?php echo $book['From_Date']?></td>
+                                    <td><?php echo $book['To_Date']?></td>
+                                    <td><?php echo $book['People']?></td>
+                                    <td>
+                                        <?php
+                                            if($book['status'] == "Assigned"){
+                                                echo '<button class="btn btn-success">Assigned</button>';
+                                            }else{
+                                                echo '<a href=""><button class="btn btn-danger">Pending</button></a>';
+                                            }
+                                        ?>
+                                    </td>
+                                    <td><?php echo $book['Date_added']?></td>
+                                </tr>
+                                <?php
+                                        }
+                                    }else{
+                                        echo "<option colspan='8'>No data found</option>";
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
