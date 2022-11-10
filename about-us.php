@@ -95,52 +95,54 @@
         </div>
     </div>
     <div class="our-objective-section">
-        <div class="black-overlay-about">
-            <div class="row">
-                <div class="col-sm-5 py-4 text-light" id="black-big-bg">
-                    <div class="container">
-                        <h1 class="header-text">Our Objectives</h1>
-                        <p>
-                            The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally. 
-                        </p>
-                        <p>
-                            We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
-                        </p>
+            <div class="black-overlay-about">
+                <div class="container">
+                <div class="row py-4">
+                    <div class="col-sm-5 text-light" id="black-big-bg">
+                        <div class="container">
+                            <h1 class="header-text">Our Objectives</h1>
+                            <p>
+                                The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally. 
+                            </p>
+                            <p>
+                                We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-7" id="white-big-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <p>
-                                    Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
-                                </p>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>
-                                    Produce expeditions and memories that would satisfy every single customer.
-                                </p>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>
-                                    Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence. 
-                                </p>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>
-                                    We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
-                                </p>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>
-                                    Value our role in the community, where we recognize the responsibility and opportunity to contribute to society and make a meaningful difference. 
-                                </p>
-                            </div>
-                            <div class="col-sm-4">
-                                <p>
-                                    Participate in local and regional community service by providing general lectures, consultation, and training programs.
-                                </p>
-                            </div>
+                    <div class="col-sm-7" id="white-big-bg">
+                        <div class="container">
+                            <ul class="row">
+                                <li class="col-sm-6">
+                                    <p>
+                                        Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
+                                    </p>
+                                </li>
+                                <li class="col-sm-6">
+                                    <p>
+                                        Produce expeditions and memories that would satisfy every single customer.
+                                    </p>
+                                </li>
+                                <li class="col-sm-6">
+                                    <p>
+                                        Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence. 
+                                    </p>
+                                </li>
+                                <li class="col-sm-6">
+                                    <p>
+                                        We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
+                                    </p>
+                                </>
+                                <li class="col-sm-6">
+                                    <p>
+                                        Value our role in the community, where we recognize the responsibility and opportunity to contribute to society and make a meaningful difference. 
+                                    </p>
+                                </li>
+                                <li class="col-sm-6">
+                                    <p>
+                                        Participate in local and regional community service by providing general lectures, consultation, and training programs.
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

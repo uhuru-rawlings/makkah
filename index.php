@@ -443,82 +443,116 @@
             </div>
         </div>
     </section>
-    <section class="core-values">
-        <div class="container py-4">
-            <h3 class="header-text">Our Core Values</h3>
-            <div class="corevalues py-4" id="corevalues">
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Transparency</h3>
-                    <p class="text-center">
-                        Building trust in all business and personal dealings.
-                    </p>
+    <div class="svg-background">
+        <section class="core-values">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3 class="header-text">Our Core Values</h3>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Transparency</h4>
+                                <p>
+                                    <q>Building trust in all business and personal dealings.</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Quality</h4>
+                                <p>
+                                    <q>We provide outstanding products and services that deliver premium value to our clients and end agents.</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Respect</h4>
+                                <p>
+                                    <q>For ourselves, our guests, our partners, and our team.</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Integrity</h4>
+                                <p>
+                                    <q>We uphold the highest standards of integrity in all our actions.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Quality</h3>
-                    <p class="text-center">
-                        We provide outstanding products and services that deliver premium value to our clients and end agents.
-                    </p>
-                </div>
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Respect</h3>
-                    <p class="text-center">
-                        For ourselves, our guests, our partners, and our team.
-                    </p>
-                </div>
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Integrity</h3>
-                    <p class="text-center">
-                        We uphold the highest standards of integrity in all our actions.
-                    </p>
+                <!-- <div class="corevalues py-4" id="corevalues">
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Transparency</h3>
+                        <p class="text-center">
+                            <q>Building trust in all business and personal dealings.</a>
+                        </p>
+                    </div>
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Quality</h3>
+                        <p class="text-center">
+                            <q>We provide outstanding products and services that deliver premium value to our clients and end agents.</a>
+                        </p>
+                    </div>
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Respect</h3>
+                        <p class="text-center">
+                            <q>For ourselves, our guests, our partners, and our team.</a>
+                        </p>
+                    </div>
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Integrity</h3>
+                        <p class="text-center">
+                            <q>We uphold the highest standards of integrity in all our actions.</a>
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-sm-4">
+                        <h3 class="header-text">Testimonials</h3>
+                        <h4>What does our customer says about us.</h4>
+                    </div>
+                    <div class="col-sm-8" id="testimonials-cards">
+                        <div class="customer-cards card">
+                            <div class="top-sections">
+                                <img src="images/testimonials.jpg" alt="">
+                                <p>Anthony Haggins</p>
+                            </div>
+                            <div class="botom-sections">
+                                <q>
+                                    I have used some of their services before and they offer the best services
+                                </q>
+                            </div>
+                        </div>
+                        <div class="customer-cards card">
+                            <div class="top-sections">
+                                <img src="images/testimonials.jpg" alt="">
+                                <p>Khalid Ball</p>
+                            </div>
+                            <div class="botom-sections">
+                                <q>
+                                    I have used some of their services before and they offer the best services
+                                </q>
+                            </div>
+                        </div>
+                        <div class="customer-cards card">
+                            <div class="top-sections">
+                                <img src="images/testimonials.jpg" alt="">
+                                <p>Anthony Haggins</p>
+                            </div>
+                            <div class="botom-sections">
+                                <q>
+                                    I have used some of their services before and they offer the best services
+                                </q>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="row py-4">
-                <div class="col-sm-4">
-                    <h3 class="header-text">Testimonials</h3>
-                    <h4>What does our customer says about us.</h4>
-                </div>
-                <div class="col-sm-8" id="testimonials-cards">
-                    <div class="customer-cards card">
-                        <div class="top-sections">
-                            <img src="images/testimonials.jpg" alt="">
-                            <p>Anthony Haggins</p>
-                        </div>
-                        <div class="botom-sections">
-                            <q>
-                                I have used some of their services before and they offer the best services
-                            </q>
-                        </div>
-                    </div>
-                    <div class="customer-cards card">
-                        <div class="top-sections">
-                            <img src="images/testimonials.jpg" alt="">
-                            <p>Khalid Ball</p>
-                        </div>
-                        <div class="botom-sections">
-                            <q>
-                                I have used some of their services before and they offer the best services
-                            </q>
-                        </div>
-                    </div>
-                    <div class="customer-cards card">
-                        <div class="top-sections">
-                            <img src="images/testimonials.jpg" alt="">
-                            <p>Anthony Haggins</p>
-                        </div>
-                        <div class="botom-sections">
-                            <q>
-                                I have used some of their services before and they offer the best services
-                            </q>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <?php
         include("includes/footer.php");
     ?>
