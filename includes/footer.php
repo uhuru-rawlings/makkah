@@ -41,16 +41,6 @@
         </div>
     </div>
 </footer>
-<?php
-    if(!isset($_COOKIE['adminuser'])){
-        echo "<script>
-                var url = window.location.href;
-                var url_array = url.split('/');
-                var new_ulr_array = url.split(url_array[url_array.length - 1])
-                window.location.href = new_ulr_array[0]+'login.php';
-            </script>";
-    }
-?>
 
 <script>
     const scrollToTop = () =>{

@@ -8,6 +8,9 @@
 </head>
 <body>
     <?php
+        if(!isset($_COOKIE['adminuser'])){
+            header("Location: login.php");
+        }
         if(isset($_POST['booktrip'])){
             include_once("admin/database/Database.php");
             include_once("admin/models/Booktrip.php");

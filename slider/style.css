@@ -1,0 +1,26 @@
+.image_sliders{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.image_sliders img{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    /* transition-property: transform;
+    transition-duration: 4s;
+    transition-delay: 2s; */
+}
+img[slider-active]{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
