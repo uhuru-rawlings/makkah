@@ -46,10 +46,10 @@
     </div>
     <section class="booking-info-section">
         <div class="top-select-section">
-            <button onclick="toogleServicespage('book-a-trip',event.target)" id="button1" class="btn shadow-none active">Book A Trip</button>
-            <button onclick="toogleServicespage('hotelbooking',event.target)" id="button2" class="btn shadow-none">Hotel Booking</button>
-            <button onclick="toogleServicespage('hajjumrah',event.target)" id="button3" class="btn shadow-none">Hajj & Umrah</button>
-            <button onclick="toogleServicespage('visaasistant',event.target)" id="button4" class="btn shadow-none">Visa Asistance</button>
+            <button onclick="toogleServicespage('book-a-trip',event.target)" id="button1" class="btn shadow-none active"><i class="fa-solid fa-plane"></i> Book A Trip</button>
+            <button onclick="toogleServicespage('hotelbooking',event.target)" id="button2" class="btn shadow-none"><i class="fa-solid fa-hotel"></i> Hotel Booking</button>
+            <button onclick="toogleServicespage('hajjumrah',event.target)" id="button3" class="btn shadow-none"><i class="fa-solid fa-mosque"></i> Hajj & Umrah</button>
+            <button onclick="toogleServicespage('visaasistant',event.target)" id="button4" class="btn shadow-none"><i class="fa-solid fa-credit-card"></i> Visa Asistance</button>
         </div>
         <div class="bookings-cards py-4" id="book-a-trip">
             <div class="container">
@@ -220,7 +220,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <a href="">
+                        <a href="#">
                             <div class="flex-dets">
                                 <div class="icons"><i class="fa-solid fa-plane-departure"></i></div>
                                 <div class="name">Airline Booking</div>
@@ -228,7 +228,7 @@
                         </a>
                     </div>
                     <div class="col-sm-4">
-                        <a href="">
+                        <a href="#">
                             <div class="flex-dets">
                                 <div class="icons"><i class="fa-solid fa-hotel"></i></div>
                                 <div class="name">Hotel Booking</div>
@@ -236,7 +236,7 @@
                         </a>
                     </div>
                     <div class="col-sm-4">
-                        <a href="">
+                        <a href="#">
                             <div class="flex-dets">
                                 <div class="icons"><i class="fa-solid fa-car"></i></div>
                                 <div class="name">Car Renting</div>

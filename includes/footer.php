@@ -21,12 +21,12 @@
             <p class="text-center">
                 Subscribe to our newsletter to receive the latest special offers and news on
             </p>
-            <form action="" method="post">
+            <form action="newsletter.php" method="post">
                 <div class="form-group">
                     <input type="email" name="useremail" id="useremail" class="form-control" placeholder="Enter Email">
                 </div>
                 <div class="form-group text-center">
-                    <input type="submit" value="Sign Up" class="btn btn-secondary">
+                    <input type="submit" name="newsletter" value="Sign Up" class="btn btn-secondary">
                 </div>
             </form>
         </div>
