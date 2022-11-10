@@ -1,7 +1,7 @@
 <?php
     include_once("../../config.php");
     include_once("../database/Database.php");
-    include_once("../models/Bookings.php");
+    include_once("../models/Booktrip.php");
     $_SESSION['active']="bookings";
     if(isset($_COOKIE['adminuser'])){
 
@@ -39,65 +39,62 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo BASE_URL."admin/index.php" ?>">Home</a></li>
-                    <li class="breadcrumb-item active">List Bookings</li>
+                    <li class="breadcrumb-item active">Appointments</li>
                 </ol>
                 <div class="card" style="margin-top: 15px;">
                     <div class="card-header">
-                        List Bookings
+                        Appointments
                     </div>
                     <div class="card-body">
-                            <?php
-                                if(isset($_GET['delete-success'])){
-                                    echo "<div class='alert alert-success'>".$_GET['delete-success']."</div>";
-                                }else if(isset($_GET['delete-error'])){
-                                    echo "<div class='alert alert-danger'>".$_GET['delete-error']."</div>";
-                                }
-                            ?>
-                        <table class="table table-hover table-bordered">
-                            <thead class="bg-primary text-light">
+                        <?php
+                            if(isset($_GET['success'])){
+                                echo "<div class='alert alert-success'>".$_GET['success']."</div>";
+                            }else if(isset($_GET['error'])){
+                                echo "<div class='alert alert-danger'>".$_GET['error']."</div>";
+                            }
+                        ?>
+                        <table class="table table-hover">
+                            <thead>
                                 <tr>
-                                    <th>Id</th>
-                                    <th>Full Name</th>
-                                    <th>Location</th>
-                                    <th>From Date</th>
-                                    <th>To Date</th>
-                                    <th>Persons</th>
+                                    <th>#</th>
+                                    <th>User</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Date</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Date Added</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                    $conn = new Database();
-                                    $db = $conn -> connection();
-                                    $location = new Bookings($db);
-                                    $locations = $location -> getBookings();
-                                    if($locations){
-                                        foreach($locations as $destination){
+                                    $conn     = new Database();
+                                    $db       = $conn -> connection();
+                                    $bookings = new TripBookings($db);
+                                    $book     = $bookings -> getAppointments(); 
+                                    if($book){
+                                        foreach($book as $book){
                                 ?>
                                 <tr>
-                                    <td><?php echo $destination['id'] ?></td>
-                                    <td><?php echo $destination['Fullname'] ?></td>
-                                    <td><?php echo $destination['Location_id'] ?></td>
-                                    <td><?php echo $destination['From_Date'] ?></td>
-                                    <td><?php echo $destination['To_Date'] ?></td>
-                                    <td><?php echo $destination['Travelers'] ?></td>
-                                    <td><?php echo $destination['Status'] ?></td>
+                                    <td><?php echo $book['id']?></td>
+                                    <td><?php echo $book['Fname']." ".$book['Lname']?></td>
+                                    <td><?php echo "<a href='mailto:{$book['Email']}'>{$book['Email']}</a>"?></td>
+                                    <td><?php echo "<a href='tel:{$book['Phone']}'>{$book['Phone']}</a>"?></td>
+                                    <td><?php echo $book['Appointment_date']?></td>
                                     <td>
-                                        <?php if($destination['Status']  !== "Approved"){
-                                            echo "<a href='approve-bookings.php?id={$destination['id']}&status=Approved'><button class='btn btn-success'>Approve</button></a>";
+                                        <?php
+                                            if($book['status'] == "Assigned"){
+                                                echo '<button class="btn btn-success">Assigned</button>';
                                             }else{
-                                            echo "<a href='approve-bookings.php?id={$destination['id']}&status=Cancelled'><button class='btn btn-danger'>Cancel</button></a>";
+                                                echo "<a href='updated-status.php?id={$book['id']}&target=Appointments'><button class='btn btn-danger'>Pending</button></a>";
                                             }
                                         ?>
                                     </td>
+                                    <td><?php echo $book['Date_added']?></td>
                                 </tr>
                                 <?php
                                         }
                                     }else{
-                                        echo '<tr>
-                                                <td colspan="7" class="text-center">No Bookings Available</td>
-                                              </tr>';
+                                        echo "<option colspan='8'>No data found</option>";
                                     }
                                 ?>
                             </tbody>

@@ -29,12 +29,12 @@
             <ul class="destinationdropdown">
                 <li>
                     <a href="<?php echo BASE_URL."admin/Destinations/add-destinations.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Destination</span>
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Hotels</span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo BASE_URL."admin/Destinations/list-destinations.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-list"></i> List Destination</span>
+                    <a href="<?php echo BASE_URL."admin/Destinations/add-airlines.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> Add Airlines</span>
                     </a>
                 </li>
                 <li>
@@ -50,8 +50,23 @@
             </a>
             <ul class="bookingsdropdown">
                 <li>
-                    <a href="<?php echo BASE_URL."admin/bookings/list-bookings.php" ?>">
-                        <span><i class="nav-icon fa-solid fa-plus-circle"></i> All Bookings</span>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-hotels.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Hotel Bookings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-airlines.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Airline Bookings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-appointments.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Appointments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo BASE_URL."admin/bookings/list-hajjbookings.php" ?>">
+                        <span><i class="nav-icon fa-solid fa-list"></i> Hajj & Umrah</span>
                     </a>
                 </li>
             </ul>

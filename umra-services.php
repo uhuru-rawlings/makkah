@@ -27,7 +27,7 @@
             ?>
         </div>
     </div>
-    <div class="umrah-services">
+    <div class="umrah-services py-4">
         <div class="container">
             <h2 class="header-text">Umrah Services</h2>
             <p>
@@ -105,6 +105,16 @@
             <p>
                 Al-Ihsan Tours & Travel Ltd will always try to assist the people and its clients who want to perform Umrah in the best manner, as there are various steps of Umrah to complete the pious and sacred journey of Umrah. Al Ihsan Tours & Travel Ltd will offer its clients orientation programs through videos, pictures, and practical ones.
             </p>
+            <div class="book-now py-4">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Do you want to book ?</p>                        
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="hajj-booking.php"><button class="btn btn-secondary">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <?php

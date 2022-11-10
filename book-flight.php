@@ -1,3 +1,8 @@
+<?php
+    include_once("admin/database/Database.php");
+    include_once("admin/models/Airline.php");
+    include("admin/models/Destinations.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,27 +37,43 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3 class="header-text">Book Now</h3>
-                    <form action="" method="get">
+                    <form action="booktrip-fun.php" method="post">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="row">
                                     <div class="form-group col">
                                         <label for="fromlocation">From Location</label>
-                                        <select class="shadow-none form-control" name="fromlocation" id="fromlocation">
-                                            <option value="">From Location</option>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="fromlocation" id="fromlocation">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $locations = new Airline($db);
+                                                $location  = $locations -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['From_location']}'>".$location['From_location']."</option>";
+                                                }
+                                            ?>
                                         </select>
                                     </div>
                                     <div class="form-group col">
                                         <label for="tolocation">To Location</label>
-                                        <select class="shadow-none form-control" name="tolocation" id="tolocation">
-                                            <option value="">To Location</option>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tolocation" id="tolocation">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $locations = new Airline($db);
+                                                $location  = $locations -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['To_location']}'>".$location['To_location']."</option>";
+                                                }
+                                            ?>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col">
                                         <label for="tripsround">Trip</label>
-                                        <select class="shadow-none form-control" name="tripsround" id="tripsround">
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tripsround" id="tripsround">
                                             <option value="Rount Trip">Rount Trip</option>
                                             <option value="One Way">One Way</option>
                                         </select>
@@ -61,20 +82,16 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="row">
-                                    <div class="form-group col-sm-6">
+                                    <div class="form-group col-sm-12">
                                         <label for="formdate">Date From</label>
-                                        <input type="date" class="shadow-none form-control" name="formdate" id="formdate">
-                                    </div>
-                                    <div class="form-group col-sm-6">
-                                        <label for="todate">To Date</label>
-                                        <input type="date" class="shadow-none form-control" name="todate" id="todate">
+                                        <input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="formdate" id="formdate">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <label for="travelclass">Travel Class</label>
-                                            <select name="travelclass" id="travelclass" class="shadow-none form-control">
+                                            <select oninput="removeErrors(this.id)" name="travelclass" id="travelclass" class="shadow-none form-control">
                                                 <option value="Guest">Guest</option>
                                                 <option value="Business">Business</option>
                                                 <option value="First">First</option>
@@ -86,14 +103,14 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="number">Number of People</label>
-                                    <input type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
+                                    <input oninput="removeErrors(this.id)" type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
                                 </div>
                                 <div class="form-group">
-                                    <input type="checkbox" name="aggrement" id="aggrement">
+                                    <input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
                                     <label for="aggrement">Agree To Change +/- 7 days.</label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" value="Book Now" class="btn btn-secondary w-100">
+                                    <input type="submit" name="booktrip" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary w-100">
                                 </div>
                             </div>
                         </div>

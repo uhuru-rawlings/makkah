@@ -12,12 +12,11 @@ const validateTripForm = () =>{
     var tolocation   = document.getElementById("tolocation");
     var tripsround   = document.getElementById("tripsround");
     var formdate     = document.getElementById("formdate");
-    var todate       = document.getElementById("todate");
     var travelclass  = document.getElementById("travelclass");
     var number       = document.getElementById("number");
     var aggrement    = document.getElementById("aggrement");
 
-    if(fromlocation.value.trim() === "" || tolocation.value.trim() === "" || tripsround.value.trim() === "" || formdate.value.trim() === "" || todate.value.trim() === "" || travelclass.value.trim() === "" || number.value.trim() === ""){
+    if(fromlocation.value.trim() === "" || tolocation.value.trim() === "" || tripsround.value.trim() === "" || formdate.value.trim() === "" || travelclass.value.trim() === "" || number.value.trim() === ""){
         if(fromlocation.value.trim() === ""){
             fromlocation.style.borderColor = "red";
             return false;

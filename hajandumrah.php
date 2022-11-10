@@ -76,6 +76,16 @@
                     </p>
                 </div>
             </div>
+            <div class="book-now py-4">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Do you want to book ?</p>                        
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="hajj-booking.php"><button class="btn btn-secondary">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <?php

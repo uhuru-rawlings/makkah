@@ -32,8 +32,8 @@
                 <div class="form-logo" id="formlogo">
                     <img src="images/logo (2).png" width="100%" height="100%" alt="">
                 </div>
-                <h1 class="text-center">Welcome Back to Alihsan Tour</h1>
-                <p class="text-center">Please login to proceed</p>
+                <h1 class="text-center m-auto">Create Account</h1>
+                <p class="text-center">Please provide the following details to procceed.</p>
                 <?php
                     if(isset($_GET['error'])){
                         echo "<div class='alert alert-danger'>".$_GET['error']."</div>";

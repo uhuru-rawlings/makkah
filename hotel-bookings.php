@@ -1,3 +1,8 @@
+<?php
+    include_once("admin/database/Database.php");
+    include_once("admin/models/Airline.php");
+    include("admin/models/Destinations.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,33 +37,41 @@
             <div class="row py-4">
                 <div class="col-sm-6">
                     <h3 class="header-text">Hotel Booking</h3>
-                    <form action="" method="post">
+                    <form action="bookhotel-fun.php" method="post">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="hetels">Hotels</label>
-                                    <select name="hetels" id="hetels" class="shadow-none form-control">
-                                        <option value="">Select Hotel</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="numbers">Number of People</label>
-                                    <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
-                                </div>
+                                <select name="hetels" id="hetels" class="shadow-none form-control">
+                                        <?php
+                                            $conn = new Database();
+                                            $db = $conn -> connection();
+                                            $hotels = new Destinations($db);
+                                            $location  = $hotels -> getDestinations();
+                                            foreach($location as $location){
+                                                echo "<option value='{$location['Location_Name']}'>".$location['Location_Name']."</option>";
+                                            }
+                                        ?>
+                                </select>
                             </div>
-                        <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="fromdate">From Date</label>
-                                    <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="todate">To Date</label>
-                                    <input type="date" name="todate" id="todate" class="shadow-none form-control">
-                                </div>
+                            <div class="form-group">
+                                <label for="numbers">Number of People</label>
+                                <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                            </div>
+                        </div>
+                       <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="fromdate">From Date</label>
+                                <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="todate">To Date</label>
+                                <input type="date" name="todate" id="todate" class="shadow-none form-control">
+                            </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group" style="margin-top: 20px;">
-                                <input type="submit" value="Book Now" class="btn btn-secondary w-100" id="book">
+                                <input type="submit" value="Book Now" name="bookhotel" class="btn btn-secondary w-100" id="book">
                             </div>
                         </div>
                         </div>

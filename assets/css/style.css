@@ -1,5 +1,6 @@
 *{
     transition: 0.75s ease-in;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -19,6 +20,13 @@ nav{
     height: 50vh;
     position: relative;
 }
+.header-carouse{
+    height: 50vh;
+    overflow: hidden;
+}
+/* .header-carouse{
+    height: 50vh;
+} */
 .image-sliders{
     position: absolute;
     width: 100%;
@@ -49,10 +57,11 @@ nav .navbar{
     position: absolute;
     top: 100%;
     width: fit-content;
-    min-width: 350px;
+    min-width: 200px;
     background-color: #FFFFFF;
     align-items: center;
     display: none;
+    z-index: 34334343;
 }
 .menu-list ul{
     padding: 0;
@@ -61,11 +70,33 @@ nav .navbar{
 }
 .menu-list ul li{
     list-style: none;
-    display: inline;
-    padding: 10px 15px 10px 15px;
+    /* padding: 10px 15px 10px 15px; */
+    padding: 10px;
+}
+nav .btn{
+    color: #0B4EAA;
+}
+nav .btn:hover{
+    color: #F15A30;
+}
+.sign-in .btn{
+    border-color: #F15A30;
+    color: #F15A30;
+    border-radius: 30px;
+}
+.menu-list ul li:hover{
+    background-color: #0B4EAA;
+    color: #FFFFFF;
+}
+.menu-list ul li:hover a{
+    color: #F15A30;
 }
 .menu-list ul li a{
     text-decoration: none;
+}
+.menu-list ul li::before{
+    padding-left: 0;
+    content: unset;
 }
 nav .btn{
     border: 2px solid #FFFFFF;
@@ -112,6 +143,18 @@ nav .btn{
     background-color: rgba(31,31,31,.3);
 }
 /* end navbar */
+body ul li{
+    list-style: decimal-leading-zero;
+}
+body ul li::marker{
+    font-size: 20px;
+    color: #F15A30;
+    font-weight: 900;
+}
+#our-objectives{
+    display: flex;
+    align-items: center;
+}
 .top-select-section{
     width: fit-content;
     margin: auto;
@@ -189,6 +232,7 @@ nav .btn{
 .booking-info-section{
     transform: translateY(-50px);  
 }
+
 .full-services-details{
     box-shadow: 2px 2px 4px rgba(31,31,31,.3);
 }
@@ -239,7 +283,7 @@ h1,h2,h3,h4,h5{
     background-color: rgba(31,31,31,.4);
     color: #FFFFFF;
 }
-ul li{
+/* ul li{
     position: relative;
     padding-left: 15px;
     list-style: none;
@@ -253,7 +297,7 @@ ul li::before{
     top: calc(50% - 2px);
     bottom: calc(50% - 2px);
     left: 0;
-}
+} */
 .corevalue-card{
     display: none;
 }
@@ -472,11 +516,20 @@ form #formlogo img{
     font-size: 20px;
     border-radius: 50%;
 }
+
 @media screen and (max-width: 921px){
     .login-form{
         width: 70%;
         border-radius: 0;
         background-color: rgba(255,255,255,.6);
+    }
+    .customer-cards{
+        margin-bottom: 15px;
+    }
+    #testimonials-cards{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 540px){
@@ -491,4 +544,59 @@ form #formlogo img{
     .follow-us-on{
         display: none;
     }
+}
+
+.footer-services{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+}
+.footer-services a{
+    color: #FFFFFF;
+}
+.footer-services a:hover{
+    color: #F15A30;
+}
+
+.testimonials-section .customer-cards{
+    height: 300px;
+    border-radius: 10px;
+    width: 220px;
+    overflow: hidden;
+}
+.testimonials-section .customer-cards:hover{
+    box-shadow: 3px 3px 6px rgba(31,31,31,.3);
+}
+.top-sections,.botom-sections{
+    height: 50%;
+}
+.top-sections{
+    position: relative;
+}
+.top-sections img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top-sections p{
+    position: absolute;
+    bottom: 0;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.botom-sections{
+    padding: 10px;
+}
+.botom-sections q{
+    font-size: 18px;
+    font-weight: 700;
+}
+#testimonials-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

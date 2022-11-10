@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Brahmi&display=swap" rel="stylesheet">
 <nav class="navbar">
     <div class="manu-left">
         <div class="page-logo">
@@ -9,7 +12,6 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about-us.php">About</a></li>
-                    <li><a href="">Bookings</a></li>
                     <li id="dropdown">
                         <a href="javascript:void(0)">Services</a>
                         <ul id="main-dropdown">

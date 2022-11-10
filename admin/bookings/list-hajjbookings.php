@@ -1,8 +1,8 @@
 <?php
     include_once("../../config.php");
     include_once("../database/Database.php");
-    include_once("../models/Destinations.php");
-    $_SESSION['active']="destination";
+    include_once("../models/Booktrip.php");
+    $_SESSION['active']="bookings";
     if(isset($_COOKIE['adminuser'])){
 
     }else{
@@ -39,59 +39,60 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo BASE_URL."admin/index.php" ?>">Home</a></li>
-                    <li class="breadcrumb-item active">List Destinations</li>
+                    <li class="breadcrumb-item active">Hajj & Umrah</li>
                 </ol>
                 <div class="card" style="margin-top: 15px;">
                     <div class="card-header">
-                        List Location
+                        Hajj & Umrah
                     </div>
                     <div class="card-body">
-                            <?php
-                                if(isset($_GET['delete-success'])){
-                                    echo "<div class='alert alert-success'>".$_GET['delete-success']."</div>";
-                                }else if(isset($_GET['delete-error'])){
-                                    echo "<div class='alert alert-danger'>".$_GET['delete-error']."</div>";
-                                }
-                            ?>
-                        <table class="table table-hover table-bordered">
-                            <thead class="bg-primary text-light">
+                        <?php
+                            if(isset($_GET['success'])){
+                                echo "<div class='alert alert-success'>".$_GET['success']."</div>";
+                            }else if(isset($_GET['error'])){
+                                echo "<div class='alert alert-danger'>".$_GET['error']."</div>";
+                            }
+                        ?>
+                        <table class="table table-hover">
+                            <thead>
                                 <tr>
-                                    <th>Id</th>
-                                    <th>Location Name</th>
-                                    <th>Price Perday</th>
-                                    <th>Days Opened</th>
-                                    <th>Date added</th>
-                                    <th>Last Modified</th>
-                                    <th><i class="fa-solid fa-trash"></i></th>
+                                    <th>#</th>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Status</th>
+                                    <th>Date Added</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                    $conn = new Database();
-                                    $db = $conn -> connection();
-                                    $location = new Destinations($db);
-                                    $locations = $location -> getDestinations();
-                                    if($locations){
-                                        foreach($locations as $destination){
+                                    $conn     = new Database();
+                                    $db       = $conn -> connection();
+                                    $bookings = new TripBookings($db);
+                                    $book     = $bookings -> getHajBookings(); 
+                                    if($book){
+                                        foreach($book as $book){
                                 ?>
                                 <tr>
-                                    <td><?php echo $destination['id'] ?></td>
-                                    <td><?php echo $destination['Location_Name'] ?></td>
-                                    <td><?php echo $destination['Price_Perday'] ?></td>
-                                    <td><?php echo $destination['Days_Opened'] ?></td>
-                                    <td><?php echo $destination['Date_added'] ?></td>
-                                    <td><?php echo $destination['Last_Modified'] ?></td>
+                                    <td><?php echo $book['id']?></td>
+                                    <td><?php echo $book['Fname']." ".$book['Lname']?></td>
+                                    <td><?php echo "<a href='mailto:{$book['Email']}'>{$book['Email']}</a>"?></td>
+                                    <td><?php echo "<a href='tel:{$book['Phone']}'>{$book['Phone']}</a>"?></td>
                                     <td>
-                                        <a href="update-destination.php?update=<?php echo $destination['id'] ?>"><i class="fa-solid fa-pen"></i></a>
-                                        <a class="text-danger" href="delete-destination.php?delete=<?php echo $destination['id'] ?>"><i class="fa-solid fa-trash"></i></a>
+                                        <?php
+                                            if($book['status'] == "Assigned"){
+                                                echo '<button class="btn btn-success">Assigned</button>';
+                                            }else{
+                                                echo "<a href='updated-status.php?id={$book['id']}&target=Hajj_Umrah'><button class='btn btn-danger'>Pending</button></a>";
+                                            }
+                                        ?>
                                     </td>
+                                    <td><?php echo $book['Date_added']?></td>
                                 </tr>
                                 <?php
                                         }
                                     }else{
-                                        echo '<tr>
-                                                <td colspan="5">No Location Available</td>
-                                              </tr>';
+                                        echo "<option colspan='8'>No data found</option>";
                                     }
                                 ?>
                             </tbody>
