@@ -77,7 +77,20 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-sm-6"></div>
+                <div class="col-sm-6">
+                    <p>
+                        We work closely with some of the best hotels to provide you with the best experince you deserve. We take some measures to see these come true.
+                    </p>
+                    <p>
+                        What we do:
+                    </p>
+                    <ul>
+                        <li>Search for some of the best hotels within our travel destinations.</li>
+                        <li>Negotiate prices so you can spend minimal</li>
+                        <li>Acertain that all the resources you may need are available.</li>
+                        <li>Get you your reservation details.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
