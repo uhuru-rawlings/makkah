@@ -603,3 +603,27 @@ form #formlogo img{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+#Foutr_or_Four_page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background-image: linear-gradient(90deg,#0B4EAA,#F15A30);
+}
+.error_info{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.error_info  button.btn-primary{
+    height: 50px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #F15A30;
+    font-weight: 600;
+}
+.error_info .fa-arrow-left{
+    margin-left: 10px;
+}

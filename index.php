@@ -224,7 +224,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <a href="#">
+                            <a href="Four_or_Four.html">
                                 <div class="flex-dets">
                                     <div class="icons"><i class="fa-solid fa-plane-departure"></i></div>
                                     <div class="name">Airline Booking</div>
@@ -232,7 +232,7 @@
                             </a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="#">
+                            <a href="Four_or_Four.html">
                                 <div class="flex-dets">
                                     <div class="icons"><i class="fa-solid fa-hotel"></i></div>
                                     <div class="name">Hotel Booking</div>
@@ -240,7 +240,7 @@
                             </a>
                         </div>
                         <div class="col-sm-4">
-                            <a href="#">
+                            <a href="Four_or_Four.html">
                                 <div class="flex-dets">
                                     <div class="icons"><i class="fa-solid fa-car"></i></div>
                                     <div class="name">Car Renting</div>
