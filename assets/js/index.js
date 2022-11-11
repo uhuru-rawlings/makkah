@@ -1,3 +1,8 @@
+window.addEventListener("click", (e) => {
+    if(!e.target.className.includes("menu-list")){
+        document.getElementById("menu-list").style.display = "none";
+    }
+})
 
 function displayElements(target_element){
     var taregt = document.getElementById(target_element);
