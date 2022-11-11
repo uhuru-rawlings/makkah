@@ -144,7 +144,7 @@
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="hetels">Hotels</label>
-                                    <select name="hetels" id="hetels" class="shadow-none form-control">
+                                    <select oninput="removeErrors(this.id)" name="hetels" id="hetels" class="shadow-none form-control">
                                             <?php
                                                 $conn = new Database();
                                                 $db = $conn -> connection();
@@ -158,22 +158,22 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="numbers">Number of People</label>
-                                    <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                                    <input type="number" oninput="removeErrors(this.id)" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
                                 </div>
                             </div>
                         <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="fromdate">From Date</label>
-                                    <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
+                                    <input type="date" oninput="removeErrors(this.id)" name="fromdate" id="fromdate" class="shadow-none form-control">
                                 </div>
                                 <div class="form-group">
                                     <label for="todate">To Date</label>
-                                    <input type="date" name="todate" id="todate" class="shadow-none form-control">
+                                    <input type="date" oninput="removeErrors(this.id)" name="todate" id="todate" class="shadow-none form-control">
                                 </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group" style="margin-top: 20px;">
-                                <input type="submit" value="Book Now" name="bookhotel" class="btn btn-secondary" id="book">
+                                <input type="submit" value="Book Now" onclick="return validateHotelBooking()" name="bookhotel" class="btn btn-secondary" id="book">
                             </div>
                         </div>
                         </div>
@@ -208,12 +208,12 @@
                             <div class="col-sm-3">
                                 <div class="form-group">
                                     <label for="appointmentdate">Date</label>
-                                    <input type="date" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
+                                    <input type="date" oninput="removeErrors(this.id)" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group" style="margin-top: 20px;">
-                                    <input type="submit" value="Book Appointment" name="save" class="btn btn-secondary">
+                                    <input type="submit" onclick="return validateVisaBookings()" value="Book Appointment" name="save" class="btn btn-secondary">
                                 </div>
                             </div>
                         </div>

@@ -24,7 +24,7 @@
 <body>
     <div class="spear-header-slider">
         <div class="image-sliders">
-            <img src="images/background-1.jpg" alt="">
+            <img src="images/book-flight.jpg" alt="">
         </div>
         <div class="black-overlay">
             <?php
@@ -172,7 +172,7 @@
         include("includes/footer.php");
     ?>
 </body>
-    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/formValidations.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="fontawesome/js/all.js"></script>

@@ -59,3 +59,33 @@ function coreValuesSlider(){
 window.onload = coreValuesSlider()
 
 
+const validateHotelBooking = () => {
+    var hotels = document.getElementById("hetels");
+    var numbers = document.getElementById("numbers");
+    var fromdate = document.getElementById("fromdate");
+    var todate = document.getElementById("todate");
+
+    if(hotels.value.trim() === "" || numbers.value.trim() === "" || fromdate.value.trim() === "" || todate.value.trim() === ""){
+        if(hotels.value.trim() === ""){
+            hotels.style.borderColor = "red";
+            return false;
+        }else if(numbers.value.trim() === ""){
+            numbers.style.borderColor = "red";
+            return false;
+        }else if(fromdate.value.trim() === ""){
+            fromdate.style.borderColor = "red";
+            return false;
+        }else{
+            todate.style.borderColor = "red";
+            return false;
+        }
+    }
+}
+
+const validateVisaBookings = () => {
+    var appointmentdate = document.getElementById("appointmentdate");
+    if(appointmentdate.value.trim() === ""){
+        appointmentdate.style.borderColor = "red";
+        return false;
+    }
+}

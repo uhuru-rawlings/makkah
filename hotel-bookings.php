@@ -24,7 +24,7 @@
 <body>
     <div class="spear-header-slider">
         <div class="image-sliders">
-            <img src="images/background-1.jpg" alt="">
+            <img src="images/hotel-bookings.jpg" alt="">
         </div>
         <div class="black-overlay">
             <?php
@@ -42,7 +42,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="hetels">Hotels</label>
-                                <select name="hetels" id="hetels" class="shadow-none form-control">
+                                <select oninput="removeErrors(this.id)" name="hetels" id="hetels" class="shadow-none form-control">
                                         <?php
                                             $conn = new Database();
                                             $db = $conn -> connection();
@@ -56,22 +56,22 @@
                             </div>
                             <div class="form-group">
                                 <label for="numbers">Number of People</label>
-                                <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                                <input oninput="removeErrors(this.id)" type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
                             </div>
                         </div>
                        <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="fromdate">From Date</label>
-                                <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
+                                <input oninput="removeErrors(this.id)" type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
                             </div>
                             <div class="form-group">
                                 <label for="todate">To Date</label>
-                                <input type="date" name="todate" id="todate" class="shadow-none form-control">
+                                <input oninput="removeErrors(this.id)" type="date" name="todate" id="todate" class="shadow-none form-control">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group" style="margin-top: 20px;">
-                                <input type="submit" value="Book Now" name="bookhotel" class="btn btn-secondary w-100" id="book">
+                                <input type="submit" value="Book Now" onclick="return validateHotelBooking()" name="bookhotel" class="btn btn-secondary w-100" id="book">
                             </div>
                         </div>
                         </div>
@@ -99,6 +99,7 @@
     ?>
 </body>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/formValidations.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="fontawesome/js/all.js"></script>
     <script src="fontawesome/js/brands.js"></script>

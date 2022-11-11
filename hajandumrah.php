@@ -19,7 +19,7 @@
 <body>
     <div class="spear-header-slider">
         <div class="image-sliders">
-            <img src="images/background-5.jpg" alt="">
+            <img src="images/hajj-and-umrah.jpg" alt="">
         </div>
         <div class="black-overlay">
             <?php
