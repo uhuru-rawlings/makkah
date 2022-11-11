@@ -54,201 +54,203 @@
             <button onclick="toogleServicespage('hajjumrah',event.target)" id="button3" class="btn shadow-none"><i class="fa-solid fa-mosque"></i> Hajj & Umrah</button>
             <button onclick="toogleServicespage('visaasistant',event.target)" id="button4" class="btn shadow-none"><i class="fa-solid fa-credit-card"></i> Visa Asistance</button>
         </div>
-        <div class="bookings-cards py-4" id="book-a-trip">
-            <div class="container">
-                <form action="booktrip-fun.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div class="form-group col">
-                                    <label for="fromlocation">From Location</label>
-                                    <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="fromlocation" id="fromlocation">
-                                        <?php
-                                            $conn = new Database();
-                                            $db = $conn -> connection();
-                                            $locations = new Airline($db);
-                                            $location  = $locations -> getDestinations();
-                                            foreach($location as $location){
-                                                echo "<option value='{$location['From_location']}'>".$location['From_location']."</option>";
-                                            }
-                                        ?>
-                                    </select>
+       <div class="overlay-blue">
+            <div class="bookings-cards py-4" id="book-a-trip">
+                <div class="container">
+                    <form action="booktrip-fun.php" method="post">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label for="fromlocation">From Location</label>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="fromlocation" id="fromlocation">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $locations = new Airline($db);
+                                                $location  = $locations -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['From_location']}'>".$location['From_location']."</option>";
+                                                }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="tolocation">To Location</label>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tolocation" id="tolocation">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $locations = new Airline($db);
+                                                $location  = $locations -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['To_location']}'>".$location['To_location']."</option>";
+                                                }
+                                            ?>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group col">
-                                    <label for="tolocation">To Location</label>
-                                    <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tolocation" id="tolocation">
-                                        <?php
-                                            $conn = new Database();
-                                            $db = $conn -> connection();
-                                            $locations = new Airline($db);
-                                            $location  = $locations -> getDestinations();
-                                            foreach($location as $location){
-                                                echo "<option value='{$location['To_location']}'>".$location['To_location']."</option>";
-                                            }
-                                        ?>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col">
-                                    <label for="tripsround">Trip</label>
-                                    <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tripsround" id="tripsround">
-                                        <option value="Rount Trip">Rount Trip</option>
-                                        <option value="One Way">One Way</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div class="form-group col-sm-12">
-                                    <label for="formdate">Date From</label>
-                                    <input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="formdate" id="formdate">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="travelclass">Travel Class</label>
-                                        <select oninput="removeErrors(this.id)" name="travelclass" id="travelclass" class="shadow-none form-control">
-                                            <option value="Guest">Guest</option>
-                                            <option value="Business">Business</option>
-                                            <option value="First">First</option>
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label for="tripsround">Trip</label>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tripsround" id="tripsround">
+                                            <option value="Rount Trip">Rount Trip</option>
+                                            <option value="One Way">One Way</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="number">Number of People</label>
-                                <input oninput="removeErrors(this.id)" type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <label for="formdate">Date From</label>
+                                        <input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="formdate" id="formdate">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="travelclass">Travel Class</label>
+                                            <select oninput="removeErrors(this.id)" name="travelclass" id="travelclass" class="shadow-none form-control">
+                                                <option value="Guest">Guest</option>
+                                                <option value="Business">Business</option>
+                                                <option value="First">First</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
-                                <label for="aggrement">Agree To Change +/- 7 days.</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" name="booktrip" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="bookings-cards py-4" id="hotelbooking">
-            <div class="container">
-                <form action="bookhotel-fun.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="hetels">Hotels</label>
-                                <select name="hetels" id="hetels" class="shadow-none form-control">
-                                        <?php
-                                            $conn = new Database();
-                                            $db = $conn -> connection();
-                                            $hotels = new Destinations($db);
-                                            $location  = $hotels -> getDestinations();
-                                            foreach($location as $location){
-                                                echo "<option value='{$location['Location_Name']}'>".$location['Location_Name']."</option>";
-                                            }
-                                        ?>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="numbers">Number of People</label>
-                                <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="number">Number of People</label>
+                                    <input oninput="removeErrors(this.id)" type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
+                                    <label for="aggrement">Agree To Change +/- 7 days.</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="booktrip" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary">
+                                </div>
                             </div>
                         </div>
-                       <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="fromdate">From Date</label>
-                                <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="todate">To Date</label>
-                                <input type="date" name="todate" id="todate" class="shadow-none form-control">
-                            </div>
-                       </div>
-                       <div class="col-sm-4">
-                        <div class="form-group" style="margin-top: 20px;">
-                            <input type="submit" value="Book Now" name="bookhotel" class="btn btn-secondary" id="book">
-                        </div>
-                       </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="bookings-cards py-4" id="hajjumrah">
-            <div class="container">
-                <p>
-                    These are some of the most important religious pilgrimages for the Muslim fraternity. As fellow Muslims, we are obliged by our faith to facilitate the travel of the faithful to the Holy sites. To facilitate this, we encourage our customers to start making preparations early enough to avoid the last-minute rush.
-                </p>
-                <p>
-                    We thus allow our customers to come over for early visa application, besides pre-booking their return flights and accommodation when demand for such services is still low and charges affordable. We are always at hand to assist that intent on attending the Hajj and Umrah with all the required preparations, including visa application, flight booking, and planning for ac­commodation.
-                </p>
-                <div class="row">
-                    <div class="col">
-                        <a href="hajj-services.php" ><button class="btn btn-secondary">Hajj Services</button></a>
-                    </div>
-                    <div class="col">
-                        <a href="umra-services.php" ><button class="btn btn-secondary">Umrah Services</button></a>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="bookings-cards py-4" id="visaasistant">
-            <div class="container">
-                <p>
-                    We take the task of visa application from out clicents by doing that ourselves. You book an appointment with us, we will organise and take the right procedures on your behalf which will be alittle faster. Do you want to book a meeting ?
-                </p>
-                <form action="bookappointments.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label for="appointmentdate">Date</label>
-                                <input type="date" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
+            <div class="bookings-cards py-4" id="hotelbooking">
+                <div class="container">
+                    <form action="bookhotel-fun.php" method="post">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="hetels">Hotels</label>
+                                    <select name="hetels" id="hetels" class="shadow-none form-control">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $hotels = new Destinations($db);
+                                                $location  = $hotels -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['Location_Name']}'>".$location['Location_Name']."</option>";
+                                                }
+                                            ?>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="numbers">Number of People</label>
+                                    <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                                </div>
                             </div>
+                        <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="fromdate">From Date</label>
+                                    <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="todate">To Date</label>
+                                    <input type="date" name="todate" id="todate" class="shadow-none form-control">
+                                </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <div class="form-group" style="margin-top: 20px;">
-                                <input type="submit" value="Book Appointment" name="save" class="btn btn-secondary">
+                                <input type="submit" value="Book Now" name="bookhotel" class="btn btn-secondary" id="book">
                             </div>
                         </div>
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="full-services-details py-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <a href="#">
-                            <div class="flex-dets">
-                                <div class="icons"><i class="fa-solid fa-plane-departure"></i></div>
-                                <div class="name">Airline Booking</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="#">
-                            <div class="flex-dets">
-                                <div class="icons"><i class="fa-solid fa-hotel"></i></div>
-                                <div class="name">Hotel Booking</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="#">
-                            <div class="flex-dets">
-                                <div class="icons"><i class="fa-solid fa-car"></i></div>
-                                <div class="name">Car Renting</div>
-                            </div>
-                        </a>
+            <div class="bookings-cards py-4" id="hajjumrah">
+                <div class="container">
+                    <p>
+                        These are some of the most important religious pilgrimages for the Muslim fraternity. As fellow Muslims, we are obliged by our faith to facilitate the travel of the faithful to the Holy sites. To facilitate this, we encourage our customers to start making preparations early enough to avoid the last-minute rush.
+                    </p>
+                    <p>
+                        We thus allow our customers to come over for early visa application, besides pre-booking their return flights and accommodation when demand for such services is still low and charges affordable. We are always at hand to assist that intent on attending the Hajj and Umrah with all the required preparations, including visa application, flight booking, and planning for ac­commodation.
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <a href="hajj-services.php" ><button class="btn btn-secondary">Hajj Services</button></a>
+                        </div>
+                        <div class="col">
+                            <a href="umra-services.php" ><button class="btn btn-secondary">Umrah Services</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="bookings-cards py-4" id="visaasistant">
+                <div class="container">
+                    <p>
+                        We take the task of visa application from out clicents by doing that ourselves. You book an appointment with us, we will organise and take the right procedures on your behalf which will be alittle faster. Do you want to book a meeting ?
+                    </p>
+                    <form action="bookappointments.php" method="post">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="appointmentdate">Date</label>
+                                    <input type="date" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group" style="margin-top: 20px;">
+                                    <input type="submit" value="Book Appointment" name="save" class="btn btn-secondary">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="full-services-details py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="#">
+                                <div class="flex-dets">
+                                    <div class="icons"><i class="fa-solid fa-plane-departure"></i></div>
+                                    <div class="name">Airline Booking</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#">
+                                <div class="flex-dets">
+                                    <div class="icons"><i class="fa-solid fa-hotel"></i></div>
+                                    <div class="name">Hotel Booking</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#">
+                                <div class="flex-dets">
+                                    <div class="icons"><i class="fa-solid fa-car"></i></div>
+                                    <div class="name">Car Renting</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
     </section>
     <section class="aboutus-section">
         <div class="container py-3">

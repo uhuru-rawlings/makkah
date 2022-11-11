@@ -1,5 +1,5 @@
 *{
-    transition: 0.75s ease-in;
+    /* transition: 0.75s ease-in; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -163,24 +163,28 @@ body ul li::marker{
 }
 .top-select-section button{
     border: none;
-    border-radius: 0;
+    border-radius: 3px 3px 0px 0px;
     font-weight: 900;
     color: #292929;
     height: 50px;
     text-transform: uppercase;
+    transition: 0.75s;
 }
 .top-select-section button.active{
     border-bottom: 5px solid #F15A30;
     color: #FFFFFF;
-    background-color: #0B4EAA;
+    background-image: linear-gradient(to right,#0B4EAA,#F15A30);
 }
 .top-select-section button:hover{
     color: #FFFFFF;
-    background-color: #0B4EAA;
+    background-image: linear-gradient(to right,#0B4EAA,#F15A30);
+}
+.overlay-blue{
+    background-image: linear-gradient(to right,#0B4EAA,#F15A30);
+    /* background-image: linear-gradient(to right,#1453ac,#346dbd); */
 }
 .bookings-cards{
     width: 100%;
-    background-color: #0B4EAA;
     color: #FFFFFF;
 }
 .bookings-cards .form-group{
