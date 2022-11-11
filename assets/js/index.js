@@ -1,19 +1,3 @@
-var images = ["images/background-1.jpg","images/background-2.jpg","images/background-3.jpg","images/background-4.jpg"];
-var timer = 5000;
-var i = 0;
-
-function imageSliders(){
-    if(i < images.length - 1){
-        i++;
-    }else{
-        i = 0;
-    }
-    document.getElementById("image-slider").src = images[i];
-
-    setTimeout("imageSliders()",timer);
-}
-
-window.onload = imageSliders();
 
 function displayElements(target_element){
     var taregt = document.getElementById(target_element);

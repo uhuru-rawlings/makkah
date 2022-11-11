@@ -1,6 +1,7 @@
 nav{
     background-color: #FFFFFF;
     color: #0B4EAA;
+    z-index: 100%;
 }
 .menu-section ul li a{
     color: #0B4EAA !important;

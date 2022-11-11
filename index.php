@@ -20,23 +20,26 @@
     <link rel="stylesheet" href="fontawesome/css/brands.css">
     <link rel="stylesheet" href="fontawesome/css/regular.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>ALIHSAN TOUR & TRAVEL LTD</title>
 </head>
 <body>
     <div class="spear-header-slider">
-        <div class="image-sliders">
-            <!-- <div class="owl-carousel header-carousel position-absolute">
-                <div class="owl-carousel-item position-relative">
-                    <img src="images/background-1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="owl-carousel-item position-relative">
-                    <img src="images/background-2.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="owl-carousel-item position-relative">
-                    <img src="images/background-3.jpg" class="img-fluid" alt="">
-                </div>
-            </div> -->
-            <img src="images/background-1.jpg" id="image-slider" alt="">
+        <div class="image-sliders swiper">
+        <div class="swiper-wrapper">
+            <img src="images/background-1.jpg" class="swiper-slide" alt="">
+            <img src="images/background-2.jpg" class="swiper-slide" alt="">
+            <img src="images/background-3.jpg" class="swiper-slide" alt="">
+            <img src="images/background-4.jpg" class="swiper-slide" alt="">
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
         </div>
         <div class="black-overlay">
             <?php
@@ -557,6 +560,32 @@
         include("includes/footer.php");
     ?>
 </body>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: "slide",
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+        },
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+        });
+    </script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/formValidations.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

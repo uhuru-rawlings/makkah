@@ -17,11 +17,11 @@ nav{
     padding-right: 5%;
 }
 .spear-header-slider{
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 .header-carouse{
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
 }
 /* .header-carouse{
@@ -142,6 +142,7 @@ nav .btn{
     bottom: 0;
     width: 100%;
     background-color: rgba(31,31,31,.3);
+    z-index: 100;
 }
 /* end navbar */
 body ul li{
@@ -164,7 +165,7 @@ body ul li::marker{
     border: none;
     border-radius: 0;
     font-weight: 900;
-    color: #FFFFFF;
+    color: #292929;
     height: 50px;
     text-transform: uppercase;
 }
@@ -228,10 +229,10 @@ body ul li::marker{
 }
 .full-services-details a{
     text-decoration: none;
-    color: #161616;
+    color: #292929;
 }
 .booking-info-section{
-    transform: translateY(-50px);  
+    background-color: #dcdcdc;
 }
 
 .full-services-details{
@@ -409,9 +410,6 @@ ul li::before{
     }
     .aboutus-section{
         height: fit-content;
-    }
-    .booking-info-section{
-        transform: translateY(-100px);  
     }
     .menu-list ul li{
         display: block;
