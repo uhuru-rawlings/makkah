@@ -1,19 +1,8 @@
-var images = ["images/background-1.jpg","images/background-2.jpg","images/background-3.jpg","images/background-4.jpg"];
-var timer = 5000;
-var i = 0;
-
-function imageSliders(){
-    if(i < images.length - 1){
-        i++;
-    }else{
-        i = 0;
+window.addEventListener("click", (e) => {
+    if(!e.target.className.includes("menu-list")){
+        document.getElementById("menu-list").style.display = "none";
     }
-    document.getElementById("image-slider").src = images[i];
-
-    setTimeout("imageSliders()",timer);
-}
-
-window.onload = imageSliders();
+})
 
 function displayElements(target_element){
     var taregt = document.getElementById(target_element);
@@ -70,3 +59,33 @@ function coreValuesSlider(){
 window.onload = coreValuesSlider()
 
 
+const validateHotelBooking = () => {
+    var hotels = document.getElementById("hetels");
+    var numbers = document.getElementById("numbers");
+    var fromdate = document.getElementById("fromdate");
+    var todate = document.getElementById("todate");
+
+    if(hotels.value.trim() === "" || numbers.value.trim() === "" || fromdate.value.trim() === "" || todate.value.trim() === ""){
+        if(hotels.value.trim() === ""){
+            hotels.style.borderColor = "red";
+            return false;
+        }else if(numbers.value.trim() === ""){
+            numbers.style.borderColor = "red";
+            return false;
+        }else if(fromdate.value.trim() === ""){
+            fromdate.style.borderColor = "red";
+            return false;
+        }else{
+            todate.style.borderColor = "red";
+            return false;
+        }
+    }
+}
+
+const validateVisaBookings = () => {
+    var appointmentdate = document.getElementById("appointmentdate");
+    if(appointmentdate.value.trim() === ""){
+        appointmentdate.style.borderColor = "red";
+        return false;
+    }
+}

@@ -20,23 +20,26 @@
     <link rel="stylesheet" href="fontawesome/css/brands.css">
     <link rel="stylesheet" href="fontawesome/css/regular.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>ALIHSAN TOUR & TRAVEL LTD</title>
 </head>
 <body>
     <div class="spear-header-slider">
-        <div class="image-sliders">
-            <!-- <div class="owl-carousel header-carousel position-absolute">
-                <div class="owl-carousel-item position-relative">
-                    <img src="images/background-1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="owl-carousel-item position-relative">
-                    <img src="images/background-2.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="owl-carousel-item position-relative">
-                    <img src="images/background-3.jpg" class="img-fluid" alt="">
-                </div>
-            </div> -->
-            <img src="images/background-1.jpg" id="image-slider" alt="">
+        <div class="image-sliders swiper">
+        <div class="swiper-wrapper">
+            <img src="images/background-1.jpg" class="swiper-slide" alt="">
+            <img src="images/background-2.jpg" class="swiper-slide" alt="">
+            <img src="images/background-3.jpg" class="swiper-slide" alt="">
+            <img src="images/background-4.jpg" class="swiper-slide" alt="">
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
         </div>
         <div class="black-overlay">
             <?php
@@ -51,201 +54,203 @@
             <button onclick="toogleServicespage('hajjumrah',event.target)" id="button3" class="btn shadow-none"><i class="fa-solid fa-mosque"></i> Hajj & Umrah</button>
             <button onclick="toogleServicespage('visaasistant',event.target)" id="button4" class="btn shadow-none"><i class="fa-solid fa-credit-card"></i> Visa Asistance</button>
         </div>
-        <div class="bookings-cards py-4" id="book-a-trip">
-            <div class="container">
-                <form action="booktrip-fun.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div class="form-group col">
-                                    <label for="fromlocation">From Location</label>
-                                    <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="fromlocation" id="fromlocation">
-                                        <?php
-                                            $conn = new Database();
-                                            $db = $conn -> connection();
-                                            $locations = new Airline($db);
-                                            $location  = $locations -> getDestinations();
-                                            foreach($location as $location){
-                                                echo "<option value='{$location['From_location']}'>".$location['From_location']."</option>";
-                                            }
-                                        ?>
-                                    </select>
+       <div class="overlay-blue">
+            <div class="bookings-cards py-4" id="book-a-trip">
+                <div class="container">
+                    <form action="booktrip-fun.php" method="post">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label for="fromlocation">From Location</label>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="fromlocation" id="fromlocation">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $locations = new Airline($db);
+                                                $location  = $locations -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['From_location']}'>".$location['From_location']."</option>";
+                                                }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="tolocation">To Location</label>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tolocation" id="tolocation">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $locations = new Airline($db);
+                                                $location  = $locations -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['To_location']}'>".$location['To_location']."</option>";
+                                                }
+                                            ?>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group col">
-                                    <label for="tolocation">To Location</label>
-                                    <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tolocation" id="tolocation">
-                                        <?php
-                                            $conn = new Database();
-                                            $db = $conn -> connection();
-                                            $locations = new Airline($db);
-                                            $location  = $locations -> getDestinations();
-                                            foreach($location as $location){
-                                                echo "<option value='{$location['To_location']}'>".$location['To_location']."</option>";
-                                            }
-                                        ?>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col">
-                                    <label for="tripsround">Trip</label>
-                                    <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tripsround" id="tripsround">
-                                        <option value="Rount Trip">Rount Trip</option>
-                                        <option value="One Way">One Way</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div class="form-group col-sm-12">
-                                    <label for="formdate">Date From</label>
-                                    <input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="formdate" id="formdate">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="travelclass">Travel Class</label>
-                                        <select oninput="removeErrors(this.id)" name="travelclass" id="travelclass" class="shadow-none form-control">
-                                            <option value="Guest">Guest</option>
-                                            <option value="Business">Business</option>
-                                            <option value="First">First</option>
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label for="tripsround">Trip</label>
+                                        <select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tripsround" id="tripsround">
+                                            <option value="Rount Trip">Rount Trip</option>
+                                            <option value="One Way">One Way</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="number">Number of People</label>
-                                <input oninput="removeErrors(this.id)" type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <label for="formdate">Date From</label>
+                                        <input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="formdate" id="formdate">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="travelclass">Travel Class</label>
+                                            <select oninput="removeErrors(this.id)" name="travelclass" id="travelclass" class="shadow-none form-control">
+                                                <option value="Guest">Guest</option>
+                                                <option value="Business">Business</option>
+                                                <option value="First">First</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
-                                <label for="aggrement">Agree To Change +/- 7 days.</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" name="booktrip" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="bookings-cards py-4" id="hotelbooking">
-            <div class="container">
-                <form action="bookhotel-fun.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="hetels">Hotels</label>
-                                <select name="hetels" id="hetels" class="shadow-none form-control">
-                                        <?php
-                                            $conn = new Database();
-                                            $db = $conn -> connection();
-                                            $hotels = new Destinations($db);
-                                            $location  = $hotels -> getDestinations();
-                                            foreach($location as $location){
-                                                echo "<option value='{$location['Location_Name']}'>".$location['Location_Name']."</option>";
-                                            }
-                                        ?>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="numbers">Number of People</label>
-                                <input type="number" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="number">Number of People</label>
+                                    <input oninput="removeErrors(this.id)" type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
+                                    <label for="aggrement">Agree To Change +/- 7 days.</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="booktrip" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary">
+                                </div>
                             </div>
                         </div>
-                       <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="fromdate">From Date</label>
-                                <input type="date" name="fromdate" id="fromdate" class="shadow-none form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="todate">To Date</label>
-                                <input type="date" name="todate" id="todate" class="shadow-none form-control">
-                            </div>
-                       </div>
-                       <div class="col-sm-4">
-                        <div class="form-group" style="margin-top: 20px;">
-                            <input type="submit" value="Book Now" name="bookhotel" class="btn btn-secondary" id="book">
-                        </div>
-                       </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="bookings-cards py-4" id="hajjumrah">
-            <div class="container">
-                <p>
-                    These are some of the most important religious pilgrimages for the Muslim fraternity. As fellow Muslims, we are obliged by our faith to facilitate the travel of the faithful to the Holy sites. To facilitate this, we encourage our customers to start making preparations early enough to avoid the last-minute rush.
-                </p>
-                <p>
-                    We thus allow our customers to come over for early visa application, besides pre-booking their return flights and accommodation when demand for such services is still low and charges affordable. We are always at hand to assist that intent on attending the Hajj and Umrah with all the required preparations, including visa application, flight booking, and planning for ac­commodation.
-                </p>
-                <div class="row">
-                    <div class="col">
-                        <a href="hajj-services.php" ><button class="btn btn-secondary">Hajj Services</button></a>
-                    </div>
-                    <div class="col">
-                        <a href="umra-services.php" ><button class="btn btn-secondary">Umrah Services</button></a>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="bookings-cards py-4" id="visaasistant">
-            <div class="container">
-                <p>
-                    We take the task of visa application from out clicents by doing that ourselves. You book an appointment with us, we will organise and take the right procedures on your behalf which will be alittle faster. Do you want to book a meeting ?
-                </p>
-                <form action="bookappointments.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label for="appointmentdate">Date</label>
-                                <input type="date" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
+            <div class="bookings-cards py-4" id="hotelbooking">
+                <div class="container">
+                    <form action="bookhotel-fun.php" method="post">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="hetels">Hotels</label>
+                                    <select oninput="removeErrors(this.id)" name="hetels" id="hetels" class="shadow-none form-control">
+                                            <?php
+                                                $conn = new Database();
+                                                $db = $conn -> connection();
+                                                $hotels = new Destinations($db);
+                                                $location  = $hotels -> getDestinations();
+                                                foreach($location as $location){
+                                                    echo "<option value='{$location['Location_Name']}'>".$location['Location_Name']."</option>";
+                                                }
+                                            ?>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="numbers">Number of People</label>
+                                    <input type="number" oninput="removeErrors(this.id)" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+                                </div>
                             </div>
+                        <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="fromdate">From Date</label>
+                                    <input type="date" oninput="removeErrors(this.id)" name="fromdate" id="fromdate" class="shadow-none form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="todate">To Date</label>
+                                    <input type="date" oninput="removeErrors(this.id)" name="todate" id="todate" class="shadow-none form-control">
+                                </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <div class="form-group" style="margin-top: 20px;">
-                                <input type="submit" value="Book Appointment" name="save" class="btn btn-secondary">
+                                <input type="submit" value="Book Now" onclick="return validateHotelBooking()" name="bookhotel" class="btn btn-secondary" id="book">
                             </div>
                         </div>
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="full-services-details py-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <a href="#">
-                            <div class="flex-dets">
-                                <div class="icons"><i class="fa-solid fa-plane-departure"></i></div>
-                                <div class="name">Airline Booking</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="#">
-                            <div class="flex-dets">
-                                <div class="icons"><i class="fa-solid fa-hotel"></i></div>
-                                <div class="name">Hotel Booking</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="#">
-                            <div class="flex-dets">
-                                <div class="icons"><i class="fa-solid fa-car"></i></div>
-                                <div class="name">Car Renting</div>
-                            </div>
-                        </a>
+            <div class="bookings-cards py-4" id="hajjumrah">
+                <div class="container">
+                    <p>
+                        These are some of the most important religious pilgrimages for the Muslim fraternity. As fellow Muslims, we are obliged by our faith to facilitate the travel of the faithful to the Holy sites. To facilitate this, we encourage our customers to start making preparations early enough to avoid the last-minute rush.
+                    </p>
+                    <p>
+                        We thus allow our customers to come over for early visa application, besides pre-booking their return flights and accommodation when demand for such services is still low and charges affordable. We are always at hand to assist that intent on attending the Hajj and Umrah with all the required preparations, including visa application, flight booking, and planning for ac­commodation.
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <a href="hajj-services.php" ><button class="btn btn-secondary">Hajj Services</button></a>
+                        </div>
+                        <div class="col">
+                            <a href="umra-services.php" ><button class="btn btn-secondary">Umrah Services</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="bookings-cards py-4" id="visaasistant">
+                <div class="container">
+                    <p>
+                        We take the task of visa application from out clicents by doing that ourselves. You book an appointment with us, we will organise and take the right procedures on your behalf which will be alittle faster. Do you want to book a meeting ?
+                    </p>
+                    <form action="bookappointments.php" method="post">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="appointmentdate">Date</label>
+                                    <input type="date" oninput="removeErrors(this.id)" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group" style="margin-top: 20px;">
+                                    <input type="submit" onclick="return validateVisaBookings()" value="Book Appointment" name="save" class="btn btn-secondary">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="full-services-details py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="Four_or_Four.html">
+                                <div class="flex-dets">
+                                    <div class="icons"><i class="fa-solid fa-plane-departure"></i></div>
+                                    <div class="name">Airline Booking</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="Four_or_Four.html">
+                                <div class="flex-dets">
+                                    <div class="icons"><i class="fa-solid fa-hotel"></i></div>
+                                    <div class="name">Hotel Booking</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="Four_or_Four.html">
+                                <div class="flex-dets">
+                                    <div class="icons"><i class="fa-solid fa-car"></i></div>
+                                    <div class="name">Car Renting</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
     </section>
     <section class="aboutus-section">
         <div class="container py-3">
@@ -266,34 +271,40 @@
                     </p>
                 </div>
             </div>
-            <h3 class="header-text">Our Objectives</h3>
-            <div class="row py-4">
-                <div class="col-sm-6" id="our-objectives">
-                The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally. 
+            <div class="objectives py-2">
+                <h3 class="header-text">Our Objectives</h3>
+                <p class="py-2">
+                    The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally. 
 
-                We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
-                </div>
-                <div class="col-sm-6">
-                    <ul>
-                        <li>
-                            Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
-                        </li>
-                        <li>
-                            Produce expeditions and memories that would satisfy every single customer.
-                        </li>
-                        <li>
-                            Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence.
-                        </li>
-                        <li>
-                            We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
-                        </li>
-                        <li>
-                            Value our role in the community, where we recognize the responsibility and opportunity to contribute to society and make a meaningful difference.
-                        </li>
-                        <li>
-                            Value our role in the community, where we Participate in local and regional community service by providing general lectures, consultation, and training programs.
-                        </li>
-                    </ul>
+                    We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
+                </p>
+                <div class="row py-2">
+                    <div class="col-sm-12">
+                        <ul class="row mr-3">
+                            <div class="col-sm-5">
+                                <li>
+                                    Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
+                                </li>
+                                <li>
+                                    Produce expeditions and memories that would satisfy every single customer.
+                                </li>
+                                <li>
+                                    Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence.
+                                </li>
+                            </div>
+                            <div class="col-sm-5 ms-auto">
+                                <li>
+                                    We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
+                                </li>
+                                <li>
+                                    Value our role in the community, where we recognize the responsibility and opportunity to contribute to society and make a meaningful difference.
+                                </li>
+                                <li>
+                                    Value our role in the community, where we Participate in local and regional community service by providing general lectures, consultation, and training programs.
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -306,48 +317,52 @@
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
@@ -357,48 +372,52 @@
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
                     <div class="tip-card p-2">
                         <div class="trip-details">
                             <div class="col-sm-6 d-flex justify-content-between">
-                                <div class="text-bold">Nairobi</div>
-                                <div class="text-bold">Nairobi</div>
+                                <div class="text-bolds">Nairobi</div>
+                                <div><i class="fa-solid fa-plane"></i></div>
+                                <div class="text-bolds">Nairobi</div>
                             </div>
                             <div class="col-sm-6" style="text-align: right;">
                                 <div class="text-center">Round Trips</div>
-                                <div class="text-center text-bold">350</div>
+                                <div class="text-center text-bolds">350</div>
                             </div>
                         </div>
                     </div>
@@ -443,86 +462,146 @@
             </div>
         </div>
     </section>
-    <section class="core-values">
-        <div class="container py-4">
-            <h3 class="header-text">Our Core Values</h3>
-            <div class="corevalues py-4" id="corevalues">
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Transparency</h3>
-                    <p class="text-center">
-                        Building trust in all business and personal dealings.
-                    </p>
+    <div class="svg-background">
+        <section class="core-values">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3 class="header-text">Our Core Values</h3>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Transparency</h4>
+                                <p>
+                                    <q>Building trust in all business and personal dealings.</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Quality</h4>
+                                <p>
+                                    <q>We provide outstanding products and services that deliver premium value to our clients and end agents.</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Respect</h4>
+                                <p>
+                                    <q>For ourselves, our guests, our partners, and our team.</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4 class="header-text">Integrity</h4>
+                                <p>
+                                    <q>We uphold the highest standards of integrity in all our actions.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Quality</h3>
-                    <p class="text-center">
-                        We provide outstanding products and services that deliver premium value to our clients and end agents.
-                    </p>
-                </div>
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Respect</h3>
-                    <p class="text-center">
-                        For ourselves, our guests, our partners, and our team.
-                    </p>
-                </div>
-                <div class="corevalue-card">
-                    <h3 class="header-text m-auto">Integrity</h3>
-                    <p class="text-center">
-                        We uphold the highest standards of integrity in all our actions.
-                    </p>
+                <!-- <div class="corevalues py-4" id="corevalues">
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Transparency</h3>
+                        <p class="text-center">
+                            <q>Building trust in all business and personal dealings.</a>
+                        </p>
+                    </div>
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Quality</h3>
+                        <p class="text-center">
+                            <q>We provide outstanding products and services that deliver premium value to our clients and end agents.</a>
+                        </p>
+                    </div>
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Respect</h3>
+                        <p class="text-center">
+                            <q>For ourselves, our guests, our partners, and our team.</a>
+                        </p>
+                    </div>
+                    <div class="corevalue-card">
+                        <h3 class="header-text m-auto">Integrity</h3>
+                        <p class="text-center">
+                            <q>We uphold the highest standards of integrity in all our actions.</a>
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-sm-4">
+                        <h3 class="header-text">Testimonials</h3>
+                        <h4>What does our customer says about us.</h4>
+                    </div>
+                    <div class="col-sm-8" id="testimonials-cards">
+                        <div class="customer-cards card">
+                            <div class="top-sections">
+                                <img src="images/testimonials.jpg" alt="">
+                                <p>Anthony Haggins</p>
+                            </div>
+                            <div class="botom-sections">
+                                <q>
+                                    I have used some of their services before and they offer the best services
+                                </q>
+                            </div>
+                        </div>
+                        <div class="customer-cards card">
+                            <div class="top-sections">
+                                <img src="images/testimonials.jpg" alt="">
+                                <p>Khalid Ball</p>
+                            </div>
+                            <div class="botom-sections">
+                                <q>
+                                    I have used some of their services before and they offer the best services
+                                </q>
+                            </div>
+                        </div>
+                        <div class="customer-cards card">
+                            <div class="top-sections">
+                                <img src="images/testimonials.jpg" alt="">
+                                <p>Anthony Haggins</p>
+                            </div>
+                            <div class="botom-sections">
+                                <q>
+                                    I have used some of their services before and they offer the best services
+                                </q>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="row py-4">
-                <div class="col-sm-4">
-                    <h3 class="header-text">Testimonials</h3>
-                    <h4>What does our customer says about us.</h4>
-                </div>
-                <div class="col-sm-8" id="testimonials-cards">
-                    <div class="customer-cards card">
-                        <div class="top-sections">
-                            <img src="images/testimonials.jpg" alt="">
-                            <p>Anthony Haggins</p>
-                        </div>
-                        <div class="botom-sections">
-                            <q>
-                                I have used some of their services before and they offer the best services
-                            </q>
-                        </div>
-                    </div>
-                    <div class="customer-cards card">
-                        <div class="top-sections">
-                            <img src="images/testimonials.jpg" alt="">
-                            <p>Khalid Ball</p>
-                        </div>
-                        <div class="botom-sections">
-                            <q>
-                                I have used some of their services before and they offer the best services
-                            </q>
-                        </div>
-                    </div>
-                    <div class="customer-cards card">
-                        <div class="top-sections">
-                            <img src="images/testimonials.jpg" alt="">
-                            <p>Anthony Haggins</p>
-                        </div>
-                        <div class="botom-sections">
-                            <q>
-                                I have used some of their services before and they offer the best services
-                            </q>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <?php
         include("includes/footer.php");
     ?>
 </body>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: "slide",
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+        },
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+        });
+    </script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/formValidations.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

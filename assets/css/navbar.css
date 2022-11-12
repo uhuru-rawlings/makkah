@@ -1,6 +1,7 @@
 nav{
     background-color: #FFFFFF;
     color: #0B4EAA;
+    z-index: 100%;
 }
 .menu-section ul li a{
     color: #0B4EAA !important;
@@ -15,6 +16,9 @@ nav .btn:hover{
     border-color: #F15A30;
     color: #F15A30;
     border-radius: 30px;
+}
+#menu-list ul li{
+    display: inline;
 }
 .menu-list ul li:hover{
     background-color: #0B4EAA;

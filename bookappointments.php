@@ -8,6 +8,9 @@
 </head>
 <body>
     <?php
+        if(!isset($_COOKIE['adminuser'])){
+            header("Location: login.php");
+        }
         if(isset($_POST['save'])){
             ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
             include_once("admin/database/Database.php");

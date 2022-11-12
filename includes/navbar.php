@@ -12,6 +12,7 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about-us.php">About</a></li>
+                    <li><a href="contact.php">Contact us</a></li>
                     <li id="dropdown">
                         <a href="javascript:void(0)">Services</a>
                         <ul id="main-dropdown">
@@ -21,7 +22,6 @@
                             <li><a href="">Visa Assistance</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.php">Contact us</a></li>
                 </ul>
             </div>
         </div>

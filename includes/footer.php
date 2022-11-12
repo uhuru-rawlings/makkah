@@ -23,7 +23,7 @@
             </p>
             <form action="newsletter.php" method="post">
                 <div class="form-group">
-                    <input type="email" name="useremail" id="useremail" class="form-control" placeholder="Enter Email">
+                    <input type="email" name="useremail" id="useremail" class="form-control" placeholder="Enter Email" required>
                 </div>
                 <div class="form-group text-center">
                     <input type="submit" name="newsletter" value="Sign Up" class="btn btn-secondary">
@@ -41,16 +41,6 @@
         </div>
     </div>
 </footer>
-<?php
-    if(!isset($_COOKIE['adminuser'])){
-        echo "<script>
-                var url = window.location.href;
-                var url_array = url.split('/');
-                var new_ulr_array = url.split(url_array[url_array.length - 1])
-                window.location.href = new_ulr_array[0]+'login.php';
-            </script>";
-    }
-?>
 
 <script>
     const scrollToTop = () =>{
