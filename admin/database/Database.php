@@ -1,9 +1,15 @@
 <?php
     class Database {
-        private $db_host     = "127.0.0.1";
-        private $db_user     = "root";
-        private $db_password = "";
-        private $db_name     = "alishan_tour";
+        // private $db_host     = "127.0.0.1";
+        // private $db_user     = "root";
+        // private $db_password = "";
+        // private $db_name     = "alishan_tour";
+
+        private $db_host     = "localhost";
+        private $db_user     = "rc5";
+        private $db_password = "Ntheketha26*";
+        private $db_name     = "alihsan";
+
         private $conn;
 
         public function connection()

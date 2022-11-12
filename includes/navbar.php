@@ -27,6 +27,6 @@
         </div>
     </div>
     <div class="sign-in">
-        <a href="login.php"><button class="btn shadow-none">Login/Signup</button></a>
+        <a href="login.php"><button class="btn shadow-none">Login / Signup</button></a>
     </div>
 </nav>
