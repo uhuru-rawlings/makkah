@@ -1046,6 +1046,48 @@ section
 	width: 100%;
 	height: 100%;
 }
+.search_panel form .form-control{
+	background-color: inherit;
+	color: #FFFFFF;
+	border-radius: 0;
+	border: none;
+	border-bottom: 2px solid #FFFFFF;
+	outline: none !important;
+}
+#core_values{
+	display: flex;
+	justify-content: space-between;
+}
+#core_values #transparency{
+	background-size: 100% 100%;
+	height: 300px;
+	width: 250px;
+	position: relative;
+}
+#core_values #quality,#core_values #respect,#core_values #integrity,#core_values #transparency{
+	background-size: 100% 100%;
+	height: 300px;
+	width: 250px;
+	position: relative;
+}
+#core_values #transparency img,#core_values #quality img,#core_values #respect img,#core_values #integrity img{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	object-fit: cover;
+}
+.core_values_text{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(239, 145, 10,.7);
+	height: 50%;
+	color: #FFFFFF;
+}
+.core_values_text p{
+	color: #FFFFFF;
+}
 .search_input
 {
 	width: 100%;
