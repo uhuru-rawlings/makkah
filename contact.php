@@ -1,73 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo (2).png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="fontawesome/css/brands.css">
-    <link rel="stylesheet" href="fontawesome/css/regular.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <title>ALIHSAN TOUR & TRAVEL LTD</title>
+<title>Contact</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travelix Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
 </head>
+
 <body>
-    <div class="spear-header-slider">
-        <div class="image-sliders">
-            <img src="images/background-1.jpg" alt="">
-        </div>
-        <div class="black-overlay">
-            <?php
-                include("includes/navbar.php");
-            ?>
-        </div>
-    </div>
-    <div class="contact-us-section" id="contact-us-section">
-        <div class="container py-4">
-            <h1 class="header-text">Talk To Us</h1>
-            <div class="row">
-                <div class="col-sm-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127642.11182818291!2d36.821051!3d-1.2843240000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5feca0500bd24aeb!2sJKUAT%20Towers!5e0!3m2!1sen!2sus!4v1666785399093!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-sm-7">
-                    <form action="contact-fun.php" autocomplete="off" method="post">
-                        <div class="form-group">
-                            <label for="fullname">Fullname</label>
-                            <input type="text" oninput="removeErrors(this.id)" name="fullname" id="fullname" class="form-control" placeholder="Fullname">
-                        </div>
-                        <div class="form-group">
-                            <label for="emailadress">Email</label>
-                            <input type="email" oninput="removeErrors(this.id)" name="emailadress" id="emailadress" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phonenumber">Phone</label>
-                            <input type="tel" oninput="removeErrors(this.id)" name="phonenumber" id="phonenumber" class="form-control" placeholder="Phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea oninput="removeErrors(this.id)" name="message"  class="form-control" id="message" cols="30" rows="10">Message here...</textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" onclick="return validateContact()" value="SEND MESSAGE" class="btn btn-primary">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php
-        include("includes/footer.php");
-    ?>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<?php
+		include_once("includes/navbar.php");
+	?>
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="menu_close_container"><div class="menu_close"></div></div>
+			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<ul>
+				<li class="menu_item"><a href="index.php">home</a></li>
+				<li class="menu_item"><a href="about.php">about us</a></li>
+				<li class="menu_item"><a href="services.php">services</a></li>
+				<li class="menu_item"><a href="contact.php">contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact_background.jpg"></div>
+		<div class="home_content">
+			<div class="home_title">contact</div>
+		</div>
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact_form_section">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+
+					<!-- Contact Form -->
+					<div class="contact_form_container">
+						<div class="contact_title text-center">get in touch</div>
+						<form action="#" id="contact_form" class="contact_form text-center">
+							<input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Name" required="required" data-error="Name is required.">
+							<input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
+							<input type="text" id="contact_form_subject" class="contact_form_subject input_field" placeholder="Subject" required="required" data-error="Subject is required.">
+							<textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
+							<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">send message<span></span><span></span><span></span></button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- About -->
+	<div class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					
+					<!-- About - Image -->
+
+					<div class="about_image">
+						<img src="images/man.png" alt="">
+					</div>
+
+				</div>
+
+				<div class="col-lg-4">
+					
+					<!-- About - Content -->
+
+					<div class="about_content">
+						<div class="logo_container about_logo">
+							<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+						</div>
+						<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula iaculis consequat nisl. Nunc et suscipit urna pretium.</p>
+						<ul class="about_social_list">
+							<li class="about_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li class="about_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+							<li class="about_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li class="about_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li class="about_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="col-lg-3">
+					
+					<!-- About Info -->
+
+					<div class="about_info">
+						<ul class="contact_info_list">
+							<li class="contact_info_item d-flex flex-row">
+								<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+								<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
+							</li>
+							<li class="contact_info_item d-flex flex-row">
+								<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+								<div class="contact_info_text">2556-808-8613</div>
+							</li>
+							<li class="contact_info_item d-flex flex-row">
+								<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+								<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
+							</li>
+							<li class="contact_info_item d-flex flex-row">
+								<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+								<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Google Map -->
+		
+	<div class="travelix_map">
+		<div id="google_map" class="google_map">
+			<div class="map_container">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_column">
+					<div class="footer_col">
+						<div class="footer_content footer_about">
+							<div class="logo_container footer_logo">
+								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+							</div>
+							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
+							<ul class="footer_social_list">
+								<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_column">
+					<div class="footer_col">
+						<div class="footer_title">blog posts</div>
+						<div class="footer_content footer_blog">
+							
+							<!-- Footer blog item -->
+							<div class="footer_blog_item clearfix">
+								<div class="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
+								<div class="footer_blog_content">
+									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
+									<div class="footer_blog_date">Nov 29, 2017</div>
+								</div>
+							</div>
+							
+							<!-- Footer blog item -->
+							<div class="footer_blog_item clearfix">
+								<div class="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
+								<div class="footer_blog_content">
+									<div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
+									<div class="footer_blog_date">Nov 29, 2017</div>
+								</div>
+							</div>
+
+							<!-- Footer blog item -->
+							<div class="footer_blog_item clearfix">
+								<div class="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
+								<div class="footer_blog_content">
+									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
+									<div class="footer_blog_date">Nov 29, 2017</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_column">
+					<div class="footer_col">
+						<div class="footer_title">tags</div>
+						<div class="footer_content footer_tags">
+							<ul class="tags_list clearfix">
+								<li class="tag_item"><a href="#">design</a></li>
+								<li class="tag_item"><a href="#">fashion</a></li>
+								<li class="tag_item"><a href="#">music</a></li>
+								<li class="tag_item"><a href="#">video</a></li>
+								<li class="tag_item"><a href="#">party</a></li>
+								<li class="tag_item"><a href="#">photography</a></li>
+								<li class="tag_item"><a href="#">adventure</a></li>
+								<li class="tag_item"><a href="#">travel</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_column">
+					<div class="footer_col">
+						<div class="footer_title">contact info</div>
+						<div class="footer_content footer_contact">
+							<ul class="contact_info_list">
+								<li class="contact_info_item d-flex flex-row">
+									<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+									<div class="contact_info_text">2556-808-8613</div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+									<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<!-- Copyright -->
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 order-lg-1 order-2  ">
+					<div class="copyright_content d-flex flex-row align-items-center">
+						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+					</div>
+				</div>
+				<div class="col-lg-9 order-lg-2 order-1">
+					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
+						<div class="footer_nav">
+							<ul class="footer_nav_list">
+								<li class="footer_nav_item"><a href="index.html">home</a></li>
+								<li class="footer_nav_item"><a href="about.html">about us</a></li>
+								<li class="footer_nav_item"><a href="offers.html">offers</a></li>
+								<li class="footer_nav_item"><a href="blog.html">news</a></li>
+								<li class="footer_nav_item"><a href="#">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<script src="js/contact_custom.js"></script>
+
 </body>
-<script src="assets/js/validation.js"></script>
-<script src="assets/js/index.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="fontawesome/js/all.js"></script>
-<script src="fontawesome/js/brands.js"></script>
-<script src="fontawesome/js/regular.js"></script>
+
 </html>

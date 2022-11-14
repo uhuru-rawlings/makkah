@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="fontawesome/css/regular.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <title>ALIHSAN TOUR & TRAVEL LTD</title>
+    <title>Al-Ihsan Tours & Travel Ltd</title>
 </head>
 <body>
     <?php 
