@@ -1057,6 +1057,7 @@ section
 #core_values{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 #core_values #transparency{
 	background-size: 100% 100%;
