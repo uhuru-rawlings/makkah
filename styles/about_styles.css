@@ -58,7 +58,7 @@
 }
 body
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	background: #FFFFFF;
@@ -79,7 +79,7 @@ ul
 }
 p
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	line-height: 2;
 	font-weight: 400;
@@ -136,7 +136,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -375,7 +375,7 @@ section
 {
 	color: #fa9e1c;
 }
-.social_list_item a i
+.social_list_item a
 {
 	font-size: 12px;
 	color: #FFFFFF;
@@ -457,7 +457,7 @@ section
 }
 .logo a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
 	color: #f4f4f8;
 	font-weight: 800;
@@ -483,6 +483,9 @@ section
 {
 	margin-right: 221px;
 }
+#marked_list .list_check{
+	color: #ef910a;
+}
 .main_nav_item
 {
 	position: relative;
@@ -495,7 +498,7 @@ section
 }
 .main_nav_item a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	color: #FFFFFF;
@@ -1144,7 +1147,9 @@ section
 }
 .footer_social_item
 {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	width: 31px;
 	height: 31px;
 	border: solid 1px #fa9e1b;
@@ -1156,6 +1161,13 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 	margin-right: 9px;
+}
+.footer_social_list{
+	display: flex;
+	column-gap: 15px;
+}
+.footer_social_list a{
+	color: #FFFFFF;
 }
 .footer_social_item:last-child
 {

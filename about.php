@@ -7,6 +7,9 @@
 <meta name="description" content="Travelix Project">
 <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -89,36 +92,42 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="marked_list">
 					<div class="section_title">Mission</div>
 					<ul>
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							We seek service excellence and will provide quality service at a cost that will enable us to remain competitive.
-						</li> 
+						</p> 
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							Expand our relationship with airlines, charter flight operators, hotels, tour operators, and travel agents within East Africa and overseas.
-						</li>
+						</p>
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							To Deliver overall satisfaction to our clients while fulfilling their requirements and needs with assistance from our experienced and professional team with total commitment to the satisfaction of our client
-						</li>
+						</p>
 					</ul>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="marked_list">
 					<div class="section_title">Vision</div>
 					<ul>
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							Travel leading Travel Agency in the travel industry, providing our customers with the best and most effective services.
-						</li>
+						</p>
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							To be one of the well–known leading Hajj and Umrah agencies in Kenya.
-						</li> 
+						</p> 
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							Provide new cultural exchange in unique ways by creating a multi-tourism, Hajj, and Umrah business.
-						</li>
+						</p>
 					</ul>
 				</div>
 			</div>
@@ -134,31 +143,37 @@
 				<div class="col-sm-4">
 					Our proven track record speaks for itself. Over the years, we have provided services par excellence that value and empower our clients. Many factors make us your best choice in air travel and accommodation booking. This includes: 
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-8" id="marked_list">
 					<ul>
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							We have the latest market information, including airlines offering discounts on tickets, and we are always happy to forward this to our customers.
-						</li>
+						</p>
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							We book our customers on the most reliable airlines offering the best quality services at competitive rates.
-						</li> 
+						</p> 
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							We understand global destinations like the back of our hands. We are thus able to advise our clients on applicable rules, taxes, and exchange rates, among other things that make traveling hassle-free and fun.
-						</li> 
+						</p> 
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							We help our clients in arranging airport pick-up services, ho­tel booking, and other critical logistical issues that come in handy, especially for first-time travelers to destinations of choice.
-						</li> 
+						</p> 
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							Multilingual staff speaking different languages, including English, Arabic, Kiswahili, Dutch, and Somali.
-						</li>
+						</p>
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							Finally, our customer service is fast and effective, and we go the extra mile to ensure our customers feel appreciated.
-						</li>
+						</p>
 					</ul>
 				</div>
 			</div>

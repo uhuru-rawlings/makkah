@@ -13,6 +13,11 @@ include("admin/models/Destinations.php");
 	<meta name="description" content="Travelix Project">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -448,29 +453,35 @@ include("admin/models/Destinations.php");
 						We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
 						</p>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-6" id="marked_list">
 							<ul>
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
-								</li>
+								</p>
 
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									Produce expeditions and memories that would satisfy every single customer. 
-								</li>
+								</p>
 
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence.
-								</li> 
-								<li>
+								</p> 
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
-								</li>
-								<li>
+								</p>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									We recognize the responsibility and opportunity to contribute to society and make a meaningful difference.
-								</li>
+								</p>
 
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 								 	We Participate in local and regional community service by providing general lectures, consultation, and training programs.
-								</li>
+								</p>
 							</ul>
 					</div>
 				</div>

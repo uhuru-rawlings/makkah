@@ -15,9 +15,9 @@
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
-								<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<a href="#"><li class="footer_social_item"><i class="fa-brands fa-facebook-f"></i></li></a>
+								<a href="#"><li class="footer_social_item"><i class="fa-brands fa-twitter"></i></li></a>
+								<a href="#"><li class="footer_social_item"><i class="fa-brands fa-linkedin"></i></li></a>
 							</ul>
 						</div>
 					</div>
@@ -101,3 +101,6 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="js/all.js"></script>
+	<script src="js/solid.js"></script>
