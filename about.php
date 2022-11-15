@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -126,18 +127,39 @@
 
 	<!-- Add -->
 
-	<div class="add">
+	<div class="why_choose_us">
 		<div class="container">
+			<div class="section_title text-center">Why Choose Us</div>
 			<div class="row">
-				<div class="col">
-					<div class="add_container">
-						<div class="add_background" style="background-image:url(images/add.jpg)"></div>
-						<div class="add_content">
-							<h1 class="add_title">thailand</h1>
-							<div class="add_subtitle">From <span>$999</span></div>
-							<div class="button add_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
-						</div>
-					</div>
+				<div class="col-sm-4">
+					Our proven track record speaks for itself. Over the years, we have provided services par excellence that value and empower our clients. Many factors make us your best choice in air travel and accommodation booking. This includes: 
+				</div>
+				<div class="col-sm-8">
+					<ul>
+						<li>
+							We have the latest market information, including airlines offering discounts on tickets, and we are always happy to forward this to our customers.
+						</li>
+
+						<li>
+							We book our customers on the most reliable airlines offering the best quality services at competitive rates.
+						</li> 
+
+						<li>
+							We understand global destinations like the back of our hands. We are thus able to advise our clients on applicable rules, taxes, and exchange rates, among other things that make traveling hassle-free and fun.
+						</li> 
+
+						<li>
+							We help our clients in arranging airport pick-up services, ho­tel booking, and other critical logistical issues that come in handy, especially for first-time travelers to destinations of choice.
+						</li> 
+
+						<li>
+							Multilingual staff speaking different languages, including English, Arabic, Kiswahili, Dutch, and Somali.
+						</li>
+
+						<li>
+							Finally, our customer service is fast and effective, and we go the extra mile to ensure our customers feel appreciated.
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

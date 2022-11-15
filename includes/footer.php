@@ -82,7 +82,7 @@
 				<div class="col-lg-3 order-lg-1 order-2  ">
 					<div class="copyright_content d-flex flex-row align-items-center">
 						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by: by <a href="http://fourtechglobalsolutions.com" target="_blank">Fourtech</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
 						<div class="footer_nav">
 							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="#">home</a></li>
+								<li class="footer_nav_item"><a href="index.php">home</a></li>
 								<li class="footer_nav_item"><a href="about.php">about us</a></li>
 								<li class="footer_nav_item"><a href="services.php">Services</a></li>
 								<li class="footer_nav_item"><a href="contact.php">contact</a></li>
