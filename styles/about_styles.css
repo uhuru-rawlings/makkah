@@ -253,7 +253,7 @@ section
 	left: 0;
 	width: 200%;
 	height: 100%;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+	background: linear-gradient(to right, #F15A30, #8d4fff, #F15A30);
 	z-index: -1;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -315,7 +315,7 @@ section
 {
 	position: fixed;
 	width: 100%;
-	background: rgba(54, 19, 84, 0.6);
+	background: rgba(54, 19, 84,0.85);
 	z-index: 12;
 }
 .header.scrolled
@@ -373,7 +373,7 @@ section
 }
 .social_list_item:hover a i
 {
-	color: #fa9e1c;
+	color: #F15A30;
 }
 .social_list_item a
 {
@@ -404,7 +404,7 @@ section
 }
 .user_box_link a:hover
 {
-	color: #fa9e1c;
+	color: #F15A30;
 }
 .user_box_login
 {
@@ -484,7 +484,7 @@ section
 	margin-right: 221px;
 }
 #marked_list .list_check{
-	color: #ef910a;
+	color: #F15A30;
 }
 .main_nav_item
 {
@@ -514,7 +514,7 @@ section
 	bottom: -11px;
 	width: calc(100% + 2px);
 	height: 2px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #F15A30, #8d4fff);
 	content: '';
 	opacity: 0;
 	-webkit-transition: all 200ms ease;
@@ -559,11 +559,11 @@ section
 }
 .content_search:hover .mag_glass
 {
-	fill: #fa9e1c;
+	fill: #F15A30;
 }
 .content_search:hover .mag_glass
 {
-	fill: #fa9e1c;
+	fill: #F15A30;
 }
 .search_form
 {
@@ -631,14 +631,14 @@ section
 }
 .hamburger:hover i
 {
-	color: #fa9e1c;
+	color: #F15A30;
 }
 .menu
 {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #F15A30, #8d4fff);
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -747,7 +747,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #fa9e1c;
+	background: #F15A30;
 }
 
 /*********************************
@@ -866,11 +866,11 @@ section
 .rating_4 i:first-child{color: #ffeb8d;}
 .rating_4 i:nth-child(2){color: #fed46b;}
 .rating_4 i:nth-child(3){color: #fbb53d;}
-.rating_4 i:nth-child(4){color: #fa9e1b;}
+.rating_4 i:nth-child(4){color: #F15A30;}
 .rating_5 i:first-child{color: #ffeb8d;}
 .rating_5 i:nth-child(2){color: #fed46b;}
 .rating_5 i:nth-child(3){color: #fbb53d;}
-.rating_5 i:nth-child(4){color: #fa9e1b;}
+.rating_5 i:nth-child(4){color: #F15A30;}
 .rating_r i::before
 {
 	font-family: 'FontAwesome';
@@ -888,12 +888,12 @@ section
 .rating_r_4 i:first-child::before{color: #ffeb8d; content: "\f005";}
 .rating_r_4 i:nth-child(2)::before{color: #fed46b; content: "\f005";}
 .rating_r_4 i:nth-child(3)::before{color: #fbb53d; content: "\f005";}
-.rating_r_4 i:nth-child(4)::before{color: #fa9e1b; content: "\f005";}
+.rating_r_4 i:nth-child(4)::before{color: #F15A30; content: "\f005";}
 .rating_r_5 i:first-child::before{color: #ffeb8d; content: "\f005";}
 .rating_r_5 i:nth-child(2)::before{color: #fed46b; content: "\f005";}
 .rating_r_5 i:nth-child(3)::before{color: #fbb53d; content: "\f005";}
-.rating_r_5 i:nth-child(4)::before{color: #fa9e1b; content: "\f005";}
-.rating_r_5 i:nth-child(5)::before{color: #ef910a; content: "\f005";}
+.rating_r_5 i:nth-child(4)::before{color: #F15A30; content: "\f005";}
+.rating_r_5 i:nth-child(5)::before{color: #F15A30; content: "\f005";}
 
 /*********************************
 8. Stats
@@ -927,7 +927,7 @@ section
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 700;
-	color: #fa9e1b;
+	color: #F15A30;
 }
 .stats_item
 {
@@ -1152,7 +1152,7 @@ section
 	align-items: center;
 	width: 31px;
 	height: 31px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #F15A30;
 	border-radius: 50%;
 	text-align: center;
 	-webkit-transition: all 200ms ease;
@@ -1200,7 +1200,7 @@ section
 }
 .footer_social_item:hover
 {
-	background: #fa9e1b;
+	background: #F15A30;
 }
 .footer_social_item:hover a i
 {
@@ -1250,13 +1250,13 @@ section
 }
 .footer_blog_title a:hover
 {
-	color: #fa9e1b;
+	color: #F15A30;
 }
 .footer_blog_date
 {
 	font-size: 12px;
 	font-weight: 400;
-	color: #fa9e1b;
+	color: #F15A30;
 	margin-top: 7px;
 }
 
@@ -1274,7 +1274,7 @@ section
 	float: left;
 	margin-right: 9px;
 	margin-bottom: 9px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #F15A30;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1283,7 +1283,7 @@ section
 }
 .tag_item:hover
 {
-	background: #fa9e1b;
+	background: #F15A30;
 }
 .tag_item a
 {
@@ -1329,7 +1329,7 @@ section
 .contact_info_item:hover .contact_info_text,
 .contact_info_item:hover .contact_info_text a
 {
-	color: #fa9e1b;
+	color: #F15A30;
 }
 
 /*********************************
