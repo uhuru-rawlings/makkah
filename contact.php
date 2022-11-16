@@ -80,12 +80,28 @@
 					<!-- Contact Form -->
 					<div class="contact_form_container">
 						<div class="contact_title text-center">get in touch</div>
-						<form action="#" id="contact_form" class="contact_form text-center">
-							<input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Name" required="required" data-error="Name is required.">
-							<input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
-							<input type="text" id="contact_form_subject" class="contact_form_subject input_field" placeholder="Subject" required="required" data-error="Subject is required.">
-							<textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-							<button type="submit" id="form_submit_button" class="form_submit_button button trans_200">send message<span></span><span></span><span></span></button>
+						<form action="contact-fun.php" autocomplete="off" method="post">
+							<div class="row">
+								<div class="form-group col-sm-6">
+									<label for="fullname">Fullname</label>
+									<input type="text" oninput="removeErrors(this.id)" name="fullname" id="fullname" class="form-control" placeholder="Fullname">
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="emailadress">Email</label>
+									<input type="email" oninput="removeErrors(this.id)" name="emailadress" id="emailadress" class="form-control" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="phonenumber">Phone</label>
+								<input type="tel" oninput="removeErrors(this.id)" name="phonenumber" id="phonenumber" class="form-control" placeholder="Phone">
+							</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea oninput="removeErrors(this.id)" name="message"  class="form-control" id="message" cols="30" rows="10">Message here...</textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" id="form_submit_button" class="form_submit_button button trans_200" onclick="return validateContact()">send message<span></span><span></span><span></span></button>
+							</div>
 						</form>
 					</div>
 

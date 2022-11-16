@@ -1335,3 +1335,20 @@ section
 {
 	color: #FFFFFF;
 }
+.contact_form_container{
+	color: #FFFFFF;
+}
+.contact_form_container form .form-control::placeholder{
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.contact_form_container form .form-control{
+	border: none;
+	border-radius: 0;
+	background-color: inherit;
+	border-bottom: 2px solid #FFFFFF;
+	color: #FFFFFF;
+}
+.contact_form_container form textarea.form-control{
+	height: 100px;
+}
