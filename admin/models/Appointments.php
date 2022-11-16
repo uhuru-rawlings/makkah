@@ -23,7 +23,7 @@
 
         public function getAppointments()
         {
-            $sql = "SELECT * FROM Visa_Appointments";
+            $sql = "SELECT * FROM Visa_Appointments ORDER BY id DESC";
             $query = $this -> conn -> prepare($sql);
             $query -> execute();
             if($query){

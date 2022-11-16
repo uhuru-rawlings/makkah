@@ -5,7 +5,7 @@
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Offers</title>
+<title>Services</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
