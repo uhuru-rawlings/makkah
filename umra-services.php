@@ -82,7 +82,7 @@
                                             <i></i>
                                         </div>
                                         <p class="offers_text" id="marked_list">
-                                        This visa is designed for Muslims who wish to make a pilgrimage to Mecca and other holy sites outside of the traditional Hajj period. AL-IHSAN Tours & Travel Ltd offers private and group packages of monthly umrah services.
+                                        This visa is designed for Muslims who wish to make a pilgrimage to Mecca and other holy sites outside of the traditional Hajj period. Al-Ihsan Tours & Travel Ltd offers private and group packages of monthly umrah services.
 
                                         We offer;
                                             <p>
@@ -120,7 +120,7 @@
                 <div class="col-sm-4">
                     <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Umrah Packages </h3>
                     <br>
-                    AL-IHSAN Tours & Travel Ltd provides a variety of umrah packages, including the umrah tour group package. Each Umrah package has certain specifications over one, and you can book the umrah packages suitable for you in terms of need and want. 
+                    Al-Ihsan Tours & Travel Ltd provides a variety of umrah packages, including the umrah tour group package. Each Umrah package has certain specifications over one, and you can book the umrah packages suitable for you in terms of need and want. 
 
                     Each umrah package is designed keeping in view the utmost hospitality and comfort of the pilgrims. So, providing a variety of umrah packages gives pilgrims a choice so they can select the umrah package according to their need, want, and budget. We are on the ground to help you organize a lifetime worth remembering journey to Makkah and Madinah.
                 </div>

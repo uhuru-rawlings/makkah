@@ -1425,6 +1425,14 @@ section
 9. Offers
 *********************************/
 
+.gpadding
+{
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 43px;
+
+}
+
 .offers
 {
 	width: 100%;

@@ -119,7 +119,7 @@
                 <div class="col-sm-6">
                     <h3 class="header-text">Airline Ticketing & Reservation</h3>
                     <p>
-                        Thank you in advance for choosing our services at AL-IHSAN Tours & Travel Ltd. Stating confidently that you are here at the pane of a professional journey and tour, eager to create a long-term business relationship with you.
+                        Thank you in advance for choosing our services at Al-Ihsan Tours & Travel Ltd. Stating confidently that you are here at the pane of a professional journey and tour, eager to create a long-term business relationship with you.
                     </p>
                     <p>
                         We are the experts in air ticketing in the region. Whether you are fly­ing alone, with your family, or as a team, we offer the most afford­able and reliable air ticketing services for domestic and international flights. 
