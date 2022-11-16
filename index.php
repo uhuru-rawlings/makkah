@@ -6,7 +6,7 @@ include("admin/models/Destinations.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Travelix</title>
+	<title>Al-Ihsan Tours & Travel Ltd</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Travelix Project">
@@ -128,7 +128,7 @@ include("admin/models/Destinations.php");
 						<defs>
 							<linearGradient id='home_grad_prev'>
 								<stop offset='0%' stop-color='#fa9e1b' />
-								<stop offset='100%' stop-color='#8d4fff' />
+								<stop offset='100%' stop-color='#0143a9' />
 							</linearGradient>
 						</defs>
 						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
@@ -145,7 +145,7 @@ include("admin/models/Destinations.php");
 						<defs>
 							<linearGradient id='home_grad_next'>
 								<stop offset='0%' stop-color='#fa9e1b' />
-								<stop offset='100%' stop-color='#8d4fff' />
+								<stop offset='100%' stop-color='#0143a9' />
 							</linearGradient>
 						</defs>
 						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
@@ -610,7 +610,7 @@ include("admin/models/Destinations.php");
 									<defs>
 										<linearGradient id='cta_grad_prev'>
 											<stop offset='0%' stop-color='#fa9e1b' />
-											<stop offset='100%' stop-color='#8d4fff' />
+											<stop offset='100%' stop-color='#0143a9' />
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
@@ -627,7 +627,7 @@ include("admin/models/Destinations.php");
 									<defs>
 										<linearGradient id='cta_grad_next'>
 											<stop offset='0%' stop-color='#fa9e1b' />
-											<stop offset='100%' stop-color='#8d4fff' />
+											<stop offset='100%' stop-color='#0143a9' />
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
@@ -1008,7 +1008,7 @@ include("admin/models/Destinations.php");
 									<defs>
 										<linearGradient id='test_grad_prev'>
 											<stop offset='0%' stop-color='#fa9e1b' />
-											<stop offset='100%' stop-color='#8d4fff' />
+											<stop offset='100%' stop-color='#0143a9' />
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
@@ -1025,7 +1025,7 @@ include("admin/models/Destinations.php");
 									<defs>
 										<linearGradient id='test_grad_next'>
 											<stop offset='0%' stop-color='#fa9e1b' />
-											<stop offset='100%' stop-color='#8d4fff' />
+											<stop offset='100%' stop-color='#0143a9' />
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z

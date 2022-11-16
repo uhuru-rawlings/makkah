@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="fontawesome/css/brands.css">
     <link rel="stylesheet" href="fontawesome/css/regular.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>ALIHSAN TOUR & TRAVEL LTD</title>
+    <title>Al-Ihsan Tours & Travel Ltd</title>
 </head>
 <body>
     <div class="login-form-section">

@@ -116,8 +116,8 @@
 					<ul>
 						<p>
 							<span class="list_check"><i class="fa-solid fa-check"></i></span>
-							Travel leading Travel Agency in the travel industry, providing our customers with the best and most effective services.
-						</p>
+							Travel leading Travel Agency in the travel industry, providing our customers with the best and most effective services. </p>
+
 
 						<p>
 							<span class="list_check"><i class="fa-solid fa-check"></i></span>

@@ -359,7 +359,7 @@ $(document).ready(function()
 						thickness: 3,
 						size: 176,
 						emptyFill:"transparent",
-						fill: {gradient:["#fa9e1b", "#8d4fff"]},
+						fill: {gradient:["#fa9e1b", "#0143a9"]},
 					}).on('circle-animation-progress', function(event, progress, stepValue)
 						{
 							$(this).find('strong').text(Math.round(stepValue * 100) + "%");

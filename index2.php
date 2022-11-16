@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <title>ALIHSAN TOUR & TRAVEL LTD</title>
+    <title>Al-Ihsan Tours & Travel Ltd</title>
 </head>
 <body>
     <div class="spear-header-slider">
