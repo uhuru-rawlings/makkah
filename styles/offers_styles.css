@@ -1806,3 +1806,49 @@ section
 {
 	color: #FFFFFF;
 }
+.overlay_white{
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 2342676554;
+}
+.booking_models{
+	background-image: linear-gradient(210deg,#fa9e1b,#31124b);
+	position: absolute;
+	height: fit-content;
+	width: 40%;
+	margin: auto;
+	padding: 20px;
+	color: #FFFFFF;
+}
+.booking_models .card,.booking_models .card-header,.booking_models .card-footer{
+	background-color: inherit;
+}
+.booking_models form .form-control{
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid #FFFFFF;
+	background-color: inherit !important;
+	color: #FFFFFF;
+	outline-offset: 0px;
+	outline: none;
+	height: 30px;
+}
+.booking_models form .form-group{
+	margin-bottom: 10px;
+}
+.form-control:hover, 
+.form-control:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+.booking_models form option{
+	color: #fa9e1c;
+}

@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+	include_once("admin/database/Database.php");
+	include_once("admin/models/Airline.php");
+	include("admin/models/Destinations.php");
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Offers</title>
@@ -273,7 +277,59 @@
 			</div>
 		</div>		
 	</div>
-
+	<div class="overlay_white">
+		<div class="booking_models" id="hotel-booking">
+			<div class="card">
+				<div class="card-header">
+					Book Hotel
+				</div>
+				<div class="card-body">
+				<form action="bookhotel-fun.php" method="post" class="w-100">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label for="hetels">Hotels</label>
+								<select oninput="removeErrors(this.id)" name="hetels" id="hetels" class="shadow-none form-control">
+									<?php
+									$conn = new Database();
+									$db = $conn->connection();
+									$hotels = new Destinations($db);
+									$location  = $hotels->getDestinations();
+									foreach ($location as $location) {
+										echo "<option value='{$location['Location_Name']}'>" . $location['Location_Name'] . "</option>";
+									}
+									?>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="numbers">Number of People</label>
+								<input type="number" oninput="removeErrors(this.id)" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label for="fromdate">From Date</label>
+								<input type="date" oninput="removeErrors(this.id)" name="fromdate" id="fromdate" class="shadow-none form-control">
+							</div>
+							<div class="form-group">
+								<label for="todate">To Date</label>
+								<input type="date" oninput="removeErrors(this.id)" name="todate" id="todate" class="shadow-none form-control">
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="form-group" style="margin-top: 20px;">
+								<input type="submit" value="Book Now" onclick="return validateHotelBooking()" name="bookhotel" class="btn btn-secondary" id="book">
+							</div>
+						</div>
+					</div>
+				</form>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-secondary">close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Footer -->
 
 	<?php
