@@ -193,7 +193,6 @@ include("admin/models/Destinations.php");
 						<div class="search_tabs_container">
 							<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 								<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
 								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
 								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">Hajj & Umrah</div>
 								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">Visa Assistance</div>
@@ -203,50 +202,6 @@ include("admin/models/Destinations.php");
 						<!-- Search Panel -->
 
 						<div class="search_panel active text-light">
-							<form action="bookhotel-fun.php" method="post" class="w-100">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="form-group">
-											<label for="hetels">Hotels</label>
-											<select oninput="removeErrors(this.id)" name="hetels" id="hetels" class="shadow-none form-control">
-												<?php
-												$conn = new Database();
-												$db = $conn->connection();
-												$hotels = new Destinations($db);
-												$location  = $hotels->getDestinations();
-												foreach ($location as $location) {
-													echo "<option value='{$location['Location_Name']}'>" . $location['Location_Name'] . "</option>";
-												}
-												?>
-											</select>
-										</div>
-										<div class="form-group">
-											<label for="numbers">Number of People</label>
-											<input type="number" oninput="removeErrors(this.id)" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="form-group">
-											<label for="fromdate">From Date</label>
-											<input type="date" oninput="removeErrors(this.id)" name="fromdate" id="fromdate" class="shadow-none form-control">
-										</div>
-										<div class="form-group">
-											<label for="todate">To Date</label>
-											<input type="date" oninput="removeErrors(this.id)" name="todate" id="todate" class="shadow-none form-control">
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="form-group" style="margin-top: 20px;">
-											<input type="submit" value="Book Now" onclick="return validateHotelBooking()" name="bookhotel" class="btn btn-secondary" id="book">
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-
-						<!-- Search Panel -->
-
-						<div class="search_panel text-light">
 							<form action="bookhotel-fun.php" method="post" class="w-100">
 								<div class="row">
 									<div class="col-sm-4">
@@ -1211,7 +1166,7 @@ include("admin/models/Destinations.php");
 		?>
 		<!-- footer -->
 	</div>
-
+	<script src="js/main.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="styles/bootstrap4/popper.js"></script>
 	<script src="styles/bootstrap4/bootstrap.min.js"></script>
