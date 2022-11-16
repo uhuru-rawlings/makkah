@@ -66,18 +66,18 @@
 							Al-Ihsan Tours & Travel Ltd started operations in 2015 in Amsterdam, Netherlands. The company is registered and licensed as a full-fledged travel and tourism management agency to operate inbound, outbound, and airline ticket reservations for domestic and international travelers.
 
 							AL-IHSAN Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.
-
-							AL-IHSAN also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
-
-							We have highly skilled travel experts who are taught the latest technologies yearly. Al Ihsan Tours & Travel Ltd has been at the forefront of travel pursuits to provide its clients with the best services and the lowest air tickets.
-
-							We provide for the travel needs of individuals, teams, and large groups to any place. So, whatever your flight tickets and travel requirements are, contact us immediately for the most economical tours and travel solutions.
-
-							The company’s vision is to give the best services to its customers with an emphasis on effectiveness, safety, and knowledge. 
 						</p>
-						<div class="button intro_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
 					</div>
 				</div>
+				<p class="intro_text">
+					AL-IHSAN also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
+
+					We have highly skilled travel experts who are taught the latest technologies yearly. Al Ihsan Tours & Travel Ltd has been at the forefront of travel pursuits to provide its clients with the best services and the lowest air tickets.
+
+					We provide for the travel needs of individuals, teams, and large groups to any place. So, whatever your flight tickets and travel requirements are, contact us immediately for the most economical tours and travel solutions.
+
+					The company’s vision is to give the best services to its customers with an emphasis on effectiveness, safety, and knowledge. 
+				</p>
 			</div>
 		</div>
 	</div>
