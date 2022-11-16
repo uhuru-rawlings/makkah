@@ -15,9 +15,9 @@
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
-								<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<a href="#"><li class="footer_social_item"><i class="fa-brands fa-facebook-f"></i></li></a>
+								<a href="#"><li class="footer_social_item"><i class="fa-brands fa-twitter"></i></li></a>
+								<a href="#"><li class="footer_social_item"><i class="fa-brands fa-linkedin"></i></li></a>
 							</ul>
 						</div>
 					</div>
@@ -82,7 +82,7 @@
 				<div class="col-lg-3 order-lg-1 order-2  ">
 					<div class="copyright_content d-flex flex-row align-items-center">
 						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by: by <a href="http://fourtechglobalsolutions.com" target="_blank">Fourtech</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
 						<div class="footer_nav">
 							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="#">home</a></li>
+								<li class="footer_nav_item"><a href="index.php">home</a></li>
 								<li class="footer_nav_item"><a href="about.php">about us</a></li>
 								<li class="footer_nav_item"><a href="services.php">Services</a></li>
 								<li class="footer_nav_item"><a href="contact.php">contact</a></li>
@@ -101,3 +101,6 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="js/all.js"></script>
+	<script src="js/solid.js"></script>

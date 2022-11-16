@@ -31,7 +31,7 @@
 
         public function getBookings()
         {
-            $sql = "SELECT Travel_Bookings.id,Travel_Bookings.Fullname,Travel_Bookings.Email,Travel_Bookings.Phone,Travel_Bookings.Location_id,Travel_Bookings.From_Date,Travel_Bookings.To_Date,Travel_Bookings.Travelers,Travel_Bookings.Status,Travel_Bookings.Date_added FROM Travel_Destinations INNER JOIN Travel_Bookings ON Travel_Bookings.Location_id = Travel_Destinations.id";
+            $sql = "SELECT Travel_Bookings.id,Travel_Bookings.Fullname,Travel_Bookings.Email,Travel_Bookings.Phone,Travel_Bookings.Location_id,Travel_Bookings.From_Date,Travel_Bookings.To_Date,Travel_Bookings.Travelers,Travel_Bookings.Status,Travel_Bookings.Date_added FROM Travel_Destinations INNER JOIN Travel_Bookings ON Travel_Bookings.Location_id = Travel_Destinations.id ORDER BY Travel_Bookings.id DESC";
             $query = $this -> conn -> prepare($sql);
             $query -> execute();
             $rows = $query -> rowCount();
@@ -46,7 +46,7 @@
 
         public function getSingleBooking()
         {
-            $sql = "SELECT Travel_Bookings.id,Travel_Bookings.Fullname,Travel_Bookings.Email,Travel_Bookings.Phone,Travel_Bookings.Location_id,Travel_Bookings.From_Date,Travel_Bookings.To_Date,Travel_Bookings.Travelers,Travel_Bookings.Status,Travel_Bookings.Date_added FROM Travel_Destinations INNER JOIN Travel_Bookings ON Travel_Bookings.Location_id = Travel_Destinations.id WHERE Travel_Bookings.id = ?";
+            $sql = "SELECT Travel_Bookings.id,Travel_Bookings.Fullname,Travel_Bookings.Email,Travel_Bookings.Phone,Travel_Bookings.Location_id,Travel_Bookings.From_Date,Travel_Bookings.To_Date,Travel_Bookings.Travelers,Travel_Bookings.Status,Travel_Bookings.Date_added FROM Travel_Destinations INNER JOIN Travel_Bookings ON Travel_Bookings.Location_id = Travel_Destinations.id WHERE Travel_Bookings.id = ?ORDER BY Travel_Bookings.id DESC";
             $query = $this -> conn -> prepare($sql);
             $query -> execute([$this -> id]);
             $rows = $query -> rowCount();

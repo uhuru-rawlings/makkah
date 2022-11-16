@@ -5,7 +5,6 @@ include("admin/models/Destinations.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>Al-Ihsan Tours & Travel Ltd</title>
 	<meta charset="utf-8">
@@ -13,6 +12,11 @@ include("admin/models/Destinations.php");
 	<meta name="description" content="Travelix Project">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -188,7 +192,6 @@ include("admin/models/Destinations.php");
 						<div class="search_tabs_container">
 							<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 								<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
 								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
 								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">Hajj & Umrah</div>
 								<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">Visa Assistance</div>
@@ -198,50 +201,6 @@ include("admin/models/Destinations.php");
 						<!-- Search Panel -->
 
 						<div class="search_panel active text-light">
-							<form action="bookhotel-fun.php" method="post" class="w-100">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="form-group">
-											<label for="hetels">Hotels</label>
-											<select oninput="removeErrors(this.id)" name="hetels" id="hetels" class="shadow-none form-control">
-												<?php
-												$conn = new Database();
-												$db = $conn->connection();
-												$hotels = new Destinations($db);
-												$location  = $hotels->getDestinations();
-												foreach ($location as $location) {
-													echo "<option value='{$location['Location_Name']}'>" . $location['Location_Name'] . "</option>";
-												}
-												?>
-											</select>
-										</div>
-										<div class="form-group">
-											<label for="numbers">Number of People</label>
-											<input type="number" oninput="removeErrors(this.id)" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="3" min="1">
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="form-group">
-											<label for="fromdate">From Date</label>
-											<input type="date" oninput="removeErrors(this.id)" name="fromdate" id="fromdate" class="shadow-none form-control">
-										</div>
-										<div class="form-group">
-											<label for="todate">To Date</label>
-											<input type="date" oninput="removeErrors(this.id)" name="todate" id="todate" class="shadow-none form-control">
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="form-group" style="margin-top: 20px;">
-											<input type="submit" value="Book Now" onclick="return validateHotelBooking()" name="bookhotel" class="btn btn-secondary" id="book">
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-
-						<!-- Search Panel -->
-
-						<div class="search_panel text-light">
 							<form action="bookhotel-fun.php" method="post" class="w-100">
 								<div class="row">
 									<div class="col-sm-4">
@@ -448,29 +407,35 @@ include("admin/models/Destinations.php");
 						We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
 						</p>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-6" id="marked_list">
 							<ul>
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
-								</li>
+								</p>
 
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									Produce expeditions and memories that would satisfy every single customer. 
-								</li>
+								</p>
 
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence.
-								</li> 
-								<li>
+								</p> 
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
-								</li>
-								<li>
+								</p>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 									We recognize the responsibility and opportunity to contribute to society and make a meaningful difference.
-								</li>
+								</p>
 
-								<li>
+								<p>
+									<span class="list_check"><i class="fa-solid fa-check"></i></span>
 								 	We Participate in local and regional community service by providing general lectures, consultation, and training programs.
-								</li>
+								</p>
 							</ul>
 					</div>
 				</div>
@@ -851,40 +816,56 @@ include("admin/models/Destinations.php");
 					</div>
 				</div>
 				<div id="core_values">
-					<div id="transparency">
-						<img src="img/transparency.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Transparency</h4>
-							<p>
-								Building trust in all business and personal dealings.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4" style="height: 220px;">
+							<img src="img/transparency.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Transparency</h4>
+								<p>
+									Building trust in all business and personal dealings.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div id="quality">
-						<img src="img/quanlity.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Quality</h4>
-							<p>
-								We provide outstanding products and services that deliver premium value to our clients and end agents.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<img src="img/quanlity.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Quality</h4>
+								<p>
+									We provide outstanding products and services that deliver premium value to our clients and end agents.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div id="respect">
-						<img src="img/respect.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Respect</h4>
-							<p>
-								For ourselves, our guests, our partners, and our team.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<img src="img/respect.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Respect</h4>
+								<p>
+									For ourselves, our guests, our partners, and our team.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div id="integrity">
-						<img src="img/integrity.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Integrity</h4>
-							<p>
-								We uphold the highest standards of integrity in all our actions.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<img src="img/integrity.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Integrity</h4>
+								<p>
+									We uphold the highest standards of integrity in all our actions.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1200,7 +1181,7 @@ include("admin/models/Destinations.php");
 		?>
 		<!-- footer -->
 	</div>
-
+	<script src="js/main.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="styles/bootstrap4/popper.js"></script>
 	<script src="styles/bootstrap4/bootstrap.min.js"></script>

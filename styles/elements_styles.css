@@ -59,7 +59,7 @@
 }
 body
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	background: #FFFFFF;
@@ -80,7 +80,7 @@ ul
 }
 p
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	line-height: 2;
 	font-weight: 400;
@@ -137,7 +137,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -255,7 +255,7 @@ section
 	left: 0;
 	width: 200%;
 	height: 100%;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+	background: linear-gradient(to right, #F15A30, #8d4fff, #F15A30);
 	z-index: -1;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -459,7 +459,7 @@ section
 }
 .logo a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
 	color: #f4f4f8;
 	font-weight: 800;
@@ -497,7 +497,7 @@ section
 }
 .main_nav_item a
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	color: #FFFFFF;
@@ -513,7 +513,7 @@ section
 	bottom: -11px;
 	width: calc(100% + 2px);
 	height: 2px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #F15A30, #8d4fff);
 	content: '';
 	opacity: 0;
 	-webkit-transition: all 200ms ease;
@@ -637,7 +637,7 @@ section
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #F15A30, #8d4fff);
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -832,7 +832,7 @@ section
 }
 .button_color_2
 {
-	background: #fa9e1b;
+	background: #F15A30;
 }
 .button_color_2:hover
 {
@@ -1076,7 +1076,7 @@ section
 }
 .loader strong
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	position: absolute;
 	top: 53px;
 	left: 0;
@@ -1189,7 +1189,7 @@ section
 	display: inline-block;
 	width: 31px;
 	height: 31px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #F15A30;
 	border-radius: 50%;
 	text-align: center;
 	-webkit-transition: all 200ms ease;
@@ -1230,7 +1230,7 @@ section
 }
 .footer_social_item:hover
 {
-	background: #fa9e1b;
+	background: #F15A30;
 }
 .footer_social_item:hover a i
 {
@@ -1280,13 +1280,13 @@ section
 }
 .footer_blog_title a:hover
 {
-	color: #fa9e1b;
+	color: #F15A30;
 }
 .footer_blog_date
 {
 	font-size: 12px;
 	font-weight: 400;
-	color: #fa9e1b;
+	color: #F15A30;
 	margin-top: 7px;
 }
 
@@ -1304,7 +1304,7 @@ section
 	float: left;
 	margin-right: 9px;
 	margin-bottom: 9px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #F15A30;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1313,7 +1313,7 @@ section
 }
 .tag_item:hover
 {
-	background: #fa9e1b;
+	background: #F15A30;
 }
 .tag_item a
 {
@@ -1359,7 +1359,7 @@ section
 .contact_info_item:hover .contact_info_text,
 .contact_info_item:hover .contact_info_text a
 {
-	color: #fa9e1b;
+	color: #F15A30;
 }
 
 /*********************************

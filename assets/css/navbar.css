@@ -1,0 +1,41 @@
+nav{
+    background-color: #FFFFFF;
+    color: #0B4EAA;
+    z-index: 100%;
+}
+.menu-section ul li a{
+    color: #0B4EAA !important;
+}
+nav .btn{
+    color: #0B4EAA;
+}
+nav .btn:hover{
+    color: #F15A30;
+}
+.sign-in .btn{
+    border-color: #F15A30;
+    color: #F15A30;
+    border-radius: 30px;
+}
+#menu-list ul li{
+    display: inline;
+}
+.menu-list ul li:hover{
+    background-color: #0B4EAA;
+    color: #F15A30;
+}
+.menu-list ul li:hover a{
+    color: #F15A30 !important;
+}
+#menu-button:hover #menu-list{
+    display: block;
+}
+.spear-header-slider{
+    height: 80vh;
+}
+form .form-group{
+    margin-bottom: 15px;
+}
+form .form-control{
+    height: 40px;
+}

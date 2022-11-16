@@ -5,7 +5,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -62,18 +66,18 @@
 							Al-Ihsan Tours & Travel Ltd started operations in 2015 in Amsterdam, Netherlands. The company is registered and licensed as a full-fledged travel and tourism management agency to operate inbound, outbound, and airline ticket reservations for domestic and international travelers.
 
 							AL-IHSAN Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.
-
-							AL-IHSAN also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
-
-							We have highly skilled travel experts who are taught the latest technologies yearly. Al Ihsan Tours & Travel Ltd has been at the forefront of travel pursuits to provide its clients with the best services and the lowest air tickets.
-
-							We provide for the travel needs of individuals, teams, and large groups to any place. So, whatever your flight tickets and travel requirements are, contact us immediately for the most economical tours and travel solutions.
-
-							The company’s vision is to give the best services to its customers with an emphasis on effectiveness, safety, and knowledge. 
 						</p>
-						<div class="button intro_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
 					</div>
 				</div>
+				<p class="intro_text">
+					AL-IHSAN also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
+
+					We have highly skilled travel experts who are taught the latest technologies yearly. Al Ihsan Tours & Travel Ltd has been at the forefront of travel pursuits to provide its clients with the best services and the lowest air tickets.
+
+					We provide for the travel needs of individuals, teams, and large groups to any place. So, whatever your flight tickets and travel requirements are, contact us immediately for the most economical tours and travel solutions.
+
+					The company’s vision is to give the best services to its customers with an emphasis on effectiveness, safety, and knowledge. 
+				</p>
 			</div>
 		</div>
 	</div>
@@ -88,109 +92,42 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="marked_list">
 					<div class="section_title">Mission</div>
 					<ul>
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							We seek service excellence and will provide quality service at a cost that will enable us to remain competitive.
-						</li> 
+						</p> 
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							Expand our relationship with airlines, charter flight operators, hotels, tour operators, and travel agents within East Africa and overseas.
-						</li>
+						</p>
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							To Deliver overall satisfaction to our clients while fulfilling their requirements and needs with assistance from our experienced and professional team with total commitment to the satisfaction of our client
-						</li>
+						</p>
 					</ul>
 				</div>
-<<<<<<< HEAD
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="stats_years">
-						<div class="stats_years_last">2016</div>
-						<div class="stats_years_new float-right">2017</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="stats_contents">
-						
-						<!-- Stats Item -->
-						<div class="stats_item d-flex flex-md-row flex-column clearfix">
-							<div class="stats_last order-md-1 order-3">
-								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_1.png" alt="">
-								</div>
-								<div class="stats_last_content">
-									<div class="stats_number">1642</div>
-									<div class="stats_type">Clients</div>
-								</div>
-							</div>
-							<div class="stats_bar order-md-2 order-2" data-x="1642" data-y="3527" data-color="#a73d1d">
-								<div class="stats_bar_perc">
-									<div>
-										<div class="stats_bar_value"></div>
-									</div>
-								</div>
-							</div>
-							<div class="stats_new order-md-3 order-1 text-right">
-								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_1.png" alt="">
-								</div>
-								<div class="stats_new_content">
-									<div class="stats_number">3527</div>
-									<div class="stats_type">Clients</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Stats Item -->
-						<div class="stats_item d-flex flex-md-row flex-column clearfix">
-							<div class="stats_last order-md-1 order-3">
-								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_2.png" alt="">
-								</div>
-								<div class="stats_last_content">
-									<div class="stats_number">768</div>
-									<div class="stats_type">Returning Clients</div>
-								</div>
-							</div>
-							<div class="stats_bar order-md-2 order-2" data-x="768" data-y="145" data-color="#a95ce4">
-								<div class="stats_bar_perc">
-									<div>
-										<div class="stats_bar_value"></div>
-									</div>
-								</div>
-							</div>
-							<div class="stats_new order-md-3 order-1 text-right">
-								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_2.png" alt="">
-								</div>
-								<div class="stats_new_content">
-									<div class="stats_number">145</div>
-									<div class="stats_type">Returning Clients</div>
-								</div>
-							</div>
-						</div>
-=======
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="marked_list">
 					<div class="section_title">Vision</div>
 					<ul>
-						<li>
-							Travel leading Travel Agency in the travel industry, providing our customers with the best and most effective services.
-						</li>
->>>>>>> 73a0fa1ead4771107327eb5860d1f72c8a6f80e9
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
+							Travel leading Travel Agency in the travel industry, providing our customers with the best and most effective services. </p>
 
-						<li>
+
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							To be one of the well–known leading Hajj and Umrah agencies in Kenya.
-						</li> 
+						</p> 
 
-						<li>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
 							Provide new cultural exchange in unique ways by creating a multi-tourism, Hajj, and Umrah business.
-						</li>
+						</p>
 					</ul>
 				</div>
 			</div>
@@ -199,18 +136,45 @@
 
 	<!-- Add -->
 
-	<div class="add">
+	<div class="why_choose_us">
 		<div class="container">
+			<div class="section_title text-center">Why Choose Us</div>
 			<div class="row">
-				<div class="col">
-					<div class="add_container">
-						<div class="add_background" style="background-image:url(images/add.jpg)"></div>
-						<div class="add_content">
-							<h1 class="add_title">thailand</h1>
-							<div class="add_subtitle">From <span>$999</span></div>
-							<div class="button add_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
-						</div>
-					</div>
+				<div class="col-sm-4">
+					Our proven track record speaks for itself. Over the years, we have provided services par excellence that value and empower our clients. Many factors make us your best choice in air travel and accommodation booking. This includes: 
+				</div>
+				<div class="col-sm-8" id="marked_list">
+					<ul>
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
+							We have the latest market information, including airlines offering discounts on tickets, and we are always happy to forward this to our customers.
+						</p>
+
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
+							We book our customers on the most reliable airlines offering the best quality services at competitive rates.
+						</p> 
+
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
+							We understand global destinations like the back of our hands. We are thus able to advise our clients on applicable rules, taxes, and exchange rates, among other things that make traveling hassle-free and fun.
+						</p> 
+
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
+							We help our clients in arranging airport pick-up services, ho­tel booking, and other critical logistical issues that come in handy, especially for first-time travelers to destinations of choice.
+						</p> 
+
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
+							Multilingual staff speaking different languages, including English, Arabic, Kiswahili, Dutch, and Somali.
+						</p>
+
+						<p>
+							<span class="list_check"><i class="fa-solid fa-check"></i></span>
+							Finally, our customer service is fast and effective, and we go the extra mile to ensure our customers feel appreciated.
+						</p>
+					</ul>
 				</div>
 			</div>
 		</div>
