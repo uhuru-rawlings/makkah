@@ -379,8 +379,11 @@ include("admin/models/Destinations.php");
 						<h2 class="intro_title text-center">We have the best tours</h2>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-12">
+				<div class="row py-2">
+					<div class="col-sm-6">
+						<img src="img/alishnan-travel.jpg" width="100%" height="100%" alt="">
+					</div>
+					<div class="col-lg-6">
 						<div class="">
 							<p>
 								Al-Ihsan Tours & Travel Ltd started operations in 2015 in Amsterdam, Netherlands. The company is registered and licensed as a full-fledged travel and tourism management agency to operate inbound, outbound, and airline ticket reservations for domestic and international travelers.
@@ -396,7 +399,7 @@ include("admin/models/Destinations.php");
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row py-2">
 					<div class="col-sm-12">
 						<h2 class="intro_title text-center">Our Objectives</h2>
 					</div>

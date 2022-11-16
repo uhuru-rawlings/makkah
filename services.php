@@ -5,7 +5,7 @@
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Services</title>
+<title>Hotel Booking</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
@@ -101,7 +101,7 @@
 												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
-										<div class="button book_button" onclick="closeOverlay('hotel-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
+										<div class="button book_button"><a href="hotel-booking.php">Read More<span></span><span></span><span></span></a></div>
 									</div>
 								</div>
 							</div>

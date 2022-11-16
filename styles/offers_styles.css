@@ -1857,3 +1857,27 @@ section
 .booking_models form option{
 	color: #fa9e1c;
 }
+#hotel_cards .col-sm-4{
+	padding: 3px 20px;
+}
+#hotel_cards .col-sm-4 img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+#hotel_cards .col-sm-4 .card_image{
+	width: 100%;
+	height: 150px;
+}
+#hotel_cards .btn-primary{
+	height: 40px;
+	cursor: pointer;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 900;
+	background-color: #31124b;
+	border: none;
+}
+#hotel_cards .btn-primary:hover{
+	opacity: 0.8;
+}
