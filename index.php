@@ -5,7 +5,6 @@ include("admin/models/Destinations.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>Travelix</title>
 	<meta charset="utf-8">
@@ -817,40 +816,56 @@ include("admin/models/Destinations.php");
 					</div>
 				</div>
 				<div id="core_values">
-					<div id="transparency">
-						<img src="img/transparency.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Transparency</h4>
-							<p>
-								Building trust in all business and personal dealings.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4" style="height: 220px;">
+							<img src="img/transparency.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Transparency</h4>
+								<p>
+									Building trust in all business and personal dealings.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div id="quality">
-						<img src="img/quanlity.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Quality</h4>
-							<p>
-								We provide outstanding products and services that deliver premium value to our clients and end agents.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<img src="img/quanlity.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Quality</h4>
+								<p>
+									We provide outstanding products and services that deliver premium value to our clients and end agents.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div id="respect">
-						<img src="img/respect.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Respect</h4>
-							<p>
-								For ourselves, our guests, our partners, and our team.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<img src="img/respect.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Respect</h4>
+								<p>
+									For ourselves, our guests, our partners, and our team.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div id="integrity">
-						<img src="img/integrity.jpg" height="100%" width="100%" alt="">
-						<div class="core_values_text">
-							<h4 class="trending_title">Integrity</h4>
-							<p>
-								We uphold the highest standards of integrity in all our actions.
-							</p>
+					<div class="row py-2">
+						<div class="col-sm-4">
+							<img src="img/integrity.jpg" height="100%" width="100%" alt="">
+						</div>
+						<div class="col-sm-8">
+							<div class="core_values_text">
+								<h4 class="trending_title">Integrity</h4>
+								<p>
+									We uphold the highest standards of integrity in all our actions.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
