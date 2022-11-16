@@ -5,6 +5,7 @@ include("admin/models/Destinations.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Al-Ihsan Tours & Travel Ltd</title>
 	<meta charset="utf-8">
@@ -15,7 +16,7 @@ include("admin/models/Destinations.php");
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -62,7 +63,7 @@ include("admin/models/Destinations.php");
 
 					<!-- Slider Item -->
 					<div class="owl-item home_slider_item">
-						<!-- Image by https://unsplash.com/@anikindimitry -->
+
 						<div class="home_slider_background" style="background-image:url(img/hotel-bookings.jpg)"></div>
 
 						<div class="home_slider_content text-center">
@@ -374,71 +375,88 @@ include("admin/models/Destinations.php");
 
 		<div class="intro">
 			<div class="container">
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col">
 						<h2 class="intro_title text-center">We have the best tours</h2>
 					</div>
-				</div>
+				</div> -->
+
+
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-lg-6">
+						<img width="80%" height="auto" src="images/about-us-section1.jpg" alt="Holiday Destinations" srcset="">
+					</div>
+
+					<div class="col-lg-6">
 						<div class="">
+						<h2 class="intro_title text-left gpadding">Your Flying Partner</h2>
 							<p>
 								Al-Ihsan Tours & Travel Ltd started operations in 2015 in Amsterdam, Netherlands. The company is registered and licensed as a full-fledged travel and tourism management agency to operate inbound, outbound, and airline ticket reservations for domestic and international travelers.
 							</p>
 
 							<p>
-								AL-IHSAN Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.
+								Al-Ihsan Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.
 							</p>
 
 							<p>
-								AL-IHSAN also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
+								Al-Ihsan also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
 							</p>
 						</div>
 					</div>
 				</div>
+													
 				<div class="row">
 					<div class="col-sm-12">
-						<h2 class="intro_title text-center">Our Objectives</h2>
+						<h2 class="intro_title text-center gpadding">Our Objectives</h2>
 					</div>
 					<div class="col-sm-6">
-						<p>
-						The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally. 
+					
+					<img width="100%" height="auto" src="images/holiday-saudia.jpg" alt="Holiday Destinations" srcset="">
 
-						We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season. 
+					
+					<p>
+							The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally.
+
+							We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season.
 						</p>
 					</div>
+
+
+
 					<div class="col-sm-6" id="marked_list">
-							<ul>
-								<p>
-									<span class="list_check"><i class="fa-solid fa-check"></i></span>
-									Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
-								</p>
+						<ul>
+							<p>
+								<span class="list_check"><i class="fa-solid fa-check"></i></span>
+								Provide a high standard of services for individuals seeking relaxing, comfortable, and memorable experiences in the hospitality and tourism industry.
+							</p>
 
-								<p>
-									<span class="list_check"><i class="fa-solid fa-check"></i></span>
-									Produce expeditions and memories that would satisfy every single customer. 
-								</p>
+							<p>
+								<span class="list_check"><i class="fa-solid fa-check"></i></span>
+								Produce expeditions and memories that would satisfy every single customer. 
+							</p>
 
-								<p>
-									<span class="list_check"><i class="fa-solid fa-check"></i></span>
-									Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence.
-								</p> 
-								<p>
-									<span class="list_check"><i class="fa-solid fa-check"></i></span>
-									We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
-								</p>
-								<p>
-									<span class="list_check"><i class="fa-solid fa-check"></i></span>
-									We recognize the responsibility and opportunity to contribute to society and make a meaningful difference.
-								</p>
+							<p>
+								<span class="list_check"><i class="fa-solid fa-check"></i></span>
+								Customer-focused organization; we listen to our customers by providing them superior service and exceeding their expectations. Thus, earning their trust, respect, and confidence.
+							</p>
+							<p>
+								<span class="list_check"><i class="fa-solid fa-check"></i></span>
+								We are a unified team that believes in collaboration, professionalism, investing in our employees, technology, quality, continuous learning, and improvement.
+							</p>
+							<p>
+								<span class="list_check"><i class="fa-solid fa-check"></i></span>
+								We recognize the responsibility and opportunity to contribute to society and make a meaningful difference.
+							</p>
 
-								<p>
-									<span class="list_check"><i class="fa-solid fa-check"></i></span>
-								 	We Participate in local and regional community service by providing general lectures, consultation, and training programs.
-								</p>
-							</ul>
+							<p>
+								<span class="list_check"><i class="fa-solid fa-check"></i></span>
+								We Participate in local and regional community service by providing general lectures, consultation, and training programs.
+							</p>
+						</ul>
 					</div>
 				</div>
+
+
 				<div class="row intro_items">
 
 					<!-- Intro Item -->
@@ -446,7 +464,7 @@ include("admin/models/Destinations.php");
 					<div class="col-lg-4 intro_col">
 						<div class="intro_item">
 							<div class="intro_item_overlay"></div>
-							<!-- Image by https://unsplash.com/@dnevozhai -->
+							
 							<div class="intro_item_background" style="background-image:url(images/intro_1.jpg)"></div>
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
 								<div class="intro_date">May 25th - June 01st</div>
@@ -473,7 +491,7 @@ include("admin/models/Destinations.php");
 					<div class="col-lg-4 intro_col">
 						<div class="intro_item">
 							<div class="intro_item_overlay"></div>
-							<!-- Image by https://unsplash.com/@hellolightbulb -->
+							
 							<div class="intro_item_background" style="background-image:url(images/intro_2.jpg)"></div>
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
 								<div class="intro_date">May 25th - June 01st</div>
@@ -530,7 +548,7 @@ include("admin/models/Destinations.php");
 		<!-- CTA -->
 
 		<div class="cta">
-			<!-- Image by https://unsplash.com/@thanni -->
+			
 			<div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
 
 			<div class="container">
@@ -555,9 +573,11 @@ include("admin/models/Destinations.php");
 									<p>
 										Driven by our deeply rooted origins and commitment to delivering the highest service standards, we have successfully distinguished ourselves in the world of hospitality by designing exceptional Hajj and Umrah packages and organizing Hajj and Umrah groups. We have consistently moved towards evolution and excellence in Hajj and Umrah services to ensure the best possible experience during the pilgrimage.
 									</p>
+
 									<div class="button cta_button">
 										<div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a>
 									</div>
+
 								</div>
 
 								<!-- CTA Slider Item -->
@@ -565,10 +585,7 @@ include("admin/models/Destinations.php");
 									<div class="cta_title text-center">Airline reservation & ticketing.</div>
 									<div class="rating_r rating_r_4 text-center">
 										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
+										
 									</div>
 									<p>
 										We are the experts in air ticketing in the region. Whether you are fly­ing alone, with your family, or as a team, we offer the most afford­able and reliable air ticketing services for domestic and international flights.
