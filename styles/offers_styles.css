@@ -1816,6 +1816,11 @@ section
 	justify-content: space-around;
 	align-items: center;
 	z-index: 2342676554;
+	overflow-y: auto;
+	display: none;
+}
+.overlay_white::-webkit-scrollbar{
+	width: 0;
 }
 .booking_models{
 	background-image: linear-gradient(210deg,#fa9e1b,#31124b);
@@ -1837,7 +1842,7 @@ section
 	color: #FFFFFF;
 	outline-offset: 0px;
 	outline: none;
-	height: 30px;
+	height: 30px !important;
 }
 .booking_models form .form-group{
 	margin-bottom: 10px;

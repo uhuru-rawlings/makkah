@@ -101,7 +101,7 @@
 												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
-										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
+										<div class="button book_button" onclick="closeOverlay('hotel-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
 									</div>
 								</div>
 							</div>
@@ -140,7 +140,7 @@
 												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
-										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
+										<div class="button book_button" onclick="closeOverlay('appointment-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
 									</div>
 								</div>
 							</div>
@@ -179,7 +179,7 @@
 												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
-										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
+										<div class="button book_button" onclick="closeOverlay('flight-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
 									</div>
 								</div>
 							</div>
@@ -209,14 +209,6 @@
 										</div>
 										<p class="offers_text">
 											Driven by our deeply rooted origins and commitment to delivering the highest service standards, we have successfully distinguished ourselves in the world of hospitality by designing exceptional Hajj and Umrah packages and organizing Hajj and Umrah groups. We have consistently moved towards evolution and excellence in Hajj and Umrah services to ensure the best possible experience during the pilgrimage. 
-											<div class="row">
-												<div class="col-sm-6">
-													<a href="umra-services.php"><button class="btn btn-primary">Umrah Services</button></a>
-												</div>
-												<div class="col-sm-6">
-													<a href="hajj-services.php"><button class="btn btn-primary">Hajj Services</button></a>
-												</div>
-											</div>
 										</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
@@ -226,7 +218,15 @@
 												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
-										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="button book_button"><a href="umra-services.php">Umrah Services<span></span><span></span><span></span></a></div>
+											</div>
+											<div class="col-sm-6">
+												<div class="button book_button"><a href="hajj-services.php">Hajj Services<span></span><span></span><span></span></a></div>
+											</div>
+										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -277,8 +277,9 @@
 			</div>
 		</div>		
 	</div>
-	<div class="overlay_white">
-		<div class="booking_models" id="hotel-booking">
+	<!-- hotel booking -->
+	<div class="overlay_white" id="hotel-booking">
+		<div class="booking_models">
 			<div class="card">
 				<div class="card-header">
 					Book Hotel
@@ -325,11 +326,137 @@
 				</form>
 				</div>
 				<div class="card-footer">
-					<button class="btn btn-secondary">close</button>
+					<button class="btn btn-secondary" onclick="closeOverlay('hotel-booking')">close</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- end hotel booking -->
+	<!-- flight booking -->
+	<div class="overlay_white" id="flight-booking">
+		<div class="booking_models">
+			<div class="card">
+				<div class="card-header">
+					Book Flight
+				</div>
+				<div class="card-body">
+					<form action="booktrip-fun.php" method="post" class="w-100">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="form-group col">
+										<label for="fromlocation">From Location</label>
+										<select oninput="removeErrors(this.id)" class="shadow-none form-control" name="fromlocation" id="fromlocation">
+											<?php
+											$conn = new Database();
+											$db = $conn->connection();
+											$locations = new Airline($db);
+											$location  = $locations->getDestinations();
+											foreach ($location as $location) {
+												echo "<option value='{$location['From_location']}'>" . $location['From_location'] . "</option>";
+											}
+											?>
+										</select>
+									</div>
+									<div class="form-group col">
+										<label for="tolocation">To Location</label>
+										<select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tolocation" id="tolocation">
+											<?php
+											$conn = new Database();
+											$db = $conn->connection();
+											$locations = new Airline($db);
+											$location  = $locations->getDestinations();
+											foreach ($location as $location) {
+												echo "<option value='{$location['To_location']}'>" . $location['To_location'] . "</option>";
+											}
+											?>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<label for="tripsround">Trip</label>
+										<select oninput="removeErrors(this.id)" class="shadow-none form-control" name="tripsround" id="tripsround">
+											<option value="Rount Trip">Rount Trip</option>
+											<option value="One Way">One Way</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="form-group col-sm-12">
+										<label for="formdate">Date From</label>
+										<input oninput="removeErrors(this.id)" type="date" class="shadow-none form-control" name="formdate" id="formdate">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="travelclass">Travel Class</label>
+											<select oninput="removeErrors(this.id)" name="travelclass" id="travelclass" class="shadow-none form-control">
+												<option value="Guest">Guest</option>
+												<option value="Business">Business</option>
+												<option value="First">First</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label for="number">Number of People</label>
+									<input oninput="removeErrors(this.id)" type="number" min="1" value="1" max="7" name="number" id="number" class="shadow-none form-control">
+								</div>
+								<div class="form-group">
+									<input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
+									<label for="aggrement">Agree To Change +/- 7 days.</label>
+								</div>
+								<div class="form-group">
+									<input type="submit" name="booktrip" onclick="return validateTripForm()" value="Book Now" class="btn btn-secondary">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-secondary" onclick="closeOverlay('flight-booking')">close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end flight booking -->
+	<!-- book appointment -->
+	<div class="overlay_white" id="appointment-booking">
+		<div class="booking_models">
+			<div class="card">
+				<div class="card-header">
+					Book Visa Appointments
+				</div>
+				<div class="card-body">
+					<form action="bookappointments.php" method="post" class="w-100">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label for="appointmentdate">Date</label>
+									<input type="date" oninput="removeErrors(this.id)" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="form-group" style="margin-top: 20px;">
+									<input type="submit" onclick="return validateVisaBookings()" value="Book Appointment" name="save" class="btn btn-secondary">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<button class="btn btn-secondary" onclick="closeOverlay('appointment-booking')">close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end book appointment -->
 	<!-- Footer -->
 
 	<?php
@@ -337,7 +464,7 @@
 	?>
 
 </div>
-
+<script src="js/main.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
