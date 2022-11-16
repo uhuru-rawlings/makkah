@@ -31,7 +31,7 @@
             <form action="login-fun.php" method="post">
                 
                 <div class="form-logo" id="formlogo">
-                    <img src="images/logo (2).png" width="100%" height="100%" alt="">
+                    <img src="images/logo.png" width="100%" height="100%" alt="">
                 </div>
                 <h1 class="text-center">Welcome Back to Alihsan Tour</h1>
                 <p class="text-center">Please login to proceed</p>

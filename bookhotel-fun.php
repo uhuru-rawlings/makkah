@@ -43,15 +43,4 @@
     ?>
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<style>
-    body{
-        height: 100vh;
-        display: flex;
-        align-items: center;
-    }
-    body div{
-        width: 70%;
-        margin: auto;
-    }
-</style>
 </html>
