@@ -666,7 +666,7 @@ include("admin/models/Destinations.php");
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<h2 class="section_title">the best offers with rooms</h2>
+						<h2 class="section_title">Al-Ihsan Circuits</h2>
 					</div>
 				</div>
 				<div class="row offers_items">
@@ -824,7 +824,7 @@ include("admin/models/Destinations.php");
 		</div>
 
 		<!-- core values -->
-		<div class="testimonials">
+		<!-- <div class="testimonials">
 			<div class="test_border"></div>
 			<div class="container">
 				<div class="row">
@@ -887,7 +887,7 @@ include("admin/models/Destinations.php");
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- Testimonials -->
 
 		<div class="testimonials">
@@ -1062,7 +1062,7 @@ include("admin/models/Destinations.php");
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<h2 class="section_title">trending now</h2>
+						<h2 class="section_title">Featured Packages</h2>
 					</div>
 				</div>
 				<div class="row trending_container">
@@ -1168,7 +1168,7 @@ include("admin/models/Destinations.php");
 		</div>
 
 		<div class="contact">
-			<div class="contact_background" style="background-image:url(images/contact.png)"></div>
+			<div class="contact_background" style="background-image:url(images/contact.jpg)"></div>
 
 			<div class="container">
 				<div class="row">

@@ -81,11 +81,11 @@ nav .btn{
     color: #0B4EAA;
 }
 nav .btn:hover{
-    color: #F15A30;
+    color: #110603;
 }
 .sign-in .btn{
-    border-color: #F15A30;
-    color: #F15A30;
+    border-color: #110603;
+    color: #110603;
     border-radius: 30px;
 }
 .menu-list ul li:hover{
@@ -93,7 +93,7 @@ nav .btn:hover{
     color: #FFFFFF;
 }
 .menu-list ul li:hover a{
-    color: #F15A30;
+    color: #110603;
 }
 .menu-list ul li a{
     text-decoration: none;
@@ -150,7 +150,7 @@ body ul li{
 }
 body ul li::marker{
     font-size: 20px;
-    color: #F15A30;
+    color: #110603;
     font-weight: 900;
 }
 #our-objectives{
@@ -171,16 +171,16 @@ body ul li::marker{
     transition: 0.75s;
 }
 .top-select-section button.active{
-    border-bottom: 5px solid #F15A30;
+    border-bottom: 5px solid #110603;
     color: #FFFFFF;
-    background-image: linear-gradient(to right,#0B4EAA,#F15A30);
+    background-image: linear-gradient(to right,#0B4EAA,#110603);
 }
 .top-select-section button:hover{
     color: #FFFFFF;
-    background-image: linear-gradient(to right,#0B4EAA,#F15A30);
+    background-image: linear-gradient(to right,#0B4EAA,#110603);
 }
 .overlay-blue{
-    background-image: linear-gradient(to right,#0B4EAA,#F15A30);
+    background-image: linear-gradient(to right,#0B4EAA,#110603);
     /* background-image: linear-gradient(to right,#1453ac,#346dbd); */
 }
 .bookings-cards{
@@ -199,7 +199,7 @@ body ul li::marker{
 .bookings-cards .btn{
     border: none;
     border-radius: 0;
-    background-color: #F15A30;
+    background-color: #110603;
     color: #FFFFFF;
     height: 40px;
 }
@@ -259,9 +259,9 @@ h1,h2,h3,h4,h5{
     content: "";
     width: 20%;
     height: 3px;
-    /* background-color: #F15A30; */
+    /* background-color: #110603; */
     /* height: 5px; */
-    border-bottom: 3px solid #F15A30;
+    border-bottom: 3px solid #110603;
 }
 .tip-card{
     border-top: 1px solid #dcdcdc;
@@ -298,7 +298,7 @@ ul li::before{
     width: 10px;
     height: 2px;
     content: "";
-    background-color: #F15A30;
+    background-color: #110603;
     position: absolute;
     top: calc(50% - 2px);
     bottom: calc(50% - 2px);
@@ -347,10 +347,10 @@ ul li::before{
     position: relative;
 }
 .page-footer a{
-    color: #F15A30;
+    color: #110603;
 }
 .scroll-to-top{
-    background-color: #F15A30;
+    background-color: #110603;
     color: #FFFFFF;
     width: 40px;
     height: 40px;
@@ -394,13 +394,13 @@ ul li::before{
 
 .btn-secondary{
     height: 50px;
-    background-color: #F15A30;
+    background-color: #110603;
     color: #FFFFFF;
     border: none;
     /* box-shadow: 2px 2px 4px rgba(31,31,31,.3); */
 }
 .btn-secondary:hover{
-    background-color: #F15A30;
+    background-color: #110603;
     color: #FFFFFF;
     box-shadow: 2px 2px 4px rgba(31,31,31,.3);
 }
@@ -425,15 +425,15 @@ ul li::before{
     }
 }
 .btn-primary{
-    border-color: #F15A30;
-    background-color: #F15A30;
+    border-color: #110603;
+    background-color: #110603;
     color: #FFFFFF;
     box-shadow: 2px 2px 4px rgba(31,31,31,.4);
     outline: none;
 }
 .btn-primary:hover{
-    border-color: #F15A30;
-    background-color: #F15A30;
+    border-color: #110603;
+    background-color: #110603;
     color: #FFFFFF;
     box-shadow: 2px 2px 4px rgba(31,31,31,.4);
 }
@@ -559,7 +559,7 @@ form #formlogo img{
     color: #FFFFFF;
 }
 .footer-services a:hover{
-    color: #F15A30;
+    color: #110603;
 }
 
 .testimonials-section .customer-cards{
@@ -609,7 +609,7 @@ form #formlogo img{
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    background-image: linear-gradient(90deg,#0B4EAA,#F15A30);
+    background-image: linear-gradient(90deg,#0B4EAA,#110603);
 }
 .error_info{
     width: 50%;
@@ -621,7 +621,7 @@ form #formlogo img{
     border-radius: 25px;
     background-color: #FFFFFF;
     border-color: #FFFFFF;
-    color: #F15A30;
+    color: #110603;
     font-weight: 600;
 }
 .error_info .fa-arrow-left{

@@ -199,7 +199,7 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><i class="fa-solid fa-phone"></i><a href="tel:+254 727 885454"> +254 727 885454</a></li>
-                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@alIhsanumrah.com"> info@alIhsanumrah.com</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@al-ihsanumrah.com"> info@al-ihsanumrah.com</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">

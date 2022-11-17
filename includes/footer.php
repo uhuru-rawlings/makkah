@@ -13,17 +13,17 @@
 										<img src="images/logo-landscape.png" alt="" height="100%" width="100%" style="object-fit: cover;">
 									</a></div>
 							</div>
-							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
+							<p class="footer_about_text">Al-Ihsan Tours & Travel Ltd is the market leader in low-cost domestic and international air travel.</p>
 							<ul class="footer_social_list">
-								<a href="#">
+								<a href="https://www.facebook.com/profile.php?id=100086970790856">
 									<li class="footer_social_item"><i class="fa-brands fa-facebook-f"></i></li>
 								</a>
-								<a href="#">
+								<!-- <a href="#">
 									<li class="footer_social_item"><i class="fa-brands fa-twitter"></i></li>
 								</a>
 								<a href="#">
 									<li class="footer_social_item"><i class="fa-brands fa-linkedin"></i></li>
-								</a>
+								</a> -->
 							</ul>
 						</div>
 					</div>
@@ -33,17 +33,12 @@
 				<!-- Footer Column -->
 				<div class="col-lg-4 footer_column">
 					<div class="footer_col">
-						<div class="footer_title">tags</div>
+						<div class="footer_title">Services</div>
 						<div class="footer_content footer_tags">
 							<ul class="tags_list clearfix">
-								<li class="tag_item"><a href="#">design</a></li>
-								<li class="tag_item"><a href="#">fashion</a></li>
-								<li class="tag_item"><a href="#">music</a></li>
-								<li class="tag_item"><a href="#">video</a></li>
-								<li class="tag_item"><a href="#">party</a></li>
-								<li class="tag_item"><a href="#">photography</a></li>
-								<li class="tag_item"><a href="#">adventure</a></li>
-								<li class="tag_item"><a href="#">travel</a></li>
+								<li class="tag_item"><a href="#">Hotel Booking</a></li>
+								<li class="tag_item"><a href="#">Visa Assistance</a></li>
+								<li class="tag_item"><a href="#">Airline Ticketing & Reservation</a></li>
 							</ul>
 						</div>
 					</div>
@@ -59,7 +54,7 @@
 									<div>
 										<div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div>
 									</div>
-									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
+									<div class="contact_info_text">1st floor, Istanbul Shopping Mall, Captain Mungai St, Nairobi</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div>
@@ -71,14 +66,9 @@
 									<div>
 										<div class="contact_info_icon"><img src="images/message.svg" alt=""></div>
 									</div>
-									<div class="contact_info_text"><a href="mailto:info@alIhsanumrah.com" target="_top">info@alIhsanumrah.com</a></div>
+									<div class="contact_info_text"><a href="mailto:info@al-ihsanumrah.com" target="_top">info@al-ihsanumrah.com</a></div>
 								</li>
-								<li class="contact_info_item d-flex flex-row">
-									<div>
-										<div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div>
-									</div>
-									<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
-								</li>
+								
 							</ul>
 						</div>
 					</div>

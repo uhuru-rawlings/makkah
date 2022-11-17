@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #F15A30;
+    color: #110603;
 }
 .text-primary{
     color: #0B4EAA;
@@ -51,7 +51,7 @@ img{
     object-fit: cover;
 }
 .nav-links ul li a:hover{
-    color: #F15A30;
+    color: #110603;
 }
 .nav-links ul li a{
     text-decoration: none;
@@ -90,7 +90,7 @@ img{
     bottom: 0;
     width: 20%;
     content: "";
-    border-bottom: 5px solid #F15A30;
+    border-bottom: 5px solid #110603;
 }
 #umrah-image{
     max-height: 450px;
@@ -460,7 +460,7 @@ img{
     text-align: right;
 }
 .counter-section .card{
-    background-color: #F15A30;
+    background-color: #110603;
     color: #FFFFFF;
     border-radius: 10px;
     height: 150px;
@@ -468,7 +468,7 @@ img{
     border-radius: 50%;
 }
 .counter-section .card:hover{
-    background-color: #F15A30;
+    background-color: #110603;
     color: #FFFFFF;
 }
 .card-body{
@@ -648,7 +648,7 @@ img{
 .umrah-services ul li::before, .col-sm-3 ul li::before, #HajjPackageservices ul li::before,.airline-ticketing-reservation ul li::before{
     height: 1px;
     width: 10px;
-    background-color: #F15A30;
+    background-color: #110603;
     position: absolute;
     left: 0;
     top: calc(50% - 1px);
@@ -662,6 +662,6 @@ img{
     color: #0B4EAA;
 }
 .umrah-services button:hover{
-    border: 2px solid #F15A30;
-    color: #F15A30;
+    border: 2px solid #110603;
+    color: #110603;
 }

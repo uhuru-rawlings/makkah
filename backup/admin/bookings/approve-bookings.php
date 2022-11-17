@@ -34,7 +34,7 @@
                                                     <div class='name'>Dear {$location['Fullname']},</div>
                                                 </div>
                                                 <div class='message-content' style=' background-color: #dfdfdf;padding: 20px 15px;'>
-                                                    <p style='border-left: 5px solid #F15A30;padding-left: 10px;'>
+                                                    <p style='border-left: 5px solid #110603;padding-left: 10px;'>
                                                     Your Booking for {$location['Location_Name']}, schedule from  {$location['From_Date']} to {$location['To_Date']} has been and {$location['Status']}.
                                 
                                                         For any inquiry please reach out throught <a style='text-decoration: none;' href='mailto:'>[support-email]</a>, We will be glad to help.
