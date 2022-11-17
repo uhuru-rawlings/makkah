@@ -119,7 +119,7 @@
 					</p>
                 </div>
 				<div class="col-sm-12">
-				<h3 class="offers_price" style="font-weight: 600; font-size: 25px;">How to perform Hajj</h3> 
+					<h3 class="offers_price" style="font-weight: 600; font-size: 25px;">How to perform Hajj</h3> 
 					<p>
 						Al-Ihsan Tours & Travel Ltd will always try to assist the people and its clients who want to perform Hajj in the best manner, as there are various steps of Hajj to complete the pious and sacred journey of Hajj. Al-Ihsan Tours & Travel Ltd will offer its clients orientation programs through videos, pictures, and practical ones.
 					</p>
@@ -138,6 +138,16 @@
 					<div>
 						<span class="list_check"><i class="fa-solid fa-check"></i></span>
 						First-class (Single Room)
+					</div>
+				</div>
+				<div class="row py-2" id="hajjbooking">
+					<div class="col-sm-4">
+						<p>Do you want us to help you attend hajj and umrah?</p>
+					</div>
+					<div class="col-sm-4">
+						<a href="hajj-booking.php">
+							<button class="btn">Request Now</button>
+						</a>
 					</div>
 				</div>
             </div>

@@ -200,7 +200,16 @@
                     </div>
                 </div>
             </div>
-            <h2 class="offers_price py-2">N.B Dates are tentative and can change according to airline availability</h2>
+            <div class="row py-2" id="hajjbooking">
+                <div class="col-sm-4">
+                    <p>Do you want us to help you attend hajj and umrah?</p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="hajj-booking.php">
+                        <button class="btn">Request Now</button>
+                    </a>
+                </div>
+            </div>
         </div>	
 	</div>
 
