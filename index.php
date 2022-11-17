@@ -202,11 +202,9 @@
 						<!-- Search Panel -->
 
 						<div class="search_panel active text-light">
-							
-							<form action="bookhotel-fun.php" method="post" class="w-100">
-							<p>Make an enquiry</p>	
+							<div>Make an enquiry</div>	
+							<form action="bookhotel-fun.php" method="post" style="margin-bottom: 20px !important;" class="w-100">
 							<div class="row">
-								
 									<div class="col-sm-4">
 										<div class="form-group">
 											<label for="hetels">Hotels</label>

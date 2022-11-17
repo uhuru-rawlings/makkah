@@ -112,14 +112,6 @@
 											<p class="offers_text">
 												We look for affordable,secure hotels who serves our customers needs and make them available to you.
 											</p>
-											<div class="offers_icons">
-												<ul class="offers_icons_list">
-													<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-												</ul>
-											</div>
 											<div class="button book_button"><a href="hotel-booking.php">Read More<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
@@ -151,14 +143,6 @@
 											<p class="offers_text">
 												We work hard to avail visa to our clients who need them, We are well connected and we can process your visa legaly but faster.
 											</p>
-											<div class="offers_icons">
-												<ul class="offers_icons_list">
-													<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-												</ul>
-											</div>
 											<div class="button book_button" onclick="closeOverlay('appointment-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
@@ -190,14 +174,6 @@
 											<p class="offers_text">
 												We are the experts in air ticketing in the region.You can take advantage of our partnership with leading local and international airlines to book your flights at the least cost and guar­antee hassle-free arrival to your desired destination. Our friendly customer agents are always available to assist with inquiries regarding our services and the flight you’re booked.
 											</p>
-											<div class="offers_icons">
-												<ul class="offers_icons_list">
-													<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-												</ul>
-											</div>
 											<div class="button book_button" onclick="closeOverlay('flight-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
@@ -229,30 +205,13 @@
 											<p class="offers_text">
 												Driven by our deeply rooted origins and commitment to delivering the highest service standards, we have successfully distinguished ourselves in the world of hospitality by designing exceptional Hajj and Umrah packages and organizing Hajj and Umrah groups. We have consistently moved towards evolution and excellence in Hajj and Umrah services to ensure the best possible experience during the pilgrimage.
 											</p>
-											<div class="offers_icons">
-												<ul class="offers_icons_list">
-													<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-												</ul>
-											</div>
 											<div class="row">
 												<div class="col-sm-6">
 													<div class="button book_button"><a href="umra-services.php">Umrah Services<span></span><span></span><span></span></a></div>
 												</div>
-												<p class="offers_text">
-													We look for affordable,secure hotels who serves our customers needs and make them available to you.
-												</p>
-												<div class="offers_icons">
-													<ul class="offers_icons_list">
-														<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-														<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-														<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-														<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-													</ul>
+												<div class="col-sm-6">
+													<div class="button book_button"><a href="hajj-services.php">hAJJ Services<span></span><span></span><span></span></a></div>
 												</div>
-												<div class="button book_button" onclick="closeOverlay('hotel-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
 											</div>
 										</div>
 									</div>
@@ -290,14 +249,6 @@
 											<p class="offers_text">
 												Do you find it hard to choose the best holyday location for you or you and your family. We have sampled and chosen the best among the best Leisure and holiday destinations for you at an affordable price.
 											</p>
-											<div class="offers_icons">
-												<ul class="offers_icons_list">
-													<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-													<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-												</ul>
-											</div>
 											<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>

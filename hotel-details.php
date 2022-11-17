@@ -82,7 +82,7 @@
 						<h4>Cost</h4>
                         <div class="price">Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
                     </div>
-					<div class="col-sm-6 py-2">
+					<div class="col-sm-6 py-2" style="padding-left: 0 !important;">
 						<p><b>You can send your enquiry via the form below.</b></p>
 						<form action="bookhotel-fun.php" method="post" class="w-100">
 							<div class="row">
