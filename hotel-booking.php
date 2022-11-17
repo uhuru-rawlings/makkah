@@ -68,9 +68,12 @@
                         <img src='<?php echo "uploads/{$image[1]}"?>' alt="" class="hotel_image">
                     </div>
                     <div class="hotel_details">
-                        <div class="hotel_name"><?php echo $product['Location_Name'] ?></div>
-                        <div class="price">Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
-                        <button onclick="closeOverlay('hotel-booking',this.id)" id="<?php echo $product['id'] ?>" class="btn btn-primary">Book Now</button>
+                       <div class="row">
+						<div class="col-sm-6 hotel_name"><a href="<?php echo $product['Location'] ?>" target="_blank"><b><?php echo $product['Location_Name'] ?></a></b></div>
+							<div class="col-sm-6 price">Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
+					   </div>
+                        <div class="links"><a href='<?php echo "hotel-details.php?hotel_id=".$product['id'] ?>'>See More</a></div>
+                        <button class="btn" onclick="closeOverlay('hotel-booking',this.id)" id="<?php echo $product['id'] ?>">Book Now</button>
                     </div>
                 </div>
                 <?php

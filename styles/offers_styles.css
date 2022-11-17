@@ -1878,6 +1878,27 @@ section
 	background-color: #31124b;
 	border: none;
 }
+.hotel_details .button{
+	background-color: #31124b;
+	border: none;
+	color: #FFFFFF;
+}
 #hotel_cards .btn-primary:hover{
 	opacity: 0.8;
+}
+#multiple_images{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#multiple_images img{
+	height: 180px;
+	width: 300px;
+	object-fit: cover;
+	margin-bottom: 15px;
+}
+#multiple_images img:nth-child(1){
+	width: 100vw !important;
+	height: 400px;
 }
