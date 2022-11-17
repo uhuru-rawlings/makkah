@@ -7,16 +7,16 @@ include("admin/models/Destinations.php");
 <html lang="en">
 
 <head>
-	<title>Services</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Travelix Project">
-	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
-	<link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
+<title>Hotel Booking</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travelix Project">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
 </head>
 
 <body>
@@ -84,6 +84,7 @@ include("admin/models/Destinations.php");
 											<!-- <div class="offer_name"><a href="single_listing.html">grand castle</a></div> -->
 										</div>
 									</div>
+<<<<<<< HEAD
 									<div class="col-lg-8">
 										<div class="offers_content">
 											<div class="offers_price">Hotel Booking</div>
@@ -93,6 +94,150 @@ include("admin/models/Destinations.php");
 												<i></i>
 												<i></i>
 												<i></i>
+=======
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">Hotel Booking</div>
+										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">
+											We look for affordable,secure hotels who serves our customers needs and make them available to you.
+										</p>
+										<div class="offers_icons">
+											<ul class="offers_icons_list">
+												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											</ul>
+										</div>
+										<div class="button book_button"><a href="hotel-booking.php">Read More<span></span><span></span><span></span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Offers Item -->
+
+						<div class="offers_item rating_3">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@thoughtcatalog -->
+										<div class="offers_image_background" style="background-image:url(img/visa-assistance.jpg)"></div>
+										<div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">Visa Asistance</span></div>
+										<div class="rating_r rating_r_3 offers_rating" data-rating="3">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">
+											We work hard to avail visa to our clients who need them, We are well connected and we can process your visa legaly but faster.
+										</p>
+										<div class="offers_icons">
+											<ul class="offers_icons_list">
+												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											</ul>
+										</div>
+										<div class="button book_button" onclick="closeOverlay('appointment-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Offers Item -->
+
+						<div class="offers_item rating_5">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@mindaugas -->
+										<div class="offers_image_background" style="background-image:url(img/background-1.jpg)"></div>
+										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">Airline Ticketing & Reservation</div>
+										<div class="rating_r rating_r_5 offers_rating"  data-rating="5">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">
+											We are the experts in air ticketing in the region.You can take advantage of our partnership with leading local and international airlines to book your flights at the least cost and guar­antee hassle-free arrival to your desired destination. Our friendly customer agents are always available to assist with inquiries regarding our services and the flight you’re booked.
+										</p>
+										<div class="offers_icons">
+											<ul class="offers_icons_list">
+												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											</ul>
+										</div>
+										<div class="button book_button" onclick="closeOverlay('flight-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Offers Item -->
+
+						<div class="offers_item rating_4">
+							<div class="row">
+								<div class="col-lg-1 temp_col"></div>
+								<div class="col-lg-3 col-1680-4">
+									<div class="offers_image_container">
+										<!-- Image by https://unsplash.com/@rktkn -->
+										<div class="offers_image_background" style="background-image:url(img/hajj-and-umrah.jpg)"></div>
+										<!-- <div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div> -->
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="offers_content">
+										<div class="offers_price">Hajj & Umrah Services</div>
+										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+											<i></i>
+										</div>
+										<p class="offers_text">
+											Driven by our deeply rooted origins and commitment to delivering the highest service standards, we have successfully distinguished ourselves in the world of hospitality by designing exceptional Hajj and Umrah packages and organizing Hajj and Umrah groups. We have consistently moved towards evolution and excellence in Hajj and Umrah services to ensure the best possible experience during the pilgrimage. 
+										</p>
+										<div class="offers_icons">
+											<ul class="offers_icons_list">
+												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											</ul>
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="button book_button"><a href="umra-services.php">Umrah Services<span></span><span></span><span></span></a></div>
+>>>>>>> db82d2a40f1510432e3d4e905a2be6d55af5f02b
 											</div>
 											<p class="offers_text">
 												We look for affordable,secure hotels who serves our customers needs and make them available to you.

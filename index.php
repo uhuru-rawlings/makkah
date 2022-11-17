@@ -1,7 +1,7 @@
 <?php
-include_once("admin/database/Database.php");
-include_once("admin/models/Airline.php");
-include("admin/models/Destinations.php");
+	include_once("admin/database/Database.php");
+	include_once("admin/models/Airline.php");
+	include_once("admin/models/Destinations.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -404,7 +404,6 @@ include("admin/models/Destinations.php");
 						</div>
 					</div>
 				</div>
-													
 				<div class="row">
 					<div class="col-sm-12">
 						<h2 class="intro_title text-center gpadding">Our Objectives</h2>
@@ -585,7 +584,6 @@ include("admin/models/Destinations.php");
 									<div class="cta_title text-center">Airline reservation & ticketing.</div>
 									<div class="rating_r rating_r_4 text-center">
 										<i></i>
-										
 									</div>
 									<p>
 										We are the experts in air ticketing in the region. Whether you are fly­ing alone, with your family, or as a team, we offer the most afford­able and reliable air ticketing services for domestic and international flights.
