@@ -12,9 +12,9 @@
                     <div class="phone"><a href="tel:+254 727 885454" class="text-light">+254 727 885454</a></div>
                     <div class="social">
                         <ul class="social_list">
-                            <li class="social_list_item"><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social_list_item"><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social_list_item"><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social_list_item"><a href="#" class="text-white"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social_list_item"><a href="#" class="text-white"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social_list_item"><a href="#" class="text-white"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                     <div class="user_box ml-auto">
