@@ -1857,8 +1857,12 @@ section
 .booking_models form option{
 	color: #fa9e1c;
 }
-#hotel_cards .col-sm-4{
-	padding: 3px 20px;
+#hotel_cards .col-sm-4 .card{
+	/* padding: 3px 20px; */
+	transition: 0.75s;
+}
+#hotel_cards .col-sm-4 .card:hover{
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.15);
 }
 #hotel_cards .col-sm-4 img{
 	height: 100%;
@@ -1878,9 +1882,30 @@ section
 	background-color: #31124b;
 	border: none;
 }
-.hotel_details .button{
+#hotel_cards .card-footer .btn{
+	/* height: 30px; */
+	border: 2px solid #31124b;
+	color: #31124b;
+	background-color: inherit;
+	transition: 0.75s ease;
+	border-radius: 20px;
+	margin: auto;
+}
+.intro_title
+{
+	font-weight: 700;
+	color: #2d2c2c;
+	margin-top: -14px;
+}
+.gpadding
+{
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 43px;
+
+}
+#hotel_cards .card-footer .btn:hover{
 	background-color: #31124b;
-	border: none;
 	color: #FFFFFF;
 }
 #hotel_cards .btn-primary:hover{

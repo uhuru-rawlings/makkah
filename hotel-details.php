@@ -64,23 +64,26 @@
                     if($product){   
                 ?>
                 <div class="col-sm-12">
-					<div class="hotel_name"><h1><?php echo $product['Location_Name'] ?></h1></div>
+					<div class="hotel_name">
+						<h2 class="intro_title text-left gpadding"><?php echo $product['Location_Name'] ?></h2>	
+					</div>
                     <div class="card_image" id="multiple_images">
 						<?php
 							$image = explode(",",$product['Location_images']);
-							for($i = 1; $i < count($image); $i++){
+							// for($i = 1; $i < count($image); $i++){
 						?>
-                        	<img src='<?php echo "uploads/{$image[$i]}"?>' alt="" class="hotel_image">
+                        	<img src='<?php echo "uploads/{$image[1]}"?>' alt="" class="hotel_image">
 						<?php
-							}
+							// }
 						?>
                     </div>
                     <div class="hotel_details">
-                        <div class="price">Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
 						<div class="hotel_name"><?php echo $product['place_description'] ?></div>
+						<h4>Cost</h4>
+                        <div class="price">Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
                     </div>
-					<div class="col-sm-6">
-						<p><b>Make your inquiry now</b></p>
+					<div class="col-sm-6 py-2">
+						<p><b>You can send your enquiry via the form below.</b></p>
 						<form action="bookhotel-fun.php" method="post" class="w-100">
 							<div class="row">
 								<div class="col-sm-12">

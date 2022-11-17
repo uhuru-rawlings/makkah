@@ -52,7 +52,7 @@
 
 	<div class="offers">
 		<!-- Offers -->
-		<div class="container" id="hotel_cards">
+		<div class="container py-4" id="hotel_cards">
 			<div class="row">
                 <?php
                     $conn = new Database();
@@ -64,17 +64,26 @@
                         $image = explode(",",$product['Location_images']);
                 ?>
                 <div class="col-sm-4">
-                    <div class="card_image">
-                        <img src='<?php echo "uploads/{$image[1]}"?>' alt="" class="hotel_image">
-                    </div>
-                    <div class="hotel_details">
-                       <div class="row">
-						<div class="col-sm-6 hotel_name"><a href="<?php echo $product['Location'] ?>" target="_blank"><b><?php echo $product['Location_Name'] ?></a></b></div>
-							<div class="col-sm-6 price">Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
-					   </div>
-                        <div class="links"><a href='<?php echo "hotel-details.php?hotel_id=".$product['id'] ?>'>See More</a></div>
-                        <button class="btn" onclick="closeOverlay('hotel-booking',this.id)" id="<?php echo $product['id'] ?>">Book Now</button>
-                    </div>
+                    <div class="card">
+						<div class="card_image">
+							<img src='<?php echo "uploads/{$image[1]}"?>' alt="" class="hotel_image">
+						</div>
+						<div class="card-body">
+							<div class="hotel_details">
+							<div class="row">
+								<div class="col-sm-6 hotel_name">
+									<b><i class="fa-solid fa-location-dot"></i> <?php echo $product['Location_Name'] ?></b>
+								</div>
+									<div class="col-sm-6 price"><i class="fa-solid fa-dolar"></i> Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer text-center">
+							<a href='<?php echo "hotel-details.php?hotel_id=".$product['id'] ?>'>
+								<button class="btn" onclick="closeOverlay('hotel-booking',this.id)" id="<?php echo $product['id'] ?>">VIEW DETAILS</button>
+							</a>
+						</div>
+					</div>
                 </div>
                 <?php
                         }
