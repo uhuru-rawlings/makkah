@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/regular.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>ALISHAN TOUR & TRAVEL LTD.</title>
+    <title>Al-Ihsan Tours & Travel Ltd</title>
 </head>
 <body>
     <section class="top-nav">

@@ -3,6 +3,8 @@ include_once("admin/database/Database.php");
 include_once("admin/models/Airline.php");
 include("admin/models/Destinations.php");
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,17 +86,6 @@ include("admin/models/Destinations.php");
 											<!-- <div class="offer_name"><a href="single_listing.html">grand castle</a></div> -->
 										</div>
 									</div>
-<<<<<<< HEAD
-									<div class="col-lg-8">
-										<div class="offers_content">
-											<div class="offers_price">Hotel Booking</div>
-											<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-												<i></i>
-												<i></i>
-												<i></i>
-												<i></i>
-												<i></i>
-=======
 								</div>
 								<div class="col-lg-8">
 									<div class="offers_content">
@@ -237,7 +228,6 @@ include("admin/models/Destinations.php");
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="button book_button"><a href="umra-services.php">Umrah Services<span></span><span></span><span></span></a></div>
->>>>>>> db82d2a40f1510432e3d4e905a2be6d55af5f02b
 											</div>
 											<p class="offers_text">
 												We look for affordable,secure hotels who serves our customers needs and make them available to you.
