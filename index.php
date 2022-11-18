@@ -1080,7 +1080,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
@@ -1092,7 +1091,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
@@ -1104,7 +1102,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
@@ -1116,7 +1113,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
@@ -1128,7 +1124,6 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Trending Item -->
 					<div class="col-lg-3 col-sm-6">
 						<div class="trending_item clearfix">
@@ -1165,6 +1160,109 @@
 						</div>
 					</div>
 
+				</div>
+				<div class="row">
+					<div class="col text-center">
+						<h2 class="section_title">Featured Packages</h2>
+					</div>
+				</div>
+				<div class="row py-4" id="testimonials">
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex justify-space-between">
+									<div class="user_image">
+										<img src="img/users.png" width="100%" height="100%" alt="">
+									</div>
+									<div class="name_and_ratings">
+										<div class="name">Durel</div>
+										<div class="stars">
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<div class="texts">
+									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex justify-space-between">
+									<div class="user_image">
+										<img src="img/users.png" width="100%" height="100%" alt="">
+									</div>
+									<div class="name_and_ratings">
+										<div class="name">Durel</div>
+										<div class="stars">
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-regular fa-star-half-stroke"></i>
+										</div>
+									</div>
+								</div>
+								<div class="texts">
+									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex justify-space-between">
+									<div class="user_image">
+										<img src="img/users.png" width="100%" height="100%" alt="">
+									</div>
+									<div class="name_and_ratings">
+										<div class="name">Durel</div>
+										<div class="stars">
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<div class="texts">
+									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="card-body">
+								<div class="d-flex justify-space-between">
+									<div class="user_image">
+										<img src="img/users.png" width="100%" height="100%" alt="">
+									</div>
+									<div class="name_and_ratings">
+										<div class="name">Durel</div>
+										<div class="stars">
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-sharp fa-solid fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+											<i class="fa-regular fa-star"></i>
+										</div>
+									</div>
+								</div>
+								<div class="texts">
+									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
