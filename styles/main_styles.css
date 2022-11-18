@@ -2198,3 +2198,32 @@ section
 {
 	color: #FFFFFF;
 }
+.user_image{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.user_image img{
+	border-radius: 50%;
+	object-fit: cover;
+}
+.card-body .d-flex{
+	display: flex;
+	justify-content: space-between;
+}
+.name_and_ratings .name{
+	font-weight: 600;
+}
+.name_and_ratings .stars{
+	color: #F15A30;
+}
+#testimonials .card{
+	min-height: 250px;
+}
+#testimonials .card .card-body{
+	position: relative;
+}
+#testimonials .card .card-body .texts{
+	position: absolute;
+	top: 40%;
+}
