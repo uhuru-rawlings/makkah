@@ -84,7 +84,7 @@
 										<div class="offers_image_container">
 
 											<div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
-											<!-- <div class="offer_name"><a href="single_listing.html">grand castle</a></div> -->
+											
 										</div>
 									</div>
 
@@ -236,7 +236,7 @@
 										<div class="offers_image_container">
 											<!-- Image by https://unsplash.com/@itsnwa -->
 											<div class="offers_image_background" style="background-image:url(img/surfing.jpg)"></div>
-											<!-- <div class="offer_name"><a href="single_listing.html">grand castle</a></div> -->
+											
 										</div>
 									</div>
 									<div class="col-lg-8">

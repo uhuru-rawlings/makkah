@@ -679,7 +679,7 @@
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@kensuarez -->
+										
 										<div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
 										<div class="offer_name"><a href="#">grand castle</a></div>
 									</div>
