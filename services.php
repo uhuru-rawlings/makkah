@@ -262,6 +262,7 @@
 			</div>
 			<!-- hotel booking -->
 
+			
 			<div class="overlay_white" id="hotel-booking">
 				<div class="booking_models">
 					<div class="card">

@@ -70,7 +70,6 @@
                             </g>
                         </svg>
                     </div>
-
                     <form id="search_form" class="search_form bez_1">
                         <input type="search" class="search_content_input bez_1">
                     </form>

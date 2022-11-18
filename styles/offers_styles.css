@@ -1831,6 +1831,16 @@ section
 	padding: 20px;
 	color: #FFFFFF;
 }
+@media screen and (max-width: 921px){
+	.booking_models{
+		width: 70%;
+	}
+}
+@media screen and (max-width: 500px){
+	.booking_models{
+		width: 95%;
+	}
+}
 .booking_models .card,.booking_models .card-header,.booking_models .card-footer{
 	background-color: inherit;
 }
