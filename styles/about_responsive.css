@@ -256,10 +256,6 @@
 {
 	p{font-size: 13px;}
 	h1{font-size: 28px;}
-	.top_bar
-	{
-		display: none;
-	}
 	.button
 	{
 		height: 44px;
@@ -270,10 +266,6 @@
 		line-height: 44px;
 		padding-left: 36px;
 		padding-right: 36px;
-	}
-	.logo a img
-	{
-		width: 24px;
 	}
 	.logo a
 	{
@@ -322,11 +314,6 @@
 	.logo a
 	{
 		font-size: 16px;
-	}
-	.logo a img
-	{
-		width: 16px;
-		margin-right: 7px;
 	}
 	.hamburger i
 	{

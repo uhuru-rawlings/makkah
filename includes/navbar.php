@@ -28,13 +28,14 @@
 
     <!-- Main Navigation -->
 
+
     <nav class="main_nav">
         <div class="container">
             <div class="row">
                 <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                     <div class="logo_container">
                         <div class="logo">
-                            <a href="index.php"> <div class="imgz" style="height: 40px; width: 150px;">
+                            <a href="index.php"> <div class="imgz" style="height: 40px; width: 150px !important;">
                                 <img src="images/logo-landscape.png" width="100%" height="100%" style="object-fit: cover;" alt="">
                             </div></a>
                         </div>
