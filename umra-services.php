@@ -106,7 +106,9 @@
 				</div>
 
 			</div>
-            <div class="row py-3">
+		</div>	
+        <div class="container">
+        <div class="row py-3">
                 <div class="col-sm-4">
                     <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Single visa processing</h3>
                     <br>
@@ -125,7 +127,7 @@
                     Each umrah package is designed keeping in view the utmost hospitality and comfort of the pilgrims. So, providing a variety of umrah packages gives pilgrims a choice so they can select the umrah package according to their need, want, and budget. We are on the ground to help you organize a lifetime worth remembering journey to Makkah and Madinah.
                 </div>
             </div>
-		</div>	
+        </div>
         <div class="container">
             <div class="offers_grid">
                 <!-- Offers Item -->
