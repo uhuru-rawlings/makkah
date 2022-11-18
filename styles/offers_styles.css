@@ -1934,8 +1934,10 @@ section
 	margin-bottom: 15px;
 }
 #multiple_images img:nth-child(1){
-	width: 100vw !important;
-	height: 400px;
+	/* width: 100vw !important;
+	height: 400px; */
+	width: 100%;
+	height: auto;
 }
 #hajjbooking .btn{
 	height: 50px;

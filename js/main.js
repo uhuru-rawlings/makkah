@@ -3,10 +3,11 @@ const closeOverlay = (clicked_id,id = 0) =>{
         document.getElementById("hotels").value = id;
     }
     var target = document.getElementById(clicked_id);
-    if(target.style.display == "none"){
-        target.style.display = "flex"
-    }else{
+    if(target.style.display !== "none"){
         target.style.display = "none"
+        
+    }else{
+        target.style.display = "flex"
     }
 }
 

@@ -5,6 +5,7 @@
         
         // define('BASE_URL', 'http://localhost/Fourtech/alishan/');
         define('BASE_URL', 'http://localhost/server/fourtech/Al-Ihsan-ToursAndTravel/');
+        // define('BASE_URL', 'http://fourtechglobalsolutions.com/alhasan/');
     }else{
         define('BASE_URL', '');
     }

@@ -10,6 +10,11 @@
         private $db_password = "Ntheketha26*";
         private $db_name     = "alihsan";
 
+        // private $db_host     = "localhost";
+        // private $db_user     = "fourtech_ali";
+        // private $db_password = "Ntheketha26*";
+        // private $db_name     = "fourtech_ali";
+
         private $conn;
 
         public function connection()
