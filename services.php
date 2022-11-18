@@ -247,7 +247,7 @@
 												<i></i>
 											</div>
 											<p class="offers_text">
-												Do you find it hard to choose the best holyday location for you or you and your family. We have sampled and chosen the best among the best Leisure and holiday destinations for you at an affordable price.
+												Do you find it hard to choose the best holiday location for you or you and your family. We have sampled and chosen the best among the best Leisure and holiday destinations for you at an affordable price.
 											</p>
 											<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
 										</div>

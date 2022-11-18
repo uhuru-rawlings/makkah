@@ -108,12 +108,12 @@
 			</div>
             <div class="row py-3">
                 <div class="col-sm-4">
-                    <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Single visa processing</h3>
+                    <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Single Visa Processing</h3>
                     <br>
                     The Kingdom of Saudi Arabia has made it far easier for prospective Umrah applicants to get their travel visas in a short period. Therefore, we help facilitate the issuing of Umrah Visas to individuals going to Saudi Arabia based on applications submitted via our office. Then, one would have to wait for a few days till the visa processing was done and applications were approved to visit Saudi Arabia.
                 </div>
                 <div class="col-sm-4">
-                    <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Umrah visa express service</h3>
+                    <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Umrah Visa Express Service</h3>
                     <br>
                     Our pleasure to assist you in your trip to Umrah to Saudi Arabia by providing you with Umrah visas.  An Umrah visa can be easily obtained as an electronic visa permit to Saudi Arabia. Electronic visa application for a tourist visa is far more accessible than a regular Umrah visa. The application takes just a few minutes to complete, and the e-Visa arrives at your e-mail address within 72 hours. However, most applications are approved in only 24 hours.
                 </div>
