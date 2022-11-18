@@ -63,7 +63,7 @@
                         foreach($product as $product){
                         $image = explode(",",$product['Location_images']);
                 ?>
-                <div class="col-sm-4">
+                <div class="col-sm-4" style="margin-bottom: 15px;">
                     <div class="card">
 						<div class="card_image">
 							<img src='<?php echo "uploads/{$image[1]}"?>' alt="" class="hotel_image">

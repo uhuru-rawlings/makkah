@@ -2,6 +2,9 @@
 	include_once("admin/database/Database.php");
 	include_once("admin/models/Airline.php");
 	include("admin/models/Destinations.php");
+	session_start();
+	$url = "services.php";
+	$_SESSION['redirect_url'] = $url;
 ?>
 
 
@@ -249,7 +252,7 @@
 											<p class="offers_text">
 												Do you find it hard to choose the best holiday location for you or you and your family. We have sampled and chosen the best among the best Leisure and holiday destinations for you at an affordable price.
 											</p>
-											<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
+											<!-- <div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div> -->
 										</div>
 									</div>
 								</div>
@@ -262,7 +265,7 @@
 			</div>
 			<!-- hotel booking -->
 
-			
+
 			<div class="overlay_white" id="hotel-booking">
 				<div class="booking_models">
 					<div class="card">

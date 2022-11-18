@@ -1,7 +1,10 @@
 <?php
+	session_start();
 	include_once("admin/database/Database.php");
 	include_once("admin/models/Airline.php");
 	include_once("admin/models/Destinations.php");
+	$url= "index.php";
+	$_SESSION['redirect_url'] = $url;
 ?>
 <!DOCTYPE html>
 <html lang="en">
