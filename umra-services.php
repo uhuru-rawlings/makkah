@@ -1,3 +1,8 @@
+<?php
+	session_start();
+    $url= "umra-services.php";
+	$_SESSION['redirect_url'] = $url;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
