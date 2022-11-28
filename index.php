@@ -1066,98 +1066,110 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<h2 class="section_title">Featured Packages</h2>
+						<h2 class="section_title">Featured Hotels</h2>
 					</div>
 				</div>
 				<div class="row trending_container">
 
 					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
+					<div class="col-lg-4 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt=""></div>
+							<div class="trending_image"><img src="img/smh-seasonal-saver.jpg" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">grand hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
+								<div class="trending_title"><a href="#">Swissotel Al Maqam Makkah</a></div>
 							</div>
 						</div>
 					</div>
 					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
+					<div class="col-lg-4 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt=""></div>
+							<div class="trending_image"><img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">mars hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">queen hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt="https://unsplash.com/@oowgnuj"></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">mars hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt="https://unsplash.com/@mindaugas"></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">grand hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt="https://unsplash.com/@itsnwa"></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">mars hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
-							</div>
-						</div>
-					</div>
+								<div class="trending_title"><a href="#">Jabal Omar Hyatt Regency Makkah</a></div>
+								
 
-					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt="https://unsplash.com/@rktkn"></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">queen hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
 							</div>
 						</div>
 					</div>
-
 					<!-- Trending Item -->
-					<div class="col-lg-3 col-sm-6">
+					<div class="col-lg-4 col-sm-6">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt="https://unsplash.com/@thoughtcatalog"></div>
+							<div class="trending_image"><img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">mars hotel</a></div>
-								<div class="trending_price">From $182</div>
-								<div class="trending_location">madrid, spain</div>
+								<div class="trending_title"><a href="#">Makkah Clock Royal Tower Fairmont</a></div>
+								
+
+							</div>
+						</div>
+					</div>
+					<!-- Trending Item -->
+					<div class="col-lg-4 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="img/hcon-1218.webp" alt=""></div>
+							<div class="trending_content">
+								<div class="trending_title"><a href="#">Hilton Makkah Convention Hotel</a></div>
+								
+
+							</div>
+						</div>
+					</div>
+					<!-- Trending Item -->
+					<div class="col-lg-4 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="img/2022-04-13.jpg" alt=""></div>
+							<div class="trending_content">
+								<div class="trending_title"><a href="#">Grand Makkah Hotel</a></div>
+								
+
+							</div>
+						</div>
+					</div>
+					<!-- Trending Item -->
+					<div class="col-lg-4 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="img/Jimbaran_xxxxxxxxx_i126380_11by5.webp" alt=""></div>
+							<div class="trending_content">
+								<div class="trending_title"><a href="#">Movenpick Hotel & Residence Hajar Tower</a></div>
+								
+
+							</div>
+						</div>
+					</div>
+					<!-- Trending Item -->
+					<div class="col-lg-4 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="img/overview-page-carousel-piazza.jpg" alt=""></div>
+							<div class="trending_content">
+								<div class="trending_title"><a href="#">Anjum Hotel Makkah</a></div>
+								
+
+							</div>
+						</div>
+					</div>
+					<!-- Trending Item -->
+					<div class="col-lg-4 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="img/intercontinental-madinah-al-mounawarah-6672236740-2x1.jpeg" alt=""></div>
+							<div class="trending_content">
+								<div class="trending_title"><a href="#">InterContinental Dar al Hijra Madinah</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="img/crowne-plaza-madinah-4153649785-3x2.jpeg" alt=""></div>
+							<div class="trending_content">
+								<div class="trending_title"><a href="#">Grawne Plaza Madinah</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<div class="trending_item clearfix">
+							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt=""></div>
+							<div class="trending_content">
+								<div class="trending_title"><a href="#">Anwar Al Madinah Movenpick Hotel</a></div>
+								
+
 							</div>
 						</div>
 					</div>

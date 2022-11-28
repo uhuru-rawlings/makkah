@@ -146,7 +146,7 @@
 											<p class="offers_text">
 												We work hard to avail visa to our clients who need them, We are well connected and we can process your visa legaly but faster.
 											</p>
-											<div class="button book_button" onclick="closeOverlay('appointment-booking')"><a href="javascript:void(0)">book<span></span><span></span><span></span></a></div>
+											<div class="button book_button"><a href="visa-assistance.php">Read More<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
 								</div>
@@ -414,37 +414,7 @@
 				</div>
 			</div>
 			<!-- end flight booking -->
-			<!-- book appointment -->
-			<div class="overlay_white" id="appointment-booking">
-				<div class="booking_models">
-					<div class="card">
-						<div class="card-header">
-							Book Visa Appointments
-						</div>
-						<div class="card-body">
-							<form action="bookappointments.php" method="post" class="w-100">
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="form-group">
-											<label for="appointmentdate">Date</label>
-											<input type="date" oninput="removeErrors(this.id)" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
-										</div>
-									</div>
-									<div class="col-sm-12">
-										<div class="form-group" style="margin-top: 20px;">
-											<input type="submit" onclick="return validateVisaBookings()" value="Book Appointment" name="save" class="btn btn-secondary">
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="card-footer">
-							<button class="btn btn-secondary" onclick="closeOverlay('appointment-booking')">close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end book appointment -->
+
 			<!-- Footer -->
 		</div>
 

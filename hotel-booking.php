@@ -50,9 +50,60 @@
 
 	<!-- Offers -->
 
-	<div class="offers">
+	<div class="offers py-4">
+		<div class="container py-2">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="img/hotel-bookings.jpg" width="100%" style="height: auto;" alt="">
+				</div>
+				<div class="col-sm-8">
+					<p>
+						Our vast network of hotels locally and worldwide enables us to provide the best deals and rates available to our clients.
+					</p>
+					<p>
+						You can rely on our professional hotel booking services to guarantee your space in the most comfortable and affordable accommodation at your destination. 
+					</p>
+					<p>
+						Whether traveling locally or abroad for a holiday, business, medical or educational purposes, we can organize timely pickup services to get you from the airport into your booked hotel for your stay or as you wait for other transit. 
+					</p>
+					<p>
+						The best thing about booking your hotel and accommodation with us is that we are constantly updated on facilities offering seasonal or promotional discounts and would like you to sample their world-class hospitality. 
+					</p>
+					<p>
+						You may also be eligible for discounts should you book your flight and accommodation with us; try us today.
+					</p>
+				</div>
+			</div>
+			<h3>We ensure that:</h3>
+			<ul>
+				<li>
+					Hotels and quotations are based on the lowest possible rates.
+				</li>
+				<li>
+					You remain updated on the status of reservations and informed of additional offers.
+				</li>
+				<li>
+					We leverage relationships with hotels to get the best possible deals for you.
+				</li>
+				<li>
+					Arriving at a new destination can be a daunting experience, but a friendly face can improve it; our team Assists services are available at your destination airport. 
+				</li>
+				<li>
+					A warm welcome by our team at the airport. 
+				</li>
+				<li>
+					Escort through immigration, baggage collection, customs clearance, and airport transfer.
+				</li>
+				<li>
+					Visa delivery to airport immigration.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="offers py-4">
 		<!-- Offers -->
-		<div class="container py-4" id="hotel_cards">
+		<div class="container py-2" id="hotel_cards">
+			<h2>Book With Us.</h2>
 			<div class="row">
                 <?php
                     $conn = new Database();
