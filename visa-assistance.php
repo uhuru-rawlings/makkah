@@ -55,7 +55,7 @@
 		<div class="container py-4" id="hotel_cards">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="" width="100%" style="height: auto;" alt="">
+                    <img src="img/visa-assistance.jpg" width="100%" style="height: auto;" alt="">
                 </div>
                 <div class="col-sm-8">
                     <p>
@@ -69,33 +69,35 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h3>Types of Visa</h3>
-                <ul>
-                    <li>Medical visa</li>
-                    <li>Student visa</li>
-                    <li>Tourist visa</li>
-                    <li>Business and work permit visa</li>
-                    <li>Transit visa</li>
-                    <li>Single entry visa</li>
-                    <li>Multiple entry visa</li>
-                </ul>
-            </div>
-            <div class="col-sm-6">
-                <h3>Consultation and visa for:</h3>
-                <ul>
-                    <li>Kenya </li>
-                    <li>Somalia</li>
-                    <li>India </li>
-                    <li>Saudi Arabia </li>
-                    <li>Uganda </li>
-                    <li>Turkey </li>
-                    <li>Malaysia </li>
-                    <li>Qatar </li>
-                    <li>Kuwait </li>
-                    <li>Egypt </li>
-                    <li>UAE</li>
-                </ul>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Types of Visa</h3>
+                    <ul>
+                        <li>Medical visa</li>
+                        <li>Student visa</li>
+                        <li>Tourist visa</li>
+                        <li>Business and work permit visa</li>
+                        <li>Transit visa</li>
+                        <li>Single entry visa</li>
+                        <li>Multiple entry visa</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Consultation and visa for:</h3>
+                    <ul>
+                        <li>Kenya </li>
+                        <li>Somalia</li>
+                        <li>India </li>
+                        <li>Saudi Arabia </li>
+                        <li>Uganda </li>
+                        <li>Turkey </li>
+                        <li>Malaysia </li>
+                        <li>Qatar </li>
+                        <li>Kuwait </li>
+                        <li>Egypt </li>
+                        <li>UAE</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-sm-6">
                 <div class="button book_button" onclick="closeOverlay('appointment-booking')"><a href="javascript:void(0)">Book Appointment<span></span><span></span><span></span></a></div>
