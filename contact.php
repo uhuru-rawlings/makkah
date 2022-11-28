@@ -60,18 +60,18 @@
 
 						<!-- About Info -->
 
-						<div class="about_content">
+						<!-- <div class="about_content">
 							<div class="logo_container about_logo">
 								<div><a href="index"><img src="images/logo-landscape.png" width="50%" height="auto" alt=""></a></div>
 							</div>
-							<p class="about_text">Al-Ihsan also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.</p>
 							<ul class="about_social_list">
 								<li class="about_social_item "><a href="https://www.facebook.com/profile.php?id=100086970790856"><i class="about_social_item_vertical fa-brands fa-facebook fa-2x"></i></a></li>
 								<li class="about_social_item "><a href="#"><i class="about_social_item_vertical fa-brands fa-whatsapp fa-2x"></i></a></li>
 							</ul>
-						</div>
+						</div> -->
 
 						<div class="about_info">
+							<h3>Nairobi</h3>
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
 									<div>
@@ -90,6 +90,23 @@
 										<div class="contact_info_icon"><img src="images/message.svg" alt=""></div>
 									</div>
 									<div class="contact_info_text"><a href="mailto:info@al-ihsanumrah.com" target="_top">info@al-ihsanumrah.com</a></div>
+								</li>
+							</ul>
+						</div>
+						<div class="about_info">
+							<h3>Amsterdam, Netherlands</h3>
+							<ul class="contact_info_list">
+								<li class="contact_info_item d-flex flex-row">
+									<div>
+										<div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div>
+									</div>
+									<div class="contact_info_text"><a href="tel:+31684058008">+31684058008</a></div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div>
+										<div class="contact_info_icon"><img src="images/message.svg" alt=""></div>
+									</div>
+									<div class="contact_info_text"><a href="mailto:info@hollandumrah.com" target="_top">info@hollandumrah.com</a></div>
 								</li>
 							</ul>
 						</div>

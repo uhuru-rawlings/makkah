@@ -130,7 +130,7 @@
 										<div class="offers_image_container">
 											<!-- Image by https://unsplash.com/@thoughtcatalog -->
 											<div class="offers_image_background" style="background-image:url(img/visa-assistance.jpg)"></div>
-											<div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div>
+											<!-- <div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div> -->
 										</div>
 									</div>
 									<div class="col-lg-8">
@@ -144,7 +144,7 @@
 												<i></i>
 											</div>
 											<p class="offers_text">
-												We work hard to avail visa to our clients who need them, We are well connected and we can process your visa legaly but faster.
+												We are a Travel Management Agent and offer various visa assistance services to our clients. Our visa expert team will give full visa assistance, such as application, file completion, and submissions.
 											</p>
 											<div class="button book_button"><a href="visa-assistance.php">Read More<span></span><span></span><span></span></a></div>
 										</div>
