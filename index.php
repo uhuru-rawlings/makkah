@@ -918,11 +918,13 @@
 										<div class="test_content_container">
 											<div class="test_content">
 												<div class="test_item_info">
-													<div class="test_name">carla smith</div>
-													<div class="test_date">May 24, 2017</div>
+													<div class="test_name">Kennedy</div>
+													<div class="test_date">Oct 10, 2022</div>
 												</div>
-												<div class="test_quote_title">" Best holliday ever "</div>
-												<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+												<div class="test_quote_title">" Cost Effective Holyday "</div>
+												<p class="test_quote_text">
+													If you are looking to spend less but enjoy more, This is the right place for you.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -936,11 +938,13 @@
 										<div class="test_content_container">
 											<div class="test_content">
 												<div class="test_item_info">
-													<div class="test_name">carla smith</div>
-													<div class="test_date">May 24, 2017</div>
+													<div class="test_name">Annita</div>
+													<div class="test_date">Jul 13, 2022</div>
 												</div>
 												<div class="test_quote_title">" Best holliday ever "</div>
-												<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+												<p class="test_quote_text">
+													They have made me discover places that are very nice to spend your holyday after hard seasons of work.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -954,65 +958,13 @@
 										<div class="test_content_container">
 											<div class="test_content">
 												<div class="test_item_info">
-													<div class="test_name">carla smith</div>
-													<div class="test_date">May 24, 2017</div>
+													<div class="test_name">Clara</div>
+													<div class="test_date">Jun 01, 2022</div>
 												</div>
-												<div class="test_quote_title">" Best holliday ever "</div>
-												<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Testimonial Item -->
-								<div class="owl-item">
-									<div class="test_item">
-										<div class="test_image"><img src="images/test_2.jpg" alt=""></div>
-										<div class="test_icon"><img src="images/island_t.png" alt=""></div>
-										<div class="test_content_container">
-											<div class="test_content">
-												<div class="test_item_info">
-													<div class="test_name">carla smith</div>
-													<div class="test_date">May 24, 2017</div>
-												</div>
-												<div class="test_quote_title">" Best holliday ever "</div>
-												<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Testimonial Item -->
-								<div class="owl-item">
-									<div class="test_item">
-										<div class="test_image"><img src="images/test_1.jpg" alt=""></div>
-										<div class="test_icon"><img src="images/backpack.png" alt=""></div>
-										<div class="test_content_container">
-											<div class="test_content">
-												<div class="test_item_info">
-													<div class="test_name">carla smith</div>
-													<div class="test_date">May 24, 2017</div>
-												</div>
-												<div class="test_quote_title">" Best holliday ever "</div>
-												<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Testimonial Item -->
-								<div class="owl-item">
-									<div class="test_item">
-										<div class="test_image"><img src="images/test_3.jpg" alt=""></div>
-										<div class="test_icon"><img src="images/kayak.png" alt=""></div>
-										<div class="test_content_container">
-											<div class="test_content">
-												<div class="test_item_info">
-													<div class="test_name">carla smith</div>
-													<div class="test_date">May 24, 2017</div>
-												</div>
-												<div class="test_quote_title">" Best holliday ever "</div>
-												<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+												<div class="test_quote_title">" Quick Visa "</div>
+												<p class="test_quote_text">
+													Normaly it can be really hard to get a visa but with alishan i got mine with much ease.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -1072,7 +1024,7 @@
 				<div class="row trending_container">
 
 					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
+					<div class="col-lg-6 col-sm-6">
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/smh-seasonal-saver.jpg" alt=""></div>
 							<div class="trending_content">
@@ -1081,7 +1033,7 @@
 						</div>
 					</div>
 					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
+					<div class="col-lg-6 col-sm-6">
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt=""></div>
 							<div class="trending_content">
@@ -1092,7 +1044,7 @@
 						</div>
 					</div>
 					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
+					<div class="col-lg-6 col-sm-6">
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt=""></div>
 							<div class="trending_content">
@@ -1103,7 +1055,7 @@
 						</div>
 					</div>
 					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
+					<div class="col-lg-6 col-sm-6">
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/hcon-1218.webp" alt=""></div>
 							<div class="trending_content">
@@ -1114,169 +1066,6 @@
 						</div>
 					</div>
 					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/2022-04-13.jpg" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">Grand Makkah Hotel</a></div>
-								
-
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/Jimbaran_xxxxxxxxx_i126380_11by5.webp" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">Movenpick Hotel & Residence Hajar Tower</a></div>
-								
-
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/overview-page-carousel-piazza.jpg" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">Anjum Hotel Makkah</a></div>
-								
-
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/intercontinental-madinah-al-mounawarah-6672236740-2x1.jpeg" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">InterContinental Dar al Hijra Madinah</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/crowne-plaza-madinah-4153649785-3x2.jpeg" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">Grawne Plaza Madinah</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hotel-bookings.jpg" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title"><a href="#">Anwar Al Madinah Movenpick Hotel</a></div>
-								
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="row">
-					<div class="col text-center">
-						<h2 class="section_title">Testimonials</h2>
-					</div>
-				</div>
-				<div class="row py-4" id="testimonials">
-					<div class="col-sm-3">
-						<div class="card">
-							<div class="card-body">
-								<div class="d-flex justify-space-between">
-									<div class="user_image">
-										<img src="img/users.png" width="100%" height="100%" alt="">
-									</div>
-									<div class="name_and_ratings">
-										<div class="name">Durel</div>
-										<div class="stars">
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-										</div>
-									</div>
-								</div>
-								<div class="texts">
-									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="card">
-							<div class="card-body">
-								<div class="d-flex justify-space-between">
-									<div class="user_image">
-										<img src="img/users.png" width="100%" height="100%" alt="">
-									</div>
-									<div class="name_and_ratings">
-										<div class="name">Durel</div>
-										<div class="stars">
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-regular fa-star-half-stroke"></i>
-										</div>
-									</div>
-								</div>
-								<div class="texts">
-									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="card">
-							<div class="card-body">
-								<div class="d-flex justify-space-between">
-									<div class="user_image">
-										<img src="img/users.png" width="100%" height="100%" alt="">
-									</div>
-									<div class="name_and_ratings">
-										<div class="name">Durel</div>
-										<div class="stars">
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-regular fa-star"></i>
-										</div>
-									</div>
-								</div>
-								<div class="texts">
-									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="card">
-							<div class="card-body">
-								<div class="d-flex justify-space-between">
-									<div class="user_image">
-										<img src="img/users.png" width="100%" height="100%" alt="">
-									</div>
-									<div class="name_and_ratings">
-										<div class="name">Durel</div>
-										<div class="stars">
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-sharp fa-solid fa-star"></i>
-											<i class="fa-regular fa-star"></i>
-											<i class="fa-regular fa-star"></i>
-										</div>
-									</div>
-								</div>
-								<div class="texts">
-									I have been a berneficiary for your visa services and all i can say it was greate, very reliable people.
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
