@@ -463,22 +463,20 @@
 
 
 				<div class="row intro_items">
-
 					<!-- Intro Item -->
-
 					<div class="col-lg-4 intro_col">
 						<div class="intro_item">
 							<div class="intro_item_overlay"></div>
 							
 							<div class="intro_item_background" style="background-image:url(images/intro_1.jpg)"></div>
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="intro_date">May 25th - June 01st</div>
-								<div class="button intro_button">
-									<div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a>
+								<!-- <div class="intro_date">May 25th - June 01st</div> -->
+								<div class="button intro_button" onclick="openBookHotel('JABAL OMAR HYATT REGENCY MAKKAH')">
+									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
 								</div>
 								<div class="intro_center text-center">
-									<h1>Mauritius</h1>
-									<div class="intro_price">From $1450</div>
+									<h3 class="text-light">JABAL OMAR HYATT REGENCY MAKKAH</h3>
+									<!-- <div class="intro_price">From $1450</div> -->
 									<div class="rating rating_4">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -490,22 +488,20 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Intro Item -->
-
 					<div class="col-lg-4 intro_col">
 						<div class="intro_item">
 							<div class="intro_item_overlay"></div>
 							
 							<div class="intro_item_background" style="background-image:url(images/intro_2.jpg)"></div>
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="intro_date">May 25th - June 01st</div>
-								<div class="button intro_button">
-									<div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a>
+								<!-- <div class="intro_date">May 25th - June 01st</div> -->
+								<div class="button intro_button" onclick="openBookHotel('HILTON MAKKAH CONVENTION HOTEL')">
+									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
 								</div>
 								<div class="intro_center text-center">
-									<h1>Greece</h1>
-									<div class="intro_price">From $1450</div>
+									<h3 class="text-light">HILTON MAKKAH CONVENTION HOTEL</h3>
+									<!-- <div class="intro_price">From $1450</div> -->
 									<div class="rating rating_4">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -517,22 +513,20 @@
 							</div>
 						</div>
 					</div>
-
 					<!-- Intro Item -->
-
 					<div class="col-lg-4 intro_col">
 						<div class="intro_item">
 							<div class="intro_item_overlay"></div>
 							<!-- Image by https://unsplash.com/@willianjusten -->
 							<div class="intro_item_background" style="background-image:url(images/intro_3.jpg)"></div>
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-								<div class="intro_date">May 25th - June 01st</div>
-								<div class="button intro_button">
-									<div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a>
+								<!-- <div class="intro_date">May 25th - June 01st</div> -->
+								<div class="button intro_button" onclick="openBookHotel('SWISSOTEL AL MAQAM MAKKAH')">
+									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
 								</div>
 								<div class="intro_center text-center">
-									<h1>Scotland</h1>
-									<div class="intro_price">From $1450</div>
+									<h3 class="text-light">SWISSOTEL AL MAQAM MAKKAH</h3>
+									<!-- <div class="intro_price">From $1450</div> -->
 									<div class="rating rating_4">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -544,12 +538,53 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 		<!-- objectives -->
-
+		<div class="white_overlay_apply_hotel" id="white_overlay_apply_hotel">
+			<div class="col-sm-6 py-2 m-auto">
+				<div class="card">
+					<div class="card-header">
+						<h4>You can send your enquiry via the form below.</h4>
+					</div>
+					<div class="card-body">
+						<form action="book_hotels_fun.php" method="post" class="w-100">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group" style="display: none;">
+										<label for="hotel_name">Hotel Name</label>
+										<input type="text" name="hotel_name" id="hotel_name" class="form-control" placeholder="Hotel name">
+									</div>
+									<div class="form-group">
+										<label for="numbers">Number of People</label>
+										<input type="number" oninput="removeErrors(this.id)" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="5" min="1" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="fromdate">From Date</label>
+										<input type="date" oninput="removeErrors(this.id)" name="fromdate" id="fromdate" class="shadow-none form-control" required>
+									</div>
+									<div class="form-group">
+										<label for="todate">To Date</label>
+										<input type="date" oninput="removeErrors(this.id)" name="todate" id="todate" class="shadow-none form-control" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group" style="margin-top: 20px;">
+										<input type="submit" value="Book Now" name="bookhotel" class="btn btn-primary btn btn-secondary" id="book">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="card-footer">
+						<button class="btn btn-secondary" onclick="closeBookHotel()">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- CTA -->
 
 		<div class="cta">

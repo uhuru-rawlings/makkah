@@ -16,6 +16,14 @@ const removeErrors = (clicked_id) =>{
 }
 
 
+const openBookHotel = (hotel_name) => {
+    document.getElementById("hotel_name").value = hotel_name;
+    document.getElementById("white_overlay_apply_hotel").style.display = "block";
+}
+const closeBookHotel = () => {
+    document.getElementById("white_overlay_apply_hotel").style.display = "none";
+}
+
 const validateHotelBooking = () =>{
     var hotels = document.getElementById("hetels");
     var numbers = document.getElementById("numbers");

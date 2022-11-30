@@ -1713,7 +1713,19 @@ section
 /*********************************
 11. Trending
 *********************************/
-
+.white_overlay_apply_hotel{
+	height: 100%;
+	background-color: rgba(255,255,255,.6);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 3455456576;
+	display: none;
+}
+.white_overlay_apply_hotel .card{
+	background-color: #FFFFFF;
+}
 .trending
 {
 	width: 100%;
