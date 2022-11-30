@@ -460,131 +460,9 @@
 						</ul>
 					</div>
 				</div>
-
-
-				<div class="row intro_items">
-					<!-- Intro Item -->
-					<div class="col-lg-4 intro_col">
-						<div class="intro_item">
-							<div class="intro_item_overlay"></div>
-							
-							<div class="intro_item_background" style="background-image:url(images/intro_1.jpg)"></div>
-							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-								<!-- <div class="intro_date">May 25th - June 01st</div> -->
-								<div class="button intro_button" onclick="openBookHotel('JABAL OMAR HYATT REGENCY MAKKAH')">
-									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
-								</div>
-								<div class="intro_center text-center">
-									<h3 class="text-light">JABAL OMAR HYATT REGENCY MAKKAH</h3>
-									<!-- <div class="intro_price">From $1450</div> -->
-									<div class="rating rating_4">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Intro Item -->
-					<div class="col-lg-4 intro_col">
-						<div class="intro_item">
-							<div class="intro_item_overlay"></div>
-							
-							<div class="intro_item_background" style="background-image:url(images/intro_2.jpg)"></div>
-							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-								<!-- <div class="intro_date">May 25th - June 01st</div> -->
-								<div class="button intro_button" onclick="openBookHotel('HILTON MAKKAH CONVENTION HOTEL')">
-									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
-								</div>
-								<div class="intro_center text-center">
-									<h3 class="text-light">HILTON MAKKAH CONVENTION HOTEL</h3>
-									<!-- <div class="intro_price">From $1450</div> -->
-									<div class="rating rating_4">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Intro Item -->
-					<div class="col-lg-4 intro_col">
-						<div class="intro_item">
-							<div class="intro_item_overlay"></div>
-							<!-- Image by https://unsplash.com/@willianjusten -->
-							<div class="intro_item_background" style="background-image:url(images/intro_3.jpg)"></div>
-							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-								<!-- <div class="intro_date">May 25th - June 01st</div> -->
-								<div class="button intro_button" onclick="openBookHotel('SWISSOTEL AL MAQAM MAKKAH')">
-									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
-								</div>
-								<div class="intro_center text-center">
-									<h3 class="text-light">SWISSOTEL AL MAQAM MAKKAH</h3>
-									<!-- <div class="intro_price">From $1450</div> -->
-									<div class="rating rating_4">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 		<!-- objectives -->
-		<div class="white_overlay_apply_hotel" id="white_overlay_apply_hotel">
-			<div class="col-sm-6 py-2 m-auto">
-				<div class="card">
-					<div class="card-header">
-						<h4>You can send your enquiry via the form below.</h4>
-					</div>
-					<div class="card-body">
-						<form action="book_hotels_fun.php" method="post" class="w-100">
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="form-group" style="display: none;">
-										<label for="hotel_name">Hotel Name</label>
-										<input type="text" name="hotel_name" id="hotel_name" class="form-control" placeholder="Hotel name">
-									</div>
-									<div class="form-group">
-										<label for="numbers">Number of People</label>
-										<input type="number" oninput="removeErrors(this.id)" name="numbers" id="numbers" class="shadow-none form-control" value="1" max="5" min="1" required>
-									</div>
-								</div>
-								<div class="col-sm-12">
-									<div class="form-group">
-										<label for="fromdate">From Date</label>
-										<input type="date" oninput="removeErrors(this.id)" name="fromdate" id="fromdate" class="shadow-none form-control" required>
-									</div>
-									<div class="form-group">
-										<label for="todate">To Date</label>
-										<input type="date" oninput="removeErrors(this.id)" name="todate" id="todate" class="shadow-none form-control" required>
-									</div>
-								</div>
-								<div class="col-sm-12">
-									<div class="form-group" style="margin-top: 20px;">
-										<input type="submit" value="Book Now" name="bookhotel" class="btn btn-primary btn btn-secondary" id="book">
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="card-footer">
-						<button class="btn btn-secondary" onclick="closeBookHotel()">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- CTA -->
 
 		<div class="cta">
@@ -709,7 +587,15 @@
 					</div>
 				</div>
 				<div class="row offers_items">
-
+					<?php
+						$conn = new Database();
+						$db   = $conn -> connection();
+						$products = new Destinations($db);
+						$product = $products -> getFewDestinations();
+						if($product){
+							foreach($product as $product){
+							$image = explode(",",$product['Location_images']);
+					?>
 					<!-- Offers Item -->
 					<div class="col-lg-6 offers_col">
 						<div class="offers_item">
@@ -717,13 +603,13 @@
 								<div class="col-lg-6">
 									<div class="offers_image_container">
 										
-										<div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
-										<div class="offer_name"><a href="#">grand castle</a></div>
+										<div class="offers_image_background" style="background-image:url(<?php echo "uploads/{$image[1]}"?>)"></div>
+										<div class="offer_name"><a href="#"><?php echo $product['Location_Name'] ?></a></div>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="offers_content">
-										<div class="offers_price">$70<span>per night</span></div>
+										<!-- <div class="offers_price">$70<span>per night</span></div> -->
 										<div class="rating_r rating_r_4 offers_rating">
 											<i></i>
 											<i></i>
@@ -740,195 +626,19 @@
 												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
-										<div class="offers_link"><a href="offers.html">read more</a></div>
+										<div class="offers_link"><a href="<?php echo "hotel-details.php?hotel_id=".$product['id'] ?>">read more</a></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<!-- Offers Item -->
-					<div class="col-lg-6 offers_col">
-						<div class="offers_item">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="offers_image_container">
-										<!-- Image by Egzon Bytyqi -->
-										<div class="offers_image_background" style="background-image:url(images/offer_2.jpg)"></div>
-										<div class="offer_name"><a href="#">turkey hills</a></div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="offers_content">
-										<div class="offers_price">$50<span>per night</span></div>
-										<div class="rating_r rating_r_4 offers_rating">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
-										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-											</ul>
-										</div>
-										<div class="offers_link"><a href="offers.html">read more</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Offers Item -->
-					<div class="col-lg-6 offers_col">
-						<div class="offers_item">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@nevenkrcmarek -->
-										<div class="offers_image_background" style="background-image:url(images/offer_3.jpg)"></div>
-										<div class="offer_name"><a href="#">island dream</a></div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="offers_content">
-										<div class="offers_price">$90<span>per night</span></div>
-										<div class="rating_r rating_r_4 offers_rating">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
-										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-											</ul>
-										</div>
-										<div class="offers_link"><a href="offers.html">read more</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Offers Item -->
-					<div class="col-lg-6 offers_col">
-						<div class="offers_item">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@mantashesthaven -->
-										<div class="offers_image_background" style="background-image:url(images/offer_4.jpg)"></div>
-										<div class="offer_name"><a href="#">travel light</a></div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="offers_content">
-										<div class="offers_price">$30<span>per night</span></div>
-										<div class="rating_r rating_r_4 offers_rating">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
-										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-											</ul>
-										</div>
-										<div class="offers_link"><a href="offers.html">read more</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
+					<?php
+							}
+						}
+					?>
 				</div>
 			</div>
 		</div>
-
-		<!-- core values -->
-		<!-- <div class="testimonials">
-			<div class="test_border"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col text-center">
-						<h2 class="section_title">Our core values</h2>
-					</div>
-				</div>
-				<div id="core_values">
-					<div class="row py-2">
-						<div class="col-sm-4" style="height: 220px;">
-							<img src="img/transparency.jpg" height="100%" width="100%" alt="">
-						</div>
-						<div class="col-sm-8">
-							<div class="core_values_text">
-								<h4 class="trending_title">Transparency</h4>
-								<p>
-									Building trust in all business and personal dealings.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row py-2">
-						<div class="col-sm-4">
-							<img src="img/quanlity.jpg" height="100%" width="100%" alt="">
-						</div>
-						<div class="col-sm-8">
-							<div class="core_values_text">
-								<h4 class="trending_title">Quality</h4>
-								<p>
-									We provide outstanding products and services that deliver premium value to our clients and end agents.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row py-2">
-						<div class="col-sm-4">
-							<img src="img/respect.jpg" height="100%" width="100%" alt="">
-						</div>
-						<div class="col-sm-8">
-							<div class="core_values_text">
-								<h4 class="trending_title">Respect</h4>
-								<p>
-									For ourselves, our guests, our partners, and our team.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row py-2">
-						<div class="col-sm-4">
-							<img src="img/integrity.jpg" height="100%" width="100%" alt="">
-						</div>
-						<div class="col-sm-8">
-							<div class="core_values_text">
-								<h4 class="trending_title">Integrity</h4>
-								<p>
-									We uphold the highest standards of integrity in all our actions.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- Testimonials -->
-
 		<div class="testimonials">
 			<div class="test_border"></div>
 			<div class="container">
@@ -1057,7 +767,6 @@
 					</div>
 				</div>
 				<div class="row trending_container">
-
 					<!-- Trending Item -->
 					<div class="col-lg-6 col-sm-6">
 						<div class="trending_item clearfix">
@@ -1073,8 +782,6 @@
 							<div class="trending_image"><img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt=""></div>
 							<div class="trending_content">
 								<div class="trending_title"><a href="#">Jabal Omar Hyatt Regency Makkah</a></div>
-								
-
 							</div>
 						</div>
 					</div>
