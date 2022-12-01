@@ -472,7 +472,7 @@
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
 								<!-- <div class="intro_date">May 25th - June 01st</div> -->
 								<div class="button intro_button" onclick="openBookHotel('JABAL OMAR HYATT REGENCY MAKKAH')">
-									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
+									<div class="button_bcg"></div><a href="javascript:void(0)">Book Now<span></span><span></span><span></span></a>
 								</div>
 								<div class="intro_center text-center">
 									<h3 class="text-light">JABAL OMAR HYATT REGENCY MAKKAH</h3>
@@ -497,7 +497,7 @@
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
 								<!-- <div class="intro_date">May 25th - June 01st</div> -->
 								<div class="button intro_button" onclick="openBookHotel('HILTON MAKKAH CONVENTION HOTEL')">
-									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
+									<div class="button_bcg"></div><a href="javascript:void(0)">Book Now<span></span><span></span><span></span></a>
 								</div>
 								<div class="intro_center text-center">
 									<h3 class="text-light">HILTON MAKKAH CONVENTION HOTEL</h3>
@@ -522,7 +522,7 @@
 							<div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
 								<!-- <div class="intro_date">May 25th - June 01st</div> -->
 								<div class="button intro_button" onclick="openBookHotel('SWISSOTEL AL MAQAM MAKKAH')">
-									<div class="button_bcg"></div><a href="javascript:void(0)">Apply Now<span></span><span></span><span></span></a>
+									<div class="button_bcg"></div><a href="javascript:void(0)">Book Now<span></span><span></span><span></span></a>
 								</div>
 								<div class="intro_center text-center">
 									<h3 class="text-light">SWISSOTEL AL MAQAM MAKKAH</h3>
