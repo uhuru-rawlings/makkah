@@ -617,7 +617,9 @@
 											<i></i>
 											<i></i>
 										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+										<p class="offers_text main_offer_text">
+											<?php echo $product['place_description'] ?>
+										</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
 												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
@@ -637,6 +639,7 @@
 						}
 					?>
 				</div>
+
 				<div class="button book_button">
 					<div class="button_bcg"></div><a href="hotel-booking.php">See More <span></span><span></span><span></span></a>
 				</div>

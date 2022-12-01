@@ -1726,6 +1726,13 @@ section
 .white_overlay_apply_hotel .card{
 	background-color: #FFFFFF;
 }
+.main_offer_text {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   -webkit-box-orient: vertical;
+}
 .book_button
 {
 	background: #0143a9;
