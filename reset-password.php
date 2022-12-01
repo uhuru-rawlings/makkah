@@ -43,19 +43,19 @@
                 ?>
                 <div class="form-group">
                     <label for="username">Email</label>
-                    <input type="email" name="username" id="username" class="form-control" placeholder="Email">
+                    <input type="email" name="username" id="username" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                            <input type="password" minlength="6" maxlength="16" required name="password" id="password" class="form-control" placeholder="Password">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="cpassword">Confirm Password</label>
-                            <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="Password">
+                            <input type="password" minlength="6" maxlength="16" required name="cpassword" id="cpassword" class="form-control" placeholder="Password">
                         </div>
                     </div>
                 </div>
