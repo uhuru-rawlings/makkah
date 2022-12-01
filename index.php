@@ -778,7 +778,9 @@
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/smh-seasonal-saver.jpg" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">Swissotel Al Maqam Makkah</a></div>
+								<div class="trending_titles">
+									<h4>Swissotel Al Maqam Makkah</h4>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -787,7 +789,9 @@
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">Jabal Omar Hyatt Regency Makkah</a></div>
+								<div class="trending_title">
+									<h4>Jabal Omar Hyatt Regency Makkah</h4>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -796,9 +800,9 @@
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">Makkah Clock Royal Tower Fairmont</a></div>
-								
-
+								<div class="trending_title">
+									<h4>Makkah Clock Royal Tower Fairmont</h4>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -807,9 +811,7 @@
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/hcon-1218.webp" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">Hilton Makkah Convention Hotel</a></div>
-								
-
+								<div class="trending_title"><h4>Hilton Makkah Convention Hotel</h4></div>
 							</div>
 						</div>
 					</div>

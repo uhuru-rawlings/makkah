@@ -1733,6 +1733,12 @@ section
    -webkit-line-clamp: 4;
    -webkit-box-orient: vertical;
 }
+.trending_item .trending_titles{
+	color: #110603;
+}
+.trending_item h4{
+	color: #110603;
+}
 .book_button
 {
 	background: #0143a9;
