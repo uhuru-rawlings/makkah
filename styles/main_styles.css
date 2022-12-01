@@ -1726,6 +1726,22 @@ section
 .white_overlay_apply_hotel .card{
 	background-color: #FFFFFF;
 }
+.book_button
+{
+	background: #0143a9;
+	margin-top: 39px;
+	margin-bottom: -5px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	color: #FFFFFF;
+}
+.book_button:hover
+{
+	opacity: 0.8;
+}
 .trending
 {
 	width: 100%;

@@ -637,6 +637,9 @@
 						}
 					?>
 				</div>
+				<div class="button book_button">
+					<div class="button_bcg"></div><a href="hotel-booking.php">See More <span></span><span></span><span></span></a>
+				</div>
 			</div>
 		</div>
 		<div class="testimonials">
