@@ -609,28 +609,16 @@ $_SESSION['redirect_url'] = $url;
 												<div class="offer_name"><a href="#"><?php echo $product['Location_Name'] ?></a></div>
 											</div>
 										</div>
-
-										<div class="col-lg-6">
-											<div class="offers_content">
-												<!-- <div class="offers_price">$70<span>per night</span></div> -->
-												<div class="rating_r rating_r_4 offers_rating">
-													<i></i>
-													<i></i>
-													<i></i>
-													<i></i>
-													<i></i>
-												</div>
-												<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
-												<div class="offers_icons">
-													<ul class="offers_icons_list">
-														<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-														<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-														<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-														<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-													</ul>
-												</div>
-												<div class="offers_link"><a href="<?php echo "hotel-details.php?hotel_id=" . $product['id'] ?>">read more</a></div>
-											</div>
+										<p class="offers_text main_offer_text">
+											<?php echo $product['place_description'] ?>
+										</p>
+										<div class="offers_icons">
+											<ul class="offers_icons_list">
+												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											</ul>
 										</div>
 
 									</div>
@@ -643,6 +631,7 @@ $_SESSION['redirect_url'] = $url;
 					}
 					?>
 				</div>
+
 				<div class="button book_button">
 					<div class="button_bcg"></div><a href="hotel-booking.php">See More <span></span><span></span><span></span></a>
 				</div>
@@ -781,7 +770,9 @@ $_SESSION['redirect_url'] = $url;
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/smh-seasonal-saver.jpg" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">Swissotel Al Maqam Makkah</a></div>
+								<div class="trending_titles">
+									<h4>Swissotel Al Maqam Makkah</h4>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -790,7 +781,9 @@ $_SESSION['redirect_url'] = $url;
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><a href="#">Jabal Omar Hyatt Regency Makkah</a></div>
+								<div class="trending_title">
+									<h4>Jabal Omar Hyatt Regency Makkah</h4>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -799,9 +792,15 @@ $_SESSION['redirect_url'] = $url;
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt=""></div>
 							<div class="trending_content">
+<<<<<<< HEAD
 								<div class="trending_title"><a href="#">Makkah Clock Royal Tower Fairmont</a></div>
 
 
+=======
+								<div class="trending_title">
+									<h4>Makkah Clock Royal Tower Fairmont</h4>
+								</div>
+>>>>>>> c9739eabd719d037752dc4f8afc0bdd1d7379986
 							</div>
 						</div>
 					</div>
@@ -810,9 +809,13 @@ $_SESSION['redirect_url'] = $url;
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/hcon-1218.webp" alt=""></div>
 							<div class="trending_content">
+<<<<<<< HEAD
 								<div class="trending_title"><a href="#">Hilton Makkah Convention Hotel</a></div>
 
 
+=======
+								<div class="trending_title"><h4>Hilton Makkah Convention Hotel</h4></div>
+>>>>>>> c9739eabd719d037752dc4f8afc0bdd1d7379986
 							</div>
 						</div>
 					</div>
