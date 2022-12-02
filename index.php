@@ -1,11 +1,12 @@
 <?php
-	session_start();
-	include_once("admin/database/Database.php");
-	include_once("admin/models/Airline.php");
-	include_once("admin/models/Destinations.php");
-	$url= "index.php";
-	$_SESSION['redirect_url'] = $url;
+session_start();
+include_once("admin/database/Database.php");
+include_once("admin/models/Airline.php");
+include_once("admin/models/Destinations.php");
+$url = "index.php";
+$_SESSION['redirect_url'] = $url;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,6 +85,7 @@
 					<div class="owl-item home_slider_item">
 						<div class="home_slider_background" style="background-image:url(img/signup-background-image.jpg)"></div>
 
+
 						<div class="home_slider_content text-center">
 							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
 								<h1>Vacation</h1>
@@ -136,12 +138,13 @@
 							</linearGradient>
 						</defs>
 						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-					M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-					C22.545,2,26,5.541,26,9.909V23.091z" />
+          M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+          C22.545,2,26,5.541,26,9.909V23.091z" />
 						<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
-					11.042,18.219 " />
+          11.042,18.219 " />
 					</svg>
 				</div>
+
 
 				<!-- Home Slider Nav - Next -->
 				<div class="home_slider_nav home_slider_next">
@@ -153,10 +156,10 @@
 							</linearGradient>
 						</defs>
 						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-				M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-				C22.545,2,26,5.541,26,9.909V23.091z" />
+        M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+        C22.545,2,26,5.541,26,9.909V23.091z" />
 						<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
-				17.046,15.554 " />
+        17.046,15.554 " />
 					</svg>
 				</div>
 
@@ -204,12 +207,13 @@
 
 						<!-- Search Panel -->
 
-						<p>Make an enquiry	</p> 
+
+						<p>Make an enquiry </p>
 						<div class="search_panel active text-light">
-						
+
 							<form action="bookhotel-fun.php" method="post" style="margin-bottom: 20px !important;" class="w-100">
-							<div class="row">
-								
+								<div class="row">
+
 									<div class="col-sm-4">
 										<div class="form-group">
 											<label for="hetels">Hotels</label>
@@ -250,6 +254,7 @@
 						</div>
 
 						<!-- Search Panel -->
+
 
 						<div class="search_panel text-light">
 							<form action="booktrip-fun.php" method="post" class="w-100">
@@ -322,6 +327,8 @@
 										</div>
 										<div class="form-group">
 											<input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
+
+
 											<label for="aggrement">Agree To Change +/- 7 days.</label>
 										</div>
 										<div class="form-group">
@@ -382,10 +389,10 @@
 		<div class="intro">
 			<div class="container">
 				<!-- <div class="row">
-					<div class="col">
-						<h2 class="intro_title text-center">We have the best tours</h2>
-					</div>
-				</div> -->
+          <div class="col">
+            <h2 class="intro_title text-center">We have the best tours</h2>
+          </div>
+        </div> -->
 
 
 				<div class="row">
@@ -395,7 +402,7 @@
 
 					<div class="col-lg-6">
 						<div class="">
-						<h2 class="intro_title text-left gpadding">Your Flying Partner</h2>
+							<h2 class="intro_title text-left gpadding">Your Flying Partner</h2>
 							<p>
 								Al-Ihsan Tours & Travel Ltd started operations in 2015 in Amsterdam, Netherlands. The company is registered and licensed as a full-fledged travel and tourism management agency to operate inbound, outbound, and airline ticket reservations for domestic and international travelers.
 							</p>
@@ -403,6 +410,7 @@
 							<p>
 								Al-Ihsan Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.
 							</p>
+
 
 							<p>
 								Al-Ihsan also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
@@ -415,11 +423,11 @@
 						<h2 class="intro_title text-center gpadding">Our Objectives</h2>
 					</div>
 					<div class="col-sm-6">
-					
-					<img width="100%" height="auto" src="images/holiday-saudia.jpg" alt="Holiday Destinations" srcset="">
 
-					
-					<p>
+						<img width="100%" height="auto" src="images/holiday-saudia.jpg" alt="Holiday Destinations" srcset="">
+
+
+						<p>
 							The main business scope at Al Ihsan Tours & Travel Ltd is Air ticketing, Regional, local, and international, Hajj and Umrah, and Hotel Booking. Regarding marketing strategy, Al Ihsan Tours & Travel Ltd can improve and develop the tourism sector locally and internationally.
 
 							We aim to develop our business in the travel industry in line with international rules and policy. Also, the potential to expand its business as the company is often focused on engaging with overseas travel agencies, especially during the holiday season.
@@ -437,7 +445,7 @@
 
 							<p>
 								<span class="list_check"><i class="fa-solid fa-check"></i></span>
-								Produce expeditions and memories that would satisfy every single customer. 
+								Produce expeditions and memories that would satisfy every single customer.
 							</p>
 
 							<p>
@@ -466,7 +474,7 @@
 		<!-- CTA -->
 
 		<div class="cta">
-			
+
 			<div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
 
 			<div class="container">
@@ -477,6 +485,7 @@
 
 						<div class="cta_slider_container">
 							<div class="owl-carousel owl-theme cta_slider">
+
 
 								<!-- CTA Slider Item -->
 								<div class="owl-item cta_item">
@@ -535,6 +544,7 @@
 
 							</div>
 
+
 							<!-- CTA Slider Nav - Prev -->
 							<div class="cta_slider_nav cta_slider_prev">
 								<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
@@ -545,10 +555,10 @@
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-								C22.545,2,26,5.541,26,9.909V23.091z" />
+                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
-								11.042,18.219 " />
+                11.042,18.219 " />
 								</svg>
 							</div>
 
@@ -562,10 +572,10 @@
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-							C22.545,2,26,5.541,26,9.909V23.091z" />
+              M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+              C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
-							17.046,15.554 " />
+              17.046,15.554 " />
 								</svg>
 							</div>
 
@@ -579,6 +589,7 @@
 
 		<!-- Offers -->
 
+
 		<div class="offers">
 			<div class="container">
 				<div class="row">
@@ -588,13 +599,13 @@
 				</div>
 				<div class="row offers_items">
 					<?php
-						$conn = new Database();
-						$db   = $conn -> connection();
-						$products = new Destinations($db);
-						$product = $products -> getFewDestinations();
-						if($product){
-							foreach($product as $product){
-							$image = explode(",",$product['Location_images']);
+					$conn = new Database();
+					$db   = $conn->connection();
+					$products = new Destinations($db);
+					$product = $products->getFewDestinations();
+					if ($product) {
+						foreach ($product as $product) {
+							$image = explode(",", $product['Location_images']);
 					?>
 					<!-- Offers Item -->
 					<div class="col-lg-6 offers_col">
@@ -635,8 +646,8 @@
 						</div>
 					</div>
 					<?php
-							}
 						}
+					}
 					?>
 				</div>
 
@@ -660,6 +671,7 @@
 
 						<div class="test_slider_container">
 							<div class="owl-carousel owl-theme test_slider">
+
 
 								<!-- Testimonial Item -->
 								<div class="owl-item">
@@ -723,6 +735,7 @@
 
 							</div>
 
+
 							<!-- Testimonials Slider Nav - Prev -->
 							<div class="test_slider_nav test_slider_prev">
 								<svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
@@ -733,10 +746,10 @@
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-								C22.545,2,26,5.541,26,9.909V23.091z" />
+                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
-								11.042,18.219 " />
+                11.042,18.219 " />
 								</svg>
 							</div>
 
@@ -750,10 +763,10 @@
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-							C22.545,2,26,5.541,26,9.909V23.091z" />
+              M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+              C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
-							17.046,15.554 " />
+              17.046,15.554 " />
 								</svg>
 							</div>
 
@@ -764,6 +777,7 @@
 
 			</div>
 		</div>
+
 
 		<div class="trending">
 			<div class="container">
