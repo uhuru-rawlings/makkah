@@ -131,7 +131,7 @@
 						</div>
 						<div class="card-footer text-center">
 							<a href='<?php echo "hotel-details.php?hotel_id=".$product['id'] ?>'>
-								<button class="btn" onclick="closeOverlay('hotel-booking',this.id)" id="<?php echo $product['id'] ?>">VIEW DETAILS</button>
+								<button class="btn" id="<?php echo $product['id'] ?>">VIEW DETAILS</button>
 							</a>
 						</div>
 					</div>
