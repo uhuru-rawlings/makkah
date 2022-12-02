@@ -90,7 +90,7 @@ include("admin/models/Destinations.php");
 									</div>
 									<div class="card-footer text-center">
 										<a href='<?php echo "hotel-details.php?hotel_id=" . $product['id'] ?>'>
-											<button class="btn" onclick="closeOverlay('hotel-booking',this.id)" id="<?php echo $product['id'] ?>">VIEW DETAILS</button>
+											<button class="btn" id="<?php echo $product['id'] ?>">VIEW DETAILS</button>
 										</a>
 									</div>
 								</div>
@@ -101,13 +101,11 @@ include("admin/models/Destinations.php");
 						echo "<div class='alert alert-danger'>No hotels available at the moment.</div>";
 					}
 					?>
-
-					
 				</div>
 			</div>
 		</div>
 
-
+		
 		<!-- hotel booking -->
 		<div class="overlay_white" id="hotel-booking">
 			<div class="booking_models">
@@ -164,9 +162,8 @@ include("admin/models/Destinations.php");
 					</div>
 					<div class="col-sm-8">
 						<p>
-							Our vast network of hotels locally and worldwide enables us to provide the best deals and rates available to our clients. You can rely on our professional hotel booking services to guarantee your space in the most comfortable and affordable accommodation at your destination.  Whether traveling locally or abroad for a holiday, business, medical or educational purposes, we can organize timely pickup services to get you from the airport into your booked hotel for your stay or as you wait for other transit. The best thing about booking your hotel and accommodation with us is that we are constantly updated on facilities offering seasonal or promotional discounts and would like you to sample their world-class hospitality. You may also be eligible for discounts should you book your flight and accommodation with us; try us today.
+							Our vast network of hotels locally and worldwide enables us to provide the best deals and rates available to our clients. You can rely on our professional hotel booking services to guarantee your space in the most comfortable and affordable accommodation at your destination. Whether traveling locally or abroad for a holiday, business, medical or educational purposes, we can organize timely pickup services to get you from the airport into your booked hotel for your stay or as you wait for other transit. The best thing about booking your hotel and accommodation with us is that we are constantly updated on facilities offering seasonal or promotional discounts and would like you to sample their world-class hospitality. You may also be eligible for discounts should you book your flight and accommodation with us; try us today.
 						</p>
-						
 					</div>
 				</div>
 				<h3>We ensure that:</h3>
@@ -197,6 +194,8 @@ include("admin/models/Destinations.php");
 		</div>
 
 
+
+		
 		<!-- Footer -->
 
 		<?php
