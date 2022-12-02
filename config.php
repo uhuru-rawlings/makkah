@@ -3,8 +3,8 @@
     session_start();
     if($_SERVER['HTTP_HOST'] == "127.0.0.1" || $_SERVER['HTTP_HOST'] == "localhost"){
         
-        // define('BASE_URL', 'http://localhost/Fourtech/Alishan/');
-        define('BASE_URL', 'http://localhost/server/fourtech/Al-Ihsan-ToursAndTravel/');
+        define('BASE_URL', 'http://localhost/Fourtech/Alishan/');
+        // define('BASE_URL', 'http://localhost/server/fourtech/Al-Ihsan-ToursAndTravel/');
         // define('BASE_URL', 'http://fourtechglobalsolutions.com/alhasan/');
     }else{
         define('BASE_URL', '');
