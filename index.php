@@ -6,6 +6,7 @@ include_once("admin/models/Destinations.php");
 $url = "index.php";
 $_SESSION['redirect_url'] = $url;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,6 +85,7 @@ $_SESSION['redirect_url'] = $url;
 					<div class="owl-item home_slider_item">
 						<div class="home_slider_background" style="background-image:url(img/signup-background-image.jpg)"></div>
 
+
 						<div class="home_slider_content text-center">
 							<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
 								<h1>Vacation</h1>
@@ -136,12 +138,13 @@ $_SESSION['redirect_url'] = $url;
 							</linearGradient>
 						</defs>
 						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-					M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-					C22.545,2,26,5.541,26,9.909V23.091z" />
+          M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+          C22.545,2,26,5.541,26,9.909V23.091z" />
 						<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
-					11.042,18.219 " />
+          11.042,18.219 " />
 					</svg>
 				</div>
+
 
 				<!-- Home Slider Nav - Next -->
 				<div class="home_slider_nav home_slider_next">
@@ -153,10 +156,10 @@ $_SESSION['redirect_url'] = $url;
 							</linearGradient>
 						</defs>
 						<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-				M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-				C22.545,2,26,5.541,26,9.909V23.091z" />
+        M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+        C22.545,2,26,5.541,26,9.909V23.091z" />
 						<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
-				17.046,15.554 " />
+        17.046,15.554 " />
 					</svg>
 				</div>
 
@@ -204,6 +207,7 @@ $_SESSION['redirect_url'] = $url;
 
 						<!-- Search Panel -->
 
+
 						<p>Make an enquiry </p>
 						<div class="search_panel active text-light">
 
@@ -250,6 +254,7 @@ $_SESSION['redirect_url'] = $url;
 						</div>
 
 						<!-- Search Panel -->
+
 
 						<div class="search_panel text-light">
 							<form action="booktrip-fun.php" method="post" class="w-100">
@@ -322,6 +327,8 @@ $_SESSION['redirect_url'] = $url;
 										</div>
 										<div class="form-group">
 											<input oninput="removeErrors(this.id)" type="checkbox" name="aggrement" id="aggrement">
+
+
 											<label for="aggrement">Agree To Change +/- 7 days.</label>
 										</div>
 										<div class="form-group">
@@ -382,10 +389,10 @@ $_SESSION['redirect_url'] = $url;
 		<div class="intro">
 			<div class="container">
 				<!-- <div class="row">
-					<div class="col">
-						<h2 class="intro_title text-center">We have the best tours</h2>
-					</div>
-				</div> -->
+          <div class="col">
+            <h2 class="intro_title text-center">We have the best tours</h2>
+          </div>
+        </div> -->
 
 
 				<div class="row">
@@ -403,6 +410,7 @@ $_SESSION['redirect_url'] = $url;
 							<p>
 								Al-Ihsan Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.
 							</p>
+
 
 							<p>
 								Al-Ihsan also provides Hajj and Umrah services, skilled travel advisers, and a customer support team with almost ten (10) years of combined expertise, making us one of the top firms providing Hajj and Umrah packages smoothly as possible.
@@ -437,7 +445,7 @@ $_SESSION['redirect_url'] = $url;
 
 							<p>
 								<span class="list_check"><i class="fa-solid fa-check"></i></span>
-								Produce expeditions and memories that would satisfy every single customer. 
+								Produce expeditions and memories that would satisfy every single customer.
 							</p>
 
 							<p>
@@ -477,6 +485,7 @@ $_SESSION['redirect_url'] = $url;
 
 						<div class="cta_slider_container">
 							<div class="owl-carousel owl-theme cta_slider">
+
 
 								<!-- CTA Slider Item -->
 								<div class="owl-item cta_item">
@@ -535,6 +544,7 @@ $_SESSION['redirect_url'] = $url;
 
 							</div>
 
+
 							<!-- CTA Slider Nav - Prev -->
 							<div class="cta_slider_nav cta_slider_prev">
 								<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
@@ -545,10 +555,10 @@ $_SESSION['redirect_url'] = $url;
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-								C22.545,2,26,5.541,26,9.909V23.091z" />
+                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
-								11.042,18.219 " />
+                11.042,18.219 " />
 								</svg>
 							</div>
 
@@ -562,10 +572,10 @@ $_SESSION['redirect_url'] = $url;
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-							C22.545,2,26,5.541,26,9.909V23.091z" />
+              M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+              C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
-							17.046,15.554 " />
+              17.046,15.554 " />
 								</svg>
 							</div>
 
@@ -579,14 +589,13 @@ $_SESSION['redirect_url'] = $url;
 
 		<!-- Offers -->
 
+
 		<div class="offers">
 			<div class="container">
 				<div class="row">
-
 					<div class="col text-center">
 						<h2 class="section_title">Al-Ihsan Circuits</h2>
 					</div>
-
 				</div>
 				<div class="row offers_items">
 					<?php
@@ -609,21 +618,31 @@ $_SESSION['redirect_url'] = $url;
 												<div class="offer_name"><a href="#"><?php echo $product['Location_Name'] ?></a></div>
 											</div>
 										</div>
-										<p class="offers_text main_offer_text">
-											<?php echo $product['place_description'] ?>
-										</p>
-										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-											</ul>
+										<div class="col-lg-6">
+											<div class="offers_content">
+												<!-- <div class="offers_price">$70<span>per night</span></div> -->
+												<div class="rating_r rating_r_4 offers_rating">
+													<i></i>
+													<i></i>
+													<i></i>
+													<i></i>
+													<i></i>
+												</div>
+												<p class="offers_text main_offer_text">
+													<?php echo $product['place_description'] ?>
+												</p>
+												<div class="offers_icons">
+													<ul class="offers_icons_list">
+														<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
+														<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
+														<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
+														<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+													</ul>
+												</div>
+												<div class="offers_link"><a href="<?php echo "hotel-details.php?hotel_id=" . $product['id'] ?>">read more</a></div>
+											</div>
 										</div>
-
 									</div>
-									<br>
-									
 								</div>
 							</div>
 					<?php
@@ -637,7 +656,6 @@ $_SESSION['redirect_url'] = $url;
 				</div>
 			</div>
 		</div>
-
 		<div class="testimonials">
 			<div class="test_border"></div>
 			<div class="container">
@@ -653,6 +671,7 @@ $_SESSION['redirect_url'] = $url;
 
 						<div class="test_slider_container">
 							<div class="owl-carousel owl-theme test_slider">
+
 
 								<!-- Testimonial Item -->
 								<div class="owl-item">
@@ -713,7 +732,9 @@ $_SESSION['redirect_url'] = $url;
 										</div>
 									</div>
 								</div>
+
 							</div>
+
 
 							<!-- Testimonials Slider Nav - Prev -->
 							<div class="test_slider_nav test_slider_prev">
@@ -725,10 +746,10 @@ $_SESSION['redirect_url'] = $url;
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-								C22.545,2,26,5.541,26,9.909V23.091z" />
+                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
-								11.042,18.219 " />
+                11.042,18.219 " />
 								</svg>
 							</div>
 
@@ -742,10 +763,10 @@ $_SESSION['redirect_url'] = $url;
 										</linearGradient>
 									</defs>
 									<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-							C22.545,2,26,5.541,26,9.909V23.091z" />
+              M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+              C22.545,2,26,5.541,26,9.909V23.091z" />
 									<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
-							17.046,15.554 " />
+              17.046,15.554 " />
 								</svg>
 							</div>
 
@@ -756,6 +777,7 @@ $_SESSION['redirect_url'] = $url;
 
 			</div>
 		</div>
+
 
 		<div class="trending">
 			<div class="container">
@@ -792,15 +814,9 @@ $_SESSION['redirect_url'] = $url;
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt=""></div>
 							<div class="trending_content">
-<<<<<<< HEAD
-								<div class="trending_title"><a href="#">Makkah Clock Royal Tower Fairmont</a></div>
-
-
-=======
 								<div class="trending_title">
 									<h4>Makkah Clock Royal Tower Fairmont</h4>
 								</div>
->>>>>>> c9739eabd719d037752dc4f8afc0bdd1d7379986
 							</div>
 						</div>
 					</div>
@@ -809,13 +825,9 @@ $_SESSION['redirect_url'] = $url;
 						<div class="trending_item clearfix">
 							<div class="trending_image"><img src="img/hcon-1218.webp" alt=""></div>
 							<div class="trending_content">
-<<<<<<< HEAD
-								<div class="trending_title"><a href="#">Hilton Makkah Convention Hotel</a></div>
-
-
-=======
-								<div class="trending_title"><h4>Hilton Makkah Convention Hotel</h4></div>
->>>>>>> c9739eabd719d037752dc4f8afc0bdd1d7379986
+								<div class="trending_title">
+									<h4>Hilton Makkah Convention Hotel</h4>
+								</div>
 							</div>
 						</div>
 					</div>

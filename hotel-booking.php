@@ -1,3 +1,4 @@
+
 <?php
 include_once("admin/database/Database.php");
 include("admin/models/Destinations.php");
@@ -6,7 +7,7 @@ include("admin/models/Destinations.php");
 <html lang="en">
 
 <head>
-	<title>Hotel Booking</title>
+	<title>Services</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Al-Ihsan Tours & Travel Ltd is the market leader in low-cost domestic and international air travel. Since our inception, we have distinguishably provided end-to-end air transportation solutions for our clients flying to domestic and international destinations. We have also established a solid status for reliability and world-class customer service.">
@@ -49,6 +50,60 @@ include("admin/models/Destinations.php");
 			<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/about_background.jpg"></div>
 			<div class="home_content">
 				<div class="home_title">Hotel Booking</div>
+			</div>
+		</div>
+
+		<!-- Offers -->
+
+		
+		
+
+
+		<div class="offers py-4">
+			<!-- Offers -->
+			<div class="container py-2" id="hotel_cards">
+				<h2>Book With Us.</h2>
+				<div class="row">
+					<?php
+					$conn = new Database();
+					$db   = $conn->connection();
+					$products = new Destinations($db);
+					$product = $products->getDestinations();
+					if ($product) {
+						foreach ($product as $product) {
+							$image = explode(",", $product['Location_images']);
+					?>
+							<div class="col-sm-4" style="margin-bottom: 15px;">
+								<div class="card">
+									<div class="card_image">
+										<img src='<?php echo "uploads/{$image[1]}" ?>' alt="" class="hotel_image">
+									</div>
+									<div class="card-body">
+										<div class="hotel_details">
+											<div class="row">
+												<div class="col-sm-6 hotel_name">
+													<b><i class="fa-solid fa-location-dot"></i> <?php echo $product['Location_Name'] ?></b>
+												</div>
+												<div class="col-sm-6 price"><i class="fa-solid fa-dolar"></i> Kshs. <?php echo $product['Price_Perday'] ?> / Day</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-footer text-center">
+										<a href='<?php echo "hotel-details.php?hotel_id=" . $product['id'] ?>'>
+											<button class="btn" onclick="closeOverlay('hotel-booking',this.id)" id="<?php echo $product['id'] ?>">VIEW DETAILS</button>
+										</a>
+									</div>
+								</div>
+							</div>
+					<?php
+						}
+					} else {
+						echo "<div class='alert alert-danger'>No hotels available at the moment.</div>";
+					}
+					?>
+
+					
+				</div>
 			</div>
 		</div>
 
@@ -98,6 +153,48 @@ include("admin/models/Destinations.php");
 			</div>
 		</div>
 		<!-- end hotel booking -->
+
+
+
+		<div class="offers py-4">
+			<div class="container py-2">
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="img/hotel-bookings.jpg" width="100%" style="height: auto;" alt="">
+					</div>
+					<div class="col-sm-8">
+						<p>
+							Our vast network of hotels locally and worldwide enables us to provide the best deals and rates available to our clients. You can rely on our professional hotel booking services to guarantee your space in the most comfortable and affordable accommodation at your destination.  Whether traveling locally or abroad for a holiday, business, medical or educational purposes, we can organize timely pickup services to get you from the airport into your booked hotel for your stay or as you wait for other transit. The best thing about booking your hotel and accommodation with us is that we are constantly updated on facilities offering seasonal or promotional discounts and would like you to sample their world-class hospitality. You may also be eligible for discounts should you book your flight and accommodation with us; try us today.
+						</p>
+						
+					</div>
+				</div>
+				<h3>We ensure that:</h3>
+				<ul>
+					<li>
+						Hotels and quotations are based on the lowest possible rates.
+					</li>
+					<li>
+						You remain updated on the status of reservations and informed of additional offers.
+					</li>
+					<li>
+						We leverage relationships with hotels to get the best possible deals for you.
+					</li>
+					<li>
+						Arriving at a new destination can be a daunting experience, but a friendly face can improve it; our team Assists services are available at your destination airport.
+					</li>
+					<li>
+						A warm welcome by our team at the airport.
+					</li>
+					<li>
+						Escort through immigration, baggage collection, customs clearance, and airport transfer.
+					</li>
+					<li>
+						Visa delivery to airport immigration.
+					</li>
+				</ul>
+			</div>
+		</div>
 
 
 		<!-- Footer -->

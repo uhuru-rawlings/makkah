@@ -70,7 +70,8 @@
             }else{
                 return false;
             }
-        }  
+        } 
+        
         public function updateDestination()
         {
             if(!empty($this -> Location_images) || $this -> Location_images !== ""){
