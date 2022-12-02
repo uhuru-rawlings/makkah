@@ -45,31 +45,31 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="Fullname">Fullname</label>
-                            <input type="text" name="Fullname" id="Fullname" class="form-control" placeholder="Fullname">
+                            <input type="text" name="Fullname" id="Fullname" class="form-control" placeholder="Fullname" required>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="username">Email</label>
-                            <input type="email" name="username" id="username" class="form-control" placeholder="Email">
+                            <input type="email" name="username" id="username" class="form-control" placeholder="Email" required>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="Phone">Phone</label>
-                    <input type="tel" name="Phone" id="Phone" class="form-control" placeholder="Phone">
+                    <input type="tel" name="Phone" id="Phone" class="form-control" placeholder="Phone" required>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="username">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                            <input type="password"  name="password" id="password" minlength="6" maxlength="16" class="form-control" placeholder="Password" required>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="cpassword">Confirm Password</label>
-                            <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="Password">
+                            <input type="password" name="cpassword" id="cpassword" minlength="6" maxlength="16" class="form-control" placeholder="Password" required>
                         </div>
                     </div>
                 </div>

@@ -42,6 +42,21 @@
             }
         }
 
+        public function getFewDestinations()
+        {
+            $sql = "SELECT Travel_Destinations.id,Travel_Destinations.Location_id,Travel_Destinations.Location_images,Travel_Destinations.Price_Perday,Travel_Destinations.Days_Opened,Travel_Destinations.place_description,Travel_Destinations.Date_added,Travel_Destinations.Last_Modified,Travel_Locations.Location_Name,Travel_Destinations.Location FROM  Travel_Locations INNER JOIN Travel_Destinations ON Travel_Locations.id = Travel_Destinations.Location_id ORDER BY Travel_Destinations.Location_id DESC LIMIT 4";
+            $query = $this -> conn -> prepare($sql);
+            $query -> execute();
+            $rows = $query -> rowCount();
+            if($rows > 0){
+                while($results = $query -> fetchAll(PDO::FETCH_ASSOC)){
+                    return $results;
+                }
+            }else{
+                return false;
+            }
+        }
+
         public function getSingleDestination()
         {
             $sql = "SELECT Travel_Destinations.id,Travel_Destinations.Location_id,Travel_Destinations.Location_images,Travel_Destinations.Price_Perday,Travel_Destinations.Days_Opened,Travel_Destinations.place_description,Travel_Destinations.Date_added,Travel_Destinations.Last_Modified,Travel_Locations.Location_Name,Travel_Destinations.Location FROM  Travel_Locations INNER JOIN Travel_Destinations ON Travel_Locations.id = Travel_Destinations.Location_id WHERE Travel_Destinations.id = ?";

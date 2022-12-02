@@ -44,11 +44,11 @@
                 ?>
                 <div class="form-group">
                     <label for="username">Email</label>
-                    <input type="email" name="username" id="username" class="form-control" placeholder="Email">
+                    <input type="email" name="username" id="username" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                     <label for="username">Password</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
                 </div>
                 <div class="form-group">
                     <div class="row">
