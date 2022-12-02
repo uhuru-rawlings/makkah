@@ -36,9 +36,9 @@
 						<div class="footer_title">Services</div>
 						<div class="footer_content footer_tags">
 							<ul class="tags_list clearfix">
-								<li class="tag_item"><a href="#">Hotel Booking</a></li>
-								<li class="tag_item"><a href="#">Visa Assistance</a></li>
-								<li class="tag_item"><a href="#">Airline Ticketing & Reservation</a></li>
+								<li class="tag_item"><a href="hotel-booking.php">Hotel Booking</a></li>
+								<li class="tag_item"><a href="services.php">Visa Assistance</a></li>
+								<li class="tag_item"><a href="services.php">Airline Ticketing & Reservation</a></li>
 							</ul>
 						</div>
 					</div>
