@@ -44,7 +44,7 @@
 				<div class="menu_close_container">
 					<div class="menu_close"></div>
 				</div>
-				<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+				<div class="logo menu_logo"><a href="index.php"><img src="images/logo.png" alt=""></a></div>
 				<ul>
 					<li class="menu_item"><a href="index.php">home</a></li>
 					<li class="menu_item"><a href="about.php">about us</a></li>
@@ -74,7 +74,7 @@
 								<h1>Hotel</h1>
 								<h1>Booking</h1>
 								<div class="button home_slider_button">
-									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+									<div class="button_bcg"></div><a href="services.php">explore now<span></span><span></span><span></span></a>
 								</div>
 							</div>
 						</div>
@@ -119,7 +119,7 @@
 								<h1>Hajj</h1>
 								<h1>& umrah Services</h1>
 								<div class="button home_slider_button">
-									<div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a>
+									<div class="button_bcg"></div><a href="about.php">explore now<span></span><span></span><span></span></a>
 								</div>
 							</div>
 						</div>
@@ -493,7 +493,7 @@
 									</p>
 
 									<div class="button cta_button">
-										<div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a>
+										<div class="button_bcg"></div><a href="services.php">book now<span></span><span></span><span></span></a>
 									</div>
 
 								</div>
@@ -510,7 +510,7 @@
 										You can take advantage of our partnership with leading local and international airlines to book your flights at the least cost and guar­antee hassle-free arrival to your desired destination. Our friendly customer agents are always available to assist with inquiries regarding our services and the flight you’re booked.
 									</p>
 									<div class="button cta_button">
-										<div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a>
+										<div class="button_bcg"></div><a href="services.php">book now<span></span><span></span><span></span></a>
 									</div>
 								</div>
 
@@ -529,7 +529,7 @@
 										We are well connected with some of the best hotels that serves the interests of our customers.
 									</p>
 									<div class="button cta_button">
-										<div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a>
+										<div class="button_bcg"></div><a href="services.php">book now<span></span><span></span><span></span></a>
 									</div>
 								</div>
 
@@ -604,7 +604,7 @@
 									<div class="offers_image_container">
 										
 										<div class="offers_image_background" style="background-image:url(<?php echo "uploads/{$image[1]}"?>)"></div>
-										<div class="offer_name"><a href="#"><?php echo $product['Location_Name'] ?></a></div>
+										<div class="offer_name"><a href="<?php echo "hotel-details.php?hotel_id=".$product['id'] ?>"><?php echo $product['Location_Name'] ?></a></div>
 									</div>
 								</div>
 								<div class="col-lg-6">
@@ -774,44 +774,41 @@
 				</div>
 				<div class="row trending_container">
 					<!-- Trending Item -->
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-4 col-sm-4">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/smh-seasonal-saver.jpg" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_titles">
+								<div class="trending_titles" style="text-align: left;">
 									<h4>Swissotel Al Maqam Makkah</h4>
 								</div>
 							</div>
+							<div class="trending_image">
+								<img src="img/smh-seasonal-saver.jpg" alt="">
+							</div>
 						</div>
 					</div>
 					<!-- Trending Item -->
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-4 col-sm-4">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title">
+								<div class="trending_title" style="text-align: left;">
 									<h4>Jabal Omar Hyatt Regency Makkah</h4>
 								</div>
 							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-6 col-sm-6">
-						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt=""></div>
-							<div class="trending_content">
-								<div class="trending_title">
-									<h4>Makkah Clock Royal Tower Fairmont</h4>
-								</div>
+							<div class="trending_image">
+								<img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt="">
 							</div>
 						</div>
 					</div>
 					<!-- Trending Item -->
-					<div class="col-lg-6 col-sm-6">
+					<div class="col-lg-4 col-sm-4">
 						<div class="trending_item clearfix">
-							<div class="trending_image"><img src="img/hcon-1218.webp" alt=""></div>
 							<div class="trending_content">
-								<div class="trending_title"><h4>Hilton Makkah Convention Hotel</h4></div>
+								<div class="trending_title" style="text-align: left;">
+									<h4>Makkah Clock Royal Tower Fairmont</h4>
+								</div>
+							</div>
+							<div class="trending_image">
+								<img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt="">
 							</div>
 						</div>
 					</div>
