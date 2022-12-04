@@ -1,0 +1,15 @@
+.icon-circle{
+    height: 45px;
+    width: 45px;
+    border: 1px solid #1B963E;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    justify-content: center;
+}
+.contact-sh{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
