@@ -177,7 +177,7 @@ Nairobi, Kenya </div>
           </div>
           <div class="row mt-4 mt-md-5">
             <div class="col-sm-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-              <div class="ring-icon mx-auto" data-zanim-xs='{"delay":0}'><span class="far fa-chart-bar"></span></div>
+              <div class="ring-icon mx-auto" data-zanim-xs='{"delay":0}'><span class="fa-solid fa-line-chart"></span></div>
               <h5 class="mt-4" data-zanim-xs='{"delay":0.1}'>Growth Partner</h5>
               <p class="mb-0 mt-3 px-3" data-zanim-xs='{"delay":0.2}'>
                 We are here to work along side you to grow your business. We take a long-term approach to your business, actively supporting both your planning and efforts.
@@ -298,7 +298,7 @@ Nairobi, Kenya </div>
             <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
               <div class="overflow-hidden">
                 <div class="px-4 px-sm-0" data-zanim-xs='{"delay":0}'>
-                  <h5 class="fs-0 fs-lg-1"><span class="fas fa-comment-dots fs-1 me-2" data-fa-transform="flip-h"></span>We Are Professional</h5>
+                  <h5 class="fs-0 fs-lg-1"><i class="fa-solid fa-user-tie fs-1 me-2" data-fa-transform="flip-h"></i>We Are Professional</h5>
                   <p class="mt-3">
                     We have in place all the necessary techniques,resources that you need to take your business to the next level.
                   </p>
@@ -307,13 +307,17 @@ Nairobi, Kenya </div>
               <div class="overflow-hidden">
                 <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
                   <h5 class="fs-0 fs-lg-1"><span class="fas fa-palette fs-1 me-2" data-fa-transform="shrink-1"></span>We Are Creative</h5>
-                  <p class="mt-3"></p>
+                  <p class="mt-3">
+                    With the resources that we have we come up with solutions that not only help you now but also will have a great positive impact in the future of your business.
+                  </p>
                 </div>
               </div>
               <div class="overflow-hidden">
                 <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
-                  <h5 class="fs-0 fs-lg-1"><span class="fas fa-stopwatch fs-1 me-2" data-fa-transform="grow-1"></span>One-stop for your B/s Needs</h5>
-                  <p class="mt-3">Design clever and compelling marketing strategies, improve product positioning, and drive conversion rates, Elixir is all time available to guide you.</p>
+                  <h5 class="fs-0 fs-lg-1"><i class="fa-solid fa-shop fs-1 me-2" data-fa-transform="grow-1"></i>One-stop for your B/s Needs</h5>
+                  <p class="mt-3">
+                    All the services you may need from consultancy to certifications services are available.
+                  </p>
                 </div>
               </div>
             </div>
@@ -441,13 +445,19 @@ Nairobi, Kenya </div>
               </div>
             </div>
             <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
-              <h5 class="text-white">I would like to discuss:</h5>
-              <form class="mt-4" method="post">
+              <h5 class="text-white">Call Me:</h5>
+              <form action="request_callback.php" class="mt-4" method="post">
                 <div class="row">
-                  <div class="col-6"><input class="form-control" type="hidden" name="to" value="username@domain.extension" /><input class="form-control" type="text" placeholder="Your Name" aria-label="Your Name" /></div>
-                  <div class="col-6"><input class="form-control" type="text" placeholder="Phone Number" aria-label="Phone Number" /></div>
-                  <div class="col-6 mt-4"><input class="form-control" type="text" placeholder="Subject" aria-label="Subject" /></div>
-                  <div class="col-6 mt-4"><button class="btn btn-warning w-100" type="submit">Submit</button></div>
+                  <div class="col-6">
+                    <input class="form-control" type="text" name="fullname" placeholder="Your Name" aria-label="Your Name" required/>
+                  </div>
+                  <div class="col-6">
+                    <input class="form-control" type="tel" name="phoneno" placeholder="Phone Number" aria-label="Phone Number" required/>
+                  </div>
+                  <div class="col-6 mt-4">
+                    <input class="form-control" type="text" name="subject" placeholder="Subject" aria-label="Subject" required/></div>
+                  <div class="col-6 mt-4">
+                    <button class="btn btn-warning w-100" type="submit" name="save">Submit</button></div>
                 </div>
               </form>
             </div>
