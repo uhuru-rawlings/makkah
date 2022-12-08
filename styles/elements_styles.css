@@ -505,26 +505,20 @@ section
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-.main_nav_item::after
-{
-	display: block;
+.main_nav_item::after{
 	position: absolute;
-	left: -1px;
-	bottom: -11px;
-	width: calc(100% + 2px);
+	content: "";
+	bottom: 0;
+	width: 0%;
+	left: 50%;
 	height: 2px;
-	background: linear-gradient(to right, #110603, #0143a9);
-	content: '';
-	opacity: 0;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+	background-color: linear-gradient(to right, #110603, #0143a9);
+	transition: 0.5s ease-out;
 }
 .main_nav_item:hover::after
 {
-	opacity: 1;
+	left: 0;
+	width: 80%;
 }
 .content_search
 {

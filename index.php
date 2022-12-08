@@ -40,6 +40,7 @@ $_SESSION['redirect_url'] = $url;
 		include_once("includes/navbar.php");
 		?>
 
+
 		<div class="menu trans_500">
 			<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 				<div class="menu_close_container">

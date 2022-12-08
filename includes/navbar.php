@@ -44,7 +44,16 @@
                         <ul class="main_nav_list">
                             <li class="main_nav_item"><a href="index.php">Home</a></li>
                             <li class="main_nav_item"><a href="about.php">About us</a></li>
-                            <li class="main_nav_item"><a href="services.php">Services</a></li>
+                            <li class="main_nav_item nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-dark" href="#">Action</a>
+                                <a class="dropdown-item text-dark" href="#">Another action</a>
+                                <a class="dropdown-item text-dark" href="#">Something else here</a>
+                                </div>
+                            </li>
                             <li class="main_nav_item"><a href="contact.php">contact</a></li>
                         </ul>
                     </div>
