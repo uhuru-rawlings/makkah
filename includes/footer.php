@@ -1,6 +1,9 @@
 	<!-- Footer -->
 
 	<footer class="footer">
+		<div class="whatsApp-chart">
+			<a href="https://wa.me/+254727885454" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+		</div>
 		<div class="container">
 			<div class="row">
 
@@ -112,3 +115,29 @@
 
 	<script src="js/all.js"></script>
 	<script src="js/solid.js"></script>
+
+	<style>
+		footer{
+			position: relative;
+		}
+		.whatsApp-chart{
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			font-size: 25px;
+			right: 20px;
+			bottom: 20px;
+			background-color: #00E676;
+			color: #FFFFFF;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			overflow: hidden;
+		}
+		.whatsApp-chart a{
+			text-decoration: none;
+			background-color: #00E676;
+			color: #FFFFFF;
+		}
+	</style>

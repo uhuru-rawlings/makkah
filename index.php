@@ -779,59 +779,6 @@ $_SESSION['redirect_url'] = $url;
 			</div>
 		</div>
 
-
-		<div class="trending">
-			<div class="container">
-				<div class="row">
-					<div class="col text-center">
-						<h2 class="section_title">Featured Hotels</h2>
-					</div>
-				</div>
-				<div class="row trending_container">
-					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-4">
-						<div class="trending_item clearfix">
-							<div class="trending_content">
-								<div class="trending_titles" style="text-align: left;">
-									<h4>Swissotel Al Maqam Makkah</h4>
-								</div>
-							</div>
-							<div class="trending_image">
-								<img src="img/smh-seasonal-saver.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-4">
-						<div class="trending_item clearfix">
-							<div class="trending_content">
-								<div class="trending_title" style="text-align: left;">
-									<h4>Jabal Omar Hyatt Regency Makkah</h4>
-								</div>
-							</div>
-							<div class="trending_image">
-								<img src="img/Hyatt-Regency-Makkah-P006-Tea-Lounge.webp" alt="">
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-					<div class="col-lg-4 col-sm-4">
-						<div class="trending_item clearfix">
-							<div class="trending_content">
-								<div class="trending_title" style="text-align: left;">
-									<h4>Makkah Clock Royal Tower Fairmont</h4>
-								</div>
-							</div>
-							<div class="trending_image">
-								<img src="img/MAK_490500_Fairmont-Makkah-Royal-Suite-Living-Area.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<!-- Trending Item -->
-				</div>
-			</div>
-		</div>
-
 		<div class="contact">
 			<div class="contact_background" style="background-image:url(images/contact.jpg)"></div>
 

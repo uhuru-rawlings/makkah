@@ -43,15 +43,26 @@
                     <div class="main_nav_container ml-auto">
                         <ul class="main_nav_list">
                             <li class="main_nav_item"><a href="index.php">Home</a></li>
-                            <li class="main_nav_item"><a href="about.php">About us</a></li>
+                            <li class="main_nav_item nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-dark" href="directors-message.php">Director's Message</a>
+                                <a class="dropdown-item text-dark" href="company-profile.php">Company Profile</a>
+                                <a class="dropdown-item text-dark" href="why-us.php">Why Us</a>
+                                </div>
+                            </li>
                             <li class="main_nav_item nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Services
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-dark" href="#">Action</a>
-                                <a class="dropdown-item text-dark" href="#">Another action</a>
-                                <a class="dropdown-item text-dark" href="#">Something else here</a>
+                                <a class="dropdown-item text-dark" href="#">Airline Ticketing & Reservation</a>
+                                <a class="dropdown-item text-dark" href="#">Hajj & Umrah Services</a>
+                                <a class="dropdown-item text-dark" href="hotel-booking.php">Hotel Booking</a>
+                                <a class="dropdown-item text-dark" href="#">Visa Assistance</a>
+                                <a class="dropdown-item text-dark" href="#">Career & Study Consultations</a>
                                 </div>
                             </li>
                             <li class="main_nav_item"><a href="contact.php">contact</a></li>

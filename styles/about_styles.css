@@ -825,12 +825,28 @@ section
 	margin-bottom: 0px;
 	font-weight: 600;
 	color: #929191;
-	margin-top: 60px;
+	margin-top: 20px;
 }
 .intro_button
 {
 	margin-top: 57px;
 	z-index: 1;
+}
+.card-body .count{
+	height: 50px;
+	width: 50px;
+	background-color: #FFFFFF !important;
+	font-size: 20px;
+	border-radius: 50%;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.count span{
+	text-align: center;
+	width: fit-content;
 }
 
 /*********************************
