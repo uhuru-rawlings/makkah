@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+<<<<<<< HEAD
         "appointmentdate",
         "bookappointments",
         "IELTS",
@@ -8,5 +9,11 @@
         "Swissotel",
         "umra",
         "UMRAH"
+=======
+        "fullname",
+        "Maqam",
+        "phoneno",
+        "Swissotel"
+>>>>>>> 799d7c4ce325c99e8ffe3edc7df117a52793b863
     ]
 }
