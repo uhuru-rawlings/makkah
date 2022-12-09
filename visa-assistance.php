@@ -84,56 +84,63 @@
                 </div>
                 <div class="col-sm-6">
                     <h3>Consultation and visa for:</h3>
-                    <ul>
-                        <li>Kenya </li>
-                        <li>Somalia</li>
-                        <li>India </li>
-                        <li>Saudi Arabia </li>
-                        <li>Uganda </li>
-                        <li>Turkey </li>
-                        <li>Malaysia </li>
-                        <li>Qatar </li>
-                        <li>Kuwait </li>
-                        <li>Egypt </li>
-                        <li>UAE</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Kenya</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Somalia</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">India</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Saudi Arabia</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Uganda</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Turkey</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Malaysia</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Qatar</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Kuwait</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">Egypt</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="alert bg-light">UAE</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="button book_button" onclick="closeOverlay('appointment-booking')"><a href="javascript:void(0)">Book Appointment<span></span><span></span><span></span></a></div>
+                <form action="bookappointments.php" method="post" class="w-100">
+                    <h3>Book Appointment</h3>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="appointmentdate">Date</label>
+                                <input type="date" oninput="removeErrors(this.id)" name="appointmentdate" id="appointmentdate" class="shadow-none form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group" style="margin-top: 20px;">
+                                <input type="submit" onclick="return validateVisaBookings()" value="Book Appointment" name="save" class="btn btn-secondary">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
 		</div>		
 	</div>
-    <!-- book appointment -->
-    <div class="overlay_white" id="appointment-booking">
-        <div class="booking_models">
-            <div class="card">
-                <div class="card-header">
-                    Book Visa Appointments
-                </div>
-                <div class="card-body">
-                    <form action="bookappointments.php" method="post" class="w-100">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="appointmentdate">Date</label>
-                                    <input type="date" oninput="removeErrors(this.id)" name="appointmentdate" id="appointmentdate" class="shadow-none form-control">
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group" style="margin-top: 20px;">
-                                    <input type="submit" onclick="return validateVisaBookings()" value="Book Appointment" name="save" class="btn btn-secondary">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-secondary" onclick="closeOverlay('appointment-booking')">close</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- end book appointment -->
 	<!-- Footer -->
 	<?php

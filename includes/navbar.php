@@ -58,11 +58,11 @@
                                 Services
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-dark" href="#">Airline Ticketing & Reservation</a>
-                                <a class="dropdown-item text-dark" href="#">Hajj & Umrah Services</a>
+                                <a class="dropdown-item text-dark" href="airline-ticketing.php">Airline Ticketing & Reservation</a>
+                                <a class="dropdown-item text-dark" href="hajj-&-umrah.php">Hajj & Umrah Services</a>
                                 <a class="dropdown-item text-dark" href="hotel-booking.php">Hotel Booking</a>
-                                <a class="dropdown-item text-dark" href="#">Visa Assistance</a>
-                                <a class="dropdown-item text-dark" href="#">Career & Study Consultations</a>
+                                <a class="dropdown-item text-dark" href="visa-assistance.php">Visa Assistance</a>
+                                <a class="dropdown-item text-dark" href="career-and-education.php">Career & Study Consultations</a>
                                 </div>
                             </li>
                             <li class="main_nav_item"><a href="contact.php">contact</a></li>

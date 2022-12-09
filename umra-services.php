@@ -56,9 +56,6 @@ $_SESSION['redirect_url'] = $url;
         <!-- Offers -->
 
         <div class="offers">
-            <!-- Search -->
-            <!-- Offers -->
-
             <div class="container">
                 <div class="row">
                     <div class="col-lg-1 temp_col"></div>
@@ -117,32 +114,57 @@ $_SESSION['redirect_url'] = $url;
 
                 </div>
             </div>
+        </div>
 
-
+        <div class="offers">
             <div class="container">
-                <div class="row py-3">
-                    <div class="col-sm-4">
-                        <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Single Visa Processing</h3>
-                        <br>
-                        The Kingdom of Saudi Arabia has made it far easier for prospective Umrah applicants to get their travel visas in a short period. Therefore, we help facilitate the issuing of Umrah Visas to individuals going to Saudi Arabia based on applications submitted via our office. Then, one would have to wait for a few days till the visa processing was done and applications were approved to visit Saudi Arabia.
+                <div class="row" style="margin-top: 60px;">
+                    <div class="col-sm-6">
+                        <div class="bg-light shadow p-3 mb-5 bg-body rounded">
+                            <div class="card-body">
+                                <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Single Visa Processing</h3>
+                                <br>
+                                The Kingdom of Saudi Arabia has made it far easier for prospective Umrah applicants to get their travel visas in a short period. Therefore, we help facilitate the issuing of Umrah Visas to individuals going to Saudi Arabia based on applications submitted via our office. Then, one would have to wait for a few days till the visa processing was done and applications were approved to visit Saudi Arabia.
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Umrah Visa Express Service</h3>
-                        <br>
-                        Our pleasure to assist you in your trip to Umrah to Saudi Arabia by providing you with Umrah visas. An Umrah visa can be easily obtained as an electronic visa permit to Saudi Arabia. Electronic visa application for a tourist visa is far more accessible than a regular Umrah visa. The application takes just a few minutes to complete, and the e-Visa arrives at your e-mail address within 72 hours. However, most applications are approved in only 24 hours.
+                    <div class="col-sm-6">
+                        <div class="bg-light shadow p-3 mb-5 bg-body rounded">
+                            <div class="card-body">
+                                <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Umrah Visa Express Service</h3>
+                                <br>
+                                Our pleasure to assist you in your trip to Umrah to Saudi Arabia by providing you with Umrah visas. An Umrah visa can be easily obtained as an electronic visa permit to Saudi Arabia. Electronic visa application for a tourist visa is far more accessible than a regular Umrah visa. The application takes just a few minutes to complete, and the e-Visa arrives at your e-mail address within 72 hours. However, most applications are approved in only 24 hours.
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Umrah Packages </h3>
-                        <br>
-                        Al-Ihsan Tours & Travel Ltd provides a variety of umrah packages, including the umrah tour group package. Each Umrah package has certain specifications over one, and you can book the umrah packages suitable for you in terms of need and want.
+                    <div class="col-sm-8">
+                        <div class="bg-light shadow p-3 mb-5 bg-body rounded">
+                            <div class="card-body">
+                                <h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Umrah Packages </h3>
+                                <br>
+                                <p>
+                                    Al-Ihsan Tours & Travel Ltd provides a variety of umrah packages, including the umrah tour group package. Each Umrah package has certain specifications over one, and you can book the umrah packages suitable for you in terms of need and want.
+                                </p>
 
-                        Each umrah package is designed keeping in view the utmost hospitality and comfort of the pilgrims. So, providing a variety of umrah packages gives pilgrims a choice so they can select the umrah package according to their need, want, and budget. We are on the ground to help you organize a lifetime worth remembering journey to Makkah and Madinah.
+                                <p>
+                                    Each umrah package is designed keeping in view the utmost hospitality and comfort of the pilgrims. So, providing a variety of umrah packages gives pilgrims a choice so they can select the umrah package according to their need, want, and budget. We are on the ground to help you organize a lifetime worth remembering journey to Makkah and Madinah.
+                                </p>
+
+                                <p>
+                                    A typical Umrah package generally consists of a 7 to 14-day trip through Makkah and Madinah. For a 7-day package, the itinerary includes a 4-night and 3-night stay in Makkah and Madinah. A 14-day Umrah package typically consists of 8 nights in Makkah and 4 Nights in Madinah; the minimum number of packages offered is four people and different kinds of umrah services.
+                                </p>
+
+                                <p>
+                                    We aim to be your Companion and Friend on your visit to the House of Allah. Our mission is to connect people to Makkah and Madinah. No matter how far away you might be, we will help you find the Umrah trip right for you!
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-
-
+        <div class="offers">
             <div class="container">
 
                 <div class="offers_grid">

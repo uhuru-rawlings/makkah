@@ -79,7 +79,7 @@ $_SESSION['redirect_url'] = $url;
 									<div class="col-lg-3 col-1680-4">
 										<div class="offers_image_container">
 
-											<div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
+											<div class="offers_image_background" style="background-image:url(images/hajj-services.jpg)"></div>
 
 										</div>
 									</div>
@@ -95,11 +95,14 @@ $_SESSION['redirect_url'] = $url;
 											</div>
 											<p class="offers_text" id="marked_list">
 												Hajj is an annual Islamic pilgrimage to the Muslim’s holiest city since Hajj is the fifth pillar of Islamic practice for every Muslim, with the physical and financial ability to undertake the journey to Makkah, Saudi Arabia. 
-
+											</p>
+											<p class="offers_text" id="marked_list">
 												The five-to-six-day pilgrimage is a once-in-a-lifetime obligation for all Muslims with the physical and financial ability to undertake the journey.
-
+											</p>
+											<p class="offers_text" id="marked_list">
 												Every year of Dhu al-Hajj, the last month of the Islamic Hijri lunar calendar, millions of Muslims from around the world gather their savings to “attend the epic journey’’ towards Makkah and perform the rituals of Hajj. There’s no journey, no spiritual experience, nor such a chance to connect with Allah quite as substantial as Hajj, for it denotes both the outward act of physically traveling and the inward act of every Muslim’s contemplation of their faith. Such a journey comes with numerous sacrifices, strength, and unimaginable rewards.
 											<p>
+											<p class="offers_text" id="marked_list">
 												<span class="list_check"><i class="fa-solid fa-check"></i></span>
 												Hajj packages (E-Visa)
 											</p>
@@ -112,6 +115,11 @@ $_SESSION['redirect_url'] = $url;
 					</div>
 
 				</div>
+			</div>
+		</div>
+
+		<div class="offers">
+			<div class="container">
 				<div class="row py-3">
 					<div class="col-sm-12">
 						<h3 class="offers_price" style="font-weight: 600; font-size: 25px;">Hajj Package services</h3>
@@ -126,42 +134,46 @@ $_SESSION['redirect_url'] = $url;
 							Each Hajj package is designed to keep the pilgrims' utmost hospitality and comfort. So, providing a variety of Hajj packages gives pilgrims a choice so they can select the Hajj package according to their need, want, and budget. We are on the ground to help you organize a lifetime worth remembering journey to Makkah and Madinah.
 						</p>
 					</div>
-					<div class="col-sm-12">
-						<h3 class="offers_price" style="font-weight: 600; font-size: 25px;">How to perform Hajj</h3>
-						<p>
-							Al-Ihsan Tours & Travel Ltd will always try to assist the people and its clients who want to perform Hajj in the best manner, as there are various steps of Hajj to complete the pious and sacred journey of Hajj. Al-Ihsan Tours & Travel Ltd will offer its clients orientation programs through videos, pictures, and practical ones.
-						</p>
-
-						<p>
-							Also, Al-Ihsan Tours & Travel Ltd offers different classes of Hajj packages, such as;
-						</p>
-						<div>
-							<span class="list_check"><i class="fa-solid fa-check"></i></span>
-							Economic class (Quad room, 4-people)
-						</div>
-						<div>
-							<span class="list_check"><i class="fa-solid fa-check"></i></span>
-							Business class (Triple & Double room 3-2 -People) &
-						</div>
-						<div>
-							<span class="list_check"><i class="fa-solid fa-check"></i></span>
-							First-class (Single Room)
-						</div>
-					</div>
-					<div class="row py-2" id="hajjbooking">
-						<div class="col-sm-4">
-							<p>Do you want us to help you attend hajj and umrah?</p>
-						</div>
-						<div class="col-sm-4">
-							<a href="hajj-booking.php">
-								<button class="btn">Request Now</button>
-							</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="offers">
+			<div class="container">
+				<div class="col-sm-12">
+					<h3 class="offers_price" style="font-weight: 600; font-size: 25px;">How to perform Hajj</h3>
+					<p>
+						Al-Ihsan Tours & Travel Ltd will always try to assist the people and its clients who want to perform Hajj in the best manner, as there are various steps of Hajj to complete the pious and sacred journey of Hajj. Al-Ihsan Tours & Travel Ltd will offer its clients orientation programs through videos, pictures, and practical ones.
+					</p>
+
+					<p>
+						Also, Al-Ihsan Tours & Travel Ltd offers different classes of Hajj packages, such as;
+					</p>
+					<div>
+						<span class="list_check"><i class="fa-solid fa-check"></i></span>
+						Economic class (Quad room, 4-people)
+					</div>
+					<div>
+						<span class="list_check"><i class="fa-solid fa-check"></i></span>
+						Business class (Triple & Double room 3-2 -People) &
+					</div>
+					<div>
+						<span class="list_check"><i class="fa-solid fa-check"></i></span>
+						First-class (Single Room)
+					</div>
+				</div>
+				<div class="row py-2" id="hajjbooking">
+					<div class="col-sm-4">
+						<p>Do you want us to help you attend hajj and umrah?</p>
+					</div>
+					<div class="col-sm-4">
+						<a href="hajj-booking.php">
+							<button class="btn">Request Now</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Footer -->
 
 		<?php

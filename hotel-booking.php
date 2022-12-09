@@ -1,7 +1,7 @@
 
 <?php
-include_once("admin/database/Database.php");
-include("admin/models/Destinations.php");
+	include_once("admin/database/Database.php");
+	include("admin/models/Destinations.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
